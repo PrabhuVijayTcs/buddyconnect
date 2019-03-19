@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +14,7 @@ import { BookingComponent } from './booking/booking.component';
 import { TrackerComponent } from './tracker/tracker.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-flight-entertainment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-fli
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
