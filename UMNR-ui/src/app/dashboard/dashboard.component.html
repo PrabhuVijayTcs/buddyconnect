@@ -1,3 +1,61 @@
-<p>
-  dashboard works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="dashboard-page-title">Upcoming Trips</h1>
+            <div class="row upcomingTripRow"  *ngFor="let trip of upComingTripResponseData; let i = index">
+                <div class="row row-align">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div>{{trip.originCity}} to {{trip.destinationCity}}</div>
+                  <div>Reservation Code: {{trip.pnrNbr}}</div>
+                  <div>Departs: {{trip.dateRange}}</div>
+                  <div *ngFor="let pax of trip.travellers">Travellers: {{pax.firstName}} {{pax.lastName}}</div></div>
+				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <img [attr.alt]="(trip.airlineBooked)" [src]="(trip.airlineLogo)" class="img-fluid secondNavImage">
+                  <input class="btn btn-warning btn-sm" type="submit" name="submit" value="Open Itinerary">
+				   <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Options
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+				  </div>
+                 
+                </div>
+				        <p class="clear"></p>
+              </div>
+             <div class="row">
+			 <h1 class="dashboard-page-title">Recent Trips</h1>
+			 <div class="dropdown">Show
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="selectDetailsBasedOnTripType($event.target.value)">
+                        Options
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">UMNR trips</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                      </div>
+                    </div>
+			 </div>
+			 <div class="row recentTripRow"  *ngFor="let recentTrip of recentTripDetails; let i = index">
+                <div class="row row-align">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div>{{recentTrip.originCity}} to {{recentTrip.destinationCity}}</div>
+                  <div>Reservation Code: {{recentTrip.pnrNbr}}</div>
+                  <div>Departs: {{recentTrip.dateRange}}</div>
+                  <div *ngFor="let pax of recentTrip.travellers">Travellers: {{pax.firstName}} {{pax.lastName}}</div>
+				  </div>
+				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<img *ngIf="recentTrip?.isUmnrOnly" [attr.alt]="(recentTrip.umnrChildExpBaralt)" [src]="(recentTrip.umnrChildExpBar)" class="img-fluid secondNavImage">
+                  <img [attr.alt]="(recentTrip.airlineBooked)" [src]="(recentTrip.airlineLogo)" class="img-fluid secondNavImage">
+                  <input class="btn btn-warning btn-sm" type="submit" name="submit" value="Repeat this trip">
+				  </div>
+                 
+                </div>
+				        <p class="clear"></p>
+              </div>
+          </div>
+      </div>
+  </div>
