@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+
 
 import { CommonModule } from '@angular/common';
 import { BookerComponent } from './booker/booker.component';
@@ -30,7 +32,9 @@ import { MainRoutingModule } from './main-routing.module';
     CommonModule,
     MainRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule,           // <----- this module will be deprecated in the future version.
+    MatDatepickerModule,        // <----- import(must)
+    MatNativeDateModule,        // <----- import for date formating(optional),
     MatSelectModule
   ]
 })

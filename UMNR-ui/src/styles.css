@@ -32,3 +32,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mT2{
     margin-top:2%;
 }
+
+
+.mat-select-value-text{
+    color:#000;
+}
