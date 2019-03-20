@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder,FormsModule, Validators } from '@angular/forms'; 
 import {MatSelectModule} from '@angular/material/select';
+import { NavigationExtras, Router } from '@angular/router';
 
 //const localData = require('src/data.json')
 @Component({
@@ -18,7 +19,7 @@ states: string[] = [
   'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
   'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 ];
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, public router: Router) { }
    loginform = this.fb.group({
      username: ['',Validators.required],
      password: ['',Validators.required]
@@ -30,6 +31,19 @@ states: string[] = [
   }
   console.log(data)
 }*/
+login(){
+  let redirect = 'main';
+
+  // Set our navigation extras object
+  // that passes on our global query params and fragment
+  let navigationExtras: NavigationExtras = {
+    queryParamsHandling: 'preserve',
+    preserveFragment: true
+  };
+
+  // Redirect the user
+  this.router.navigate([redirect]);
+}
   
   ngOnInit() {
     //console.log("json from intenal file "+ JSON.stringify(localData) )

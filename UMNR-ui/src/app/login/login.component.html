@@ -9,7 +9,7 @@
               <input type="text" class="form-control"  formControlName="password" required placeholder="password">
           </div>  <br>
             <div class=" col-sm-6 col-md-6 col-lg-6">
-              <button type="submit" routerLink="/dashboard"  class="form-control" [disabled]="!loginform.valid">Log in</button>
+              <button type="submit" (click)="login()"  class="form-control" [disabled]="!loginform.valid">Log in</button>
             </div>  <br>
             <div class=" col-sm-6 col-md-6 col-lg-6">
                 forgot password?<a href="#" >click here</a>
@@ -21,34 +21,34 @@
     </div>
 
     <div class="col-sm-12 col-md-6 col-lg-6">
-        <form>
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <input type="radio">Roundtrip
-            <input type="radio">One-Way
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="selectText">from</div>
-            <mat-select class="selectBox">
-              <mat-option>Select Origin</mat-option>
-              <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-            </mat-select>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12 mT2">
-            <div class="selectText">to</div>
-            <mat-select class="selectBox">
-              <mat-option>Select Destination</mat-option>
-              <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-            </mat-select>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12"> 
-
-          </div> 
-         <div class="col-sm-6 col-md-6 col-lg-6">
-              
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-6">
-              <button type="submit" routerLink="/dashboard"  class="btn btn-warning btn-sm">Search Flights</button>
-          </div>
-        </form>
+      <form>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <input type="radio">Roundtrip
+          <input type="radio">One-Way
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="selectText">from</div>
+          <mat-select class="selectBox">
+            <mat-option>Select Origin</mat-option>
+            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+          </mat-select>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 mT2">
+          <div class="selectText">to</div>
+          <mat-select class="selectBox">
+            <mat-option>Select Destination</mat-option>
+            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+          </mat-select>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12"> 
+    
+        </div> 
+       <div class="col-sm-6 col-md-6 col-lg-6">
+            
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <button type="submit" routerLink="/dashboard"  class="btn btn-warning btn-sm">Search Flights</button>
+        </div>
+      </form>
     </div>
   </div>

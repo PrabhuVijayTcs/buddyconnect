@@ -8,12 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
-import { BookingComponent } from './booking/booking.component';
-import { TrackerComponent } from './tracker/tracker.component';
-import { ReviewsComponent } from './reviews/reviews.component';
-import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-flight-entertainment.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -21,13 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    DashboardComponent,
-    ProfileComponent,
-    BookingComponent,
-    TrackerComponent,
-    ReviewsComponent,
-    InFlightEntertainmentComponent
-  ],
+    ProfileComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
