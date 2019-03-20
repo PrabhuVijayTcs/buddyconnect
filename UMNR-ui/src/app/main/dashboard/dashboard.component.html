@@ -31,16 +31,16 @@
 			 <h1 class="dashboard-page-title">Recent Trips</h1>
 			 <div class="dropdown">Show
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="selectDetailsBasedOnTripType($event.target.value)">
-                        Options
+                          UMNR trips
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">UMNR trips</a>
+                        <a class="dropdown-item selected" href="#">UMNR trips</a>
                         <a class="dropdown-item" href="#">Others</a>
                       </div>
                     </div>
 			 </div>
-			 <div class="row recentTripRow"  *ngFor="let recentTrip of recentTripDetails; let i = index">
-                <div class="row row-align">
+			 <div  class="row recentTripRow"  *ngFor="let recentTrip of recentTripDetails; let i = index">
+                <div *ngIf="recentTrip?.isUmnrOnly" class="row row-align hidden">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                   <div>{{recentTrip.originCity}} to {{recentTrip.destinationCity}}</div>
                   <div>Reservation Code: {{recentTrip.pnrNbr}}</div>
