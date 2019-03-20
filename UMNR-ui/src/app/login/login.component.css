@@ -35,7 +35,7 @@
 }
 
 .mat-select-value-text{
-    color:#ccc
+    color:#ccc;
 }
 .p0{
 padding: 0;
@@ -44,7 +44,7 @@ padding: 0;
     float: left;
 }
 .w50{
-    width: 50%
+    width: 50%;
 }
 .bg_login{
     background-image: url(../../assets/img/bg-image.jpg);
@@ -52,4 +52,11 @@ padding: 0;
     width: 100%;
     height: 100%;
     
+}
+.pdT1{
+    padding-top: 1%;
+}
+.triptype{
+    text-align:center;
+    padding-bottom:1%;
 }

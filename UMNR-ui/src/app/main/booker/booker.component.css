@@ -35,7 +35,7 @@
 }
 
 .mat-select-value-text{
-    color:#ccc
+    color:#ccc;
 }
 .p0{
 padding: 0;
@@ -45,4 +45,13 @@ padding: 0;
 }
 .w50{
     width: 50%
+}
+.mat-form-field-flex{
+    border-bottom: 1px solid #000;
+}
+.mat-form-field-suffix{
+    background:  #1f5084;
+}
+.mat-select-value{
+    color:#000;
 }
