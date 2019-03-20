@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import {MatDatepickerModule, MatNativeDateModule, MatInputModule } from '@angular/material';
 
 
 import { CommonModule } from '@angular/common';
@@ -15,6 +15,7 @@ import { TrackerComponent } from './tracker/tracker.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-flight-entertainment.component';
 import { MainRoutingModule } from './main-routing.module';
+import { ProfileComponent } from '../profile/profile.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MainRoutingModule } from './main-routing.module';
     ReviewsComponent,
     InFlightEntertainmentComponent,
     LandingComponent,
-    MainComponent
+    MainComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { MainRoutingModule } from './main-routing.module';
     FormsModule,           // <----- this module will be deprecated in the future version.
     MatDatepickerModule,        // <----- import(must)
     MatNativeDateModule,        // <----- import for date formating(optional),
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule
   ]
 })
 export class MainModule { }

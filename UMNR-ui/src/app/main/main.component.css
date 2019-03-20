@@ -1,0 +1,25 @@
+.navC{
+    background: rgba(31, 80, 132);
+    padding: 1% 0 1% 4%;
+    width:100%;
+}
+.navC a{
+    color: #fff;   
+    padding:0 1%;
+}
+.navC a{
+    color: #fff;   
+    padding:0 1%;
+}
+.navC a[active="active"]{
+    background-color: #ffc107;
+}
+.navC a:last-child{
+    float: right;
+}
+.navC a:last-child img{
+    margin-top:-4px;
+}
+.selectedContent{
+  padding: 2% 4% 1% 4%;
+}

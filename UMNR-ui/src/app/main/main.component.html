@@ -1,8 +1,25 @@
-<nav>
-  <a routerLink="./booking" routerLinkActive="active">Booker</a>
-  <a routerLink="./dashboard" routerLinkActive="active">Dashboard</a>
-  <a routerLink="./tracker" routerLinkActive="active">Tracker</a>
-  <a routerLink="./review" routerLinkActive="active">Review</a>
-  <a routerLink="./IFE" routerLinkActive="active">IFS</a>
-</nav>
-<router-outlet></router-outlet>
+<div>
+<!--<div> class="col-sm-12 col-md-12 col-lg-12"
+        <div>
+          <img></img>
+        </div>
+    </div>-->
+
+    <div>
+        <div class="navC">
+          <nav>
+            <a routerLink="./booking" routerLinkActive="active">Booker</a>|
+            <a routerLink="./dashboard" routerLinkActive="active">Dashboard</a>|
+            <a routerLink="./tracker" routerLinkActive="active">Tracker</a>|
+            <a routerLink="./review" routerLinkActive="active">Review</a>|
+            <a routerLink="./IFE" routerLinkActive="active">IFS</a>
+            <a routerLink="./profile" routerLinkActive="active">
+              <img height="32px" width="32px" src="../../assets/img/profile.png"/>
+            </a>
+          </nav>
+        </div>
+        <div class="selectedContent">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

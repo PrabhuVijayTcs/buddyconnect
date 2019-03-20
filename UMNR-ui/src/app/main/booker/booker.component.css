@@ -2,12 +2,17 @@
     margin-top:10px;
 }
 .bgC{
-    background-color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top:10px;
+    margin: auto;
+    top:20%;
+    position: absolute;
+    width: 100%
 }
 .bgL{
-    background-color: #1f5084;
+    background-color:rgba(31, 80, 132, 0.5);
     border-radius: 3px;
+    padding: 4% 0;
 }
 .selectText{
     position: absolute;
@@ -23,11 +28,21 @@
     border-radius: 5px;
     padding: 1%;
     color:#000;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 .mT2{
     margin-top:2%;
 }
+
 .mat-select-value-text{
-    color: #ccc
+    color:#ccc
+}
+.p0{
+padding: 0;
+}
+.fl{
+    float: left;
+}
+.w50{
+    width: 50%
 }

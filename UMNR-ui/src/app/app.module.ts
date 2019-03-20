@@ -17,9 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrationComponent,
-    ProfileComponent
-    ],
+    RegistrationComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -8,6 +8,8 @@ import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-fli
 import { LandingComponent } from './landing/landing.component';
 import { MainComponent } from './main.component';
 import { BookerComponent } from './booker/booker.component';
+import { ProfileComponent } from '../profile/profile.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +21,7 @@ const routes: Routes = [
     { path: 'tracker', component: TrackerComponent},
     { path: 'review', component: ReviewsComponent},
     { path: 'IFE', component: InFlightEntertainmentComponent},
-
+    { path: 'profile', component: ProfileComponent}
   ]
 }
 ];

@@ -37,3 +37,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-select-value-text{
     color:#000;
 }
+.cb{
+    clear: both;
+}
