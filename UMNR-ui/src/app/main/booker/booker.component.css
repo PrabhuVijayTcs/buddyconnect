@@ -24,15 +24,15 @@
     width: 50px;
     background-color:#1f5084;
     border-radius: 3px;
-    color:#fff;
+    color:rgb(133, 36, 36);
 }
 .selectBox{
     background: white;
     border-radius: 5px;
     padding: 1%;
     color:#000;
-    padding-left: 60px;
-    border: 1px solid #ccc;
+    text-align: center;
+    width: 100%;
 }
 .mT2{
     margin-top:2%;
