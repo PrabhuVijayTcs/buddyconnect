@@ -1,0 +1,13 @@
+h1{
+    color:rgba(31, 80, 132);
+}
+h2{
+    color:#ffc107;
+}
+.profileData div span:first-child{
+    width: 20%;
+    display: inline-block;
+}
+.profileData div{
+    padding: 0.5% 1%;
+}

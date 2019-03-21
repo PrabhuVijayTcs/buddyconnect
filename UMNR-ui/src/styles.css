@@ -42,3 +42,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-form-field-label{
     display: none;
 }
+.mat-form-field-infix{
+    border-bottom:1px solid #ccc;
+}
+.mat-select-value-text{
+    color:#5c5c5c;
+}
+.mat-select-arrow{
+    color:#1f5084;
+}

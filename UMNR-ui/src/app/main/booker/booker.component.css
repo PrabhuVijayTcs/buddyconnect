@@ -1,13 +1,16 @@
 .padT{
     margin-top:10px;
 }
+.mat-form-field-infix{
+    border-bottom:1px solid #ccc;
+}
 .bgC{
     background-color: rgba(0, 0, 0, 0.5);
     margin-top:10px;
     margin: auto;
     top:20%;
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 .bgL{
     background-color:rgba(31, 80, 132, 0.5);
@@ -29,6 +32,7 @@
     padding: 1%;
     color:#000;
     padding-left: 60px;
+    border: 1px solid #ccc;
 }
 .mT2{
     margin-top:2%;
@@ -38,13 +42,13 @@
     color:#ccc;
 }
 .p0{
-padding: 0;
+    padding:0;
 }
 .fl{
     float: left;
 }
 .w50{
-    width: 50%
+    width: 50%;
 }
 .mat-form-field-flex{
     border-bottom: 1px solid #000;
