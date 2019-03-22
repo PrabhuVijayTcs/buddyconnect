@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service }  from '../service.service';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
-  constructor() { }
+  profileData:object; 
+  constructor(private httpService: Service) {
+    
+   }
 
   ngOnInit() {
+    this.httpService.getData("./assets/profileData.JSON").subscribe(
+      profileData=>this.profileData=profileData
+    );
   }
 
 }

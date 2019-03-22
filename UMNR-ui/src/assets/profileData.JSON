@@ -1,0 +1,16 @@
+{
+  "Name": "Angelo",
+  "DateOfBirth": "06/06/1987",
+  "SeatPreference": "Window",
+  "FoodPreference": "Chicken",
+  "kids": [
+    {
+      "Name": "Jesse",
+      "DateOfBirth": "06/16/2010",
+      "SeatPreference": "Window",
+      "FoodPreference": "pizza",
+      "Hobbies": "Playing Video Games",
+      "EmergencyContactNumber": "+1 3687216313"
+    }
+  ]
+}

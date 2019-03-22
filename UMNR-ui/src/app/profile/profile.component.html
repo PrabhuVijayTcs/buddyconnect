@@ -1,15 +1,19 @@
 <div class="row">
   <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h1>Angelo</h1>
-      <div class="profileData col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2><u>Kid1 details</u></h2>
-        <div><span>kid's Name:</span><span>Jesse</span></div>
-        <div><span>Age:</span><span>10years</span></div>
-        <div><span>Seat Preference:</span><span>Window</span></div>
-        <div><span>Food Preference:</span><span>Bread and chacalotes</span></div>
-        <div><span>Hobbies:</span><span>Watching cartoon</span></div>
-        <div><span>Favourite Movie:</span><span>Spider Man</span></div>
-        <div><span>Emergency contact number:</span><span>+1 3687216313</span></div>
+      <h1>{{profileData.Name}}</h1>
+      <div class="profileData">
+        <div><span>Date of Birth:</span><span>{{profileData.DateOfBirth}}</span></div>
+        <div><span>Seat Preference:</span><span>{{profileData.SeatPreference}}</span></div>
+        <div><span>Food Preference:</span><span>{{profileData.FoodPreference}}</span></div>
+      </div>
+      <div *ngFor="let kidData of profileData!='' && profileData.kids;let i=index;" class="profileData col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2><u>{{"Kid"+(i+1)}} details</u></h2>
+        <div><span>Name:</span><span>{{kidData.Name}}</span></div>
+        <div><span>Date of Birth:</span><span>{{kidData.DateOfBirth}}</span></div>
+        <div><span>Seat Preference:</span><span>{{kidData.SeatPreference}}</span></div>
+        <div><span>Food Preference:</span><span>{{kidData.FoodPreference}}</span></div>
+        <div><span>Hobbies:</span><span>{{kidData.Hobbies}}</span></div>
+        <div><span>Emergency Contact Number:</span><span>{{kidData.EmergencyContactNumber}}</span></div>
       </div>
   </div>
   

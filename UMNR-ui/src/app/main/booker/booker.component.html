@@ -1,43 +1,78 @@
-<form>
-    <div class="triptype col-sm-12 col-md-12 col-lg-12">
-      <input type="radio">Roundtrip
-      <input type="radio">One-Way
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <!--<div class="selectText">from</div>-->
-      <select class="selectBox">
-        <option value="Select Origin">Select Origin</option>
-        <option *ngFor="let state of states" [value]="state">{{state}}</option>
-      </select>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12 mT2">
-      <!--<div class="selectText">to</div>-->
-      <select class="selectBox">
-        <option value="Select Destination">Select Destination</option>
-        <option *ngFor="let state of states" [value]="state">{{state}}</option>
-      </select>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12"> 
-      <span>Departing</span>
-      <mat-form-field class="example-full-width">
-        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a date">
-        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-        <mat-datepicker #picker1></mat-datepicker>
+<div class="col-sm-12 col-md-12 col-lg-12"></div>
+
+<form (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm">
+  <div class="triptype col-sm-12 col-md-12 col-lg-12">
+    <span>Select Travelers</span>
+    <mat-form-field>
+        <mat-label>Travelers</mat-label>
+        <mat-select  multiple id="travelers" name="travelers" [(ngModel)]="searchModel.selectedTravelers">
+          <mat-option *ngFor="let traveler of travelers" [value]="traveler">{{traveler}}</mat-option>
+        </mat-select>
       </mat-form-field>
-      <span>Returning</span>
-      <mat-form-field class="example-full-width">
-        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a date">
-        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-        <mat-datepicker #picker2></mat-datepicker>
+  </div>
+  <div class="triptype col-sm-12 col-md-12 col-lg-12">
+    <input type="radio" required value="Roundtrip" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">Roundtrip
+    <input type="radio" required value="One-Way" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">One-Way
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <!--<div class="selectText">from</div>-->
+    <select class="selectBox" [(ngModel)]="searchModel.origin" id="origin" required name="origin">
+      <option value="">Select Origin</option>
+      <option *ngFor="let state of states" [value]="state">{{state}}</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12 mT2">
+    <!--<div class="selectText">to</div>-->
+    <select class="selectBox" [(ngModel)]="searchModel.destination" id="destination" name="destination">
+      <option value="">Select Destination</option>
+      <option *ngFor="let state of states" [value]="state">{{state}}</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12"> 
+    <span>Departing</span>
+    <mat-form-field class="example-full-width">
+      <input required [(ngModel)]="searchModel.depart" id="depart" name="depart" matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <span>Returning</span>
+    <mat-form-field class="example-full-width">
+      <input required matInput [(ngModel)]="searchModel.return" id="return" name="return" [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div> 
+ <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
+    <!--<div class="selectText">Travelers</div>-->
+    <mat-form-field>
+        <mat-label>No of Adult's</mat-label>
+        <select matNativeControl required [(ngModel)]="searchModel.adultsCount" id="adultsCount" name="adultsCount">
+          <option value="" selected>Select no of Adult's</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10+">10+</option>
+        </select>
       </mat-form-field>
-    </div> 
-   <div class="col-sm-12 col-md-12 col-lg-12">
-      <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
-      <!--<div class="selectText">Travelers</div>-->
+
+    <!--<mat-select class="selectBox">
+      <mat-option>Adults</mat-option>
+      <mat-option>Children</mat-option>
+      <mat-option>UMNR</mat-option>
+    </mat-select>-->
+  </div>
+  <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
       <mat-form-field>
-          <mat-label>No of Adult's</mat-label>
-          <select matNativeControl required>
-            <option value="Select no of Adult's">Select no of Adult's</option>
+          <mat-label>No of Children's</mat-label>
+          <select matNativeControl required [(ngModel)]="searchModel.childCount" id="childCount" name="childCount">
+            <option value="">Select no of Children's</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -50,42 +85,19 @@
             <option value="10+">10+</option>
           </select>
         </mat-form-field>
-
-      <!--<mat-select class="selectBox">
-        <mat-option>Adults</mat-option>
-        <mat-option>Children</mat-option>
-        <mat-option>UMNR</mat-option>
-      </mat-select>-->
-    </div>
-    <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
-        <mat-form-field>
-            <mat-label>No of Children's</mat-label>
-            <select matNativeControl required>
-              <option value="Select no of Children's">Select no of Children's</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10+">10+</option>
-            </select>
-          </mat-form-field>
-    </div>
-    </div>
-    <div  class="cb col-sm-12 col-md-12 col-lg-12">
-      <div class="selectText">type</div>
-      <mat-select class="selectBox">
-          <mat-option value="First class">First class</mat-option>
-          <mat-option value="Business">Business</mat-option>
-          <mat-option value="Premium economy">Premium economy</mat-option>
-          <mat-option value="Economy/Coach">Economy/Coach</mat-option>
-      </mat-select>
-    </div>
-    <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
-        <button type="submit" routerLink="/dashboard"  class="btn btn-warning btn-sm">Search Flights</button>
-    </div>
-  </form>
+  </div>
+  </div>
+  <div  class="cb col-sm-12 col-md-12 col-lg-12">
+    <div class="selectText">type</div>
+    <mat-select  required class="selectBox" [(ngModel)]="searchModel.cabinType" id="cabinType" name="cabinType">
+      <mat-option value="">Cabin Type</mat-option>
+        <mat-option value="First class">First class</mat-option>
+        <mat-option value="Business">Business</mat-option>
+        <mat-option value="Premium economy">Premium economy</mat-option>
+        <mat-option value="Economy/Coach">Economy/Coach</mat-option>
+    </mat-select>
+  </div>
+  <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+      <button type="submit" [disabled]="!searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
+  </div>
+</form>
