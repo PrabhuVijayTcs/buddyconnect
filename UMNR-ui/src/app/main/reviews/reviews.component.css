@@ -4,3 +4,26 @@
 .review ul{
     padding: 0;
 }
+.submitReviewSec div{
+    text-align: center;
+}
+.submitReviewSec div label{   
+    text-align: right;
+    width:90px;
+    padding: 20px;
+    vertical-align: middle;
+    
+}
+.submitReviewSec div:nth-child(2) label{
+    vertical-align: top;
+    padding-top:3.5%;
+}
+.submitReviewSec div input{  
+    width: 200px;
+    border-radius: 3px;
+}
+.submitReviewSec div textarea{
+    width: 200px;
+    border-radius: 3px;
+    height: 100px;
+}

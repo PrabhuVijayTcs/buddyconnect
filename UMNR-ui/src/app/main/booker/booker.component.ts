@@ -41,8 +41,11 @@ states: string[] = [
   console.log(data)
 }*/
 searchFlights(searchForm:NgForm){
-  alert(JSON.stringify(searchForm.value));
+  this.httpService.getData("./assets/shopping.JSON").subscribe(
+    profileData=>this.profileData=profileData
+  );
 }
+
 ngOnInit() {
   this.httpService.getData("./assets/profileData.JSON").subscribe(
     profileData=>this.profileData=profileData
