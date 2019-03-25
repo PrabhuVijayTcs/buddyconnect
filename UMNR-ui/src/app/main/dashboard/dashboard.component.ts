@@ -1,14 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
+
 export class DashboardComponent implements OnInit {
+
+  animal: string;
+  name: string;
   private upComingTripResponseData: any;
   private recentTripDetails: any;
-  constructor() {
+  private modals: any[] = [];
+  private show = false;
+  private bsModalRef: BsModalRef;
+  private modalService: BsModalService;
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -19,11 +30,7 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  selectDetailsBasedOnTripType(event) {
-    if (this.recentTripDetails) {
 
-    }
-  }
   getDummyJson() {
     let tripResponseData = {
       "errors": [],
