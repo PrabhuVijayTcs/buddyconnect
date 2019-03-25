@@ -11,7 +11,8 @@ import { Service }  from '../../service.service';
   styleUrls: ['./booker.component.css']
 })
 export class BookerComponent implements OnInit {
-  profileData:Object;
+  profileData:object;
+  shoppingResponse:object;
   minDate = new Date(2000, 0, 1);
   maxDate = new Date(2020, 0, 1);
   dropdownList = [];
@@ -42,7 +43,7 @@ states: string[] = [
 }*/
 searchFlights(searchForm:NgForm){
   this.httpService.getData("./assets/shopping.JSON").subscribe(
-    profileData=>this.profileData=profileData
+    shoppingResponse=>this.shoppingResponse=shoppingResponse
   );
 }
 

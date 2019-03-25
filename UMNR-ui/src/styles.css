@@ -51,3 +51,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-select-arrow{
     color:#1f5084;
 }
+.fr{
+    float:right;
+}
+.dn{
+    display: none;
+}

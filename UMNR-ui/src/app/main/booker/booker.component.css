@@ -29,7 +29,7 @@
 .selectBox{
     background: white;
     border-radius: 5px;
-    padding: 1%;
+    padding: 2%;
     color:#000;
     text-align: center;
     width: 100%;
@@ -58,4 +58,33 @@
 }
 .mat-select-value{
     color:#000;
+}
+table{
+    width: 100%;
+}
+thead{
+    background: #8ab2dc;
+}
+table tr td{
+    text-align: center;
+    padding: 1% 0;
+}
+table tr th{
+    width: 20%;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 1% 0;
+}
+table tbody tr:nth-child(2n){
+    background-color:#dee7ee;
+}
+.searchForm div span{
+    padding-right:1%; 
+}
+.searchForm>div{
+    padding-top:1%;
+    padding-bottom: 1%; 
+}
+.dn{
+    display: none;
 }

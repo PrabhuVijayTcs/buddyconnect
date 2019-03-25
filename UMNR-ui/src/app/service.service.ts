@@ -11,6 +11,6 @@ const httpOptions = {
 export class Service {
   constructor(private http: HttpClient) { }
   getData(url){
-    return this.http.get(url);
+    return this.http.get(url,httpOptions);
   }
 }
