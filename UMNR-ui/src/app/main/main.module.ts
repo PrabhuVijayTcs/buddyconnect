@@ -16,6 +16,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { InFlightEntertainmentComponent } from './in-flight-entertainment/in-flight-entertainment.component';
 import { MainRoutingModule } from './main-routing.module';
 import { ProfileComponent } from '../profile/profile.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PnrConfirmationComponent } from './pnr-confirmation/pnr-confirmation.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ProfileComponent } from '../profile/profile.component';
     InFlightEntertainmentComponent,
     LandingComponent,
     MainComponent,
-    ProfileComponent
+    ProfileComponent,
+    PaymentComponent,
+    PnrConfirmationComponent
   ],
   imports: [
     CommonModule,

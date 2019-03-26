@@ -13,6 +13,7 @@
     background-color:rgba(31, 80, 132, 0.5);
     border-radius: 3px;
     padding: 4% 0;
+    padding-left: 10%;
 }
 .selectText{
     position: absolute;
@@ -61,11 +62,20 @@ padding: 0;
     text-align:center;
     padding-bottom:1%;
 }
+.loginform>div{
+    padding-bottom:4%; 
+}
+.tc{
+    text-align: center;
+}
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { /* STYLES GO HERE */
     .bgC{
         top:0%;
+    }
+    .bgL{
+        padding-left: 0%;
     }
 }
 @media only screen 
@@ -74,5 +84,8 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) { /* STYLES GO HERE */
     .bgC{
         top:10%;
+    }
+    .bgL{
+        padding-left: 0%;
     }
 }

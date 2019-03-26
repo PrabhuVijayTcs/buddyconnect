@@ -1,20 +1,20 @@
 <div class="bg_login">
   <div class="row padT bgC">
-    <div class="col-sm-12 col-md-6 col-lg-6 bgL">
-      <form [formGroup]="loginform">
-          <div class=" col-sm-6 col-md-6 col-lg-6">
+    <div class="col-sm-12 col-md-6 col-lg-6 bgL tc">
+      <form class="col-xs-12 col-sm-8 col-md-8 col-lg-8 loginform" [formGroup]="loginform">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <input type="text" class="form-control" formControlName="username" required placeholder="username">
-          </div> <br>
-          <div class=" col-sm-6 col-md-6 col-lg-6">
-              <input type="text" class="form-control"  formControlName="password" required placeholder="password">
-          </div>  <br>
-            <div class=" col-sm-6 col-md-6 col-lg-6">
+          </div> 
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <input type="password" class="form-control"  formControlName="password" required placeholder="password">
+          </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <button type="submit" (click)="login()"  class="form-control" [disabled]="!loginform.valid">Log in</button>
-            </div>  <br>
-            <div class=" col-sm-6 col-md-6 col-lg-6">
+            </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 forgot password?<a href="#" >click here</a>
-            </div>  <br>
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               not an user?<input type="button" class="btn btn-sm btn-warning btn-sm" routerLink="/registration" value="Sign Up"/>
             </div>
        </form> 
@@ -23,8 +23,8 @@
     <div class="col-sm-12 col-md-6 col-lg-6 pdT1">
       <form (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm">
         <div class="triptype col-sm-12 col-md-12 col-lg-12">
-          <input type="radio" value="Roundtrip" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">Roundtrip
-          <input type="radio" value="One-Way" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">One-Way
+          <input type="radio" value="Roundtrip" [(ngModel)]="searchModel.tripType" id="tripType1" name="tripType">Roundtrip
+          <input type="radio" value="One-Way" [(ngModel)]="searchModel.tripType" id="tripType2" name="tripType">One-Way
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12">
           <!--<div class="selectText">from</div>-->
@@ -109,7 +109,7 @@
               <mat-option value="Economy/Coach">Economy/Coach</mat-option>
           </mat-select>
         </div>
-        <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+        <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 tc">
             <button type="submit"  class="btn btn-warning btn-sm">Search Flights</button>
         </div>
       </form>

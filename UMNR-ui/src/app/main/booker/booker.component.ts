@@ -47,6 +47,8 @@ searchFlights(searchForm:NgForm){
   );
 }
 
+
+
 ngOnInit() {
   this.httpService.getData("./assets/profileData.JSON").subscribe(
     profileData=>this.profileData=profileData

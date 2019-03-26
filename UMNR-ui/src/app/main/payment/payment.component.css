@@ -1,0 +1,20 @@
+.payForm label{
+    padding-left: 0;
+}
+.payForm input{
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+.pB1{
+    padding-bottom: 2%;
+}
+.tc{
+    text-align: center
+}
+.mL2{
+    margin-left: 2%;
+}
+.dib{
+    display: inline-block;
+}
