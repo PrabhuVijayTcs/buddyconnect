@@ -19,6 +19,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MatInputModule,
     HttpClientModule,
     NgMultiSelectDropDownModule.forRoot(),
-    NgbModule
+    NgbModule.forRoot(),
 
   ],
   providers: [Service],

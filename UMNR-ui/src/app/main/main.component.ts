@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-main',
@@ -10,6 +12,7 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    //$('[data-toggle="popover"]').popover(); 
   }
 
 }
