@@ -9,12 +9,17 @@ declare const google: any;
   styleUrls: ['./tracker.component.css']
 })
 export class TrackerComponent implements OnInit {
- 
   ngOnInit() {
     const trackerDetails = this.getDummyJson();
+    const trackerRemoveDiv = document.querySelector('div#replayControl');
+    console.log(trackerRemoveDiv);
+    if (trackerRemoveDiv) {
+      trackerRemoveDiv.remove();
+    }
   console.log(trackerDetails);
   }
   getDummyJson() {
+    console.log('inside dummy json');
     let trackerResponse = {
       "originCode" : "SEA",
       "destinationCode" : "JFK",

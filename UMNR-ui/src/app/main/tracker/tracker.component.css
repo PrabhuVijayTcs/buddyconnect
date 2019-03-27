@@ -37,3 +37,69 @@ height: 5rem;
 margin-left: 20rem;
 }
 
+.flightReplayContainer{
+  display: none !important;
+}
+
+div#replayControl {
+  display: none !important;
+  visibility: hidden;
+  background-color:#1f1f1f;
+}
+.progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 90px; height: 45px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 90px; height: 90px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #eee;     /* half gray, */
+  border-bottom-color: #0bf;  /* half azure */
+  border-right-color: #0bf;
+}
+
+.datapanelfromto {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3.28571em;
+  display: flex;
+  margin-top: 15px;
+  line-height: 1em;
+}
+
+.doneBg{
+  background-color:#228B22;
+  height: 3rem;
+  width: 9rem;
+}
+.kidsStatusDiv{
+  height: 20rem;
+}
+.progressBg{
+  background-color:#FFA500;
+  height: 3rem;
+  width: 9rem;
+}
+
+.blankBg{
+  border: 1px dotted #1f1f1f;
+  height: 3rem;
+  width: 9rem;
+}
+.trackerItinDetails{
+  background-color:none !important;
+}
+.flightIcin{
+  width:3rem;
+}
