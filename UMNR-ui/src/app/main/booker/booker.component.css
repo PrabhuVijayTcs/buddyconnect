@@ -81,6 +81,9 @@ table tbody tr:nth-child(2n){
 .searchForm div span{
     padding-right:1%; 
 }
+.searchForm{
+    margin-top: -20px;
+}
 .searchForm>div{
     padding-top:1%;
     padding-bottom: 1%; 
