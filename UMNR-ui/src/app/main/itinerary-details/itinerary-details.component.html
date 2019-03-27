@@ -1,0 +1,63 @@
+<div class="container">
+    <h2>Itinerary Details</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Travel Date</th>
+          <th>Seat Number</th>
+          <th>PNR#</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="success">
+          <td>{{destinationCity}}</td>
+          <td>{{origin}}</td>
+          <td>{{travelDate}}</td>
+          <td>{{seatNumber}}</td>
+          <td>{{recordLocator}}</td>
+        </tr>      
+      </tbody>
+    </table>
+
+
+    <div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
+      
+        <h2>Offers for your itinerary</h2>
+    <table class="table table-hover">
+            <thead>
+              <tr>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
+              
+                <td >
+					        {{flightdata.Offers.CarrierLoyaltyOfferName}}
+                 </td> 
+                 <td >
+                    {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
+                   </td>
+                 
+                   <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+                      <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
+                  </div>
+                    <td >
+                      {{flightdata.Offers.ALacarteOfferItemID}}
+                     </td> 
+                     <td >
+                        {{flightdata.Offers.ALacarteOfferTotalAmount}}
+                       </td>
+                       <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+                          <button type="button" class="btn btn-warning btn-sm fr">Add to cart and checkout</button>
+                      </div>
+              </tr>
+            </tbody>
+          </table>
+          
+       
+      </div>
+  </div>
+  
