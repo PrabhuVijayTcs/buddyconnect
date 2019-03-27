@@ -18,6 +18,7 @@ import { MainRoutingModule } from './main-routing.module';
 import { ProfileComponent } from '../profile/profile.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PnrConfirmationComponent } from './pnr-confirmation/pnr-confirmation.component';
+import { ItineraryDetailsComponent } from './itinerary-details/itinerary-details.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PnrConfirmationComponent } from './pnr-confirmation/pnr-confirmation.co
     MainComponent,
     ProfileComponent,
     PaymentComponent,
-    PnrConfirmationComponent
+    PnrConfirmationComponent,
+    ItineraryDetailsComponent
   ],
   imports: [
     CommonModule,
