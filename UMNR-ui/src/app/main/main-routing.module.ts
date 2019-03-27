@@ -11,7 +11,7 @@ import { BookerComponent } from './booker/booker.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PnrConfirmationComponent } from './pnr-confirmation/pnr-confirmation.component';
-
+import { ItineraryDetailsComponent } from './itinerary-details/itinerary-details.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,7 +25,8 @@ const routes: Routes = [
     { path: 'IFE', component: InFlightEntertainmentComponent},
     { path: 'profile', component: ProfileComponent},
     { path: 'payment', component: PaymentComponent},
-    { path: 'pnrconfirm', component: PnrConfirmationComponent}
+    { path: 'pnrconfirm', component: PnrConfirmationComponent},
+    { path: 'itineraryDetails', component: ItineraryDetailsComponent}
   ]
 }
 ];
