@@ -1,6 +1,6 @@
 .navC{
-    background: rgba(31, 80, 132);
-    padding: 1% 0 1% 4%;
+    background: #1f5084;
+    padding: 0.5% 0 0.5% 4%;
     width:80%;
     position: fixed;
     z-index: 999;
@@ -9,19 +9,26 @@
     color: #fff;   
     padding:0 1%;
 }
+.profileLink{
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 130px;
+}
 .navC a{
     color: #fff;   
-    padding:0 1%;
+    padding: 1% 1%;
+    display: inline-block;
 }
 .navC a[active="active"]{
     background-color: #ffc107;
 }
-.navC a:last-child{
+/*.navC a:last-child{
     float: right;
 }
 .navC a:last-child img{
     margin-top:-4px;
-}
+}*/
 .selectedContent{
   padding: 2% 4% 1% 4%;
   margin-top:4%; 
@@ -38,4 +45,7 @@
     height: 90%;
     width: 80%;
     margin:2.5% auto;
+}
+.tc{
+    text-align: center;
 }

@@ -2,9 +2,10 @@
     padding-left: 0;
 }
 .payForm input{
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: none;
     border: 1px solid #ccc;
+    padding: 5px;
 }
 .pB1{
     padding-bottom: 2%;
