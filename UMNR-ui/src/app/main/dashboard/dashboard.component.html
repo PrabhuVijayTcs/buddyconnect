@@ -1,34 +1,26 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="dashboard-page-title">Upcoming Trips</h1>
+            <h2 class="dashboard-page-title">Upcoming Trips</h2>
             <div class="row upcomingTripRow"  *ngFor="let trip of upComingTripResponseData; let i = index">
                 <div class="row row-align">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                  <div>{{trip.originCity}} to {{trip.destinationCity}}</div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2">
+                   
+                  <div><strong>{{trip.originCity}} to {{trip.destinationCity}}</strong></div>
                   <div>Reservation Code: {{trip.pnrNbr}}</div>
                   <div>Departs: {{trip.dateRange}}</div>
                   <div *ngFor="let pax of trip.travellers">Travellers: {{pax.firstName}} {{pax.lastName}}</div></div>
 				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 imageSection">
-                  <img [attr.alt]="(trip.airlineBooked)" [src]="(trip.airlineLogo)" class="img-fluid secondNavImage">
-                  <input class="btn btn-warning btn-sm" type="submit" name="submit" value="Open Itinerary" routerLink="/main/openItinerary">
-				   <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Options
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
+            <img [attr.alt]="(trip.airlineBooked)" [src]="(trip.airlineLogo)" class="img-fluid secondNavImage px-2">
+                  <input class="btn btn-warning btn-sm mr-2" type="submit" name="submit" value="Open Itinerary" [routerLink]="['/main/itineraryDetails', trip]">
+                  <input class="btn btn-primary btn-sm mr-2"  routerLink="/main/tracker" type="submit" name="tracker" value="Track your flight">
 				  </div>
                  
                 </div>
 				        <p class="clear"></p>
               </div>
              <div class="row">
-			 <h1 class="dashboard-page-title">Recent Trips</h1>
+			 <h2 class="dashboard-page-title">Recent Trips</h2>
 			 <div class="dropdown tripType">Show
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (change)="selectDetailsBasedOnTripType($event.target.value)">
                           UMNR trips
@@ -41,18 +33,28 @@
 			 </div>
 			 <div  class="row recentTripRow"  *ngFor="let recentTrip of recentTripDetails; let i = index">
                 <div *ngIf="recentTrip?.isUmnrOnly" class="row row-align hidden">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                  <div>{{recentTrip.originCity}} to {{recentTrip.destinationCity}}</div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2">
+                 
+                  <div><strong>{{recentTrip.originCity}} to {{recentTrip.destinationCity}}</strong></div>
                   <div>Reservation Code: {{recentTrip.pnrNbr}}</div>
                   <div>Departs: {{recentTrip.dateRange}}</div>
                   <div *ngFor="let pax of recentTrip.travellers">Travellers: {{pax.firstName}} {{pax.lastName}}</div>
 				  </div>
-				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<img *ngIf="recentTrip?.isUmnrOnly" [attr.alt]="(recentTrip.umnrChildExpBaralt)" [src]="(recentTrip.umnrChildExpBar)" class="img-fluid secondNavImage">
-                  <img [attr.alt]="(recentTrip.airlineBooked)" [src]="(recentTrip.airlineLogo)" class="img-fluid secondNavImage">
-                  <input class="btn btn-warning btn-sm"  routerLink="/main/booking" type="submit" name="submit" value="Repeat this trip">
+				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2">
+            <img [attr.alt]="(recentTrip.airlineBooked)" [src]="(recentTrip.airlineLogo)" class="img-fluid secondNavImage">
+				          <img  [attr.alt]="(recentTrip.umnrChildExpBaralt)" [src]="(recentTrip.umnrChildExpBar)" class="img-fluid secondNavImage px-2">
+                  <!--<img  [attr.alt]="(recentTrip.publicRatingUrl)" [src]="(recentTrip.publicRatingUrl)" class="img-fluid secondNavImage px-2">-->
+                  <input class="btn btn-warning btn-sm"   type="submit" name="submit" value="Repeat this trip" (click)="openModalDialog()">
 				  </div>
-                 
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2">
+                  <mat-form-field>
+                    <mat-label class="ancillaryLabel">Ancillaries purchased</mat-label>
+                    <mat-select  multiple id="ancillariesArray" name="ancillariesArray" >
+                      <mat-option value="priority boarding">priority boarding</mat-option>
+                      <mat-option value="exit row seat">Exit Row Seat</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </div>   
                 </div>
 				        <p class="clear"></p>
               </div>
@@ -60,4 +62,51 @@
       </div>
   </div>
 
+ <!--pop up on click of repeat trip-->
+ <div class="backdrop" [ngStyle]="{'display':display}"></div>
  
+ <!-- modal -->
+ <div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
+   <!-- modal-dialog -->
+   <div class="modal-dialog" role="document">
+     <!-- modal-content -->
+     <div class="modal-content">
+       <div class="modal-body">
+         <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12"> 
+            <span>Departing</span>
+            <mat-form-field class="example-full-width">
+              <input required [(ngModel)]="searchModel.depart" id="depart" name="depart" matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2 mr-2 popupTravellers">
+              <mat-form-field>
+               <span>Travellers</span>
+               <mat-select  multiple id="travelers" name="travelers" [(ngModel)]="searchModel.selectedTravelers">
+                  <mat-option *ngFor="let traveler of travelers" [value]="traveler">{{traveler.firstName}} {{traveler.lastName}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+          </div>   
+        </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12">
+            <span>Returning</span>
+            <mat-form-field class="example-full-width">
+              <input required matInput [(ngModel)]="searchModel.return" id="return" name="return" [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+          </div> 
+             <div>
+                 <input type="submit" class="btn btn-warning btn-sm" value="Book now" routerLink="/main/payment">
+             </div>
+       </div>
+ 
+       <!-- modal-footer -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" (click)="closeModalDialog()" >Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
