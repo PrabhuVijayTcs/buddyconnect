@@ -73,11 +73,11 @@ background-color: #f4ad42;
   z-index: 9999999999999;
     position: absolute;
 	width: 300px;
-	background-color:#003a70;
+	background-color:#fff;
   border: 1px solid #315a68;
 	border-radius: 4px;
 	box-shadow: 0 0 10px #315a68;
-	color:white;
+	color:black;
 	padding: 10px;
 }
 
@@ -166,7 +166,7 @@ background-color: #f4ad42;
 	top: 17px;
   border: 10px solid transparent;
   border-left: 32px solid rgb(193,193,193); /* IE8 Fallback */
-  border-left: 32px solid #003a70;
+  border-left: 32px solid #fff;
   opacity:0.5;
   z-index: 2;
 }
@@ -178,7 +178,7 @@ background-color: #f4ad42;
 	right: -31px;
 	top: 20px;
   border: 8px solid transparent;
-  border-left: 24px solid #003a70;
+  border-left: 24px solid #fff;
   z-index: 3;
 }
 
