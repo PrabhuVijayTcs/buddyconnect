@@ -19,15 +19,7 @@ export class BookerComponent implements OnInit {
   selectedItems = [];
   dropdownSettings = {};
   //travelers=["Angelo","Jesse"];
-states: string[] = [
-  'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
-  'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
-  'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
-  'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico',
-  'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania',
-  'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
-  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
-];
+  airports:object;
   constructor(private httpService:Service,private fb: FormBuilder, public router: Router) { }
    loginform = this.fb.group({
      username: ['',Validators.required],
@@ -50,6 +42,10 @@ searchFlights(searchForm:NgForm){
 
 
 ngOnInit() {
+  this.httpService.getData("./assets/airports.JSON").subscribe(
+    airports=>this.airports=airports
+  );
+
   this.httpService.getData("./assets/profileData.JSON").subscribe(
     profileData=>this.profileData=profileData
   );

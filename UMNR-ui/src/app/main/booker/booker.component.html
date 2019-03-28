@@ -17,14 +17,14 @@
     <!--<div class="selectText">from</div>-->
     <select class="selectBox" [(ngModel)]="searchModel.origin" id="origin" required name="origin">
       <option value="">Select Origin</option>
-      <option *ngFor="let state of states" [value]="state">{{state}}</option>
+      <option *ngFor="let airport of airports.map" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
     </select>
   </div>
   <div class="col-sm-8 col-md-8 col-lg-8">
     <!--<div class="selectText">to</div>-->
     <select class="selectBox" [(ngModel)]="searchModel.destination" id="destination" name="destination">
       <option value="">Select Destination</option>
-      <option *ngFor="let state of states" [value]="state">{{state}}</option>
+      <option *ngFor="let airport of airports.map" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
     </select>
   </div>
   <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12"> 
@@ -161,15 +161,16 @@
     <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 p0 package">
         <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
-              <img src="../../../assets/img/delta.jpg" height="150px" width="150px">
+              <img src="../../../assets/img/delta.jpg" height="175px" width="175px">
             </div>
             <div class="tc fl col-sm-8 col-md-8 col-lg-8 p0">
               <strong>Summer vacation package</strong>
               <div>
-                  <p> Room:	Partner Package / 1 King Bed 1600 Collins Avenue, Miami Beach, FL 33139</p>
+                  <p> Room:	Partner Package / 1 King Bed 1301 6TH AVENUE, SEATTLE, WASHINGTON</p>
               </div>
               <div>
                 <strong>Flight details</strong>
+                <p>JFK-->SEA</p>
                 <p>Outbound:	Depart: 9:00 PM; Arrive: 12:10 AM (Nonstop)</p>
                 <p> Inbound:	Depart: 6:00 AM; Arrive: 8:56 AM (Nonstop)</p>
               </div>
@@ -178,7 +179,7 @@
               </div>
             </div>
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
-              <img src="../../../assets/img/hilton.jpg"  height="150px" width="150px">
+              <img src="../../../assets/img/hilton.jpg"  height="175px" width="175px">
             </div>
             <div class="cb">
               
@@ -189,15 +190,16 @@
     <div class="cb col-sm-12 col-md-12 col-lg-12 mT p0 package">
         <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
-              <img src="../../../assets/img/jetblue.jpg" height="150px" width="150px">
+              <img src="../../../assets/img/jetblue.jpg" height="175px" width="175px">
             </div>
             <div class="tc fl col-sm-8 col-md-8 col-lg-8 p0">
               <strong>Summer vacation package</strong>
               <div>
-                  <p> Room:	Partner Package / 1 King Bed 1600 Collins Avenue, Miami Beach, FL 33139</p>
+                  <p> Room:	Partner Package / 1 King Bed 1405 7TH AVENUE, SEATTLE, WASHINGTON</p>
               </div>
               <div>
                 <strong>Flight details</strong>
+                <p>JFK-->SEA</p>
                 <p>Outbound:	Depart: 9:00 PM; Arrive: 12:10 AM (Nonstop)</p>
                 <p> Inbound:	Depart: 6:00 AM; Arrive: 8:56 AM (Nonstop)</p>
               </div>
@@ -206,7 +208,7 @@
               </div>
             </div>
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
-              <img src="../../../assets/img/hyatt.jpg"  height="150px" width="150px">
+              <img src="../../../assets/img/hyatt.jpg"  height="175px" width="175px">
             </div>
             <div class="cb">
               

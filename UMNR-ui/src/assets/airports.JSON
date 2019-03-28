@@ -1,0 +1,520 @@
+{
+"lastUpdate": "Thu Mar 28 2019 10723752 GMT-0400 (Eastern Daylight Time)",
+"map": [
+{
+"code": "ABQ",
+"displayName": "Albuquerque/Santa Fe, NM",
+"regions": "US"
+},
+{
+"code": "CLT",
+"displayName": "Charlotte, NC",
+"regions": "US"
+},
+{
+"code": "AUA",
+"displayName": "Aruba, AW",
+"regions": "CA"
+},
+{
+"code": "BOS",
+"displayName": "Boston, MA",
+"regions": "US"
+},
+{
+"code": "ROC",
+"displayName": "Rochester, NY",
+"regions": "US"
+},
+{
+"code": "PUJ",
+"displayName": "Punta Cana, DR",
+"regions": "CA"
+},
+{
+"code": "SYR",
+"displayName": "Syracuse, NY",
+"regions": "US"
+},
+{
+"code": "STT",
+"displayName": "St. Thomas, VI",
+"regions": "CA,US"
+},
+{
+"code": "BUF",
+"displayName": "Buffalo, NY",
+"regions": "US"
+},
+{
+"code": "MCO",
+"displayName": "Orlando, FL",
+"regions": "US"
+},
+{
+"code": "MVY",
+"displayName": "Martha's Vineyard, MA",
+"regions": "US"
+},
+{
+"code": "BQN",
+"displayName": "Aguadilla, PR",
+"regions": "CA,US"
+},
+{
+"code": "PWM",
+"displayName": "Portland, ME",
+"regions": "US"
+},
+{
+"code": "PLS",
+"displayName": "Providenciales, Turks and Caicos",
+"regions": "CA"
+},
+{
+"code": "POP",
+"displayName": "Puerto Plata, DR",
+"regions": "CA"
+},
+{
+"code": "STI",
+"displayName": "Santiago, DR",
+"regions": "CA"
+},
+{
+"code": "JAX",
+"displayName": "Jacksonville, FL",
+"regions": "US"
+},
+{
+"code": "PAP",
+"displayName": "Port-au-Prince, Haiti",
+"regions": "CA"
+},
+{
+"code": "GND",
+"displayName": "Grenada, GD",
+"regions": "CA"
+},
+{
+"code": "SDQ",
+"displayName": "Santo Domingo, DR",
+"regions": "CA"
+},
+{
+"code": "CHS",
+"displayName": "Charleston, SC",
+"regions": "US"
+},
+{
+"code": "CUR",
+"displayName": "Curacao, Curacao",
+"regions": "CA"
+},
+{
+"code": "SXM",
+"displayName": "St. Maarten, SX",
+"regions": "CA"
+},
+{
+"code": "FLL",
+"displayName": "Fort Lauderdale, FL",
+"regions": "US"
+},
+{
+"code": "GCM",
+"displayName": "Grand Cayman, KY",
+"regions": "CA"
+},
+{
+"code": "ACK",
+"displayName": "Nantucket, MA",
+"regions": "US"
+},
+{
+"code": "BTV",
+"displayName": "Burlington, VT",
+"regions": "US"
+},
+{
+"code": "BGI",
+"displayName": "Bridgetown, Barbados",
+"regions": "CA"
+},
+{
+"code": "UVF",
+"displayName": "St. Lucia, LC",
+"regions": "CA"
+},
+{
+"code": "SAV",
+"displayName": "Savannah/Hilton Head, GA",
+"regions": "US"
+},
+{
+"code": "LRM",
+"displayName": "La Romana, DR",
+"regions": "CA"
+},
+{
+"code": "ALB",
+"displayName": "Albany, NY",
+"regions": "US"
+},
+{
+"code": "KIN",
+"displayName": "Kingston, Jamaica",
+"regions": "CA"
+},
+{
+"code": "NAS",
+"displayName": "Nassau, Bahamas",
+"regions": "CA"
+},
+{
+"code": "POS",
+"displayName": "Port of Spain, Trinidad and Tobago",
+"regions": "CA"
+},
+{
+"code": "ANU",
+"displayName": "Antigua, Antigua and Barbuda",
+"regions": "CA"
+},
+{
+"code": "PBI",
+"displayName": "West Palm Beach, FL",
+"regions": "US"
+},
+{
+"code": "RDU",
+"displayName": "Raleigh/Durham, NC",
+"regions": "US"
+},
+{
+"code": "HYA",
+"displayName": "Hyannis, MA",
+"regions": "US"
+},
+{
+"code": "BDA",
+"displayName": "Bermuda, BM",
+"regions": "CA"
+},
+{
+"code": "TPA",
+"displayName": "Tampa, FL",
+"regions": "US"
+},
+{
+"code": "JFK",
+"displayName": "New York, NY",
+"regions": "US"
+},
+{
+"code": "SJU",
+"displayName": "San Juan, PR",
+"regions": "CA,US"
+},
+{
+"code": "DFW",
+"displayName": "Dallas/Fort Worth, TX",
+"regions": "US"
+},
+{
+"code": "SFO",
+"displayName": "San Francisco, CA",
+"regions": "US"
+},
+{
+"code": "EWR",
+"displayName": "Newark, NJ",
+"regions": "US"
+},
+{
+"code": "MBJ",
+"displayName": "Montego Bay, Jamaica",
+"regions": "CA"
+},
+{
+"code": "PSE",
+"displayName": "Ponce, PR",
+"regions": "CA,US"
+},
+{
+"code": "PHL",
+"displayName": "Philadelphia, PA",
+"regions": "US"
+},
+{
+"code": "SAN",
+"displayName": "San Diego, CA",
+"regions": "US"
+},
+{
+"code": "SMF",
+"displayName": "Sacramento, CA",
+"regions": "US"
+},
+{
+"code": "CUN",
+"displayName": "Cancun, Mexico",
+"regions": "CA"
+},
+{
+"code": "MSY",
+"displayName": "New Orleans, LA",
+"regions": "US"
+},
+{
+"code": "DEN",
+"displayName": "Denver, CO",
+"regions": "US"
+},
+{
+"code": "LAS",
+"displayName": "Las Vegas, NV",
+"regions": "US"
+},
+{
+"code": "BWI",
+"displayName": "Baltimore, MD",
+"regions": "US"
+},
+{
+"code": "SJC",
+"displayName": "San Jose, CA",
+"regions": "US"
+},
+{
+"code": "AUS",
+"displayName": "Austin, TX",
+"regions": "US"
+},
+{
+"code": "BOG",
+"displayName": "Bogota, Colombia",
+"regions": "SA"
+},
+{
+"code": "DTW",
+"displayName": "Detroit, MI",
+"regions": "US"
+},
+{
+"code": "LGB",
+"displayName": "Long Beach, CA",
+"regions": "US"
+},
+{
+"code": "PIT",
+"displayName": "Pittsburgh, PA",
+"regions": "US"
+},
+{
+"code": "RNO",
+"displayName": "Reno/Tahoe, NV",
+"regions": "US"
+},
+{
+"code": "ORD",
+"displayName": "Chicago, IL",
+"regions": "US"
+},
+{
+"code": "RSW",
+"displayName": "Fort Myers, FL",
+"regions": "US"
+},
+{
+"code": "DCA",
+"displayName": "Washington, DC",
+"regions": "US"
+},
+{
+"code": "SLC",
+"displayName": "Salt Lake City, UT",
+"regions": "US"
+},
+{
+"code": "MSP",
+"displayName": "Minneapolis/St. Paul, MN",
+"regions": "US"
+},
+{
+"code": "LAX",
+"displayName": "Los Angeles, CA",
+"regions": "US"
+},
+{
+"code": "PHX",
+"displayName": "Phoenix, AZ",
+"regions": "US"
+},
+{
+"code": "HOU",
+"displayName": "Houston, TX",
+"regions": "US"
+},
+{
+"code": "RIC",
+"displayName": "Richmond, VA",
+"regions": "US"
+},
+{
+"code": "SRQ",
+"displayName": "Sarasota, FL",
+"regions": "US"
+},
+{
+"code": "SEA",
+"displayName": "Seattle, WA",
+"regions": "US"
+},
+{
+"code": "HPN",
+"displayName": "Westchester County, NY",
+"regions": "US"
+},
+{
+"code": "ATL",
+"displayName": "Atlanta, GA",
+"regions": "US"
+},
+{
+"code": "PDX",
+"displayName": "Portland, OR",
+"regions": "US"
+},
+{
+"code": "LGA",
+"displayName": "New York, NY",
+"regions": "US"
+},
+{
+"code": "ONT",
+"displayName": "Ontario, CA",
+"regions": "US"
+},
+{
+"code": "HAV",
+"displayName": "Havana, Cuba",
+"regions": "CA"
+},
+{
+"code": "BUR",
+"displayName": "Burbank, CA",
+"regions": "US"
+},
+{
+"code": "CLE",
+"displayName": "Cleveland, OH",
+"regions": "US"
+},
+{
+"code": "LIM",
+"displayName": "Lima, Peru",
+"regions": "SA"
+},
+{
+"code": "OAK",
+"displayName": "Oakland, CA",
+"regions": "US"
+},
+{
+"code": "LIR",
+"displayName": "Liberia, Costa Rica",
+"regions": "CA"
+},
+{
+"code": "MDE",
+"displayName": "Medellin, Colombia",
+"regions": "SA"
+},
+{
+"code": "MEX",
+"displayName": "Mexico City, Mexico",
+"regions": "CA"
+},
+{
+"code": "ANC",
+"displayName": "Anchorage, AK",
+"regions": "US"
+},
+{
+"code": "BNA",
+"displayName": "Nashville, TN",
+"regions": "US"
+},
+{
+"code": "PSP",
+"displayName": "Palm Springs, CA",
+"regions": "US"
+},
+{
+"code": "UIO",
+"displayName": "Quito, Ecuador",
+"regions": "SA"
+},
+{
+"code": "CTG",
+"displayName": "Cartagena, Colombia",
+"regions": "SA"
+},
+{
+"code": "PVD",
+"displayName": "Providence, RI",
+"regions": "US"
+},
+{
+"code": "ORH",
+"displayName": "Worcester, MA",
+"regions": "US"
+},
+{
+"code": "BDL",
+"displayName": "Hartford, CT",
+"regions": "US"
+},
+{
+"code": "SNU",
+"displayName": "Santa Clara, Cuba",
+"regions": "CA"
+},
+{
+"code": "SJO",
+"displayName": "San Jose, Costa Rica",
+"regions": "CA"
+},
+{
+"code": "SWF",
+"displayName": "Newburgh, NY",
+"regions": "US"
+},
+{
+"code": "CMW",
+"displayName": "Camaguey, Cuba",
+"regions": "CA"
+},
+{
+"code": "GYE",
+"displayName": "Guayaquil, Ecuador",
+"regions": "SA"
+},
+{
+"code": "HOG",
+"displayName": "Holguin, Cuba",
+"regions": "CA"
+},
+{
+"code": "HDN",
+"displayName": "Steamboat Springs, CO",
+"regions": "US"
+},
+{
+"code": "BZN",
+"displayName": "Bozeman, MT",
+"regions": "US"
+}
+]
+}

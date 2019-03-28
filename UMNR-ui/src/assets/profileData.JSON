@@ -7,12 +7,21 @@
   "FoodPreference": "Chicken",
   "kids": [
     {
-      "Name": "Jesse",
+      "Name": "John Smith",
       "AgeType":"Kid",
       "DateOfBirth": "06/16/2010",
       "SeatPreference": "Window",
       "FoodPreference": "pizza",
       "Hobbies": "Playing Video Games",
+      "EmergencyContactNumber": "+1 3687216313"
+    },
+    {
+      "Name": "John Smith",
+      "AgeType":"Kid",
+      "DateOfBirth": "06/16/2008",
+      "SeatPreference": "aisle seat",
+      "FoodPreference": "pizza",
+      "Hobbies": "Watching movies",
       "EmergencyContactNumber": "+1 3687216313"
     }
   ]
