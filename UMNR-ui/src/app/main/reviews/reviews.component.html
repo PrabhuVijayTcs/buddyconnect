@@ -1,36 +1,37 @@
-<div class="review">
-  <div class="col-sm-12 col-md-12 col-lg-12">
-    <ul>
-      <li>
-        <h4>Jesse</h4>
-        <p>✅ Trip Verified | I booked my flight from Coimbatore to Mumbai on 14th of April 2019. Some Airways rescheduled the flight by 20 hours. Again rescheduled for 22 00 hours. Couple of days back I got a notification that my flight is been canceled. It's really unfair part from Some Airways. For your internal issue you cancelled flight. But what about the customer? Very unfair and not at all satisfied with the service provided by Some Airways.
-          </p>
-      </li>
-      <li>
-        <h4>Rakesh</h4>
-        <p>✅ Trip Verified | I booked my flight from Coimbatore to Mumbai on 14th of April 2019. Some Airways rescheduled the flight by 20 hours. Again rescheduled for 22 00 hours. Couple of days back I got a notification that my flight is been canceled. It's really unfair part from Some Airways. For your internal issue you cancelled flight. But what about the customer? Very unfair and not at all satisfied with the service provided by Some Airways.
-          </p>
-      </li>
-      <li>
-          <h4>philip</h4>
-          <p>✅ Trip Verified | I booked my flight from Coimbatore to Mumbai on 14th of April 2019. Some Airways rescheduled the flight by 20 hours. Again rescheduled for 22 00 hours. Couple of days back I got a notification that my flight is been canceled. It's really unfair part from Some Airways. For your internal issue you cancelled flight. But what about the customer? Very unfair and not at all satisfied with the service provided by Some Airways.
-            </p>
-      </li>
-    </ul>
-  </div>
-  <div class="submitReviewSec col-sm-12 col-md-12 col-lg-12">
-    <form>
-      <div>
-        <label>Mail ID</label>
-        <input  type="text" required >
+<div class="container">
+  <h4>STAR RATING</h4>
+  <div class="section">
+    <div class="block">
+      <div>Customer-Experience</div>
+      <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeCustRate($event)"></star-rating>
+      <div>Rating: {{custRate}}</div>
+    </div>
+    <div class="block">
+        <div>Services Offered</div>
+        <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeServRate($event)"></star-rating>
+        <div>Rating: {{servRate}}</div>
       </div>
-      <div>
-        <label>Enter Message</label>
-        <textarea></textarea>
-      </div>
-      <div>
-          <button type="submit"  class="btn btn-warning btn-sm">Submit</button>
+      <div class="block">
+          <div>Grieviance Addressal</div>
+          <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeGrievRate($event)"></star-rating>
+          <div>Rating: {{grievRate}}</div>
         </div>
-    </form>
+         </div>
+         <input type='text' class="comments" #comment placeholder="Additional Comments if any">
+  <button type = "submit" (click)="onSubmit(comment)">Submit</button>
+  <div class="options">
+    <h4>User Rating</h4>
+  <div *ngIf='displayRatingScore > 0'>
+      <span><star-rating [score]="displayRatingScore" [forDisplay]="true"></star-rating></span>
   </div>
+  </div>
+</div>
+
+
+
+<div class="review">
+  <div class="col-sm-12 col-md-12 col-lg-12 rating" *ngFor="let person of persons">
+<b>{{ person.name  }} </b><star-rating [score]="person.rating" [forDisplay]="true"></star-rating>
+
+<p>{{ person.comment }}</p>
 </div>

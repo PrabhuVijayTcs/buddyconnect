@@ -1,0 +1,46 @@
+body {
+    background: black;
+    color: blue;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .container .section {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .section .block {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 16px;
+    padding: 40px;
+  }
+  .container .section .block .margin-vertical-8 {
+    margin: 8px 0;
+  }
+  
+  .star-rating .to-rate {
+    cursor: pointer;
+    padding: 0 3px;
+  }
+  .star-rating .fa-star-o {
+    content: "\f005";
+    color: orange;
+  }
+  .star-rating .fa-star {
+    color: orange;
+  }
+  .star-rating .fa-star-half-o {
+    color: orange;
+  }
+  .star-rating .to-display {
+    padding: 0 2px;
+  }
+  
