@@ -1,6 +1,5 @@
 {
-"lastUpdate": "Thu Mar 28 2019 10723752 GMT-0400 (Eastern Daylight Time)",
-"map": [
+"airports": [
 {
 "code": "ABQ",
 "displayName": "Albuquerque/Santa Fe, NM",
