@@ -3,7 +3,26 @@
 $(document).ready(function () {
 	setTimeout(pushChat, 2000, "Hi");
 
-	setTimeout(pushChat, 6000, "FAInfo");
+	setTimeout(pushChat, 5000, "FAInfo");	
+	
+	$(".kidMood").click(function () {
+
+		pushChat("kidmood");
+
+	});
+	
+	$(".weatherAlert").click(function () {
+
+		pushChat("weather alert");
+
+	});
+	
+	$(".screenTime").click(function () {
+
+		pushChat("screen time");
+
+	});
+	
 });
 
 $(function () {
@@ -117,7 +136,7 @@ function showResponse(lexResponse) {
 			$.each(buttons, function (index, data) {
 				console.log(data);
 				var image = document.createElement("img");
-				image.setAttribute("src", data.value + ".png");
+				image.setAttribute("src", "assets/" + data.value + ".png");
 				image.setAttribute("style", "width:30px;height:30px;margin-right:20px;cursor:pointer");
 				var resData = data.value;
 				image.setAttribute("onclick", "pushChat('" + resData + "')");
@@ -160,7 +179,7 @@ function showResponse(lexResponse) {
 		$.each(resCards, function (index, card) {
 			var buttons = card.buttons;
 			var buttonContainer = document.createElement("div");
-			buttonContainer.setAttribute("style", "text-align:center; padding-top:5px;");
+			buttonContainer.setAttribute("style", "text-align:center; padding-top:5px;font-size:12px;");
 			$.each(buttons, function (index, data) {
 				console.log(data);
 				var button = document.createElement("button");

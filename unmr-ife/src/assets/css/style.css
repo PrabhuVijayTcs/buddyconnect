@@ -5,38 +5,65 @@ body {
   background-color:black;
 }
 
+.demoMode{
+			position:fixed;
+			bottom:0px;
+			right:0px;
+			z-index:9999999999;
+			background-color:white;
+			font-weight:bold;
+			font-size:10px;
+			opacity:0.3;
+			width:3.5%;
+			padding:5px;
+			border-radius:30% 0% 0% 0%;
+			color:black;
+			text-align:center;
+		}
+		.demoMode:hover{
+			box-shadow: 0 0 10px #fff;
+		}
+		
+		.demoMode .material-icons{
+		padding:10px;opacity:1;}
+		
+		.demoMode .material-icons:hover{
+		color:red;cursor:pointer;}
 
 .button {
   background-color: #003a70;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+  width:230px;
 }
 
 .buttonRed{
 background-color: #ff4221;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+  width:230px;
 }
 
 .buttonYellow{
 background-color: #f4ad42;
+width:230px;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -62,7 +89,7 @@ background-color: #f4ad42;
   list-style-type: none;
   width: 300px; float: right; position: relative;margin-top:25px;
   font-family:Arial;
-  font-size:14px;
+  font-size:13px;
 }
 
 
