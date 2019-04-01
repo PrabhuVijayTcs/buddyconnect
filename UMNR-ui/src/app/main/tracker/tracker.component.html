@@ -188,7 +188,7 @@
 .timelineAirport{
 	font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-	margin-right:-20px;
+	margin-right:5px;
 	margin-left:10px;
 	font-weight:bold;
 }
@@ -198,7 +198,11 @@
 	padding-top:5px;
 }
 
-.kidStats{padding:1.5% 0 1% 1.5%;font-family: Arial, Helvetica, sans-serif;}
+.kidStats{padding:3% 0 1% 1.5%;font-family: Arial, Helvetica, sans-serif;}
+
+.refreshIcon{border-radius:50%;}
+
+.refreshIcon:hover{background-color:#1187c1;color:white}
 
 .moodLabel{
   color: #003a70;
@@ -225,12 +229,6 @@ font-size:13px;color:#c8102e;text-align:left;width:120px;
 	background-color:#1187c1;
 }
 
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
-}
 
 h1 {
   margin: 0;
@@ -413,7 +411,8 @@ textarea::placeholder {
 .ticket .airports .airport .airport-code {
   font-size: 24px;
   font-weight: 400;
-  margin: 3px 0;
+  line-height:27px;
+  margin: 0;
 }
 .ticket .airports .airport .dep-arr-label {
   color: #9299A0;
@@ -464,6 +463,8 @@ textarea::placeholder {
   font-weight: 500;
 }
 
+
+
 </style>
 
 <div class="container">
@@ -502,8 +503,8 @@ textarea::placeholder {
     
   </div>
   
-  <svg height="6" width="80">
-  <line x1="0" y1="0" x2="80" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  <svg height="6" width="60">
+  <line x1="0" y1="0" x2="60" y2="0" style="stroke:#06aa14;stroke-width:15" />
   Sorry, your browser does not support inline SVG.
 </svg>
 
@@ -681,7 +682,7 @@ textarea::placeholder {
     </div>
     <div class="gate">
       <div>
-        DL 182 - Gate L3
+        DELTA AIRLINES 182
       </div>
     </div>
   </header>
@@ -700,7 +701,7 @@ textarea::placeholder {
         11:25AM
       </div>
     </div>
-	<img src="assets/img/AWT-Plane.png" style="position: relative; top: -50px;left: -30px;height:25px;width:25px;"/>
+	<img src="assets/img/AWT-Plane.png" style="position: relative; top: -40px;left: -25px;height:25px;width:25px;"/>
 	<div class="airport">
       <div class="airport-name">
         New York
@@ -757,29 +758,31 @@ textarea::placeholder {
 			
 		  <div class="row">
 		  <div class="kidStats">
-<h3 style="font-family: Arial, Helvetica, sans-serif;margin-bottom:10px;font-size:22px;font-weight:500"> Kid Status: Inflight &nbsp;<img src="assets\img\live.png" height=17px width=22px/> <span class="lastUpdated">Last updated at 1:09PM ET</span></h3>
+<h3 style="font-family: Arial, Helvetica, sans-serif;margin-bottom:10px;font-size:22px;font-weight:500"> Kid Status: Inflight<i class="material-icons refreshIcon" style="vertical-align:top">
+refresh
+</i><span class="lastUpdated">Last updated at 1:09PM ET</span></h3>
 <table id="kidStatsTable" style="border-spacing:5px;">
 <tr><th> Name</th><th style="width:80px;">Status</th><th>Current Activity</th><th>Screen Time</th><th style="width:80px;text-align:center;">Chat</th>
 </tr>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-1-name">John Smith</td>
 	<td><img id="pax-1-mood" src="assets\img\happy.png" height=30px width=30px/></td>
-	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-activity">Playing Games</td>
-	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-screenTime">1hr 14m</td>
-	<td id="pax-2-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-1-activity">Playing Games</td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">14</span>m</td>
+	<td id="pax-1-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
 </tr>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-2-name">Jane Smith</td>
 	<td><img id="pax-2-mood" src="assets\img\happy.png" height=30px width=30px/></td>
-	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70;" id="pax-2-activity">Watching Movies</td>
-	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-screenTime">1hr 14m</td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70;" id="pax-2-activity">Watching Movies</td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">32</span>m</td>
 	<td id="pax-2-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
 </tr>
 </table>
 </div>
 
 
-<!-- <section class="chatbox-popup">
+<section class="chatbox-popup">
   <header class="chatbox-popup__header">
     <aside style="flex:3">
       <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
@@ -802,7 +805,7 @@ textarea::placeholder {
       <i class="fa fa-paper-plane" aria-hidden="true"></i>
     </aside>
   </footer>
-</section> -->
+</section>
 
 		  </div>
 		  </div>

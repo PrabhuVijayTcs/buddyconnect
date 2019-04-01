@@ -17,8 +17,8 @@
 </head>
 <body>
 <script type="text/javascript">
-$(() => {
-  $("#pax-1-chat").click(() =>{
+$(document ).ready(function() {
+    $("#pax-1-chat").click(() =>{
   alert("hi");
   var name = $("#pax-1-name")[0].innerHTML;
     $(".chatbox-popup").fadeIn();
@@ -26,8 +26,7 @@ $(() => {
 	$(".chatbox-popup__main")[0].innerHTML= name + " is now available for chat";
 	}
   );
-  
-  $("#pax-2-chat").click(() =>{
+    $("#pax-2-chat").click(() =>{
   var name = $("#pax-2-name")[0].innerHTML;
     $(".chatbox-popup").fadeIn();
 	$("#chat-name")[0].innerHTML= name;
@@ -38,6 +37,7 @@ $(() => {
   $(".chatbox-panel-close").click(() => {
     $(".chatbox-popup").fadeOut();
   });
+
 });
 
 </script>
