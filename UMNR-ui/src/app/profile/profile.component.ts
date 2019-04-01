@@ -20,25 +20,29 @@ export class ProfileComponent implements OnInit {
     );
   }
   openSchoolHolidayCal () {
-    const el = document.getElementsByClassName('schoolHolidays');
-    document.getElementsByClassName('schoolHolidays')[0].style.display = 'block';
-    document.getElementsByClassName('backdrop')[0].style.display = 'block';
+    const elem = <HTMLElement>document.querySelector('.schoolHolidays');
+    elem.style.display = 'block';
+    const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+    backDropElem.style.display = 'block';
   }
   closeModalDialog () {
-    const el = document.getElementsByClassName('schoolHolidays');
-    document.getElementsByClassName('schoolHolidays')[0].style.display = 'none';
-    document.getElementsByClassName('backdrop')[0].style.display = 'none';
+    const elem = <HTMLElement>document.querySelector('.schoolHolidays');
+    elem.style.display = 'none';
+    const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+    backDropElem.style.display = 'none';
   }
 
   openBarCode () {
-    const el = document.getElementsByClassName('barCode');
-    document.getElementsByClassName('barCode')[0].style.display = 'block';
-    document.getElementsByClassName('backdrop')[0].style.display = 'block';
+    const elem = <HTMLElement>document.querySelector('.barCode');
+    elem.style.display = 'block';
+    const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+    backDropElem.style.display = 'block';
   }
 
   closeBarCodeModal () {
-    const el = document.getElementsByClassName('barCode');
-    document.getElementsByClassName('barCode')[0].style.display = 'none';
-    document.getElementsByClassName('backdrop')[0].style.display = 'none';
+    const elem = <HTMLElement>document.querySelector('.barCode');
+    elem.style.display = 'none';
+    const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+    backDropElem.style.display = 'none';
   }
 }
