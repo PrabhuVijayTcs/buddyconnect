@@ -18,7 +18,7 @@
   background-color: rgba(158, 158, 158, 0.1);
   width: 135px;
   height: 60px;
-  top: -75px;
+  top: -80px;
   left: 0px;
   border-radius: 5px;
   box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
@@ -30,7 +30,7 @@
   width: 140px;
   height: 60px;
   left: -90px;
-  top: 75px;
+  top: 80px;
   border-radius: 5px;
   box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
 }
@@ -180,8 +180,8 @@
 }
 
 .futureOpacity{
-  -webkit-filter: opacity(.3);
-  filter: opacity(.3);
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);
   
 }
 
@@ -219,7 +219,7 @@ font-size:13px;color:#c8102e;text-align:left;width:120px;
 	padding-left:10px;
 }
 
-.chat-icon{text-align:center;cursor:pointer;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius:25px;}
+.chat-icon{text-align:center;cursor:pointer;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius:25px;margin:1%;}
 
 .chat-icon:hover{
 	background-color:#1187c1;
@@ -463,6 +463,7 @@ textarea::placeholder {
   color:#000000;
   font-weight: 500;
 }
+
 </style>
 
 <div class="container">
@@ -473,7 +474,7 @@ textarea::placeholder {
               </div>
           </div>
 		  <div class="row">
-			  <div class="timelineContainer">
+			  <div class="col-12 timelineContainer">
 <div class="Timeline">
 <div class="timelineAirport">Seattle (SEA)</div>
 
@@ -561,7 +562,7 @@ textarea::placeholder {
 		</div>
 		
       </div>
-      <div class="eventTitle">Boarded Flight DL 182</div>
+      <div class="eventTitle">Boarded the Aircraft</div>
     </div>
     <div class="agent2Assisted">assisted by Ken(DL)</div>
     <svg class="active" height="50" width="50">
@@ -765,18 +766,19 @@ textarea::placeholder {
 	<td><img id="pax-1-mood" src="assets\img\happy.png" height=30px width=30px/></td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-activity">Playing Games</td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-screenTime">1hr 14m</td>
-	<td class="chat-icon" id="pax-1-chat" ><img class="chatbox-open" src="assets\img\chat.png" height=30px width=30px/></td>
+	<td id="pax-2-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
 </tr>
-<tr style="max-height:10px">&nbsp;</tr>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-2-name">Jane Smith</td>
 	<td><img id="pax-2-mood" src="assets\img\happy.png" height=30px width=30px/></td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70;" id="pax-2-activity">Watching Movies</td>
-	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-2-screenTime">1hr 40m</td>
-	<td class="chat-icon" id="pax-2-chat"><img  src="assets\img\chat.png" height=30px width=30px /></td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color: #003a70" id="pax-1-screenTime">1hr 14m</td>
+	<td id="pax-2-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
 </tr>
 </table>
 </div>
+
+
 <!-- <section class="chatbox-popup">
   <header class="chatbox-popup__header">
     <aside style="flex:3">
