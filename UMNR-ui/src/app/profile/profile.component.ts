@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Service }  from '../service.service';
 
 @Component({
@@ -8,8 +8,10 @@ import { Service }  from '../service.service';
 })
 export class ProfileComponent implements OnInit {
   profileData:object; 
+  display ='none';
+  showHolidays = false;
+  private _renderer: Renderer2;
   constructor(private httpService: Service) {
-    
    }
 
   ngOnInit() {
@@ -17,5 +19,26 @@ export class ProfileComponent implements OnInit {
       profileData=>this.profileData=profileData
     );
   }
+  openSchoolHolidayCal () {
+    const el = document.getElementsByClassName('schoolHolidays');
+    document.getElementsByClassName('schoolHolidays')[0].style.display = 'block';
+    document.getElementsByClassName('backdrop')[0].style.display = 'block';
+  }
+  closeModalDialog () {
+    const el = document.getElementsByClassName('schoolHolidays');
+    document.getElementsByClassName('schoolHolidays')[0].style.display = 'none';
+    document.getElementsByClassName('backdrop')[0].style.display = 'none';
+  }
 
+  openBarCode () {
+    const el = document.getElementsByClassName('barCode');
+    document.getElementsByClassName('barCode')[0].style.display = 'block';
+    document.getElementsByClassName('backdrop')[0].style.display = 'block';
+  }
+
+  closeBarCodeModal () {
+    const el = document.getElementsByClassName('barCode');
+    document.getElementsByClassName('barCode')[0].style.display = 'none';
+    document.getElementsByClassName('backdrop')[0].style.display = 'none';
+  }
 }

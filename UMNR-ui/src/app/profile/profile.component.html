@@ -1,21 +1,213 @@
-<div class="row">
-  <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h1>{{profileData.Name}}</h1>
-      <div class="profileData">
-        <div><span>Date of Birth:</span><span>{{profileData.DateOfBirth}}</span></div>
-        <div><span>Seat Preference:</span><span>{{profileData.SeatPreference}}</span></div>
-        <div><span>Food Preference:</span><span>{{profileData.FoodPreference}}</span></div>
+<div class="container">
+  <h1 style="color:black;">My Profile</h1>
+  <div  class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2" style="text-align:center;width:100%">
+    <div class="ticket inverse">
+    <header>
+      <div  class="company-name"> Stephen <span _ngcontent-c2="" class="airport-name" style="float: right;"> 35yrs</span></div>
+     
+    </header>
+    <section class="airports">
+     
+     
+      <div class="airport">
+    <img src="assets/img/adult.JPG" style="position: relative; top: -5px;left: -26px;height:42px;width:52px;">
+        <div  class="airport-code" style="float: right;"> stephen@gmail.com </div>
+        
       </div>
-      <div *ngFor="let kidData of profileData!='' && profileData.kids;let i=index;" class="profileData col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2><u>{{"Kid"+(i+1)}} details</u></h2>
-        <div><span>Name:</span><span>{{kidData.Name}}</span></div>
-        <div><span>Date of Birth:</span><span>{{kidData.DateOfBirth}}</span></div>
-        <div><span>Seat Preference:</span><span>{{kidData.SeatPreference}}</span></div>
-        <div><span>Food Preference:</span><span>{{kidData.FoodPreference}}</span></div>
-        <div><span>Hobbies:</span><span>{{kidData.Hobbies}}</span></div>
-        <div><span>Emergency Contact Number:</span><span>{{kidData.EmergencyContactNumber}}</span></div>
+    </section>
+    <section  class="place">
+    <h1>PREFERENCE</h1>
+      <div  class="place-block">
+        <div class="place-label"> Food </div>
+        <div  class="place-value"> Cheeseburger with fries </div>
+        <div  class="place-value"> Pepperoni pizza </div>
       </div>
-  </div>
-  
+      <div  class="place-block">
+        <div  class="place-label"> Seat </div>
+        <div  class="place-value"> window </div>
+      </div>
+      <div  class="place-block">
+        <div  class="place-label"> Book </div>
+        <div class="place-value"> Train your brain </div>
+      </div>
+    <div  class="place-block">
+        <div  class="place-label"> Movie </div>
+        <div class="place-value"> Dumbo (Family) </div>
+      </div>
+    </section>
+      <section class="airports emergencyContact">
+     <div  class="place-block">
+        <div class="place-label"> Emergency Contact details </div>
+        <div  class="place-value"> +1 123 456 8890 </div>
+      </div>
+    </section>
+    </div>
+    </div>
+	
+	<div  class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2" style="text-align:center;width:100%">
+    <div class="ticket inverse">
+    <header>
+      <div  class="company-name"> Amelia Stephen <span  class="airport-name" style="float: right;"> 30yrs</span></div>
+     
+    </header>
+    <section class="airports">
+     
+     
+      <div class="airport">
+    <img src="assets/img/adult2.JPG" style="position: relative; top: -5px;left: -26px;height:42px;width:52px;">
+        <div  class="airport-code" style="float: right;"> amelia@gmail.com </div>
+        
+      </div>
+    </section>
+    <section  class="place">
+    <h1>PREFERENCE</h1>
+      <div  class="place-block">
+        <div class="place-label"> Food </div>
+        <div  class="place-value"> Cheeseburger with fries </div>
+        <div  class="place-value"> Pepperoni pizza </div>
+      </div>
+      <div  class="place-block">
+        <div  class="place-label"> Seat </div>
+        <div  class="place-value"> window </div>
+      </div>
+      <div  class="place-block">
+        <div  class="place-label"> Book </div>
+        <div class="place-value"> Train your brain </div>
+      </div>
+    <div  class="place-block">
+        <div  class="place-label"> Movie </div>
+        <div class="place-value"> Dumbo (Family) </div>
+      </div>
+    </section>
+      <section class="airports emergencyContact">
+     <div  class="place-block">
+        <div class="place-label"> Emergency Contact details </div>
+        <div  class="place-value"> +1 123 456 8890 </div>
+      </div>
+    </section>
+    </div>
+    </div>
+	
+	<div  class="col-6" style="text-align:center;width:100%">
+    <div class="ticket inverse">
+    <header>
+      <div  class="company-name"> Joe Stephen <span  class="airport-name" style="float: right;"> 09yrs</span></div>
+     
+    </header>
+    <section class="airports">
+     
+     
+      <div class="airport">
+    <img src="assets/img/kid1.JPG" style="position: relative; top: -5px;left: -26px;height:42px;width:52px;">
+       <div  class="airport-code" style="float: right;margin-right: -9rem;"> My favourite movie is DESPICABLE ME, I am a PEPPA PIG fan, I love reading GOOD NIGHT MOON and I love to visit DISNEY WORLD hurray!! </div>
+       <img src="assets/img/peppapig.jpg" style="position: relative; top: -5px;left: 167px;height:95px;width:124px;">
+	   <img src="assets/img/despicableme.jpg" style="position: relative; top: -5px;left: -73px;height:95px;width:124px;">
+      </div>
+    </section>
+    <section  class="place">
+    <h1>PREFERENCE</h1>
 
-</div>
+      <div  class="place-block">
+        <div class="place-label"> Food </div>
+        <div  class="place-value"> Mc D Kids meal</div>
+      </div>
+      <div  class="place-block">
+        <div  class="place-label"> Seat </div>
+        <div  class="place-value"> window </div>
+      </div>
+      
+	  
+	 
+	   <div  class="place-block">
+        <div  class="place-label"> Food Allergy </div>
+        <div class="place-value"> No</div>
+      </div>
+	   <div class="place-block">
+	  	
+	  </div>
+    </section>
+	<section class="airports">
+	
+		<img src="assets/img/schoolCalendar.jpg" style="position: relative; top: -5px;left: -69px;height:95px;width:124px;"><a href="javascript:void(0)" (click)="openSchoolHolidayCal()" style="margin-left:-6rem;">Click here to Plan vacation - Upcoming school holidays</a>
+	
+	</section>
+	<section class="place">
+		<img src="assets/img/wallet.jpg" style="position: relative; top: -5px;left: -69px;height:95px;width:124px;"><a href="javascript:void(0)" (click)="openBarCode()">Wallet Rewards for your Kids school lunch</a>
+	</section>
+      <section class="airports emergencyContact">
+     <div  class="place-block">
+        <div class="place-label"> Emergency Contact details </div>
+        <div  class="place-value"> +1 123 456 8890 </div>
+      </div>
+    </section>
+    </div>
+    </div>
+    </div>
+	
+	<!-- modal -->
+	 <!--pop up on click of repeat trip-->
+ <div class="backdrop" style="display: none;"></div>
+ <div class="modal schoolHolidays" tabindex="-1" role="dialog" style="display: none;">
+   <!-- modal-dialog -->
+   <div class="modal-dialog" role="document">
+     <!-- modal-content -->
+     <div class="modal-content">
+       <div class="modal-body">
+	 <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th>Holiday</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="success">
+          <td>Teacher Workday (No School)</td>
+          <td>Wednesday, January 2, 2019</td>
+		</tr>
+		<tr>
+         <td>Martin Luther King Jr. Day</td>
+          <td>Monday, January 21, 2019</td>
+		 </tr>
+		 <tr>
+         <td>Presidents Day</td>
+          <td>Monday, February 18, 2019</td>
+		</tr>
+		 <tr>
+         <td>Memorial Day</td>
+          <td>Monday, May 27, 2019</td>
+		</tr>
+		 <tr>
+         <td>Independence Day</td>
+          <td>Thursday, July 4–
+Friday, July 5, 2019</td>
+		</tr>
+      </tbody>
+    </table>
+	</div>
+	  <div class="modal-footer">
+         <button type="button" class="btn btn-default" (click)="closeModalDialog()" >Close</button>
+       </div>
+	</div>
+	</div>
+	</div>
+	
+	
+
+ <div class="backdrop" style="display: none;"></div>
+ <div class="modal barCode" tabindex="-1" role="dialog"  style="display: none;">
+   <!-- modal-dialog -->
+   <div class="modal-dialog" role="document">
+     <!-- modal-content -->
+     <div class="modal-content">
+       <div class="modal-body">
+	  <img src="assets/img/barCode.jpg" style="position: relative; top: -5px;left: 167px;height:95px;width:124px;">
+    <p><strong>Scan here at school canteen</strong></p>
+   <a href="assets/img/barCode.jpg" download> Click here to download the barcode</a>
+	</div>
+	  <div class="modal-footer">
+         <button type="button" class="btn btn-default" (click)="closeBarCodeModal()" >Close</button>
+       </div>
+	</div>
+	</div>
+	</div>
