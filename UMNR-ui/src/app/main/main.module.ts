@@ -6,7 +6,7 @@ import {MatDatepickerModule, MatNativeDateModule, MatInputModule } from '@angula
 
 
 import { CommonModule } from '@angular/common';
-import { BookerComponent } from './booker/booker.component';
+import { BookerComponent, DialogOverviewExampleDialog } from './booker/booker.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BookingComponent } from './booking/booking.component';
@@ -36,8 +36,10 @@ import { ItineraryDetailsComponent } from './itinerary-details/itinerary-details
     ProfileComponent,
     PaymentComponent,
     PnrConfirmationComponent,
-    ItineraryDetailsComponent
+    ItineraryDetailsComponent,
+    DialogOverviewExampleDialog 
   ],
+  entryComponents: [DialogOverviewExampleDialog],
   imports: [
     CommonModule,
     MainRoutingModule,

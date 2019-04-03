@@ -1,4 +1,4 @@
-<form class="searchForm" (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm">
+<form class="searchForm" (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm" *ngIf="airports">
   <div class="triptype col-sm-12 col-md-12 col-lg-12" *ngIf="profileData">
     <span>Select Travelers</span>
     <mat-form-field>
@@ -93,7 +93,7 @@
     </select>
   </div>
   <div class="cb col-sm-12 col-md-12 col-lg-12">
-      <button type="submit" [disabled]="!searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
+      <button type="submit" [disabled]="searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
   </div>
 </form>
 
@@ -136,6 +136,9 @@
             </div>
             <div>
               {{flightdata.DeptAirportCode}} --> {{flightdata.ArrAirportCode}}
+            </div>
+            <div>
+              <a class="viewSeat" (click)="openDialog()" >View Seat</a>
             </div>
           </td>
           <td>

@@ -1,9 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormControl, FormBuilder,FormsModule, Validators, NgForm } from '@angular/forms'; 
 import {MatSelectModule} from '@angular/material/select';
 import { NavigationExtras, Router } from '@angular/router';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
 import { Service }  from '../../service.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
+export interface DialogData {
+  animal: string;
+  name: string;
+}
+
 
 @Component({
   selector: 'app-booker',
@@ -11,6 +18,8 @@ import { Service }  from '../../service.service';
   styleUrls: ['./booker.component.css']
 })
 export class BookerComponent implements OnInit {
+  animal: string;
+  name: string;
   profileData:object;
   shoppingResponse:object;
   minDate = new Date(2000, 0, 1);
@@ -20,7 +29,7 @@ export class BookerComponent implements OnInit {
   dropdownSettings = {};
   //travelers=["Angelo","Jesse"];
   airports:object;
-  constructor(private httpService:Service,private fb: FormBuilder, public router: Router) { }
+  constructor(private httpService:Service,private fb: FormBuilder, public router: Router,public dialog: MatDialog) { }
    loginform = this.fb.group({
      username: ['',Validators.required],
      password: ['',Validators.required]
@@ -73,4 +82,33 @@ ngOnInit() {
   };
 }
 
+openDialog(): void {
+  const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+    width: '250px',
+    data: {name: "seeta", animal: "lion"}
+  });
+
+  dialogRef.afterClosed().subscribe(result => {
+    console.log('The dialog was closed');
+    this.animal = result;
+  });
 }
+
+}
+
+@Component({
+  selector: 'dialog-overview-example-dialog',
+  templateUrl: 'dialog-overview-example-dialog.html',
+})
+export class DialogOverviewExampleDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
+
