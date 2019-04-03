@@ -93,7 +93,7 @@
     </select>
   </div>
   <div class="cb col-sm-12 col-md-12 col-lg-12">
-      <button type="submit" [disabled]="searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
+      <button type="submit" [disabled]="!searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
   </div>
 </form>
 
