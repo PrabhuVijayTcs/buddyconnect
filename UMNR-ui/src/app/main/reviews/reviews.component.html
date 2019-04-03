@@ -31,7 +31,6 @@
 
 <div class="review">
   <div class="col-sm-12 col-md-12 col-lg-12 rating" *ngFor="let person of persons">
-<b>{{ person.name  }} </b><star-rating [score]="person.rating" [forDisplay]="true"></star-rating>
-
+<b>{{ person.name  }} </b><star-rating [score]="person.rating" [forDisplay]="true"></star-rating> <div class="SentimentData_{{person.counterId}}" style="text-transform:capitalize;font-size:12px;"> <img height="15" width="15" style="vertical-align:top" src='assets/img/{{person.sentiment}}.jpg'/> <span> <img  width="20" height="20" src="assets/img/analysing.gif"/></span></div>
 <p>{{ person.comment }}</p>
 </div>
