@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Service }  from '../../service.service';
 
-
+declare function AnalyseSentiment(obj:any,obj2:any):string;
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -21,6 +21,7 @@ export class ReviewsComponent implements OnInit {
   constructor(private httpService:Service) { }
 
   ngOnInit() {
+	  
     this.httpService.getData("./assets/profileData.JSON").subscribe(
       profileData=>this.profileData=profileData
     );
