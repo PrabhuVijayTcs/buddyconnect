@@ -67,7 +67,8 @@
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
-  z-index:0;
+  position:absolute;
+  z-index:-5;
 }
 
 /* Track */

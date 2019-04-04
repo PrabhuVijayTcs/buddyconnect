@@ -16,6 +16,18 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.434.0.min.js"></script>
   <script src="assets/js/sentimentAnalysis.js"></script>
+  <script type="text/javascript">
+   function openChat(id) {
+  var name = $("#pax-"+id+"-name")[0].innerHTML;
+    $(".chatbox-popup").fadeIn();
+	$("#chat-name")[0].innerHTML= name;
+	$(".chatbox-popup__main")[0].innerHTML= name + " is now available for chat";
+	}
+  
+  function closeChat(){
+    $(".chatbox-popup").fadeOut();
+  }
+</script>
 </head>
 <body>
 

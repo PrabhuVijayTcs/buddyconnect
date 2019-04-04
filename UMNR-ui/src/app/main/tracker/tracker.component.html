@@ -1,28 +1,4 @@
-<script type="text/javascript">
-$(document).ready(function() {
-alert("hi");
-    $("#pax-1-chat").click(() =>{
-  var name = $("#pax-1-name")[0].innerHTML;
-    $(".chatbox-popup").fadeIn();
-	$("#chat-name")[0].innerHTML= name;
-	$(".chatbox-popup__main")[0].innerHTML= name + " is now available for chat";
-	}
-  );
-    $("#pax-2-chat").click(() =>{
-  var name = $("#pax-2-name")[0].innerHTML;
-    $(".chatbox-popup").fadeIn();
-	$("#chat-name")[0].innerHTML= name;
-	$(".chatbox-popup__main")[0].innerHTML= name + " is now available for chat";
-  });
-
-
-  $(".chatbox-panel-close").click(() => {
-    $(".chatbox-popup").fadeOut();
-  });
-
-});
-
-</script>
+	
 
 <style>
 .Timeline {
@@ -334,11 +310,12 @@ textarea::placeholder {
 .chatbox-popup {
   display: flex;
   position: absolute;
+  z-index:999999999999;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
   flex-direction: column;
   display: none;
-  bottom: 15px;;
-  right: 16px;
+  bottom: 40px;;
+  right: 100px;
   width: 300px;
   height: auto;
   background-color: #fff;
@@ -346,6 +323,7 @@ textarea::placeholder {
 }
 .chatbox-popup .chatbox-popup__header {
   box-sizing: border-box;
+  z-index:999999999999;
   display: flex;
   width: 100%;
   padding: 16px;
@@ -358,12 +336,14 @@ textarea::placeholder {
 }
 .chatbox-popup .chatbox-popup__header .chatbox-popup__avatar {
   margin-top: -32px;
+  z-index:999999999999;
   background-color: #003a70;
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 .chatbox-popup .chatbox-popup__main {
   box-sizing: border-box;
+  z-index:999999999999;
   width: 100%;
   padding: calc(2 * 16px) 16px;
   line-height: calc(16px + 16px / 2);
@@ -380,6 +360,7 @@ textarea::placeholder {
   justify-content: space-around;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+  z-index:999999999999;
 }
 .ticket {
   display: inline-block;
@@ -794,20 +775,28 @@ refresh
 	<td><img id="pax-1-mood" src="assets\img\happy.png" height=30px width=30px/></td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-1-activity">Playing Games</td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">14</span>m</td>
-	<td id="pax-1-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
+	<td><div class="chat-icon"><button id="pax-1-chat" onclick="openChat(1)" type="button"><i style="vertical-align:middle;" class="material-icons">
+chat
+</i></button></div></td>
 </tr>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-2-name">Jane Smith</td>
 	<td><img id="pax-2-mood" src="assets\img\happy.png" height=30px width=30px/></td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70;" id="pax-2-activity">Watching Movies</td>
 	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">32</span>m</td>
-	<td id="pax-2-chat"><div class="chat-icon"><img  src="assets\timelineImages\chat.png" height=30px width=30px /></div></td>
+	<td><div class="chat-icon"><button id="pax-2-chat" onclick="openChat(2)" type="button"><i style="vertical-align:middle;" class="material-icons">
+chat
+</i></button></div></td>
 </tr>
 </table>
 </div>
 
 
-<section class="chatbox-popup">
+
+		  </div>
+		  
+		  
+<div class="chatbox-popup">
   <header class="chatbox-popup__header">
     <aside style="flex:3">
       <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
@@ -816,7 +805,7 @@ refresh
       <h1 id="chat-name">Random Name</h1>
     </aside>
     <aside style="flex:1">
-      <button class="chatbox-panel-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+      <button class="chatbox-panel-close" onclick="closeChat()"><i class="fa fa-close" aria-hidden="true"></i></button>
     </aside>
   </header>
   <main class="chatbox-popup__main">
@@ -830,8 +819,5 @@ refresh
       <i class="fa fa-paper-plane" aria-hidden="true"></i>
     </aside>
   </footer>
-</section>
-
+</div>
 		  </div>
-		  </div>
-    

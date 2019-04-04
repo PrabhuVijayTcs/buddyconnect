@@ -47,6 +47,7 @@ export class ReviewsComponent implements OnInit {
     this.displayRatingScore = Math.round((this.custRate + this.servRate + this.grievRate)/3);
     this.persons.push({name: this.profileData.Name,comment:comment.value , rating: this.displayRatingScore, counterId:this.counter});
 	AnalyseSentiment(comment.value,this.counter);
+	comment.value="";
 	this.counter++;
   }
 }
