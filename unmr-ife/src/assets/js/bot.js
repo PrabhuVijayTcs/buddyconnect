@@ -201,11 +201,11 @@ function showResponse(lexResponse) {
 		});
 	}
 
-	if (lexResponse.slots.kidMood && lexResponse.slots.kidMood == "Happy") {
+	if (lexResponse.slots.kidMood && lexResponse.slots.kidMood == "happy") {
 		$("#dynamic_va").attr("src", "assets/tt/happy.gif");
 	}
 
-	if (lexResponse.slots.kidMood && lexResponse.slots.kidMood == "Unhappy") {
+	if (lexResponse.slots.kidMood && lexResponse.slots.kidMood == "unhappy") {
 		$("#dynamic_va").attr("src", "assets/tt/sad.gif");
 	}
 
