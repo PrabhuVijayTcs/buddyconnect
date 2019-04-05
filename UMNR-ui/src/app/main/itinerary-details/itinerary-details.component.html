@@ -1,63 +1,94 @@
 <div class="container">
-    <h2>Itinerary Details</h2>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th>Origin</th>
-          <th>Destination</th>
-          <th>Travel Date</th>
-          <th>Seat Number</th>
-          <th>PNR#</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="success">
-          <td>{{destinationCity}}</td>
-          <td>{{origin}}</td>
-          <td>{{travelDate}}</td>
-          <td>{{seatNumber}}</td>
-          <td>{{recordLocator}}</td>
-        </tr>      
-      </tbody>
-    </table>
+  <h2>Itinerary Details</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Origin</th>
+        <th>Destination</th>
+        <th>Travel Date</th>
+        <th>Seat Number</th>
+        <th>PNR#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>{{destinationCity}}</td>
+        <td>{{origin}}</td>
+        <td>{{travelDate}}</td>
+        <td>{{seatNumber}}</td>
+        <td>{{recordLocator}}</td>
+      </tr>      
+    </tbody>
+  </table>
 
 
-    <div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
-      
-        <h2>Offers for your itinerary</h2>
-    <table class="table table-hover">
-            <thead>
-              <tr>
+  <div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
+    
+      <h2>Offers for your itinerary</h2>
+  <table class="table table-hover">
+          <thead>
+            <tr>
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
+            
+              <td >
+                {{flightdata.Offers.CarrierLoyaltyOfferName}}
+               </td> 
+               <td >
+                  {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
+                 </td>
                
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
-              
-                <td >
-					        {{flightdata.Offers.CarrierLoyaltyOfferName}}
-                 </td> 
-                 <td >
-                    {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
-                   </td>
-                 
-                   <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
-                      <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
-                  </div>
-                    <td >
-                      {{flightdata.Offers.ALacarteOfferItemID}}
-                     </td> 
-                     <td >
-                        {{flightdata.Offers.ALacarteOfferTotalAmount}}
-                       </td>
-                       <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
-                          <button type="button" class="btn btn-warning btn-sm fr">Add to cart and checkout</button>
-                      </div>
-              </tr>
-            </tbody>
-          </table>
-          
-       
+                 <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+                    <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
+                </div>
+                  <td >
+                    {{flightdata.Offers.ALacarteOfferItemID}}
+                   </td> 
+                   <td >
+                      {{flightdata.Offers.ALacarteOfferTotalAmount}}
+                     </td>
+                     <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+                        <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
+                    </div>
+            </tr>
+          </tbody>
+        </table>
+        
+     
+    </div>
+<!-- car offers starts-->
+<div  class="col-sm-12 col-md-12 mT2 col-lg-12" >
+  <div class="row">
+          <div class="mtupsellSubHeaderText">
+               Great news! Your flight is booked, now add a car rental and get at least 500 miles.
+          </div>
+          <div class="clearfix"></div>
       </div>
+  <div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 paddingLeft" >
+    <img src="../../../assets/img/car1.jpg">
+                                                  <a href="javascript:void(0);" routerLink="/main/payment">	                                        		                                       
+                                                      <span class="mtupsell_item_city toUpperCase">HERTZ</span>
+                                <br>
+                                                      <div class="fromAmt">From</div>
+                                                  <div class="itemValue"><sup>$</sup><span class="dollarAmt">34</span><sup>.17</sup>
+                                                  </div>	
+                                                  </a>
+                </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 paddingLeft" >
+    <img src="../../../assets/img/car2.jpg">
+                                                  <a href="javascript:void(0);" routerLink="/main/payment">	                                        		                                       
+                                                      <span class="mtupsell_item_city toUpperCase">HERTZ</span>
+                                <br>
+                                                      <div class="fromAmt">From</div>
+                                                  <div class="itemValue"><sup>$</sup><span class="dollarAmt">34</span><sup>.17</sup>
+                                                  </div>	
+                                                  </a>
+                </div>
   </div>
-  
+</div>
+<!-- car offers ends-->
+    </div>
