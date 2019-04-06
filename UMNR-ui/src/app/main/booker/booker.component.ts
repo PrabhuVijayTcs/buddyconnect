@@ -34,7 +34,7 @@ export class BookerComponent implements OnInit {
      username: ['',Validators.required],
      password: ['',Validators.required]
    });
-   searchModel={"selectedTravelers":["John Smith"],"tripType":"One-Way","origin":"SEA", "destination":"JFK","depart":"2019-04-07T04:00:00.000Z","return":"","adultsCount":"","childCount":"","cabinType":"Premium economy"};
+   searchModel={"selectedTravelers":["John Smith"],"tripType":"One-Way","origin":"JFK", "destination":"SEA","depart":"2019-04-07T04:00:00.000Z","return":"","adultsCount":"","childCount":"","cabinType":"Premium economy"};
 /*submitData(userName,passWord){
   const data = {
     username: userName,
