@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
         if (recentTrip.travellers) {
           for (const travellers of recentTrip.travellers) {
             this.travelers.push(travellers);
-            if (this.travelers.length > 2) {
+            if (this.travelers.length >= 2) {
               return this.travelers;
             }
           }
@@ -94,8 +94,8 @@ export class DashboardComponent implements OnInit {
             "lastName": "David"
           },
           {
-            "firstName": "Jasmine",
-            "lastName": "David"
+            "firstName": "John",
+            "lastName": "Smith"
           }
           ]
         }
@@ -112,12 +112,12 @@ export class DashboardComponent implements OnInit {
           "umnrChildExpBar": "assets/img/childExperience.JPG",
           "umnrChildExpBaralt": "child experience bar",
           "travellers": [{
-            "firstName": "Jane",
-            "lastName": "David"
+            "firstName": "John",
+            "lastName": "Smith"
           },
           {
-            "firstName": "Jasmine",
-            "lastName": "David"
+            "firstName": "Jane",
+            "lastName": "Smith"
           }
           ]
         },
@@ -134,6 +134,10 @@ export class DashboardComponent implements OnInit {
           "travellers": [{
             "firstName": "John",
             "lastName": "Smith"
+          },
+          {
+            "firstName": "Jane",
+            "lastName": "Smith"
           }]
         },
         {
@@ -148,6 +152,10 @@ export class DashboardComponent implements OnInit {
           "umnrChildExpBaralt": "child experience bar",
           "travellers": [{
             "firstName": "John",
+            "lastName": "Smith"
+          },
+          {
+            "firstName": "Jane",
             "lastName": "Smith"
           }]
         }
