@@ -12,7 +12,7 @@
                   <div *ngFor="let pax of trip.travellers">Travellers: {{pax.firstName}} {{pax.lastName}}</div></div>
 				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 imageSection">
             <img [attr.alt]="(trip.airlineBooked)" [src]="(trip.airlineLogo)" class="img-fluid secondNavImage px-2">
-                  <input class="btn btn-warning btn-sm mr-2" type="submit" name="submit" value="Open Itinerary" [routerLink]="['/main/itineraryDetails', trip]">
+                  <input class="btn btn-warning btn-sm mr-2" type="submit" name="submit" value="Open Itinerary/Upgrade to offers" [routerLink]="['/main/itineraryDetails', trip]">
                   <!--<input class="btn btn-primary btn-sm mr-2"  routerLink="/main/tracker" type="submit" name="tracker" value="Track your flight">-->
 				  </div>
                  
@@ -46,7 +46,7 @@
                   <!--<img  [attr.alt]="(recentTrip.publicRatingUrl)" [src]="(recentTrip.publicRatingUrl)" class="img-fluid secondNavImage px-2">-->
                   <input class="btn btn-warning btn-sm"   type="submit" name="submit" value="Repeat this trip" (click)="openModalDialog()">
 				  </div>
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2">
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-2" *ngIf="recentTrip.airlineBooked !== 'Delta'">
                   <mat-form-field>
                     <mat-label class="ancillaryLabel">Ancillaries purchased</mat-label>
                     <mat-select  multiple id="ancillariesArray" name="ancillariesArray" >

@@ -14,6 +14,7 @@ export class ItineraryDetailsComponent implements OnInit {
   private travelDate;
   private seatNumber;
   private recordLocator;
+  private airlineBooked;
   shoppingResponse: any;
   constructor(private route: ActivatedRoute, private service: Service) { }
 
@@ -25,6 +26,7 @@ export class ItineraryDetailsComponent implements OnInit {
       this.travelDate = params.dateRange;
       this.seatNumber = params.seatNumber;
       this.recordLocator = params.pnrNbr;
+      this.airlineBooked = params.airlineBooked;
    });
 
    this.service.getData('./assets/shopping.json')

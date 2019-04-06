@@ -7,8 +7,8 @@
   "FoodPreference": "Chicken",
   "kids": [
     {
-      "Name": "Angelo Smith",
-      "AgeType":"Adult",
+      "Name": "Jane Smith",
+      "AgeType":"Kid",
       "DateOfBirth": "06/16/2008",
       "SeatPreference": "aisle seat",
       "FoodPreference": "pizza",
