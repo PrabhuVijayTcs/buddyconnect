@@ -34,7 +34,7 @@ export class BookerComponent implements OnInit {
      username: ['',Validators.required],
      password: ['',Validators.required]
    });
-   searchModel={"selectedTravelers":"","tripType":"","origin":"", "destination":"","depart":"","return":"","adultsCount":"","childCount":"","cabinType":""};
+   searchModel={"selectedTravelers":["John Smith"],"tripType":"One-Way","origin":"SEA", "destination":"JFK","depart":"2019-04-07T04:00:00.000Z","return":"","adultsCount":"","childCount":"","cabinType":"Premium economy"};
 /*submitData(userName,passWord){
   const data = {
     username: userName,
@@ -43,6 +43,7 @@ export class BookerComponent implements OnInit {
   console.log(data)
 }*/
 searchFlights(searchForm:NgForm){
+  console.log(JSON.stringify(this.searchModel))
   this.httpService.getData("./assets/shopping.JSON").subscribe(
     shoppingResponse=>this.shoppingResponse=shoppingResponse
   );

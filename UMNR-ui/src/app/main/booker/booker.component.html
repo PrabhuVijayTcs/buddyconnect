@@ -17,14 +17,14 @@
     <!--<div class="selectText">from</div>-->
     <select class="selectBox" [(ngModel)]="searchModel.origin" id="origin" required name="origin">
       <option value="">Select Origin</option>
-      <option *ngFor="let airport of airports.airports" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
+      <option *ngFor="let airport of airports.airports" value="{{airport.code}}">{{airport.displayName}} ({{(airport.code)}})</option>
     </select>
   </div>
   <div class="col-sm-8 col-md-8 col-lg-8">
     <!--<div class="selectText">to</div>-->
     <select class="selectBox" [(ngModel)]="searchModel.destination" id="destination" name="destination">
       <option value="">Select Destination</option>
-      <option *ngFor="let airport of airports.airports" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
+      <option *ngFor="let airport of airports.airports" value="{{airport.code}}">{{airport.displayName}} ({{(airport.code)}})</option>
     </select>
   </div>
   <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12"> 
