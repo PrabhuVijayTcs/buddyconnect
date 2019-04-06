@@ -24,7 +24,7 @@
 
   <div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
     
-      <h2>Offers for your itinerary</h2>
+      
   <table class="table table-hover">
           <thead>
             <tr>
@@ -32,27 +32,29 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
-            
+            <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index" >
+            <div *ngIf="flightdata.OperatingCarrierName === airlineBooked">
+			<h2>Offers for your itinerary</h2>
               <td >
-                {{flightdata.Offers.CarrierLoyaltyOfferName}}
+                <strong>CarrierLoyaltyOfferName</strong>: {{flightdata.Offers.CarrierLoyaltyOfferName}}
                </td> 
                <td >
-                  {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
+                  <strong>CarrierLoyaltyOfferTotalAmount</strong>: {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
                  </td>
                
                  <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
                     <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
                 </div>
                   <td >
-                    {{flightdata.Offers.ALacarteOfferItemID}}
+                    <strong>ALacarteOfferItemID</strong>: {{flightdata.Offers.ALacarteOfferItemID}}
                    </td> 
                    <td >
-                      {{flightdata.Offers.ALacarteOfferTotalAmount}}
+                      <strong>ALacarteOfferTotalAmount</strong>:{{flightdata.Offers.ALacarteOfferTotalAmount}}
                      </td>
                      <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
                         <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
                     </div>
+				</div>
             </tr>
           </tbody>
         </table>
