@@ -13,7 +13,7 @@
 				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 imageSection">
             <img [attr.alt]="(trip.airlineBooked)" [src]="(trip.airlineLogo)" class="img-fluid secondNavImage px-2">
                   <input class="btn btn-warning btn-sm mr-2" type="submit" name="submit" value="Open Itinerary" [routerLink]="['/main/itineraryDetails', trip]">
-                  
+                  <!--<input class="btn btn-primary btn-sm mr-2"  routerLink="/main/tracker" type="submit" name="tracker" value="Track your flight">-->
 				  </div>
                  
                 </div>
@@ -51,7 +51,7 @@
                     <mat-label class="ancillaryLabel">Ancillaries purchased</mat-label>
                     <mat-select  multiple id="ancillariesArray" name="ancillariesArray" >
                       <mat-option value="priority boarding">priority boarding</mat-option>
-                      <mat-option value="exit row seat">Exit Row Seat</mat-option>
+                      <mat-option value="exit row seat">In flight wifi</mat-option>
                     </mat-select>
                   </mat-form-field>
               </div>   
