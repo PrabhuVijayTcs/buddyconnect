@@ -72,12 +72,16 @@ export class DashboardComponent implements OnInit {
           "pnrNbr": "H8XKLW",
           "destinationCity": "New York City,NY(JFK)",
           "originCity": "Seattlle, Washington(SEA)",
-          "dateRange": "Mar 27, 2019",
+          "dateRange": "April 09, 2019",
           "airlineBooked": "Delta",
           "airlineLogo": "assets/img/deltaLogo.JPG",
           "seatNumber": "32A",
           "travellers": [{
             "firstName": "John",
+            "lastName": "Smith"
+          },
+          {
+            "firstName": "Jane",
             "lastName": "Smith"
           }]
         },
@@ -90,11 +94,11 @@ export class DashboardComponent implements OnInit {
           "airlineLogo": "assets/img/british.jpg",
           "seatNumber": "82B",
           "travellers": [{
-            "firstName": "Jane",
-            "lastName": "David"
+            "firstName": "John",
+            "lastName": "Smith"
           },
           {
-            "firstName": "John",
+            "firstName": "Jane",
             "lastName": "Smith"
           }
           ]
@@ -105,7 +109,7 @@ export class DashboardComponent implements OnInit {
           "pnrNbr": "LBS4RT",
           "destinationCity": "New York City,NY(JFK)",
           "originCity": "Seattlle, Washington(SEA)",
-          "dateRange": "April 27, 2019",
+          "dateRange": "March 23, 2019",
           "airlineBooked": "Hawain",
           "airlineLogo": "assets/img/deltaLogo.JPG",
           "isUmnrOnly": "true",
@@ -125,7 +129,7 @@ export class DashboardComponent implements OnInit {
           "pnrNbr": "H8XKLW",
           "destinationCity": "New York City,NY(JFK)",
           "originCity": "Seattlle, Washington(SEA)",
-          "dateRange": "Mar 27, 2019",
+          "dateRange": "March 16, 2019",
           "airlineBooked": "Delta",
           "airlineLogo": "assets/img/british.jpg",
           "umnrChildExpBar": "assets/img/childExperience.JPG",
@@ -144,7 +148,7 @@ export class DashboardComponent implements OnInit {
           "pnrNbr": "H8XKLW",
           "destinationCity": "New York City,NY(JFK)",
           "originCity": "Seattlle, Washington(SEA)",
-          "dateRange": "Mar 27, 2019",
+          "dateRange": "March 09, 2019",
           "airlineBooked": "Delta",
           "airlineLogo": "assets/img/deltaLogo.JPG",
           "isUmnrOnly": "true",
