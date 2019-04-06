@@ -83,11 +83,11 @@ export class DashboardComponent implements OnInit {
         },
         {
           "pnrNbr": "LBS4RT",
-          "destinationCity": "Oahu- Honolulu,Hi(hnl)",
-          "originCity": "Hawai Island, HI(ITO)",
+          "destinationCity": "New York City,NY(JFK)",
+          "originCity": "Seattlle, Washington(SEA)",
           "dateRange": "April 27, 2019",
           "airlineBooked": "Hawain",
-          "airlineLogo": "assets/img/hawainAirlinesLogo.JPG",
+          "airlineLogo": "assets/img/british.jpg",
           "seatNumber": "82B",
           "travellers": [{
             "firstName": "Jane",
@@ -103,11 +103,11 @@ export class DashboardComponent implements OnInit {
       "recentTrips": [
         {
           "pnrNbr": "LBS4RT",
-          "destinationCity": "Oahu- Honolulu,Hi(hnl)",
-          "originCity": "Hawai Island, HI(ITO)",
+          "destinationCity": "New York City,NY(JFK)",
+          "originCity": "Seattlle, Washington(SEA)",
           "dateRange": "April 27, 2019",
           "airlineBooked": "Hawain",
-          "airlineLogo": "assets/img/hawainAirlinesLogo.JPG",
+          "airlineLogo": "assets/img/deltaLogo.JPG",
           "isUmnrOnly": "true",
           "umnrChildExpBar": "assets/img/childExperience.JPG",
           "umnrChildExpBaralt": "child experience bar",
@@ -127,7 +127,7 @@ export class DashboardComponent implements OnInit {
           "originCity": "Seattlle, Washington(SEA)",
           "dateRange": "Mar 27, 2019",
           "airlineBooked": "Delta",
-          "airlineLogo": "assets/img/deltaLogo.JPG",
+          "airlineLogo": "assets/img/british.jpg",
           "umnrChildExpBar": "assets/img/childExperience.JPG",
           "umnrChildExpBaralt": "child experience bar",
           "isUmnrOnly": "false",
