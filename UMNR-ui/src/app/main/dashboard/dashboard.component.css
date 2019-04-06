@@ -103,6 +103,7 @@
 }
 .modal{
     z-index: auto !important;
+    top: 115px !important;
 }
 .example-full-width{
     border-left:none !important;
