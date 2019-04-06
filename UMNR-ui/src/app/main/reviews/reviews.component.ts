@@ -3,7 +3,7 @@ import { Service }  from '../../service.service';
 import {HttpClientModule} from '@angular/common/http';
 
 declare function AnalyseSentiment(obj:any,obj2:any):string;
-declare function SubmitReview(obj3:any,obj4:any);
+declare function SubmitReview(obj3:any,obj4:any,obj5:any);
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -49,7 +49,9 @@ export class ReviewsComponent implements OnInit {
     this.displayRatingScore = Math.round((this.custRate + this.servRate + this.grievRate)/3);
     this.persons.push({name: this.profileData.Name,comment:comment.value , rating: this.displayRatingScore, counterId:this.counter,faReview:faReview.value});
 	AnalyseSentiment(comment.value+faReview.value,this.counter);
+	if(faReview.value !=""){
 	SubmitReview(faReview.value,this.grievRate,this.counter);
+	}
 	comment.value="";
 	faReview.value=""
 	this.counter++;
