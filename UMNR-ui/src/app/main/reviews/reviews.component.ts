@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Service }  from '../../service.service';
+import {HttpClientModule} from '@angular/common/http';
 
 declare function AnalyseSentiment(obj:any,obj2:any):string;
+declare function SubmitReview(obj3:any,obj4:any);
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -18,7 +20,7 @@ export class ReviewsComponent implements OnInit {
   comments: any;
   profileData: any;
  persons: any 
-  constructor(private httpService:Service) { }
+  constructor(private httpService:Service, private http:HttpClientModule) { }
 
   ngOnInit() {
 	  
@@ -26,9 +28,9 @@ export class ReviewsComponent implements OnInit {
       profileData=>this.profileData=profileData
     );
    this.persons = [
-      { name: 'Ritika',comment: 'The site is really simple and user friendly', rating: 5,sentiment: AnalyseSentiment('The site is really simple and user friendly',"1"),counterId:1},
-      { name: 'Mohit',comment: 'Lot of entertainment options available', rating: 4,sentiment: AnalyseSentiment('Lot of entertainment options available',"2"),counterId:2},
-      { name: 'Amrita',comment: 'Happy Customer!!', rating: 5,sentiment: AnalyseSentiment('Happy Customer!!',"3"),counterId:3},
+      { name: 'Amrita',comment: 'Really happy for choosing this service to fly my kids all alone. Flight Attendant was very kind and helpful', rating: 5,sentiment: AnalyseSentiment('The site is really simple and user friendly',"1"),counterId:1},
+      { name: 'Mohit',comment: 'Kids seems to have enjoyed interacting with the virtual assistant. Screen time limit is top notch', rating: 5,sentiment: AnalyseSentiment('Lot of entertainment options available',"2"),counterId:2},
+      { name: 'Ritika',comment: 'Good Service and kind in-flight crew', rating: 4,sentiment: AnalyseSentiment('Happy Customer!!',"3"),counterId:3},
       
   ]; 
   }
@@ -43,11 +45,13 @@ export class ReviewsComponent implements OnInit {
     this.grievRate = score$;
   }
   
-  onSubmit = (comment) => {
+  onSubmit = (comment,faReview) => {
     this.displayRatingScore = Math.round((this.custRate + this.servRate + this.grievRate)/3);
-    this.persons.push({name: this.profileData.Name,comment:comment.value , rating: this.displayRatingScore, counterId:this.counter});
-	AnalyseSentiment(comment.value,this.counter);
+    this.persons.push({name: this.profileData.Name,comment:comment.value , rating: this.displayRatingScore, counterId:this.counter,faReview:faReview.value});
+	AnalyseSentiment(comment.value+faReview.value,this.counter);
+	SubmitReview(faReview.value,this.grievRate,this.counter);
 	comment.value="";
+	faReview.value=""
 	this.counter++;
   }
 }

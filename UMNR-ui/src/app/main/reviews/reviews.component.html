@@ -1,5 +1,5 @@
 <div class="container">
-  <h4>STAR RATING</h4>
+  <h4>Travel Experience & Employee Rating</h4>
   <div class="section">
     <div class="block">
       <div>Customer-Experience</div>
@@ -11,16 +11,18 @@
         <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeServRate($event)"></star-rating>
         <div>Rating: {{servRate}}</div>
       </div>
-      <div class="block">
-          <div>Grieviance Addressal</div>
-          <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeGrievRate($event)"></star-rating>
+      <div class="block" style="padding:15px;">
+          <div style="padding-bottom:0;margin-bottom:0">Rate your Flight Attendant- <span style="font-size:12px;font-weight:bold;color:Red">Angela Long</span></div>
+		  <div style="padding:0;margin:0;font-size:10px"><sup>Powered by GuudJob API</sup></div>
+          <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeGrievRate($event)"></star-rating><br/>
+		  <input type='text' style="width:100%" class="faReview" #faReview placeholder="Comments/Feedback">
           <div>Rating: {{grievRate}}</div>
         </div>
          </div>
          <input type='text' class="comments" #comment placeholder="Additional Comments if any">
-  <button type = "submit" (click)="onSubmit(comment)">Submit</button>
+  <button type = "submit" (click)="onSubmit(comment,faReview)">Submit</button><br/>
   <div class="options">
-    <h4>User Rating</h4>
+    <h4>Public Opinion</h4>
   <div *ngIf='displayRatingScore > 0'>
       <span><star-rating [score]="displayRatingScore" [forDisplay]="true"></star-rating></span>
   </div>
@@ -32,5 +34,6 @@
 <div class="review">
   <div class="col-sm-12 col-md-12 col-lg-12 rating" *ngFor="let person of persons">
 <b>{{ person.name  }} </b><star-rating [score]="person.rating" [forDisplay]="true"></star-rating> <div class="SentimentData_{{person.counterId}}" style="text-transform:capitalize;font-size:12px;"> <img height="15" width="15" style="vertical-align:top" src='assets/img/{{person.sentiment}}.jpg'/> <span> <img  width="20" height="20" src="assets/img/analysing.gif"/></span></div>
-<p>{{ person.comment }}</p>
+<p style="margin-bottom:4px;">{{ person.comment }}</p>
+<p style="font-size:12px;"><span style="font-weight:bold;" *ngIf='person.faReview'> Review for Angela Long: </span> {{ person.faReview}}</p>
 </div>

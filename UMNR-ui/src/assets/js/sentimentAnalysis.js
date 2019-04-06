@@ -44,3 +44,24 @@ function AnalyseSentiment(comment,counter){
 function sendResponse(data){
 	return data.Sentiment;
 }
+
+function SubmitReview(review,rating,counter){
+	
+	counter= Math.floor(Math.random() * 90 + 10)
+	$.post("https://app.guudjob.com/guudjob_api/v2/profiles/26345/rates?client_id=DHbzaIyxMo7b_csCgiB5dQ&token=pmVu-6nGXMLyxZgGyRfqzCnGwHjwJ97j_4Awb_cmU88",
+    {
+"user":{
+"name": "Jackie"+counter,
+"surname": "Jonejs"+counter,
+"email": "test"+counter+"@test.com"
+},
+"rating": {
+"comment": review,
+"value": rating
+}
+
+},
+    function(resp,status){
+      console.log("Response: " + JSON.stringify(resp) + "\nStatus: " + status);
+    });
+}
