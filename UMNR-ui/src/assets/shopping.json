@@ -1,117 +1,803 @@
 {
-	"AirShoppingRS": [{
-		"ResponseOffer": [{
-				"ResponseDateTime": "2019-03-22T11:43:59.315Z",
-				"DeptAirportCode": "JFK",
-				"DeptAirportName": "NEW YORK",
-				"DeptDate": "2019-03-22",
-				"DeptTime": "18:15",
-				"ArrAirportCode": "SEA",
-				"ArrAirportName": "SEATTLE",
-				"ArrDate": "2019-03-22",
-				"ArrTime": "21:45",
-				"MarketingFlightNumber": "2950",
-				"MarketingCarrierCode": "DL",
-				"MarketingCarrierName": "Delta",
-				"OperatingFlightNumber": "2950",
-				"OperatingCarrierCode": "DL",
-				"OperatingCarrierName": "Delta",
-				"BaggageAllowance": {
-					"DimensionAllowance": "56x36x23 cm",
-					"PieceAllowance": "1",
-					"WeightAllowance": "23Kg"
-				},
-				"PaxDetail": {
-					"PaxEmailAddress": "emohitrao@gmail.com",
-					"PaxPhone": "5512479131",
-					"PaxPostalAddress": "Apt-A6, 3737, 88th Street, Jackson Heights, NY, 11372",
-					"PaxAgeMeasure": "12 years",
-					"PaxDOB": "2006-10-14",
-					"PaxBirthPlace": "Queens, NY",
-					"PaxGenderCode": "M",
-					"PaxLangUsage": "English"
-				},
-				"PaxLoyaltyAccountNumber": "3SSRFQTVDLHK/DL2950190322",
-				"PaxLoyaltyProgramName": "SkyMiles",
-				"FareCabinCode": "J",
-				"FareCabinName": "Economy",
-				"BaseFareAmount": "$215.00",
-				"TotalFareAmount": "$270.00",
-				"Offers": {
-					"CarrierLoyaltyOfferName": "SkyMiles",
-					"CarrierLoyaltyOfferUnitAmount": "$200",
-					"CarrierLoyaltyOfferTotalAmount": "$200",
-					"ALacarteOfferItemID": "Classic",
-					"ALacarteOfferExpirationDateTime": "2019-03-25T11:43:59.315Z",
-					"ALacarteOfferBaseAmount": "$315",
-					"ALacarteOfferTotalAmount": "$315",
-					"OtherOfferDesc": "",
-					"OtherOfferBaseAmount": "",
-					"OtherOfferTotalAmount": ""
-				},
-				"ClassOfService": "ECONOMY",
-				"SeatDetails": "30-31 legroom",
-				"Baggage": "1 x 23kg checked baggage allowance, Hand baggage only",
-				"Amenities": "Food and bar service",
-				"FlightReference": "Flight3",
-				"PriceClassReference": "PLUSFLEX"
+	"legs": [
+	  {
+		"legId": "8d65082b9a6fb03c2e430cd813633493",
+		"fareBasisCode": "UA7VA0BC",
+		"travelDuration": "PT5H22M",
+		"elapsedDays": 1,
+		"totalTravelDistance": 2397,
+		"totalTravelDistanceUnits": "miles",
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=824&langid=1033",
+		"segments": [
+		  {
+			"departureTime": "April 15, 2019 10:40:00 PM",
+			"departureTimeEpochSeconds": 1555393200,
+			"departureTimeRaw": "2019-04-15T22:40:00.000-07:00",
+			"departureTimeZoneOffsetSeconds": -25200,
+			"arrivalTime": "April 16, 2019 7:02:00 AM",
+			"arrivalTimeEpochSeconds": 1555412520,
+			"arrivalTimeRaw": "2019-04-16T07:02:00.000-04:00",
+			"arrivalTimeZoneOffsetSeconds": -14400,
+			"arrivalAirportCode": "JFK",
+			"arrivalAirportLocation": "New York, USA",
+			"arrivalAirportLatitude": 40.644166,
+			"arrivalAirportLongitude": -73.782548,
+			"arrivalAirportName": "John F. Kennedy Intl.",
+			"arrivalAirportAddress": {
+			  "city": "New York",
+			  "state": " NY",
+			  "country": "USA"
 			},
-			{
-				"ResponseDateTime": "2019-03-22T11:43:59.315Z",
-				"DeptAirportCode": "JFK",
-				"DeptAirportName": "NEW YORK",
-				"DeptDate": "2019-03-22",
-				"DeptTime": "17:19",
-				"ArrAirportCode": "SEA",
-				"ArrAirportName": "SEATTLE",
-				"ArrDate": "2019-03-22",
-				"ArrTime": "20:49",
-				"MarketingFlightNumber": "0263",
-				"MarketingCarrierCode": "B6",
-				"MarketingCarrierName": "JetBlue",
-				"OperatingFlightNumber": "0263",
-				"OperatingCarrierCode": "B6",
-				"OperatingCarrierName": "JetBlue",
-				"BaggageAllowance": {
-					"DimensionAllowance": "56x36x23 cm",
-					"PieceAllowance": "1",
-					"WeightAllowance": "23 Kg"
-				},
-				"PaxDetail": {
-					"PaxEmailAddress": "emohitrao@gmail.com",
-					"PaxPhone": "5512479131",
-					"PaxPostalAddress": "Apt-A6, 3737, 88th Street, Jackson Heights, NY, 11372",
-					"PaxAgeMeasure": "12 years",
-					"PaxDOB": "2006-10-14",
-					"PaxBirthPlace": "Queens, NY",
-					"PaxGenderCode": "M",
-					"PaxLangUsage": "English"
-				},
-				"PaxLoyaltyAccountNumber": "6011873955",
-				"PaxLoyaltyProgramName": "TrueBlueMiles",
-				"FareCabinCode": "J",
-				"FareCabinName": "Economy",
-				"BaseFareAmount": "$215.00",
-				"TotalFareAmount": "$270.00",
-				"Offers": {
-					"CarrierLoyaltyOfferName": "TrueBlueMiles",
-					"CarrierLoyaltyOfferUnitAmount": "$200",
-					"CarrierLoyaltyOfferTotalAmount": "$200",
-					"ALacarteOfferItemID": "Classic",
-					"ALacarteOfferExpirationDateTime": "2019-03-25T11:43:59.315Z",
-					"ALacarteOfferBaseAmount": "$315",
-					"ALacarteOfferTotalAmount": "$315",
-					"OtherOfferDesc": "",
-					"OtherOfferBaseAmount": "",
-					"OtherOfferTotalAmount": ""
-				},
-				"ClassOfService": "ECONOMY",
-				"SeatDetails": "30-31 legroom",
-				"Baggage": "1 x 23kg checked baggage allowance, Hand baggage only",
-				"Amenities": "Food and bar service",
-				"FlightReference": "Flight3",
-				"PriceClassReference": "PLUSFLEX"
+			"departureAirportCode": "SEA",
+			"departureAirportLocation": "Seattle, USA",
+			"departureAirportLatitude": 47.44363,
+			"departureAirportLongitude": -122.30175,
+			"departureAirportName": "Seattle - Tacoma Intl.",
+			"departureAirportAddress": {
+			  "city": "Seattle",
+			  "state": " WA",
+			  "country": "USA"
+			},
+			"airlineName": "Delta",
+			"airlineCode": "DL",
+			"externalAirlineCode": "DL",
+			"flightNumber": "824",
+			"onTimePercentage": "70",
+			"equipmentCode": "739",
+			"equipmentDescription": "Boeing 737-900",
+			"duration": "PT5H22M",
+			"durationInSeconds": 19320,
+			"elapsedDays": 1,
+			"distance": 2397,
+			"distanceUnits": "miles",
+			"stops": 0,
+			"providerCode": "Sabre",
+			"hasSeatMap": true
+		  }
+		],
+		"freeCancellationBy": {
+		  "raw": "2019-04-08T23:59:00Z",
+		  "localized": "Apr 8, 2019 11:59:00 PM",
+		  "epochSeconds": 1554767940,
+		  "timeZoneOffsetSeconds": 0,
+		  "localizedShortDate": "Mon, 8 Apr",
+		  "localizedMediumDate": "Apr 8, 2019",
+		  "localizedFullDate": "Monday, April 8, 2019",
+		  "localizedLongDate": "April 8, 2019",
+		  "localizedShortTime": "11:59 PM"
+		},
+		"isBasicEconomy": true,
+		"basicEconomyTooltipInfo": [
+		  {
+			"fareRulesTitle": "Delta Basic Economy Fare",
+			"fareRules": [
+			  "Seats assigned after check-in.",
+			  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+			]
+		  }
+		],
+		"isRefundable": false,
+		"isNonStop": true
+	  },
+	  {
+		"legId": "98f141b2d42559cc9a53a8951aad4795",
+		"fareBasisCode": "GH7OAVBN",
+		"travelDuration": "PT5H25M",
+		"elapsedDays": 1,
+		"totalTravelDistance": 2397,
+		"totalTravelDistanceUnits": "miles",
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=VA7NA0BA&bookingclass=X&travelDate=2019-04-15&flightNumber=18&langid=1033",
+		"segments": [
+		  {
+			"departureTime": "April 15, 2019 10:00:00 PM",
+			"departureTimeEpochSeconds": 1555390800,
+			"departureTimeRaw": "2019-04-15T22:00:00.000-07:00",
+			"departureTimeZoneOffsetSeconds": -25200,
+			"arrivalTime": "April 16, 2019 6:25:00 AM",
+			"arrivalTimeEpochSeconds": 1555410300,
+			"arrivalTimeRaw": "2019-04-16T06:25:00.000-04:00",
+			"arrivalTimeZoneOffsetSeconds": -14400,
+			"arrivalAirportCode": "JFK",
+			"arrivalAirportLocation": "New York, USA",
+			"arrivalAirportLatitude": 40.644166,
+			"arrivalAirportLongitude": -73.782548,
+			"arrivalAirportName": "John F. Kennedy Intl.",
+			"arrivalAirportAddress": {
+			  "city": "New York",
+			  "state": " NY",
+			  "country": "USA"
+			},
+			"departureAirportCode": "SEA",
+			"departureAirportLocation": "Seattle, USA",
+			"departureAirportLatitude": 47.44363,
+			"departureAirportLongitude": -122.30175,
+			"departureAirportName": "Seattle - Tacoma Intl.",
+			"departureAirportAddress": {
+			  "city": "Seattle",
+			  "state": " WA",
+			  "country": "USA"
+			},
+			"airlineName": "Alaska Airlines",
+			"airlineCode": "AS",
+			"externalAirlineCode": "AS",
+			"flightNumber": "18",
+			"equipmentCode": "73J",
+			"equipmentDescription": "Boeing 737-900",
+			"duration": "PT5H25M",
+			"durationInSeconds": 19500,
+			"elapsedDays": 1,
+			"distance": 2397,
+			"distanceUnits": "miles",
+			"stops": 0,
+			"providerCode": "Sabre",
+			"hasSeatMap": true
+		  }
+		],
+		"freeCancellationBy": {
+		  "raw": "2019-04-08T23:59:00Z",
+		  "localized": "Apr 8, 2019 11:59:00 PM",
+		  "epochSeconds": 1554767940,
+		  "timeZoneOffsetSeconds": 0,
+		  "localizedShortDate": "Mon, 8 Apr",
+		  "localizedMediumDate": "Apr 8, 2019",
+		  "localizedFullDate": "Monday, April 8, 2019",
+		  "localizedLongDate": "April 8, 2019",
+		  "localizedShortTime": "11:59 PM"
+		},
+		"isBasicEconomy": true,
+		"basicEconomyTooltipInfo": [
+		  {
+			"fareRulesTitle": "Alaska Airlines Basic Economy Fare",
+			"fareRules": [
+			  "Airline assigns seats",
+			  "Bring a carry-on bag"
+			]
+		  }
+		],
+		"isRefundable": false,
+		"isNonStop": true
+	  },
+	  {
+		"legId": "4920f8050c4c1d4174d8315fa1d638c9",
+		"fareBasisCode": "UA7VA0BC",
+		"travelDuration": "PT5H31M",
+		"elapsedDays": 1,
+		"totalTravelDistance": 2397,
+		"totalTravelDistanceUnits": "miles",
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=1120&langid=1033",
+		"segments": [
+		  {
+			"departureTime": "April 15, 2019 3:45:00 PM",
+			"departureTimeEpochSeconds": 1555368300,
+			"departureTimeRaw": "2019-04-15T15:45:00.000-07:00",
+			"departureTimeZoneOffsetSeconds": -25200,
+			"arrivalTime": "April 16, 2019 12:16:00 AM",
+			"arrivalTimeEpochSeconds": 1555388160,
+			"arrivalTimeRaw": "2019-04-16T00:16:00.000-04:00",
+			"arrivalTimeZoneOffsetSeconds": -14400,
+			"arrivalAirportCode": "JFK",
+			"arrivalAirportLocation": "New York, USA",
+			"arrivalAirportLatitude": 40.644166,
+			"arrivalAirportLongitude": -73.782548,
+			"arrivalAirportName": "John F. Kennedy Intl.",
+			"arrivalAirportAddress": {
+			  "city": "New York",
+			  "state": " NY",
+			  "country": "USA"
+			},
+			"departureAirportCode": "SEA",
+			"departureAirportLocation": "Seattle, USA",
+			"departureAirportLatitude": 47.44363,
+			"departureAirportLongitude": -122.30175,
+			"departureAirportName": "Seattle - Tacoma Intl.",
+			"departureAirportAddress": {
+			  "city": "Seattle",
+			  "state": " WA",
+			  "country": "USA"
+			},
+			"airlineName": "Delta",
+			"airlineCode": "DL",
+			"externalAirlineCode": "DL",
+			"flightNumber": "1120",
+			"equipmentCode": "757",
+			"equipmentDescription": "Boeing 757",
+			"duration": "PT5H31M",
+			"durationInSeconds": 19860,
+			"elapsedDays": 1,
+			"distance": 2397,
+			"distanceUnits": "miles",
+			"stops": 0,
+			"meal": "Lunch",
+			"providerCode": "Sabre",
+			"hasSeatMap": true
+		  }
+		],
+		"freeCancellationBy": {
+		  "raw": "2019-04-08T23:59:00Z",
+		  "localized": "Apr 8, 2019 11:59:00 PM",
+		  "epochSeconds": 1554767940,
+		  "timeZoneOffsetSeconds": 0,
+		  "localizedShortDate": "Mon, 8 Apr",
+		  "localizedMediumDate": "Apr 8, 2019",
+		  "localizedFullDate": "Monday, April 8, 2019",
+		  "localizedLongDate": "April 8, 2019",
+		  "localizedShortTime": "11:59 PM"
+		},
+		"isBasicEconomy": true,
+		"basicEconomyTooltipInfo": [
+		  {
+			"fareRulesTitle": "Delta Basic Economy Fare",
+			"fareRules": [
+			  "Seats assigned after check-in.",
+			  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+			]
+		  }
+		],
+		"isRefundable": false,
+		"isNonStop": true
+	  },
+	  {
+		"legId": "c60b17abd8af0026322873694fe26de9",
+		"fareBasisCode": "UA7VA0BC",
+		"travelDuration": "PT5H32M",
+		"elapsedDays": 0,
+		"totalTravelDistance": 2397,
+		"totalTravelDistanceUnits": "miles",
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=2218&langid=1033",
+		"segments": [
+		  {
+			"departureTime": "April 15, 2019 7:43:00 AM",
+			"departureTimeEpochSeconds": 1555339380,
+			"departureTimeRaw": "2019-04-15T07:43:00.000-07:00",
+			"departureTimeZoneOffsetSeconds": -25200,
+			"arrivalTime": "April 15, 2019 4:15:00 PM",
+			"arrivalTimeEpochSeconds": 1555359300,
+			"arrivalTimeRaw": "2019-04-15T16:15:00.000-04:00",
+			"arrivalTimeZoneOffsetSeconds": -14400,
+			"arrivalAirportCode": "JFK",
+			"arrivalAirportLocation": "New York, USA",
+			"arrivalAirportLatitude": 40.644166,
+			"arrivalAirportLongitude": -73.782548,
+			"arrivalAirportName": "John F. Kennedy Intl.",
+			"arrivalAirportAddress": {
+			  "city": "New York",
+			  "state": " NY",
+			  "country": "USA"
+			},
+			"departureAirportCode": "SEA",
+			"departureAirportLocation": "Seattle, USA",
+			"departureAirportLatitude": 47.44363,
+			"departureAirportLongitude": -122.30175,
+			"departureAirportName": "Seattle - Tacoma Intl.",
+			"departureAirportAddress": {
+			  "city": "Seattle",
+			  "state": " WA",
+			  "country": "USA"
+			},
+			"airlineName": "Delta",
+			"airlineCode": "DL",
+			"externalAirlineCode": "DL",
+			"flightNumber": "2218",
+			"onTimePercentage": "80",
+			"equipmentCode": "739",
+			"equipmentDescription": "Boeing 737-900",
+			"duration": "PT5H32M",
+			"durationInSeconds": 19920,
+			"elapsedDays": 0,
+			"distance": 2397,
+			"distanceUnits": "miles",
+			"stops": 0,
+			"meal": "Breakfast",
+			"providerCode": "Sabre",
+			"hasSeatMap": true
+		  }
+		],
+		"freeCancellationBy": {
+		  "raw": "2019-04-08T23:59:00Z",
+		  "localized": "Apr 8, 2019 11:59:00 PM",
+		  "epochSeconds": 1554767940,
+		  "timeZoneOffsetSeconds": 0,
+		  "localizedShortDate": "Mon, 8 Apr",
+		  "localizedMediumDate": "Apr 8, 2019",
+		  "localizedFullDate": "Monday, April 8, 2019",
+		  "localizedLongDate": "April 8, 2019",
+		  "localizedShortTime": "11:59 PM"
+		},
+		"isBasicEconomy": true,
+		"basicEconomyTooltipInfo": [
+		  {
+			"fareRulesTitle": "Delta Basic Economy Fare",
+			"fareRules": [
+			  "Seats assigned after check-in.",
+			  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+			]
+		  }
+		],
+		"isRefundable": false,
+		"isNonStop": true
+	  }
+	],
+	"offers": [
+		  {
+		"legIds": [
+		  "8d65082b9a6fb03c2e430cd813633493"
+		],
+		"currency": "USD",
+		"baseFare": "181.40",
+		"baseFarePrice": {
+		  "amount": "181.40",
+		  "roundedAmount": "181",
+		  "formattedPrice": "$181.40",
+		  "formattedWholePrice": "$181",
+		  "currencyCode": "USD"
+		},
+		"totalFare": "209.31",
+		"totalFarePrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"totalPrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"pricePerPassengerCategory": [
+		  {
+			"passengerCategory": "ADULT",
+			"totalPrice": {
+			  "amount": "209.31",
+			  "roundedAmount": "209",
+			  "formattedPrice": "$209.31",
+			  "formattedWholePrice": "$209",
+			  "currencyCode": "USD"
+			},
+			"basePrice": {
+			  "amount": "181.40",
+			  "roundedAmount": "181",
+			  "formattedPrice": "$181.40",
+			  "formattedWholePrice": "$181",
+			  "currencyCode": "USD"
+			},
+			"taxesPrice": {
+			  "amount": "27.91",
+			  "roundedAmount": "28",
+			  "formattedPrice": "$27.91",
+			  "formattedWholePrice": "$28",
+			  "currencyCode": "USD"
 			}
-		]
-	}]
-}
+		  }
+		],
+		"averageTotalPricePerTicket": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"numberOfTickets": 1,
+		"taxes": "27.91",
+		"taxesPrice": {
+		  "amount": "27.91",
+		  "roundedAmount": "28",
+		  "formattedPrice": "$27.91",
+		  "formattedWholePrice": "$28",
+		  "currencyCode": "USD"
+		},
+		"fees": "0.00",
+		"feesPrice": {
+		  "amount": "0.00",
+		  "roundedAmount": "0",
+		  "formattedPrice": "$0.00",
+		  "formattedWholePrice": "$0",
+		  "currencyCode": "USD"
+		},
+		"showFees": true,
+		"productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-2-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQohCh8IxJgBEgM4MjQYkgEgqVEotN6pATD24KkBOEVAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+		"mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-2-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQohCh8IxJgBEgM4MjQYkgEgqVEotN6pATD24KkBOEVAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+		"seatsRemaining": 9,
+		"segmentAttributes": [
+		  [
+			{
+			  "bookingCode": "E",
+			  "cabinCode": "coach",
+			  "isBasicEconomySegment": true
+			}
+		  ]
+		],
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=824&langid=1033",
+		"fareType": "PUBLISHED",
+		"isInternational": false,
+		"isPassportNeeded": false,
+		"mayChargeOBFees": false,
+		"hasBagFee": false,
+		"hasNoBagFee": false,
+		"isSplitTicket": false,
+		"loyaltyInfo": {
+		  "earn": {
+			"points": {
+			  "base": 42,
+			  "bonus": 0,
+			  "total": 42
+			}
+		  },
+		  "isBurnApplied": false
+		},
+		"airFulfillmentMethod": [
+		  "ETicket"
+		],
+		"naturalKey": "2019-04-15t22:40:00-07:00-coach-sea-jfk-dl-824;",
+		"isPackageable": true
+	  },
+	  {
+		"legIds": [
+		  "98f141b2d42559cc9a53a8951aad4795"
+		],
+		"currency": "USD",
+		"baseFare": "181.40",
+		"baseFarePrice": {
+		  "amount": "181.40",
+		  "roundedAmount": "181",
+		  "formattedPrice": "$181.40",
+		  "formattedWholePrice": "$181",
+		  "currencyCode": "USD"
+		},
+		"totalFare": "209.31",
+		"totalFarePrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"totalPrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"pricePerPassengerCategory": [
+		  {
+			"passengerCategory": "ADULT",
+			"totalPrice": {
+			  "amount": "209.31",
+			  "roundedAmount": "209",
+			  "formattedPrice": "$209.31",
+			  "formattedWholePrice": "$209",
+			  "currencyCode": "USD"
+			},
+			"basePrice": {
+			  "amount": "181.40",
+			  "roundedAmount": "181",
+			  "formattedPrice": "$181.40",
+			  "formattedWholePrice": "$181",
+			  "currencyCode": "USD"
+			},
+			"taxesPrice": {
+			  "amount": "27.91",
+			  "roundedAmount": "28",
+			  "formattedPrice": "$27.91",
+			  "formattedWholePrice": "$28",
+			  "currencyCode": "USD"
+			}
+		  }
+		],
+		"averageTotalPricePerTicket": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"numberOfTickets": 1,
+		"taxes": "27.91",
+		"taxesPrice": {
+		  "amount": "27.91",
+		  "roundedAmount": "28",
+		  "formattedPrice": "$27.91",
+		  "formattedWholePrice": "$28",
+		  "currencyCode": "USD"
+		},
+		"fees": "0.00",
+		"feesPrice": {
+		  "amount": "0.00",
+		  "roundedAmount": "0",
+		  "formattedPrice": "$0.00",
+		  "formattedWholePrice": "$0",
+		  "currencyCode": "USD"
+		},
+		"showFees": true,
+		"productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-10-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQogCh4IwaYBEgIxOBiSASCpUSiM3qkBMNHgqQE4WEAAWAESCggBEAEYASoCQVMYASIECAEQASgCKAMoBDAC",
+		"mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-10-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQogCh4IwaYBEgIxOBiSASCpUSiM3qkBMNHgqQE4WEAAWAESCggBEAEYASoCQVMYASIECAEQASgCKAMoBDAC",
+		"seatsRemaining": 7,
+		"segmentAttributes": [
+		  [
+			{
+			  "bookingCode": "X",
+			  "cabinCode": "coach",
+			  "isBasicEconomySegment": false
+			}
+		  ]
+		],
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=GH7OAVBN&bookingclass=X&travelDate=2019-04-15&flightNumber=18&langid=1033",
+		"fareType": "PUBLISHED",
+		"isInternational": false,
+		"isPassportNeeded": false,
+		"mayChargeOBFees": false,
+		"hasBagFee": false,
+		"hasNoBagFee": false,
+		"isSplitTicket": false,
+		"loyaltyInfo": {
+		  "earn": {
+			"points": {
+			  "base": 42,
+			  "bonus": 0,
+			  "total": 42
+			}
+		  },
+		  "isBurnApplied": false
+		},
+		"airFulfillmentMethod": [
+		  "ETicket"
+		],
+		"naturalKey": "2019-04-15t22:00:00-07:00-coach-sea-jfk-as-18;",
+		"isPackageable": true
+	  },
+	  {
+		"legIds": [
+		  "4920f8050c4c1d4174d8315fa1d638c9"
+		],
+		"currency": "USD",
+		"baseFare": "181.40",
+		"baseFarePrice": {
+		  "amount": "181.40",
+		  "roundedAmount": "181",
+		  "formattedPrice": "$181.40",
+		  "formattedWholePrice": "$181",
+		  "currencyCode": "USD"
+		},
+		"totalFare": "209.31",
+		"totalFarePrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"totalPrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"pricePerPassengerCategory": [
+		  {
+			"passengerCategory": "ADULT",
+			"totalPrice": {
+			  "amount": "209.31",
+			  "roundedAmount": "209",
+			  "formattedPrice": "$209.31",
+			  "formattedWholePrice": "$209",
+			  "currencyCode": "USD"
+			},
+			"basePrice": {
+			  "amount": "181.40",
+			  "roundedAmount": "181",
+			  "formattedPrice": "$181.40",
+			  "formattedWholePrice": "$181",
+			  "currencyCode": "USD"
+			},
+			"taxesPrice": {
+			  "amount": "27.91",
+			  "roundedAmount": "28",
+			  "formattedPrice": "$27.91",
+			  "formattedWholePrice": "$28",
+			  "currencyCode": "USD"
+			}
+		  }
+		],
+		"averageTotalPricePerTicket": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"numberOfTickets": 1,
+		"taxes": "27.91",
+		"taxesPrice": {
+		  "amount": "27.91",
+		  "roundedAmount": "28",
+		  "formattedPrice": "$27.91",
+		  "formattedWholePrice": "$28",
+		  "currencyCode": "USD"
+		},
+		"fees": "0.00",
+		"feesPrice": {
+		  "amount": "0.00",
+		  "roundedAmount": "0",
+		  "formattedPrice": "$0.00",
+		  "formattedWholePrice": "$0",
+		  "currencyCode": "USD"
+		},
+		"showFees": true,
+		"productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-17-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQoiCiAIxJgBEgQxMTIwGJIBIKlRKJXbqQEw4N2pAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+		"mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-17-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQoiCiAIxJgBEgQxMTIwGJIBIKlRKJXbqQEw4N2pAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+		"seatsRemaining": 9,
+		"segmentAttributes": [
+		  [
+			{
+			  "bookingCode": "E",
+			  "cabinCode": "coach",
+			  "isBasicEconomySegment": true
+			}
+		  ]
+		],
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=1120&langid=1033",
+		"fareType": "PUBLISHED",
+		"isInternational": false,
+		"isPassportNeeded": false,
+		"mayChargeOBFees": false,
+		"hasBagFee": false,
+		"hasNoBagFee": false,
+		"isSplitTicket": false,
+		"loyaltyInfo": {
+		  "earn": {
+			"points": {
+			  "base": 42,
+			  "bonus": 0,
+			  "total": 42
+			}
+		  },
+		  "isBurnApplied": false
+		},
+		"airFulfillmentMethod": [
+		  "ETicket"
+		],
+		"naturalKey": "2019-04-15t15:45:00-07:00-coach-sea-jfk-dl-1120;",
+		"isPackageable": true
+	  },
+	  {
+		"legIds": [
+		  "c60b17abd8af0026322873694fe26de9"
+		],
+		"currency": "USD",
+		"baseFare": "181.40",
+		"baseFarePrice": {
+		  "amount": "181.40",
+		  "roundedAmount": "181",
+		  "formattedPrice": "$181.40",
+		  "formattedWholePrice": "$181",
+		  "currencyCode": "USD"
+		},
+		"totalFare": "209.31",
+		"totalFarePrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"totalPrice": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"pricePerPassengerCategory": [
+		  {
+			"passengerCategory": "ADULT",
+			"totalPrice": {
+			  "amount": "209.31",
+			  "roundedAmount": "209",
+			  "formattedPrice": "$209.31",
+			  "formattedWholePrice": "$209",
+			  "currencyCode": "USD"
+			},
+			"basePrice": {
+			  "amount": "181.40",
+			  "roundedAmount": "181",
+			  "formattedPrice": "$181.40",
+			  "formattedWholePrice": "$181",
+			  "currencyCode": "USD"
+			},
+			"taxesPrice": {
+			  "amount": "27.91",
+			  "roundedAmount": "28",
+			  "formattedPrice": "$27.91",
+			  "formattedWholePrice": "$28",
+			  "currencyCode": "USD"
+			}
+		  }
+		],
+		"averageTotalPricePerTicket": {
+		  "amount": "209.31",
+		  "roundedAmount": "209",
+		  "formattedPrice": "$209.31",
+		  "formattedWholePrice": "$209",
+		  "currencyCode": "USD"
+		},
+		"numberOfTickets": 1,
+		"taxes": "27.91",
+		"taxesPrice": {
+		  "amount": "27.91",
+		  "roundedAmount": "28",
+		  "formattedPrice": "$27.91",
+		  "formattedWholePrice": "$28",
+		  "currencyCode": "USD"
+		},
+		"fees": "0.00",
+		"feesPrice": {
+		  "amount": "0.00",
+		  "roundedAmount": "0",
+		  "formattedPrice": "$0.00",
+		  "formattedWholePrice": "$0",
+		  "currencyCode": "USD"
+		},
+		"showFees": true,
+		"productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-30-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQoiCiAIxJgBEgQyMjE4GJIBIKlRKLPXqQEw_9mpAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+		"mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-30-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQoiCiAIxJgBEgQyMjE4GJIBIKlRKLPXqQEw_9mpAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+		"seatsRemaining": 9,
+		"segmentAttributes": [
+		  [
+			{
+			  "bookingCode": "E",
+			  "cabinCode": "coach",
+			  "isBasicEconomySegment": true
+			}
+		  ]
+		],
+		"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=2218&langid=1033",
+		"fareType": "PUBLISHED",
+		"isInternational": false,
+		"isPassportNeeded": false,
+		"mayChargeOBFees": false,
+		"hasBagFee": false,
+		"hasNoBagFee": false,
+		"isSplitTicket": false,
+		"loyaltyInfo": {
+		  "earn": {
+			"points": {
+			  "base": 42,
+			  "bonus": 0,
+			  "total": 42
+			}
+		  },
+		  "isBurnApplied": false
+		},
+		"airFulfillmentMethod": [
+		  "ETicket"
+		],
+		"naturalKey": "2019-04-15t07:43:00-07:00-coach-sea-jfk-dl-2218;",
+		"isPackageable": true
+	  }
+	  
+	],
+	"searchCities": [
+	  {
+		"code": "SEA",
+		"city": "Seattle",
+		"province": "WA",
+		"country": "United States",
+		"searchType": "AIRPORT"
+	  },
+	  {
+		"code": "JFK",
+		"city": "New York",
+		"province": "NY",
+		"country": "United States",
+		"searchType": "AIRPORT"
+	  }
+	],
+	"obFeesDetails": "https://www.expedia.com/api/flight/obFeeCostSummary?langid=1033",
+	"activityId": "e083aa26-523c-4af0-a7cd-e3ec878089a0",
+	"hasSubPub": false,
+	"mayChargePaymentFees": false
+  }

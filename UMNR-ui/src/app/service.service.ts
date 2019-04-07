@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+const headers = {
+  headers: new HttpHeaders({ 
+    'key':'4f8ce657-ee06-4527-a8d8-4b207f8f0d62' 
+  })
 };
 
 @Injectable({
@@ -10,7 +12,7 @@ const httpOptions = {
 })
 export class Service {
   constructor(private http: HttpClient) { }
-  getData(url){
-    return this.http.get(url,httpOptions);
+  getData(url: string){
+    return this.http.get(url,headers);
   }
 }

@@ -123,35 +123,35 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
+        <tr *ngFor="let flightdata of shoppingResponse.legs; let i = index">
           <td>
               <input type="radio" required value="{{i}}" id="selectTrip" name="selectTrip">
           </td>
           <td>
             <div>
-                {{flightdata.MarketingCarrierName}}
+                {{flightdata.segments[0].airlineName}}
             </div>
             <div>
-                {{flightdata.OperatingCarrierCode}} {{flightdata.OperatingFlightNumber}}
+                {{flightdata.segments[0].airlineCode}} {{flightdata.segments[0].flightNumber}}
             </div>
             <div>
-              {{flightdata.DeptAirportCode}} --> {{flightdata.ArrAirportCode}}
+              {{flightdata.segments[0].departureAirportCode}} --> {{flightdata.segments[0].arrivalAirportCode}}
             </div>
             <div>
               <a class="viewSeat" (click)="openDialog()" >View Seat</a>
             </div>
           </td>
           <td>
-              {{flightdata.DeptDate}} {{flightdata.DeptTime}}
+              {{flightdata.segments[0].departureTime}}
           </td>
           <td>
-              {{flightdata.ArrDate}} {{flightdata.ArrTime}}
+              {{flightdata.segments[0].arrivalTime}}
           </td>
           <td>
-              3 hours
+            {{flightdata.segments[0].duration}}
           </td>
           <td>
-              {{flightdata.TotalFareAmount}}
+              {{shoppingResponse.offers[i].totalFarePrice.formattedPrice}}
           </td>
         </tr>
       </tbody>

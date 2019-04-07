@@ -1,0 +1,4757 @@
+{
+    "legs": [
+        {
+			"legId": "8d65082b9a6fb03c2e430cd813633493",
+			"fareBasisCode": "UA7VA0BC",
+			"travelDuration": "PT5H22M",
+			"elapsedDays": 1,
+			"totalTravelDistance": 2397,
+			"totalTravelDistanceUnits": "miles",
+			"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=824&langid=1033",
+			"segments": [
+			  {
+				"departureTime": "April 15, 2019 10:40:00 PM",
+				"departureTimeEpochSeconds": 1555393200,
+				"departureTimeRaw": "2019-04-15T22:40:00.000-07:00",
+				"departureTimeZoneOffsetSeconds": -25200,
+				"arrivalTime": "April 16, 2019 7:02:00 AM",
+				"arrivalTimeEpochSeconds": 1555412520,
+				"arrivalTimeRaw": "2019-04-16T07:02:00.000-04:00",
+				"arrivalTimeZoneOffsetSeconds": -14400,
+				"arrivalAirportCode": "JFK",
+				"arrivalAirportLocation": "New York, USA",
+				"arrivalAirportLatitude": 40.644166,
+				"arrivalAirportLongitude": -73.782548,
+				"arrivalAirportName": "John F. Kennedy Intl.",
+				"arrivalAirportAddress": {
+				  "city": "New York",
+				  "state": " NY",
+				  "country": "USA"
+				},
+				"departureAirportCode": "SEA",
+				"departureAirportLocation": "Seattle, USA",
+				"departureAirportLatitude": 47.44363,
+				"departureAirportLongitude": -122.30175,
+				"departureAirportName": "Seattle - Tacoma Intl.",
+				"departureAirportAddress": {
+				  "city": "Seattle",
+				  "state": " WA",
+				  "country": "USA"
+				},
+				"airlineName": "Delta",
+				"airlineCode": "DL",
+				"externalAirlineCode": "DL",
+				"flightNumber": "824",
+				"onTimePercentage": "70",
+				"equipmentCode": "739",
+				"equipmentDescription": "Boeing 737-900",
+				"duration": "PT5H22M",
+				"durationInSeconds": 19320,
+				"elapsedDays": 1,
+				"distance": 2397,
+				"distanceUnits": "miles",
+				"stops": 0,
+				"providerCode": "Sabre",
+				"hasSeatMap": true
+			  }
+			],
+			"freeCancellationBy": {
+			  "raw": "2019-04-08T23:59:00Z",
+			  "localized": "Apr 8, 2019 11:59:00 PM",
+			  "epochSeconds": 1554767940,
+			  "timeZoneOffsetSeconds": 0,
+			  "localizedShortDate": "Mon, 8 Apr",
+			  "localizedMediumDate": "Apr 8, 2019",
+			  "localizedFullDate": "Monday, April 8, 2019",
+			  "localizedLongDate": "April 8, 2019",
+			  "localizedShortTime": "11:59 PM"
+			},
+			"isBasicEconomy": true,
+			"basicEconomyTooltipInfo": [
+			  {
+				"fareRulesTitle": "Delta Basic Economy Fare",
+				"fareRules": [
+				  "Seats assigned after check-in.",
+				  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+				]
+			  }
+			],
+			"isRefundable": false,
+			"isNonStop": true
+		  },
+		  {
+			"legId": "98f141b2d42559cc9a53a8951aad4795",
+			"fareBasisCode": "GH7OAVBN",
+			"travelDuration": "PT5H25M",
+			"elapsedDays": 1,
+			"totalTravelDistance": 2397,
+			"totalTravelDistanceUnits": "miles",
+			"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=VA7NA0BA&bookingclass=X&travelDate=2019-04-15&flightNumber=18&langid=1033",
+			"segments": [
+			  {
+				"departureTime": "April 15, 2019 10:00:00 PM",
+				"departureTimeEpochSeconds": 1555390800,
+				"departureTimeRaw": "2019-04-15T22:00:00.000-07:00",
+				"departureTimeZoneOffsetSeconds": -25200,
+				"arrivalTime": "April 16, 2019 6:25:00 AM",
+				"arrivalTimeEpochSeconds": 1555410300,
+				"arrivalTimeRaw": "2019-04-16T06:25:00.000-04:00",
+				"arrivalTimeZoneOffsetSeconds": -14400,
+				"arrivalAirportCode": "JFK",
+				"arrivalAirportLocation": "New York, USA",
+				"arrivalAirportLatitude": 40.644166,
+				"arrivalAirportLongitude": -73.782548,
+				"arrivalAirportName": "John F. Kennedy Intl.",
+				"arrivalAirportAddress": {
+				  "city": "New York",
+				  "state": " NY",
+				  "country": "USA"
+				},
+				"departureAirportCode": "SEA",
+				"departureAirportLocation": "Seattle, USA",
+				"departureAirportLatitude": 47.44363,
+				"departureAirportLongitude": -122.30175,
+				"departureAirportName": "Seattle - Tacoma Intl.",
+				"departureAirportAddress": {
+				  "city": "Seattle",
+				  "state": " WA",
+				  "country": "USA"
+				},
+				"airlineName": "Alaska Airlines",
+				"airlineCode": "AS",
+				"externalAirlineCode": "AS",
+				"flightNumber": "18",
+				"equipmentCode": "73J",
+				"equipmentDescription": "Boeing 737-900",
+				"duration": "PT5H25M",
+				"durationInSeconds": 19500,
+				"elapsedDays": 1,
+				"distance": 2397,
+				"distanceUnits": "miles",
+				"stops": 0,
+				"providerCode": "Sabre",
+				"hasSeatMap": true
+			  }
+			],
+			"freeCancellationBy": {
+			  "raw": "2019-04-08T23:59:00Z",
+			  "localized": "Apr 8, 2019 11:59:00 PM",
+			  "epochSeconds": 1554767940,
+			  "timeZoneOffsetSeconds": 0,
+			  "localizedShortDate": "Mon, 8 Apr",
+			  "localizedMediumDate": "Apr 8, 2019",
+			  "localizedFullDate": "Monday, April 8, 2019",
+			  "localizedLongDate": "April 8, 2019",
+			  "localizedShortTime": "11:59 PM"
+			},
+			"isBasicEconomy": true,
+			"basicEconomyTooltipInfo": [
+			  {
+				"fareRulesTitle": "Alaska Airlines Basic Economy Fare",
+				"fareRules": [
+				  "Airline assigns seats",
+				  "Bring a carry-on bag"
+				]
+			  }
+			],
+			"isRefundable": false,
+			"isNonStop": true
+		  },
+		  {
+			"legId": "4920f8050c4c1d4174d8315fa1d638c9",
+			"fareBasisCode": "UA7VA0BC",
+			"travelDuration": "PT5H31M",
+			"elapsedDays": 1,
+			"totalTravelDistance": 2397,
+			"totalTravelDistanceUnits": "miles",
+			"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=1120&langid=1033",
+			"segments": [
+			  {
+				"departureTime": "April 15, 2019 3:45:00 PM",
+				"departureTimeEpochSeconds": 1555368300,
+				"departureTimeRaw": "2019-04-15T15:45:00.000-07:00",
+				"departureTimeZoneOffsetSeconds": -25200,
+				"arrivalTime": "April 16, 2019 12:16:00 AM",
+				"arrivalTimeEpochSeconds": 1555388160,
+				"arrivalTimeRaw": "2019-04-16T00:16:00.000-04:00",
+				"arrivalTimeZoneOffsetSeconds": -14400,
+				"arrivalAirportCode": "JFK",
+				"arrivalAirportLocation": "New York, USA",
+				"arrivalAirportLatitude": 40.644166,
+				"arrivalAirportLongitude": -73.782548,
+				"arrivalAirportName": "John F. Kennedy Intl.",
+				"arrivalAirportAddress": {
+				  "city": "New York",
+				  "state": " NY",
+				  "country": "USA"
+				},
+				"departureAirportCode": "SEA",
+				"departureAirportLocation": "Seattle, USA",
+				"departureAirportLatitude": 47.44363,
+				"departureAirportLongitude": -122.30175,
+				"departureAirportName": "Seattle - Tacoma Intl.",
+				"departureAirportAddress": {
+				  "city": "Seattle",
+				  "state": " WA",
+				  "country": "USA"
+				},
+				"airlineName": "Delta",
+				"airlineCode": "DL",
+				"externalAirlineCode": "DL",
+				"flightNumber": "1120",
+				"equipmentCode": "757",
+				"equipmentDescription": "Boeing 757",
+				"duration": "PT5H31M",
+				"durationInSeconds": 19860,
+				"elapsedDays": 1,
+				"distance": 2397,
+				"distanceUnits": "miles",
+				"stops": 0,
+				"meal": "Lunch",
+				"providerCode": "Sabre",
+				"hasSeatMap": true
+			  }
+			],
+			"freeCancellationBy": {
+			  "raw": "2019-04-08T23:59:00Z",
+			  "localized": "Apr 8, 2019 11:59:00 PM",
+			  "epochSeconds": 1554767940,
+			  "timeZoneOffsetSeconds": 0,
+			  "localizedShortDate": "Mon, 8 Apr",
+			  "localizedMediumDate": "Apr 8, 2019",
+			  "localizedFullDate": "Monday, April 8, 2019",
+			  "localizedLongDate": "April 8, 2019",
+			  "localizedShortTime": "11:59 PM"
+			},
+			"isBasicEconomy": true,
+			"basicEconomyTooltipInfo": [
+			  {
+				"fareRulesTitle": "Delta Basic Economy Fare",
+				"fareRules": [
+				  "Seats assigned after check-in.",
+				  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+				]
+			  }
+			],
+			"isRefundable": false,
+			"isNonStop": true
+		  },
+		  {
+			"legId": "c60b17abd8af0026322873694fe26de9",
+			"fareBasisCode": "UA7VA0BC",
+			"travelDuration": "PT5H32M",
+			"elapsedDays": 0,
+			"totalTravelDistance": 2397,
+			"totalTravelDistanceUnits": "miles",
+			"baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=2218&langid=1033",
+			"segments": [
+			  {
+				"departureTime": "April 15, 2019 7:43:00 AM",
+				"departureTimeEpochSeconds": 1555339380,
+				"departureTimeRaw": "2019-04-15T07:43:00.000-07:00",
+				"departureTimeZoneOffsetSeconds": -25200,
+				"arrivalTime": "April 15, 2019 4:15:00 PM",
+				"arrivalTimeEpochSeconds": 1555359300,
+				"arrivalTimeRaw": "2019-04-15T16:15:00.000-04:00",
+				"arrivalTimeZoneOffsetSeconds": -14400,
+				"arrivalAirportCode": "JFK",
+				"arrivalAirportLocation": "New York, USA",
+				"arrivalAirportLatitude": 40.644166,
+				"arrivalAirportLongitude": -73.782548,
+				"arrivalAirportName": "John F. Kennedy Intl.",
+				"arrivalAirportAddress": {
+				  "city": "New York",
+				  "state": " NY",
+				  "country": "USA"
+				},
+				"departureAirportCode": "SEA",
+				"departureAirportLocation": "Seattle, USA",
+				"departureAirportLatitude": 47.44363,
+				"departureAirportLongitude": -122.30175,
+				"departureAirportName": "Seattle - Tacoma Intl.",
+				"departureAirportAddress": {
+				  "city": "Seattle",
+				  "state": " WA",
+				  "country": "USA"
+				},
+				"airlineName": "Delta",
+				"airlineCode": "DL",
+				"externalAirlineCode": "DL",
+				"flightNumber": "2218",
+				"onTimePercentage": "80",
+				"equipmentCode": "739",
+				"equipmentDescription": "Boeing 737-900",
+				"duration": "PT5H32M",
+				"durationInSeconds": 19920,
+				"elapsedDays": 0,
+				"distance": 2397,
+				"distanceUnits": "miles",
+				"stops": 0,
+				"meal": "Breakfast",
+				"providerCode": "Sabre",
+				"hasSeatMap": true
+			  }
+			],
+			"freeCancellationBy": {
+			  "raw": "2019-04-08T23:59:00Z",
+			  "localized": "Apr 8, 2019 11:59:00 PM",
+			  "epochSeconds": 1554767940,
+			  "timeZoneOffsetSeconds": 0,
+			  "localizedShortDate": "Mon, 8 Apr",
+			  "localizedMediumDate": "Apr 8, 2019",
+			  "localizedFullDate": "Monday, April 8, 2019",
+			  "localizedLongDate": "April 8, 2019",
+			  "localizedShortTime": "11:59 PM"
+			},
+			"isBasicEconomy": true,
+			"basicEconomyTooltipInfo": [
+			  {
+				"fareRulesTitle": "Delta Basic Economy Fare",
+				"fareRules": [
+				  "Seats assigned after check-in.",
+				  "Cancellations are permitted within 24 hours of booking. After 24 hours, tickets are non-refundable."
+				]
+			  }
+			],
+			"isRefundable": false,
+			"isNonStop": true
+		  }
+    ],
+    "offers": [
+        {
+            "legIds": [
+                "f0e55196c480ff0311ca8741a781f76d"
+            ],
+            "currency": "USD",
+            "baseFare": "159.07",
+            "baseFarePrice": {
+                "amount": "159.07",
+                "roundedAmount": "159",
+                "formattedPrice": "$159.07",
+                "formattedWholePrice": "$159",
+                "currencyCode": "USD"
+            },
+            "totalFare": "198.20",
+            "totalFarePrice": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "198.20",
+                        "roundedAmount": "198",
+                        "formattedPrice": "$198.20",
+                        "formattedWholePrice": "$198",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "159.07",
+                        "roundedAmount": "159",
+                        "formattedPrice": "$159.07",
+                        "formattedWholePrice": "$159",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "39.13",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$39.13",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "39.13",
+            "taxesPrice": {
+                "amount": "39.13",
+                "roundedAmount": "39",
+                "formattedPrice": "$39.13",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-5-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpnCh8IxJgBEgM3NjIYkgEg4Fwo3N6pATD44KkBOEVAAFgBCiEIxJgBEgQyMjU3GOBcIOKRASjB4akBMIfiqQE4RUABWAEKIQjEmAESBDE1OTIY4pEBIKlRKO7iqQEw4-OpAThFQAFYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-5-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpnCh8IxJgBEgM3NjIYkgEg4Fwo3N6pATD44KkBOEVAAFgBCiEIxJgBEgQyMjU3GOBcIOKRASjB4akBMIfiqQE4RUABWAEKIQjEmAESBDE1OTIY4pEBIKlRKO7iqQEw4-OpAThFQAFYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=762&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 40,
+                        "bonus": 0,
+                        "total": 40
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t23:20:00-07:00-coach-sea-atl-dl-762-coach-atl-chs-dl-2257-coach-chs-jfk-dl-1592;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "9a412cf4251e91d828de55d286d206bd"
+            ],
+            "currency": "USD",
+            "baseFare": "159.07",
+            "baseFarePrice": {
+                "amount": "159.07",
+                "roundedAmount": "159",
+                "formattedPrice": "$159.07",
+                "formattedWholePrice": "$159",
+                "currencyCode": "USD"
+            },
+            "totalFare": "198.20",
+            "totalFarePrice": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "198.20",
+                        "roundedAmount": "198",
+                        "formattedPrice": "$198.20",
+                        "formattedWholePrice": "$198",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "159.07",
+                        "roundedAmount": "159",
+                        "formattedPrice": "$159.07",
+                        "formattedWholePrice": "$159",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "39.13",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$39.13",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "198.20",
+                "roundedAmount": "198",
+                "formattedPrice": "$198.20",
+                "formattedWholePrice": "$198",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "39.13",
+            "taxesPrice": {
+                "amount": "39.13",
+                "roundedAmount": "39",
+                "formattedPrice": "$39.13",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-6-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpoCiAIxJgBEgQyNzE2GJIBIOBcKIzeqQEwqOCpAThFQABYAQohCMSYARIEMjI1NxjgXCDikQEoweGpATCH4qkBOEVAAVgBCiEIxJgBEgQxNTkyGOKRASCpUSju4qkBMOPjqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-6-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpoCiAIxJgBEgQyNzE2GJIBIOBcKIzeqQEwqOCpAThFQABYAQohCMSYARIEMjI1NxjgXCDikQEoweGpATCH4qkBOEVAAVgBCiEIxJgBEgQxNTkyGOKRASCpUSju4qkBMOPjqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=VA7NA0BA&bookingclass=E&travelDate=2019-04-15&flightNumber=2716&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 40,
+                        "bonus": 0,
+                        "total": 40
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:00:00-07:00-coach-sea-atl-dl-2716-coach-atl-chs-dl-2257-coach-chs-jfk-dl-1592;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "8d65082b9a6fb03c2e430cd813633493"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "209.31",
+            "totalFarePrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "209.31",
+                        "roundedAmount": "209",
+                        "formattedPrice": "$209.31",
+                        "formattedWholePrice": "$209",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "27.91",
+                        "roundedAmount": "28",
+                        "formattedPrice": "$27.91",
+                        "formattedWholePrice": "$28",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "27.91",
+            "taxesPrice": {
+                "amount": "27.91",
+                "roundedAmount": "28",
+                "formattedPrice": "$27.91",
+                "formattedWholePrice": "$28",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-2-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQohCh8IxJgBEgM4MjQYkgEgqVEotN6pATD24KkBOEVAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-2-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQohCh8IxJgBEgM4MjQYkgEgqVEotN6pATD24KkBOEVAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=824&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 42,
+                        "bonus": 0,
+                        "total": 42
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:40:00-07:00-coach-sea-jfk-dl-824;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "98f141b2d42559cc9a53a8951aad4795"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "209.31",
+            "totalFarePrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "209.31",
+                        "roundedAmount": "209",
+                        "formattedPrice": "$209.31",
+                        "formattedWholePrice": "$209",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "27.91",
+                        "roundedAmount": "28",
+                        "formattedPrice": "$27.91",
+                        "formattedWholePrice": "$28",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "27.91",
+            "taxesPrice": {
+                "amount": "27.91",
+                "roundedAmount": "28",
+                "formattedPrice": "$27.91",
+                "formattedWholePrice": "$28",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-10-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQogCh4IwaYBEgIxOBiSASCpUSiM3qkBMNHgqQE4WEAAWAESCggBEAEYASoCQVMYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-10-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQogCh4IwaYBEgIxOBiSASCpUSiM3qkBMNHgqQE4WEAAWAESCggBEAEYASoCQVMYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "X",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=GH7OAVBN&bookingclass=X&travelDate=2019-04-15&flightNumber=18&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 42,
+                        "bonus": 0,
+                        "total": 42
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:00:00-07:00-coach-sea-jfk-as-18;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "4920f8050c4c1d4174d8315fa1d638c9"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "209.31",
+            "totalFarePrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "209.31",
+                        "roundedAmount": "209",
+                        "formattedPrice": "$209.31",
+                        "formattedWholePrice": "$209",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "27.91",
+                        "roundedAmount": "28",
+                        "formattedPrice": "$27.91",
+                        "formattedWholePrice": "$28",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "27.91",
+            "taxesPrice": {
+                "amount": "27.91",
+                "roundedAmount": "28",
+                "formattedPrice": "$27.91",
+                "formattedWholePrice": "$28",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-17-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQoiCiAIxJgBEgQxMTIwGJIBIKlRKJXbqQEw4N2pAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-17-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQoiCiAIxJgBEgQxMTIwGJIBIKlRKJXbqQEw4N2pAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=1120&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 42,
+                        "bonus": 0,
+                        "total": 42
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t15:45:00-07:00-coach-sea-jfk-dl-1120;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "c60b17abd8af0026322873694fe26de9"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "209.31",
+            "totalFarePrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "209.31",
+                        "roundedAmount": "209",
+                        "formattedPrice": "$209.31",
+                        "formattedWholePrice": "$209",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "27.91",
+                        "roundedAmount": "28",
+                        "formattedPrice": "$27.91",
+                        "formattedWholePrice": "$28",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "27.91",
+            "taxesPrice": {
+                "amount": "27.91",
+                "roundedAmount": "28",
+                "formattedPrice": "$27.91",
+                "formattedWholePrice": "$28",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-30-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQoiCiAIxJgBEgQyMjE4GJIBIKlRKLPXqQEw_9mpAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-30-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQoiCiAIxJgBEgQyMjE4GJIBIKlRKLPXqQEw_9mpAThFQABYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=UA7VA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=2218&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 42,
+                        "bonus": 0,
+                        "total": 42
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t07:43:00-07:00-coach-sea-jfk-dl-2218;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "523f8af7eb1d070ab52a5723e297e378"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "209.31",
+            "totalFarePrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "209.31",
+                        "roundedAmount": "209",
+                        "formattedPrice": "$209.31",
+                        "formattedWholePrice": "$209",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "27.91",
+                        "roundedAmount": "28",
+                        "formattedPrice": "$27.91",
+                        "formattedWholePrice": "$28",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "209.31",
+                "roundedAmount": "209",
+                "formattedPrice": "$209.31",
+                "formattedWholePrice": "$209",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "27.91",
+            "taxesPrice": {
+                "amount": "27.91",
+                "roundedAmount": "28",
+                "formattedPrice": "$27.91",
+                "formattedWholePrice": "$28",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-16-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQohCh8IwaYBEgM0MjYYkgEgqVEondqpATDs3KkBOFhAAFgBEgoIARABGAEqAkFTGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-16-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQohCh8IwaYBEgM0MjYYkgEgqVEondqpATDs3KkBOFhAAFgBEgoIARABGAEqAkFTGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "X",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=GH7OAVBN&bookingclass=X&travelDate=2019-04-15&flightNumber=426&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 42,
+                        "bonus": 0,
+                        "total": 42
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t13:45:00-07:00-coach-sea-jfk-as-426;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "47019e24e272f4c59481ea153384d43e"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "216.51",
+            "totalFarePrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "216.51",
+                        "roundedAmount": "217",
+                        "formattedPrice": "$216.51",
+                        "formattedWholePrice": "$217",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "35.11",
+                        "roundedAmount": "35",
+                        "formattedPrice": "$35.11",
+                        "formattedWholePrice": "$35",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "35.11",
+            "taxesPrice": {
+                "amount": "35.11",
+                "roundedAmount": "35",
+                "formattedPrice": "$35.11",
+                "formattedWholePrice": "$35",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-3-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAIwYIBEgM2MDAYkgEg4poBKKHeqQEwy-CpAThCQABYAQogCMGCARIDMjE3GOKaASCpUSiS4akBMI_iqQE4QkABWAESCggBEAEYASoCQUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-3-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAIwYIBEgM2MDAYkgEg4poBKKHeqQEwy-CpAThCQABYAQogCMGCARIDMjE3GOKaASCpUSiS4akBMI_iqQE4QkABWAESCggBEAEYASoCQUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=600&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 43,
+                        "bonus": 0,
+                        "total": 43
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:21:00-07:00-coach-sea-clt-aa-600-coach-clt-jfk-aa-217;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "f33d00f366f4c46253c441c607fd9be2"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "216.51",
+            "totalFarePrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "216.51",
+                        "roundedAmount": "217",
+                        "formattedPrice": "$216.51",
+                        "formattedWholePrice": "$217",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "35.11",
+                        "roundedAmount": "35",
+                        "formattedPrice": "$35.11",
+                        "formattedWholePrice": "$35",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "35.11",
+            "taxesPrice": {
+                "amount": "35.11",
+                "roundedAmount": "35",
+                "formattedPrice": "$35.11",
+                "formattedWholePrice": "$35",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-26-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIwYIBEgQxNTg5GJIBIOKaASjc2akBMJTcqQE4QkAAWAEKIQjBggESBDE5MjgY4poBIKlRKNvcqQEwz92pAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-26-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIwYIBEgQxNTg5GJIBIOKaASjc2akBMJTcqQE4QkAAWAEKIQjBggESBDE5MjgY4poBIKlRKNvcqQEwz92pAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=1589&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 43,
+                        "bonus": 0,
+                        "total": 43
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t12:40:00-07:00-coach-sea-clt-aa-1589-coach-clt-jfk-aa-1928;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "55e7a4230a9854feba6e8c8bf0ca0c7d"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "216.51",
+            "totalFarePrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "216.51",
+                        "roundedAmount": "217",
+                        "formattedPrice": "$216.51",
+                        "formattedWholePrice": "$217",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "35.11",
+                        "roundedAmount": "35",
+                        "formattedPrice": "$35.11",
+                        "formattedWholePrice": "$35",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "216.51",
+                "roundedAmount": "217",
+                "formattedPrice": "$216.51",
+                "formattedWholePrice": "$217",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "35.11",
+            "taxesPrice": {
+                "amount": "35.11",
+                "roundedAmount": "35",
+                "formattedPrice": "$35.11",
+                "formattedWholePrice": "$35",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-18-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpFCiAIwYIBEgM2MDAYkgEg4poBKKHeqQEwy-CpAThCQABYAQohCMGCARIEMTgzMxjimgEgqVEoo-KpATCm46kBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-18-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpFCiAIwYIBEgM2MDAYkgEg4poBKKHeqQEwy-CpAThCQABYAQohCMGCARIEMTgzMxjimgEgqVEoo-KpATCm46kBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=600&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 43,
+                        "bonus": 0,
+                        "total": 43
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:21:00-07:00-coach-sea-clt-aa-600-coach-clt-jfk-aa-1833;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "428ee398e2ada6827a7efa5c0c099be1"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "218.01",
+            "totalFarePrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "218.01",
+                        "roundedAmount": "218",
+                        "formattedPrice": "$218.01",
+                        "formattedWholePrice": "$218",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "36.61",
+                        "roundedAmount": "37",
+                        "formattedPrice": "$36.61",
+                        "formattedWholePrice": "$37",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "36.61",
+            "taxesPrice": {
+                "amount": "36.61",
+                "roundedAmount": "37",
+                "formattedPrice": "$36.61",
+                "formattedWholePrice": "$37",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-34-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIwYIBEgQyNDczGJIBIKOxASjs06kBMMzVqQE4QkAAWAEKIQjBggESBDI1NTEYo7EBIKlRKIvWqQEw59epAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-34-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIwYIBEgQyNDczGJIBIKOxASjs06kBMMzVqQE4QkAAWAEKIQjBggESBDI1NTEYo7EBIKlRKIvWqQEw59epAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=2473&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 44,
+                        "bonus": 0,
+                        "total": 44
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t00:08:00-07:00-coach-sea-dfw-aa-2473-coach-dfw-jfk-aa-2551;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "b8d6c4b469d866b596e710332c2602b1"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "218.01",
+            "totalFarePrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "218.01",
+                        "roundedAmount": "218",
+                        "formattedPrice": "$218.01",
+                        "formattedWholePrice": "$218",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "36.61",
+                        "roundedAmount": "37",
+                        "formattedPrice": "$36.61",
+                        "formattedWholePrice": "$37",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "36.61",
+            "taxesPrice": {
+                "amount": "36.61",
+                "roundedAmount": "37",
+                "formattedPrice": "$36.61",
+                "formattedWholePrice": "$37",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-14-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpFCiAIwYIBEgM0MDgYkgEg77kBKKHcqQEw0d2pAThCQABYAQohCMGCARIEMTI4MBjvuQEgqVEoiN6pATCp4KkBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-14-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpFCiAIwYIBEgM0MDgYkgEg77kBKKHcqQEw0d2pAThCQABYAQohCMGCARIEMTI4MBjvuQEgqVEoiN6pATCp4KkBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=408&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 44,
+                        "bonus": 0,
+                        "total": 44
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t18:05:00-07:00-coach-sea-phx-aa-408-coach-phx-jfk-aa-1280;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "b4772bae71a85fabdd57c91a11dfd3cc"
+            ],
+            "currency": "USD",
+            "baseFare": "181.40",
+            "baseFarePrice": {
+                "amount": "181.40",
+                "roundedAmount": "181",
+                "formattedPrice": "$181.40",
+                "formattedWholePrice": "$181",
+                "currencyCode": "USD"
+            },
+            "totalFare": "218.01",
+            "totalFarePrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "218.01",
+                        "roundedAmount": "218",
+                        "formattedPrice": "$218.01",
+                        "formattedWholePrice": "$218",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "181.40",
+                        "roundedAmount": "181",
+                        "formattedPrice": "$181.40",
+                        "formattedWholePrice": "$181",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "36.61",
+                        "roundedAmount": "37",
+                        "formattedPrice": "$36.61",
+                        "formattedWholePrice": "$37",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "218.01",
+                "roundedAmount": "218",
+                "formattedPrice": "$218.01",
+                "formattedWholePrice": "$218",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "36.61",
+            "taxesPrice": {
+                "amount": "36.61",
+                "roundedAmount": "37",
+                "formattedPrice": "$36.61",
+                "formattedWholePrice": "$37",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-7-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpFCiAIwYIBEgM0MDgYkgEg77kBKKHcqQEw0d2pAThCQABYAQohCMGCARIEMjY1MRjvuQEgqVEo1N6pATD24KkBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-7-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpFCiAIwYIBEgM0MDgYkgEg77kBKKHcqQEw0d2pAThCQABYAQohCMGCARIEMjY1MRjvuQEgqVEo1N6pATD24KkBOEJAAVgBEgoIARABGAEqAkFBGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=G7AGZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=408&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 44,
+                        "bonus": 0,
+                        "total": 44
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t18:05:00-07:00-coach-sea-phx-aa-408-coach-phx-jfk-aa-2651;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "db98045ed30827741a568c5bc3d234d4"
+            ],
+            "currency": "USD",
+            "baseFare": "195.91",
+            "baseFarePrice": {
+                "amount": "195.91",
+                "roundedAmount": "196",
+                "formattedPrice": "$195.91",
+                "formattedWholePrice": "$196",
+                "currencyCode": "USD"
+            },
+            "totalFare": "224.90",
+            "totalFarePrice": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "224.90",
+                        "roundedAmount": "225",
+                        "formattedPrice": "$224.90",
+                        "formattedWholePrice": "$225",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "195.91",
+                        "roundedAmount": "196",
+                        "formattedPrice": "$195.91",
+                        "formattedWholePrice": "$196",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "28.99",
+                        "roundedAmount": "29",
+                        "formattedPrice": "$28.99",
+                        "formattedWholePrice": "$29",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "28.99",
+            "taxesPrice": {
+                "amount": "28.99",
+                "roundedAmount": "29",
+                "formattedPrice": "$28.99",
+                "formattedWholePrice": "$29",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-28-2~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQogCh4IwmwSAzI2NBiSASCpUSiQ3qkBMNXgqQE4WkAAWAESCggCEAEYAioCQjYYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-28-2%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQogCh4IwmwSAzI2NBiSASCpUSiQ3qkBMNXgqQE4WkAAWAESCggCEAEYAioCQjYYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Z",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=B6&opcarrier=&farebasis=ZC7JUEN5&bookingclass=Z&travelDate=2019-04-15&flightNumber=264&langid=1033",
+            "fareType": "WEB_FLAT",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 45,
+                        "bonus": 0,
+                        "total": 45
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:04:00-07:00-coach-sea-jfk-b6-264;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "d583a25218065d3eb8e7eb585ba9cecf"
+            ],
+            "currency": "USD",
+            "baseFare": "195.91",
+            "baseFarePrice": {
+                "amount": "195.91",
+                "roundedAmount": "196",
+                "formattedPrice": "$195.91",
+                "formattedWholePrice": "$196",
+                "currencyCode": "USD"
+            },
+            "totalFare": "224.90",
+            "totalFarePrice": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "224.90",
+                        "roundedAmount": "225",
+                        "formattedPrice": "$224.90",
+                        "formattedWholePrice": "$225",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "195.91",
+                        "roundedAmount": "196",
+                        "formattedPrice": "$195.91",
+                        "formattedWholePrice": "$196",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "28.99",
+                        "roundedAmount": "29",
+                        "formattedPrice": "$28.99",
+                        "formattedWholePrice": "$29",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "224.90",
+                "roundedAmount": "225",
+                "formattedPrice": "$224.90",
+                "formattedWholePrice": "$225",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "28.99",
+            "taxesPrice": {
+                "amount": "28.99",
+                "roundedAmount": "29",
+                "formattedPrice": "$28.99",
+                "formattedWholePrice": "$29",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-13-2~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQogCh4IwmwSAzQ2NBiSASCpUSjy2akBML7cqQE4WkAAWAESCggCEAEYAioCQjYYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-13-2%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQogCh4IwmwSAzQ2NBiSASCpUSjy2akBML7cqQE4WkAAWAESCggCEAEYAioCQjYYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Z",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=B6&opcarrier=&farebasis=ZC7JUEN5&bookingclass=Z&travelDate=2019-04-15&flightNumber=464&langid=1033",
+            "fareType": "WEB_FLAT",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 45,
+                        "bonus": 0,
+                        "total": 45
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t13:02:00-07:00-coach-sea-jfk-b6-464;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "e20a495a6958ff7afe0ab2feeea590a2"
+            ],
+            "currency": "USD",
+            "baseFare": "200.00",
+            "baseFarePrice": {
+                "amount": "200.00",
+                "roundedAmount": "200",
+                "formattedPrice": "$200.00",
+                "formattedWholePrice": "$200",
+                "currencyCode": "USD"
+            },
+            "totalFare": "238.00",
+            "totalFarePrice": {
+                "amount": "238.00",
+                "roundedAmount": "238",
+                "formattedPrice": "$238.00",
+                "formattedWholePrice": "$238",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "238.00",
+                "roundedAmount": "238",
+                "formattedPrice": "$238.00",
+                "formattedWholePrice": "$238",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "238.00",
+                        "roundedAmount": "238",
+                        "formattedPrice": "$238.00",
+                        "formattedWholePrice": "$238",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "200.00",
+                        "roundedAmount": "200",
+                        "formattedPrice": "$200.00",
+                        "formattedWholePrice": "$200",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "38.00",
+                        "roundedAmount": "38",
+                        "formattedPrice": "$38.00",
+                        "formattedWholePrice": "$38",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "238.00",
+                "roundedAmount": "238",
+                "formattedPrice": "$238.00",
+                "formattedWholePrice": "$238",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "38.00",
+            "taxesPrice": {
+                "amount": "38.00",
+                "roundedAmount": "38",
+                "formattedPrice": "$38.00",
+                "formattedWholePrice": "$38",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-0-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIwYIBEgQxMDc5GJIBIKOxASjL2KkBMLvaqQE4QkAAWAEKIQjBggESBDIyOTIYo7EBIKlRKLjbqQEwlN2pAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-0-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIwYIBEgQxMDc5GJIBIKOxASjL2KkBMLvaqQE4QkAAWAEKIQjBggESBDIyOTIYo7EBIKlRKLjbqQEwlN2pAThCQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 7,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "B",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=V7AJZNB1&bookingclass=B&travelDate=2019-04-15&flightNumber=1079&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 48,
+                        "bonus": 0,
+                        "total": 48
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t10:15:00-07:00-coach-sea-dfw-aa-1079-coach-dfw-jfk-aa-2292;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "d822d5deb5a1d675d74d875eeadab2de"
+            ],
+            "currency": "USD",
+            "baseFare": "210.24",
+            "baseFarePrice": {
+                "amount": "210.24",
+                "roundedAmount": "210",
+                "formattedPrice": "$210.24",
+                "formattedWholePrice": "$210",
+                "currencyCode": "USD"
+            },
+            "totalFare": "249.01",
+            "totalFarePrice": {
+                "amount": "249.01",
+                "roundedAmount": "249",
+                "formattedPrice": "$249.01",
+                "formattedWholePrice": "$249",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "249.01",
+                "roundedAmount": "249",
+                "formattedPrice": "$249.01",
+                "formattedWholePrice": "$249",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "249.01",
+                        "roundedAmount": "249",
+                        "formattedPrice": "$249.01",
+                        "formattedWholePrice": "$249",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "210.24",
+                        "roundedAmount": "210",
+                        "formattedPrice": "$210.24",
+                        "formattedWholePrice": "$210",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "38.77",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$38.77",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "249.01",
+                "roundedAmount": "249",
+                "formattedPrice": "$249.01",
+                "formattedWholePrice": "$249",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "38.77",
+            "taxesPrice": {
+                "amount": "38.77",
+                "roundedAmount": "39",
+                "formattedPrice": "$38.77",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-12-2~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpACh8IwmwSBDI1MDcYkgEgywko09qpATDx26kBOFpAAFgBCh0IwmwSAjE0GMsJIKlRKLzdqQEw99-pAThaQAFYARIKCAIQARgCKgJCNhgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-12-2%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpACh8IwmwSBDI1MDcYkgEgywko09qpATDx26kBOFpAAFgBCh0IwmwSAjE0GMsJIKlRKLzdqQEw99-pAThaQAFYARIKCAIQARgCKgJCNhgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 3,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Z",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Z",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=B6&opcarrier=&farebasis=ZH7AUEN5&bookingclass=Z&travelDate=2019-04-15&flightNumber=2507&langid=1033",
+            "fareType": "WEB_FLAT",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 50,
+                        "bonus": 0,
+                        "total": 50
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t14:39:00-07:00-coach-sea-lgb-b6-2507-coach-lgb-jfk-b6-14;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "84d7a88a55091563864a978343e86f31"
+            ],
+            "currency": "USD",
+            "baseFare": "218.60",
+            "baseFarePrice": {
+                "amount": "218.60",
+                "roundedAmount": "219",
+                "formattedPrice": "$218.60",
+                "formattedWholePrice": "$219",
+                "currencyCode": "USD"
+            },
+            "totalFare": "258.00",
+            "totalFarePrice": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "258.00",
+                        "roundedAmount": "258",
+                        "formattedPrice": "$258.00",
+                        "formattedWholePrice": "$258",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "218.60",
+                        "roundedAmount": "219",
+                        "formattedPrice": "$218.60",
+                        "formattedWholePrice": "$219",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "39.40",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$39.40",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "39.40",
+            "taxesPrice": {
+                "amount": "39.40",
+                "roundedAmount": "39",
+                "formattedPrice": "$39.40",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-15-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAIxJgBEgQxNjc0GJIBIMx8KILUqQEwxNWpAThFQABYAQogCMSYARIEMjYyORjMfCCpUSiS1qkBML3XqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-15-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAIxJgBEgQxNjc0GJIBIMx8KILUqQEwxNWpAThFQABYAQogCMSYARIEMjYyORjMfCCpUSiS1qkBML3XqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=LA3NA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=1674&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 52,
+                        "bonus": 0,
+                        "total": 52
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t00:30:00-07:00-coach-sea-msp-dl-1674-coach-msp-jfk-dl-2629;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "f30907fa94d9d0cc782c8caa0913ea4b"
+            ],
+            "currency": "USD",
+            "baseFare": "218.60",
+            "baseFarePrice": {
+                "amount": "218.60",
+                "roundedAmount": "219",
+                "formattedPrice": "$218.60",
+                "formattedWholePrice": "$219",
+                "currencyCode": "USD"
+            },
+            "totalFare": "258.00",
+            "totalFarePrice": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "258.00",
+                        "roundedAmount": "258",
+                        "formattedPrice": "$258.00",
+                        "formattedWholePrice": "$258",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "218.60",
+                        "roundedAmount": "219",
+                        "formattedPrice": "$218.60",
+                        "formattedWholePrice": "$219",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "39.40",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$39.40",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "258.00",
+                "roundedAmount": "258",
+                "formattedPrice": "$258.00",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "39.40",
+            "taxesPrice": {
+                "amount": "39.40",
+                "roundedAmount": "39",
+                "formattedPrice": "$39.40",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-35-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAIxJgBEgQxNTU1GJIBIPISKLvYqQEws9mpAThFQABYAQogCMSYARIEMTgxNhjyEiCpUSiJ2qkBMJ_cqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-35-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAIxJgBEgQxNTU1GJIBIPISKLvYqQEws9mpAThFQABYAQogCMSYARIEMTgxNhjyEiCpUSiJ2qkBMJ_cqQE4RUABWAESCggBEAEYASoCREwYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    },
+                    {
+                        "bookingCode": "E",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": true
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=LA3NA0BC&bookingclass=E&travelDate=2019-04-15&flightNumber=1555&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 52,
+                        "bonus": 0,
+                        "total": 52
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t09:59:00-07:00-coach-sea-slc-dl-1555-coach-slc-jfk-dl-1816;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "97119322afde8f5401d7fd86b5c5fcbf"
+            ],
+            "currency": "USD",
+            "baseFare": "237.21",
+            "baseFarePrice": {
+                "amount": "237.21",
+                "roundedAmount": "237",
+                "formattedPrice": "$237.21",
+                "formattedWholePrice": "$237",
+                "currencyCode": "USD"
+            },
+            "totalFare": "269.30",
+            "totalFarePrice": {
+                "amount": "269.30",
+                "roundedAmount": "269",
+                "formattedPrice": "$269.30",
+                "formattedWholePrice": "$269",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "269.30",
+                "roundedAmount": "269",
+                "formattedPrice": "$269.30",
+                "formattedWholePrice": "$269",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "269.30",
+                        "roundedAmount": "269",
+                        "formattedPrice": "$269.30",
+                        "formattedWholePrice": "$269",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "237.21",
+                        "roundedAmount": "237",
+                        "formattedPrice": "$237.21",
+                        "formattedWholePrice": "$237",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "32.09",
+                        "roundedAmount": "32",
+                        "formattedPrice": "$32.09",
+                        "formattedWholePrice": "$32",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "269.30",
+                "roundedAmount": "269",
+                "formattedPrice": "$269.30",
+                "formattedWholePrice": "$269",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "32.09",
+            "taxesPrice": {
+                "amount": "32.09",
+                "roundedAmount": "32",
+                "formattedPrice": "$32.09",
+                "formattedWholePrice": "$32",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-25-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQohCh8IxJgBEgMxODIYkgEgqVEokdmpATDg26kBOEtAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-25-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQohCh8IxJgBEgMxODIYkgEgqVEokdmpATDg26kBOEtAAFgBEgoIARABGAEqAkRMGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 6,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=KA0VA0MC&bookingclass=K&travelDate=2019-04-15&flightNumber=182&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 54,
+                        "bonus": 0,
+                        "total": 54
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t11:25:00-07:00-coach-sea-jfk-dl-182;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "dbf3f0e41ec46150bdce2ce594f7b175"
+            ],
+            "currency": "USD",
+            "baseFare": "234.42",
+            "baseFarePrice": {
+                "amount": "234.42",
+                "roundedAmount": "234",
+                "formattedPrice": "$234.42",
+                "formattedWholePrice": "$234",
+                "currencyCode": "USD"
+            },
+            "totalFare": "273.50",
+            "totalFarePrice": {
+                "amount": "273.50",
+                "roundedAmount": "274",
+                "formattedPrice": "$273.50",
+                "formattedWholePrice": "$274",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "273.50",
+                "roundedAmount": "274",
+                "formattedPrice": "$273.50",
+                "formattedWholePrice": "$274",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "273.50",
+                        "roundedAmount": "274",
+                        "formattedPrice": "$273.50",
+                        "formattedWholePrice": "$274",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "234.42",
+                        "roundedAmount": "234",
+                        "formattedPrice": "$234.42",
+                        "formattedWholePrice": "$234",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "39.08",
+                        "roundedAmount": "39",
+                        "formattedPrice": "$39.08",
+                        "formattedWholePrice": "$39",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "273.50",
+                "roundedAmount": "274",
+                "formattedPrice": "$273.50",
+                "formattedWholePrice": "$274",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "39.08",
+            "taxesPrice": {
+                "amount": "39.08",
+                "roundedAmount": "39",
+                "formattedPrice": "$39.08",
+                "formattedWholePrice": "$39",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-9-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIwYIBEgQyMDYyGJIBIOKaASjA1qkBMO7YqQE4TEAAWAEKIQjBggESBDIyNDYY4poBIKlRKPrZqQEw-tqpAThMQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-9-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIwYIBEgQyMDYyGJIBIOKaASjA1qkBMO7YqQE4TEAAWAEKIQjBggESBDIyNDYY4poBIKlRKPrZqQEw-tqpAThMQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 3,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "L",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "L",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=L3AKZNN1&bookingclass=L&travelDate=2019-04-15&flightNumber=2062&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 55,
+                        "bonus": 0,
+                        "total": 55
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t05:48:00-07:00-coach-sea-clt-aa-2062-coach-clt-jfk-aa-2246;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "7b720fa66331c11f0fcbc6d5a46bb5dc"
+            ],
+            "currency": "USD",
+            "baseFare": "234.42",
+            "baseFarePrice": {
+                "amount": "234.42",
+                "roundedAmount": "234",
+                "formattedPrice": "$234.42",
+                "formattedWholePrice": "$234",
+                "currencyCode": "USD"
+            },
+            "totalFare": "275.00",
+            "totalFarePrice": {
+                "amount": "275.00",
+                "roundedAmount": "275",
+                "formattedPrice": "$275.00",
+                "formattedWholePrice": "$275",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "275.00",
+                "roundedAmount": "275",
+                "formattedPrice": "$275.00",
+                "formattedWholePrice": "$275",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "275.00",
+                        "roundedAmount": "275",
+                        "formattedPrice": "$275.00",
+                        "formattedWholePrice": "$275",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "234.42",
+                        "roundedAmount": "234",
+                        "formattedPrice": "$234.42",
+                        "formattedWholePrice": "$234",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "40.58",
+                        "roundedAmount": "41",
+                        "formattedPrice": "$40.58",
+                        "formattedWholePrice": "$41",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "275.00",
+                "roundedAmount": "275",
+                "formattedPrice": "$275.00",
+                "formattedWholePrice": "$275",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "40.58",
+            "taxesPrice": {
+                "amount": "40.58",
+                "roundedAmount": "41",
+                "formattedPrice": "$40.58",
+                "formattedWholePrice": "$41",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-24-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiEIwYIBEgQ2MDUyGJIBIIu4ASiQ3akBMMXeqQE4TEAAWAEKHwjBggESAjI0GIu4ASCpUSj13qkBMMHhqQE4TEABWAESCggBEAEYASoCQUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-24-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiEIwYIBEgQ2MDUyGJIBIIu4ASiQ3akBMMXeqQE4TEAAWAEKHwjBggESAjI0GIu4ASCpUSj13qkBMMHhqQE4TEABWAESCggBEAEYASoCQUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 1,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "L",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "L",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=L3AKZNN1&bookingclass=L&travelDate=2019-04-15&flightNumber=6052&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 55,
+                        "bonus": 0,
+                        "total": 55
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t19:56:00-07:00-coach-sea-lax-aa-6052-coach-lax-jfk-aa-24;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "6022901fa7632f3975aea588e5d12acb"
+            ],
+            "currency": "USD",
+            "baseFare": "257.67",
+            "baseFarePrice": {
+                "amount": "257.67",
+                "roundedAmount": "258",
+                "formattedPrice": "$257.67",
+                "formattedWholePrice": "$258",
+                "currencyCode": "USD"
+            },
+            "totalFare": "291.30",
+            "totalFarePrice": {
+                "amount": "291.30",
+                "roundedAmount": "291",
+                "formattedPrice": "$291.30",
+                "formattedWholePrice": "$291",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "291.30",
+                "roundedAmount": "291",
+                "formattedPrice": "$291.30",
+                "formattedWholePrice": "$291",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "291.30",
+                        "roundedAmount": "291",
+                        "formattedPrice": "$291.30",
+                        "formattedWholePrice": "$291",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "257.67",
+                        "roundedAmount": "258",
+                        "formattedPrice": "$257.67",
+                        "formattedWholePrice": "$258",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "33.63",
+                        "roundedAmount": "34",
+                        "formattedPrice": "$33.63",
+                        "formattedWholePrice": "$34",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "291.30",
+                "roundedAmount": "291",
+                "formattedPrice": "$291.30",
+                "formattedWholePrice": "$291",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "33.63",
+            "taxesPrice": {
+                "amount": "33.63",
+                "roundedAmount": "34",
+                "formattedPrice": "$33.63",
+                "formattedWholePrice": "$34",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-11-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQohCh8IwaYBEgM2MjgYkgEgqVEojdepATDc2akBOFZAAFgBEgoIARABGAEqAkFTGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-11-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQohCh8IwaYBEgM2MjgYkgEgqVEojdepATDc2akBOFZAAFgBEgoIARABGAEqAkFTGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 5,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "V",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AS&opcarrier=&farebasis=VH0OAVMN&bookingclass=V&travelDate=2019-04-15&flightNumber=628&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 58,
+                        "bonus": 0,
+                        "total": 58
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t07:05:00-07:00-coach-sea-jfk-as-628;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "9b6de2e20e0e09948ff9906d7e47b8ad"
+            ],
+            "currency": "USD",
+            "baseFare": "281.86",
+            "baseFarePrice": {
+                "amount": "281.86",
+                "roundedAmount": "282",
+                "formattedPrice": "$281.86",
+                "formattedWholePrice": "$282",
+                "currencyCode": "USD"
+            },
+            "totalFare": "326.00",
+            "totalFarePrice": {
+                "amount": "326.00",
+                "roundedAmount": "326",
+                "formattedPrice": "$326.00",
+                "formattedWholePrice": "$326",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "326.00",
+                "roundedAmount": "326",
+                "formattedPrice": "$326.00",
+                "formattedWholePrice": "$326",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "326.00",
+                        "roundedAmount": "326",
+                        "formattedPrice": "$326.00",
+                        "formattedWholePrice": "$326",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "281.86",
+                        "roundedAmount": "282",
+                        "formattedPrice": "$281.86",
+                        "formattedWholePrice": "$282",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "44.14",
+                        "roundedAmount": "44",
+                        "formattedPrice": "$44.14",
+                        "formattedWholePrice": "$44",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "326.00",
+                "roundedAmount": "326",
+                "formattedPrice": "$326.00",
+                "formattedWholePrice": "$326",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "44.14",
+            "taxesPrice": {
+                "amount": "44.14",
+                "roundedAmount": "44",
+                "formattedPrice": "$44.14",
+                "formattedWholePrice": "$44",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-31-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIxJgBEgQyODc3GJIBIOO0ASi02KkBMLTaqQE4UUAAWAEKIQjEmAESBDUzMjAY47QBIKlRKPLaqQEw4tupAThRQAFYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-31-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIxJgBEgQyODc3GJIBIOO0ASi02KkBMLTaqQE4UUAAWAEKIQjEmAESBDUzMjAY47QBIKlRKPLaqQEw4tupAThRQAFYARIKCAEQARgBKgJETBgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 4,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=DL&opcarrier=&farebasis=QA0VA0MC&bookingclass=Q&travelDate=2019-04-15&flightNumber=2877&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 65,
+                        "bonus": 0,
+                        "total": 65
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t09:52:00-07:00-coach-sea-dtw-dl-2877-coach-dtw-jfk-dl-5320;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "a167e4741de765459d15a659f211a5c5"
+            ],
+            "currency": "USD",
+            "baseFare": "305.12",
+            "baseFarePrice": {
+                "amount": "305.12",
+                "roundedAmount": "305",
+                "formattedPrice": "$305.12",
+                "formattedWholePrice": "$305",
+                "currencyCode": "USD"
+            },
+            "totalFare": "351.00",
+            "totalFarePrice": {
+                "amount": "351.00",
+                "roundedAmount": "351",
+                "formattedPrice": "$351.00",
+                "formattedWholePrice": "$351",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "351.00",
+                "roundedAmount": "351",
+                "formattedPrice": "$351.00",
+                "formattedWholePrice": "$351",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "351.00",
+                        "roundedAmount": "351",
+                        "formattedPrice": "$351.00",
+                        "formattedWholePrice": "$351",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "305.12",
+                        "roundedAmount": "305",
+                        "formattedPrice": "$305.12",
+                        "formattedWholePrice": "$305",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "45.88",
+                        "roundedAmount": "46",
+                        "formattedPrice": "$45.88",
+                        "formattedWholePrice": "$46",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "351.00",
+                "roundedAmount": "351",
+                "formattedPrice": "$351.00",
+                "formattedWholePrice": "$351",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "45.88",
+            "taxesPrice": {
+                "amount": "45.88",
+                "roundedAmount": "46",
+                "formattedPrice": "$45.88",
+                "formattedWholePrice": "$46",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-36-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpGCiEIwYIBEgQxNjQ0GJIBIKOxASiR2KkBMPjZqQE4TUAAWAEKIQjBggESBDIyOTIYo7EBIKlRKLjbqQEwlN2pAThNQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-36-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpGCiEIwYIBEgQxNjQ0GJIBIKOxASiR2KkBMPjZqQE4TUAAWAEKIQjBggESBDIyOTIYo7EBIKlRKLjbqQEwlN2pAThNQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 6,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "M",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "M",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=M3AJZNN1&bookingclass=M&travelDate=2019-04-15&flightNumber=1644&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 70,
+                        "bonus": 0,
+                        "total": 70
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t09:17:00-07:00-coach-sea-dfw-aa-1644-coach-dfw-jfk-aa-2292;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "fd73b2f64e8fb681a2652f581780604d"
+            ],
+            "currency": "USD",
+            "baseFare": "420.47",
+            "baseFarePrice": {
+                "amount": "420.47",
+                "roundedAmount": "420",
+                "formattedPrice": "$420.47",
+                "formattedWholePrice": "$420",
+                "currencyCode": "USD"
+            },
+            "totalFare": "475.01",
+            "totalFarePrice": {
+                "amount": "475.01",
+                "roundedAmount": "475",
+                "formattedPrice": "$475.01",
+                "formattedWholePrice": "$475",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "475.01",
+                "roundedAmount": "475",
+                "formattedPrice": "$475.01",
+                "formattedWholePrice": "$475",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "475.01",
+                        "roundedAmount": "475",
+                        "formattedPrice": "$475.01",
+                        "formattedWholePrice": "$475",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "420.47",
+                        "roundedAmount": "420",
+                        "formattedPrice": "$420.47",
+                        "formattedWholePrice": "$420",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "54.54",
+                        "roundedAmount": "55",
+                        "formattedPrice": "$54.54",
+                        "formattedWholePrice": "$55",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "475.01",
+                "roundedAmount": "475",
+                "formattedPrice": "$475.01",
+                "formattedWholePrice": "$475",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "54.54",
+            "taxesPrice": {
+                "amount": "54.54",
+                "roundedAmount": "55",
+                "formattedPrice": "$54.54",
+                "formattedWholePrice": "$55",
+                "currencyCode": "USD"
+            },
+            "fees": "0.00",
+            "feesPrice": {
+                "amount": "0.00",
+                "roundedAmount": "0",
+                "formattedPrice": "$0.00",
+                "formattedWholePrice": "$0",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-21-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpDCiAIwYIBEgQxNTQwGJIBIK4cKJDWqQEwhtipAThLQABYAQofCMGCARIDMjcyGK4cIKlRKKzYqQEws9mpAThLQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-21-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpDCiAIwYIBEgQxNTQwGJIBIK4cKJDWqQEwhtipAThLQABYAQofCMGCARIDMjcyGK4cIKlRKKzYqQEws9mpAThLQAFYARIKCAEQARgBKgJBQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 3,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=AA&opcarrier=&farebasis=K0AJZNN1&bookingclass=K&travelDate=2019-04-15&flightNumber=1540&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 95,
+                        "bonus": 0,
+                        "total": 95
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t05:00:00-07:00-coach-sea-ord-aa-1540-coach-ord-jfk-aa-272;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "c996393187ffa377a1ff6b9357153afc"
+            ],
+            "currency": "USD",
+            "baseFare": "497.67",
+            "baseFarePrice": {
+                "amount": "497.67",
+                "roundedAmount": "498",
+                "formattedPrice": "$497.67",
+                "formattedWholePrice": "$498",
+                "currencyCode": "USD"
+            },
+            "totalFare": "567.18",
+            "totalFarePrice": {
+                "amount": "567.18",
+                "roundedAmount": "567",
+                "formattedPrice": "$567.18",
+                "formattedWholePrice": "$567",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "567.18",
+                "roundedAmount": "567",
+                "formattedPrice": "$567.18",
+                "formattedWholePrice": "$567",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "562.20",
+                        "roundedAmount": "562",
+                        "formattedPrice": "$562.20",
+                        "formattedWholePrice": "$562",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "497.67",
+                        "roundedAmount": "498",
+                        "formattedPrice": "$497.67",
+                        "formattedWholePrice": "$498",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "64.53",
+                        "roundedAmount": "65",
+                        "formattedPrice": "$64.53",
+                        "formattedWholePrice": "$65",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "567.18",
+                "roundedAmount": "567",
+                "formattedPrice": "$567.18",
+                "formattedWholePrice": "$567",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "64.53",
+            "taxesPrice": {
+                "amount": "64.53",
+                "roundedAmount": "65",
+                "formattedPrice": "$64.53",
+                "formattedWholePrice": "$65",
+                "currencyCode": "USD"
+            },
+            "fees": "4.98",
+            "feesPrice": {
+                "amount": "4.98",
+                "roundedAmount": "5",
+                "formattedPrice": "$4.98",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-23-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpmCiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCNWCARIENDM4NBiuHCDPZSi62akBMMraqQE4UUABWAEKIAjEmAESBDMzMzEYz2UgqVEoltupATD226kBOEtAAFgBEgoIARABGAEqAlVBGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-23-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpmCiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCNWCARIENDM4NBiuHCDPZSi62akBMMraqQE4UUABWAEKIAjEmAESBDMzMzEYz2UgqVEoltupATD226kBOEtAAFgBEgoIARABGAEqAlVBGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 2,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AFEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=2287&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 113,
+                        "bonus": 0,
+                        "total": 113
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t07:05:00-07:00-coach-sea-ord-ua-2287-coach-ord-pwm-ua-4384-coach-pwm-jfk-dl-3331;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "f59d0ee5555eb2b2a47ed5fb88b00efd"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "569.04",
+            "totalFarePrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "564.01",
+                        "roundedAmount": "564",
+                        "formattedPrice": "$564.01",
+                        "formattedWholePrice": "$564",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "60.75",
+                        "roundedAmount": "61",
+                        "formattedPrice": "$60.75",
+                        "formattedWholePrice": "$61",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "60.75",
+            "taxesPrice": {
+                "amount": "60.75",
+                "roundedAmount": "61",
+                "formattedPrice": "$60.75",
+                "formattedWholePrice": "$61",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-19-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpDCh8I1YIBEgM2MTkYkgEgrhwo5t6pATDM4KkBOFFAAFgBCiAIxJgBEgQzNTQ1GK4cIKlRKKbhqQEwt-KpAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-19-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpDCh8I1YIBEgM2MTkYkgEgrhwo5t6pATDM4KkBOFFAAFgBCiAIxJgBEgQzNTQ1GK4cIKlRKKbhqQEwt-KpAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=619&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 114,
+                        "bonus": 0,
+                        "total": 114
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t23:30:00-07:00-coach-sea-ord-ua-619-coach-ord-jfk-dl-3545;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "4da32912fc5a133be9bbc85664245feb"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "569.04",
+            "totalFarePrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "564.01",
+                        "roundedAmount": "564",
+                        "formattedPrice": "$564.01",
+                        "formattedWholePrice": "$564",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "60.75",
+                        "roundedAmount": "61",
+                        "formattedPrice": "$60.75",
+                        "formattedWholePrice": "$61",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "60.75",
+            "taxesPrice": {
+                "amount": "60.75",
+                "roundedAmount": "61",
+                "formattedPrice": "$60.75",
+                "formattedWholePrice": "$61",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-32-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpDCh8I1YIBEgMyNzgYkgEgrhwogNmpATDs2qkBOFFAAFgBCiAIxJgBEgQ1NDAxGK4cIKlRKMbbqQEw2NypAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-32-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpDCh8I1YIBEgMyNzgYkgEgrhwogNmpATDs2qkBOFFAAFgBCiAIxJgBEgQ1NDAxGK4cIKlRKMbbqQEw2NypAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=278&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 114,
+                        "bonus": 0,
+                        "total": 114
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t11:08:00-07:00-coach-sea-ord-ua-278-coach-ord-jfk-dl-5401;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "8d4f2405f7c4f7ae5d31066a258758a6"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "569.04",
+            "totalFarePrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "564.01",
+                        "roundedAmount": "564",
+                        "formattedPrice": "$564.01",
+                        "formattedWholePrice": "$564",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "60.75",
+                        "roundedAmount": "61",
+                        "formattedPrice": "$60.75",
+                        "formattedWholePrice": "$61",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "569.04",
+                "roundedAmount": "569",
+                "formattedPrice": "$569.04",
+                "formattedWholePrice": "$569",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "60.75",
+            "taxesPrice": {
+                "amount": "60.75",
+                "roundedAmount": "61",
+                "formattedPrice": "$60.75",
+                "formattedWholePrice": "$61",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-29-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAI1YIBEgQxMTk1GJIBIK4cKIzUqQEw-tWpAThRQABYAQogCMSYARIENTI5MBiuHCCpUSiI16kBMJDYqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-29-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAI1YIBEgQxMTk1GJIBIK4cKIzUqQEw-tWpAThRQABYAQogCMSYARIENTI5MBiuHCCpUSiI16kBMJDYqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=1195&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 114,
+                        "bonus": 0,
+                        "total": 114
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t00:40:00-07:00-coach-sea-ord-ua-1195-coach-ord-jfk-dl-5290;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "dd7d242c4b2aea7ea8ad0886f55ad130"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "574.64",
+            "totalFarePrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "569.61",
+                        "roundedAmount": "570",
+                        "formattedPrice": "$569.61",
+                        "formattedWholePrice": "$570",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "66.35",
+                        "roundedAmount": "66",
+                        "formattedPrice": "$66.35",
+                        "formattedWholePrice": "$66",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "66.35",
+            "taxesPrice": {
+                "amount": "66.35",
+                "roundedAmount": "66",
+                "formattedPrice": "$66.35",
+                "formattedWholePrice": "$66",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-4-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAI1YIBEgQxMTk1GJIBIK4cKIzUqQEw-tWpAThRQABYAQogCMSYARIENTA1MhiuHCCpUSjG2KkBMM_ZqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-4-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAI1YIBEgQxMTk1GJIBIK4cKIzUqQEw-tWpAThRQABYAQogCMSYARIENTA1MhiuHCCpUSjG2KkBMM_ZqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=1195&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 115,
+                        "bonus": 0,
+                        "total": 115
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t00:40:00-07:00-coach-sea-ord-ua-1195-coach-ord-jfk-dl-5052;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "7f361ea1bea665f5dca624934cd785c0"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "574.64",
+            "totalFarePrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "569.61",
+                        "roundedAmount": "570",
+                        "formattedPrice": "$569.61",
+                        "formattedWholePrice": "$570",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "66.35",
+                        "roundedAmount": "66",
+                        "formattedPrice": "$66.35",
+                        "formattedWholePrice": "$66",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "66.35",
+            "taxesPrice": {
+                "amount": "66.35",
+                "roundedAmount": "66",
+                "formattedPrice": "$66.35",
+                "formattedWholePrice": "$66",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-22-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCMSYARIENTQwMRiuHCCpUSjG26kBMNjcqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-22-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCMSYARIENTQwMRiuHCCpUSjG26kBMNjcqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=2287&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 115,
+                        "bonus": 0,
+                        "total": 115
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t07:05:00-07:00-coach-sea-ord-ua-2287-coach-ord-jfk-dl-5401;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "6cff8ab27f7bfdf4ca19a66e1ba6af7a"
+            ],
+            "currency": "USD",
+            "baseFare": "503.26",
+            "baseFarePrice": {
+                "amount": "503.26",
+                "roundedAmount": "503",
+                "formattedPrice": "$503.26",
+                "formattedWholePrice": "$503",
+                "currencyCode": "USD"
+            },
+            "totalFare": "574.64",
+            "totalFarePrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "569.61",
+                        "roundedAmount": "570",
+                        "formattedPrice": "$569.61",
+                        "formattedWholePrice": "$570",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "503.26",
+                        "roundedAmount": "503",
+                        "formattedPrice": "$503.26",
+                        "formattedWholePrice": "$503",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "66.35",
+                        "roundedAmount": "66",
+                        "formattedPrice": "$66.35",
+                        "formattedWholePrice": "$66",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "574.64",
+                "roundedAmount": "575",
+                "formattedPrice": "$574.64",
+                "formattedWholePrice": "$575",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "66.35",
+            "taxesPrice": {
+                "amount": "66.35",
+                "roundedAmount": "66",
+                "formattedPrice": "$66.35",
+                "formattedWholePrice": "$66",
+                "currencyCode": "USD"
+            },
+            "fees": "5.03",
+            "feesPrice": {
+                "amount": "5.03",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.03",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-1-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpDCh8I1YIBEgM2MTkYkgEgrhwo5t6pATDM4KkBOFFAAFgBCiAIxJgBEgQ1MDUyGK4cIKlRKObjqQEw7-SpAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-1-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpDCh8I1YIBEgM2MTkYkgEgrhwo5t6pATDM4KkBOFFAAFgBCiAIxJgBEgQ1MDUyGK4cIKlRKObjqQEw7-SpAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=619&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 115,
+                        "bonus": 0,
+                        "total": 115
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t23:30:00-07:00-coach-sea-ord-ua-619-coach-ord-jfk-dl-5052;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "16e926c82fe8c90f1c3e32bbd1416d95"
+            ],
+            "currency": "USD",
+            "baseFare": "555.35",
+            "baseFarePrice": {
+                "amount": "555.35",
+                "roundedAmount": "555",
+                "formattedPrice": "$555.35",
+                "formattedWholePrice": "$555",
+                "currencyCode": "USD"
+            },
+            "totalFare": "625.55",
+            "totalFarePrice": {
+                "amount": "625.55",
+                "roundedAmount": "626",
+                "formattedPrice": "$625.55",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "625.55",
+                "roundedAmount": "626",
+                "formattedPrice": "$625.55",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "620.00",
+                        "roundedAmount": "620",
+                        "formattedPrice": "$620.00",
+                        "formattedWholePrice": "$620",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "555.35",
+                        "roundedAmount": "555",
+                        "formattedPrice": "$555.35",
+                        "formattedWholePrice": "$555",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "64.65",
+                        "roundedAmount": "65",
+                        "formattedPrice": "$64.65",
+                        "formattedWholePrice": "$65",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "625.55",
+                "roundedAmount": "626",
+                "formattedPrice": "$625.55",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "64.65",
+            "taxesPrice": {
+                "amount": "64.65",
+                "roundedAmount": "65",
+                "formattedPrice": "$64.65",
+                "formattedWholePrice": "$65",
+                "currencyCode": "USD"
+            },
+            "fees": "5.55",
+            "feesPrice": {
+                "amount": "5.55",
+                "roundedAmount": "6",
+                "formattedPrice": "$5.55",
+                "formattedWholePrice": "$6",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-27-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCMSYARIENTAyNhiuHCCpUSiD2qkBMJLbqQE4UUAAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-27-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAI1YIBEgQyMjg3GJIBIK4cKI3XqQEw-NipAThRQABYAQogCMSYARIENTAyNhiuHCCpUSiD2qkBMJLbqQE4UUAAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 2,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=2287&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 125,
+                        "bonus": 0,
+                        "total": 125
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t07:05:00-07:00-coach-sea-ord-ua-2287-coach-ord-jfk-dl-5026;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "c693b9d9fdc3e1f78d1e890b36799bd4"
+            ],
+            "currency": "USD",
+            "baseFare": "546.97",
+            "baseFarePrice": {
+                "amount": "546.97",
+                "roundedAmount": "547",
+                "formattedPrice": "$546.97",
+                "formattedWholePrice": "$547",
+                "currencyCode": "USD"
+            },
+            "totalFare": "626.26",
+            "totalFarePrice": {
+                "amount": "626.26",
+                "roundedAmount": "626",
+                "formattedPrice": "$626.26",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "626.26",
+                "roundedAmount": "626",
+                "formattedPrice": "$626.26",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "620.79",
+                        "roundedAmount": "621",
+                        "formattedPrice": "$620.79",
+                        "formattedWholePrice": "$621",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "546.97",
+                        "roundedAmount": "547",
+                        "formattedPrice": "$546.97",
+                        "formattedWholePrice": "$547",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "73.82",
+                        "roundedAmount": "74",
+                        "formattedPrice": "$73.82",
+                        "formattedWholePrice": "$74",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "626.26",
+                "roundedAmount": "626",
+                "formattedPrice": "$626.26",
+                "formattedWholePrice": "$626",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "73.82",
+            "taxesPrice": {
+                "amount": "73.82",
+                "roundedAmount": "74",
+                "formattedPrice": "$73.82",
+                "formattedWholePrice": "$74",
+                "currencyCode": "USD"
+            },
+            "fees": "5.47",
+            "feesPrice": {
+                "amount": "5.47",
+                "roundedAmount": "5",
+                "formattedPrice": "$5.47",
+                "formattedWholePrice": "$5",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-8-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpFCiAI1YIBEgM2NzAYkgEgwZMBKJjaqQEwgt6pAThRQABYAQohCMSYARIEMTQyMhjBkwEgqVEomuCpATDm4KkBOFFAAFgBEgoIARABGAEqAlVBGAEiBAgBEAEoAigDKAQwAg",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-8-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpFCiAI1YIBEgM2NzAYkgEgwZMBKJjaqQEwgt6pAThRQABYAQohCMSYARIEMTQyMhjBkwEgqVEomuCpATDm4KkBOFFAAFgBEgoIARABGAEqAlVBGAEiBAgBEAEoAigDKAQwAg",
+            "seatsRemaining": 4,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA0AHEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=670&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 125,
+                        "bonus": 0,
+                        "total": 125
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t13:40:00-07:00-coach-sea-bos-ua-670-coach-bos-jfk-dl-1422;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "0ef62f4fceda3338d0e17881a391d94d"
+            ],
+            "currency": "USD",
+            "baseFare": "622.33",
+            "baseFarePrice": {
+                "amount": "622.33",
+                "roundedAmount": "622",
+                "formattedPrice": "$622.33",
+                "formattedWholePrice": "$622",
+                "currencyCode": "USD"
+            },
+            "totalFare": "698.23",
+            "totalFarePrice": {
+                "amount": "698.23",
+                "roundedAmount": "698",
+                "formattedPrice": "$698.23",
+                "formattedWholePrice": "$698",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "698.23",
+                "roundedAmount": "698",
+                "formattedPrice": "$698.23",
+                "formattedWholePrice": "$698",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "692.01",
+                        "roundedAmount": "692",
+                        "formattedPrice": "$692.01",
+                        "formattedWholePrice": "$692",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "622.33",
+                        "roundedAmount": "622",
+                        "formattedPrice": "$622.33",
+                        "formattedWholePrice": "$622",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "69.68",
+                        "roundedAmount": "70",
+                        "formattedPrice": "$69.68",
+                        "formattedWholePrice": "$70",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "698.23",
+                "roundedAmount": "698",
+                "formattedPrice": "$698.23",
+                "formattedWholePrice": "$698",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "69.68",
+            "taxesPrice": {
+                "amount": "69.68",
+                "roundedAmount": "70",
+                "formattedPrice": "$69.68",
+                "formattedWholePrice": "$70",
+                "currencyCode": "USD"
+            },
+            "fees": "6.22",
+            "feesPrice": {
+                "amount": "6.22",
+                "roundedAmount": "6",
+                "formattedPrice": "$6.22",
+                "formattedWholePrice": "$6",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-33-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpDCh8I1YIBEgM0MTkYkgEgiBgoxNepATD22akBOFFAAFgBCiAIxJgBEgQ1NDEzGIgYIKlRKN_bqQEwytypAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-33-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpDCh8I1YIBEgM0MTkYkgEgiBgoxNepATD22akBOFFAAFgBCiAIxJgBEgQ1NDEzGIgYIKlRKN_bqQEwytypAThLQABYARIKCAEQARgBKgJVQRgBIgQIARABKAIoAygEMAI",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=419&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 140,
+                        "bonus": 0,
+                        "total": 140
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t08:00:00-07:00-coach-sea-iad-ua-419-coach-iad-jfk-dl-5413;",
+            "isPackageable": true
+        },
+        {
+            "legIds": [
+                "917359227646416b0702f9f46c04b196"
+            ],
+            "currency": "USD",
+            "baseFare": "622.33",
+            "baseFarePrice": {
+                "amount": "622.33",
+                "roundedAmount": "622",
+                "formattedPrice": "$622.33",
+                "formattedWholePrice": "$622",
+                "currencyCode": "USD"
+            },
+            "totalFare": "703.83",
+            "totalFarePrice": {
+                "amount": "703.83",
+                "roundedAmount": "704",
+                "formattedPrice": "$703.83",
+                "formattedWholePrice": "$704",
+                "currencyCode": "USD"
+            },
+            "totalPrice": {
+                "amount": "703.83",
+                "roundedAmount": "704",
+                "formattedPrice": "$703.83",
+                "formattedWholePrice": "$704",
+                "currencyCode": "USD"
+            },
+            "pricePerPassengerCategory": [
+                {
+                    "passengerCategory": "ADULT",
+                    "totalPrice": {
+                        "amount": "697.61",
+                        "roundedAmount": "698",
+                        "formattedPrice": "$697.61",
+                        "formattedWholePrice": "$698",
+                        "currencyCode": "USD"
+                    },
+                    "basePrice": {
+                        "amount": "622.33",
+                        "roundedAmount": "622",
+                        "formattedPrice": "$622.33",
+                        "formattedWholePrice": "$622",
+                        "currencyCode": "USD"
+                    },
+                    "taxesPrice": {
+                        "amount": "75.28",
+                        "roundedAmount": "75",
+                        "formattedPrice": "$75.28",
+                        "formattedWholePrice": "$75",
+                        "currencyCode": "USD"
+                    }
+                }
+            ],
+            "averageTotalPricePerTicket": {
+                "amount": "703.83",
+                "roundedAmount": "704",
+                "formattedPrice": "$703.83",
+                "formattedWholePrice": "$704",
+                "currencyCode": "USD"
+            },
+            "numberOfTickets": 1,
+            "taxes": "75.28",
+            "taxesPrice": {
+                "amount": "75.28",
+                "roundedAmount": "75",
+                "formattedPrice": "$75.28",
+                "formattedWholePrice": "$75",
+                "currencyCode": "USD"
+            },
+            "fees": "6.22",
+            "feesPrice": {
+                "amount": "6.22",
+                "roundedAmount": "6",
+                "formattedPrice": "$6.22",
+                "formattedWholePrice": "$6",
+                "currencyCode": "USD"
+            },
+            "showFees": true,
+            "productKey": "v5-sos-3f911c3fd9c041008caed80fadfc7547-20-1~0.S~AQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ~AQpECiAI1YIBEgQxNTQyGJIBIIgYKLneqQEw3OCpAThRQABYAQogCMSYARIENTM2MBiIGCCpUSjq4qkBMMTjqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "mobileShoppingKey": "MXwwfHxmYWxzZQ-v5-sos-3f911c3fd9c041008caed80fadfc7547-20-1%7E0.S%7EAQoCCAESBwjUBBABGAEgByABIAwgDSAJKAJSBNTHAQBYAQ%7EAQpECiAI1YIBEgQxNTQyGJIBIIgYKLneqQEw3OCpAThRQABYAQogCMSYARIENTM2MBiIGCCpUSjq4qkBMMTjqQE4S0AAWAESCggBEAEYASoCVUEYASIECAEQASgCKAMoBDAC",
+            "seatsRemaining": 9,
+            "segmentAttributes": [
+                [
+                    {
+                        "bookingCode": "Q",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    },
+                    {
+                        "bookingCode": "K",
+                        "cabinCode": "coach",
+                        "isBasicEconomySegment": false
+                    }
+                ]
+            ],
+            "baggageFeesUrl": "https://www.expedia.com/Flights-BagFees?originapt=SEA&destinationapt=JFK&cabinclass=3&mktgcarrier=UA&opcarrier=&farebasis=QAA7AQEN&bookingclass=Q&travelDate=2019-04-15&flightNumber=1542&langid=1033",
+            "fareType": "PUBLISHED",
+            "isInternational": false,
+            "isPassportNeeded": false,
+            "mayChargeOBFees": false,
+            "hasBagFee": false,
+            "hasNoBagFee": false,
+            "isSplitTicket": false,
+            "loyaltyInfo": {
+                "earn": {
+                    "points": {
+                        "base": 141,
+                        "bonus": 0,
+                        "total": 141
+                    }
+                },
+                "isBurnApplied": false
+            },
+            "airFulfillmentMethod": [
+                "ETicket"
+            ],
+            "naturalKey": "2019-04-15t22:45:00-07:00-coach-sea-iad-ua-1542-coach-iad-jfk-dl-5360;",
+            "isPackageable": true
+        }
+    ],
+    "searchCities": [
+        {
+            "code": "SEA",
+            "city": "Seattle",
+            "province": "WA",
+            "country": "United States",
+            "searchType": "AIRPORT"
+        },
+        {
+            "code": "JFK",
+            "city": "New York",
+            "province": "NY",
+            "country": "United States",
+            "searchType": "AIRPORT"
+        }
+    ],
+    "obFeesDetails": "https://www.expedia.com/api/flight/obFeeCostSummary?langid=1033",
+    "activityId": "e083aa26-523c-4af0-a7cd-e3ec878089a0",
+    "hasSubPub": false,
+    "mayChargePaymentFees": false
+}
