@@ -32,24 +32,24 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index" >
+            <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
             <div *ngIf="flightdata.OperatingCarrierName === airlineBooked">
 			<h2>Offers for your itinerary</h2>
               <td >
-                <strong>CarrierLoyaltyOfferName</strong>: {{flightdata.Offers.CarrierLoyaltyOfferName}}
+                <strong>{{flightdata.Offers.CarrierLoyaltyOfferName}}</strong>: 
                </td> 
                <td >
-                  <strong>CarrierLoyaltyOfferTotalAmount</strong>: {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
+                  {{flightdata.Offers.CarrierLoyaltyOfferTotalAmount}}
                  </td>
                
                  <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
                     <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
                 </div>
                   <td >
-                    <strong>ALacarteOfferItemID</strong>: {{flightdata.Offers.ALacarteOfferItemID}}
+                    <strong> {{flightdata.Offers.ALacarteOfferItemID}}</strong>:
                    </td> 
                    <td >
-                      <strong>ALacarteOfferTotalAmount</strong>:{{flightdata.Offers.ALacarteOfferTotalAmount}}
+                      {{flightdata.Offers.ALacarteOfferTotalAmount}}
                      </td>
                      <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
                         <button type="button" class="btn btn-warning btn-sm fr" routerLink="/main/payment">Add to cart and checkout</button>
@@ -62,7 +62,7 @@
      
     </div>
 <!-- car offers starts-->
-<div  class="col-sm-12 col-md-12 mT2 col-lg-12" >
+<!--<div  class="col-sm-12 col-md-12 mT2 col-lg-12" >
   <div class="row">
           <div class="mtupsellSubHeaderText">
                Great news! Your flight is booked, now add a car rental and get at least 500 miles.
@@ -91,6 +91,6 @@
                                                   </a>
                 </div>
   </div>
-</div>
+</div>-->
 <!-- car offers ends-->
     </div>
