@@ -22,11 +22,13 @@ export class BookerComponent implements OnInit {
   name: string;
   profileData:object;
   shoppingResponse:object;
+  hotelOffersResponse: object;
   minDate = new Date(2000, 0, 1);
   maxDate = new Date(2020, 0, 1);
   dropdownList = [];
   selectedItems = [];
   dropdownSettings = {};
+  display: string;
   //travelers=["Angelo","Jesse"];
   airports:object;
   constructor(private httpService:Service,private fb: FormBuilder, public router: Router,public dialog: MatDialog) { }
@@ -82,7 +84,24 @@ ngOnInit() {
     allowSearchFilter: true
   };
 }
+openOfferComparisonChart () {
+  this.httpService.getData('./assets/hotelOffers.json')
+  .subscribe(
+    hotelOffersResponse => {
+      this.hotelOffersResponse = hotelOffersResponse;
+    }, error => {
+  }
+);
+const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+backDropElem.style.display = 'block';
+    this.display = 'block';
+}
 
+closeModalDialog(){
+  this.display = 'none';
+  const backDropElem =  <HTMLElement>document.querySelector('.backdrop');
+backDropElem.style.display = 'none';
+}
 openDialog(): void {
   const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
     width: '250px',
