@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   title = 'unmr-ife';
   originCode : any;
 	destinationCode : any;
+	destinationCity: any;
 	flightNumber: number =0;
 	airlineCode:any;
 	temperature:any;
