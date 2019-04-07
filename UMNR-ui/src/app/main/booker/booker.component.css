@@ -131,3 +131,56 @@ table tbody tr:nth-child(2n){
     max-width: 900px !important;
     width: 900px !important;
 }
+
+
+.backdrop {
+    background-color:rgba(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+}
+.modal{
+    z-index: auto !important;
+}
+.example-full-width{
+    border-left:none !important;
+}
+
+.paddingLeft{
+    padding-left: 4rem;
+}
+
+
+.deltaBg{
+    background-color : #11172b;
+    margin-left: -1.8rem;
+}
+
+.expediaBg{
+    background-color: #fc0;
+    margin-left: -2rem;
+}
+
+.priceFont{
+    font-size: 2rem;
+}
+.backdrop {
+    background-color:rgba(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+}
+
+.offerModal {
+    z-index: 9999999999 !important;
+}
+.modal-content{
+    width : 48rem !important;
+}
+.offersRow {
+    margin-left:0;
+}

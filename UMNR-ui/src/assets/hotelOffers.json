@@ -1,0 +1,58 @@
+{
+    "reviewSummaryCollection": {
+		"originSummary": [
+			  {
+                        "origin": "Expedia",
+                        "reviewCnt": 620,
+                        "recommendedPercent": 72.55245,
+                        "avgOverallRating": 3.7467742,
+                        "cleanliness": 4.2013106,
+                        "serviceAndStaff": 4.0964084,
+                        "roomComfort": 3.8841567,
+                        "hotelCondition": 3.7794118,
+                        "convenienceOfLocation": 4,
+                        "neighborhoodSatisfaction": 4,
+                        "valueForMoney": 0,
+                        "roomQuality": 0,
+						"hotelname" : "Staypineapple, Hotel FIVE, Downtown Seattle",
+						"hotelImage" : "../assets/img/staypineapple.JPG",
+						"hotelLocation": "Downtown Seattle",
+						"roomComfort": 3.8841567,
+                        "hotelCondition": 3.7794118,
+						"actualPrice": 7778,
+						"offerPrice": 5577,
+						"departureTime": "May 9, 2019 9:00:00 AM",
+						"arrivalTime": "May 9, 2019 12:10:00 PM",
+						"arrivalAirportLocation": "Seattle, USA",
+						"departureAirportLocation": "New York, USA",
+						"highDemadText": "In hight demand we have 5 left"
+                    },
+					  {
+                        "origin": "Expedia",
+                        "reviewCnt": 238,
+                        "recommendedPercent": 52.592594,
+                        "avgOverallRating": 4.2436976,
+                        "cleanliness": 4.566966,
+                        "serviceAndStaff": 4.4753375,
+                        "roomComfort": 4.3391814,
+                        "hotelCondition": 4.2895927,
+                        "convenienceOfLocation": 0,
+                        "neighborhoodSatisfaction": 0,
+                        "valueForMoney": 0,
+                        "roomQuality": 0,
+						"hotelname" : "Courtyard by Mariott Seattle Sea-Tac-Area",
+						"hotelImage" : "../assets/img/marriot.JPG",
+						"hotelLocation": "5.1 miles from Seattle Intl. Airport",
+						"reviewCnt": 620,
+                        "hotelCondition": 3.7794118,
+						"actualPrice": 6778,
+						"offerPrice": 6077,
+						"departureTime": "May 9, 2019 9:00:00 AM",
+						"arrivalTime": "May 9, 2019 12:10:00 PM",
+						"arrivalAirportLocation": "Seattle, USA",
+						"departureAirportLocation": "New York, USA"
+                    }
+		],
+		 "searchReviewSummary": ""
+       }
+	   }
