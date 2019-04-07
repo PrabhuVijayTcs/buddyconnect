@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 declare const google: any;
-declare function GetFlightStatus(obj:any,obj2:any):string;
+declare function GetFlightStatus(obj:any,obj2:any,obj3:any,obj4:any):string;
 
 @Component({
   selector: 'app-tracker',
@@ -29,12 +29,12 @@ export class TrackerComponent implements OnInit {
    this.destinationCity ="Newyork";
    this.depDate = this.today;
    this.arrDate = new Date();
-   this.flightNumber = 1120;
+   this.flightNumber = 182;
    this.airlineName = "Delta Airlines";
    this.airlineCode = "DL";
-   this.departureTime = "3:45 PM";
-   this.arrivalTime = "12:16 AM (+1)";
-   GetFlightStatus(this.flightNumber,this.depDate);
+   this.departureTime = "11:25 AM";
+   this.arrivalTime = "8:00 PM";
+   GetFlightStatus(this.flightNumber,this.airlineCode,this.originCode,this.destinationCode);
   }
   
 }
