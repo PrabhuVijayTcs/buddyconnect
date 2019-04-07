@@ -69,26 +69,9 @@ export class DashboardComponent implements OnInit {
       "errors": [],
       "upComingTrips": [
         {
-          "pnrNbr": "H8XKLW",
-          "destinationCity": "New York City,NY(JFK)",
-          "originCity": "Seattlle, Washington(SEA)",
-          "dateRange": "April 09, 2019",
-          "airlineBooked": "Delta",
-          "airlineLogo": "assets/img/deltaLogo.JPG",
-          "seatNumber": "32A",
-          "travellers": [{
-            "firstName": "John",
-            "lastName": "Smith"
-          },
-          {
-            "firstName": "Jane",
-            "lastName": "Smith"
-          }]
-        },
-        {
           "pnrNbr": "LBS4RT",
           "destinationCity": "New York City,NY(JFK)",
-          "originCity": "Seattlle, Washington(SEA)",
+          "originCity": "Seattle, Washington(SEA)",
           "dateRange": "April 27, 2019",
           "airlineBooked": "British",
           "airlineLogo": "assets/img/british.jpg",
@@ -108,7 +91,7 @@ export class DashboardComponent implements OnInit {
         {
           "pnrNbr": "LBS4RT",
           "destinationCity": "New York City,NY(JFK)",
-          "originCity": "Seattlle, Washington(SEA)",
+          "originCity": "Seattle, Washington(SEA)",
           "dateRange": "March 23, 2019",
           "airlineBooked": "Virgin",
           "airlineLogo": "assets/img/virgin.jpg",
@@ -128,7 +111,7 @@ export class DashboardComponent implements OnInit {
         {
           "pnrNbr": "H8XKLW",
           "destinationCity": "New York City,NY(JFK)",
-          "originCity": "Seattlle, Washington(SEA)",
+          "originCity": "Seattle, Washington(SEA)",
           "dateRange": "March 16, 2019",
           "airlineBooked": "British",
           "airlineLogo": "assets/img/british.jpg",
@@ -147,7 +130,7 @@ export class DashboardComponent implements OnInit {
         {
           "pnrNbr": "H8XKLW",
           "destinationCity": "New York City,NY(JFK)",
-          "originCity": "Seattlle, Washington(SEA)",
+          "originCity": "Seattle, Washington(SEA)",
           "dateRange": "March 09, 2019",
           "airlineBooked": "Delta",
           "airlineLogo": "assets/img/deltaLogo.JPG",
