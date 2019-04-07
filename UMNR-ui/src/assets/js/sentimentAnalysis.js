@@ -65,3 +65,33 @@ function SubmitReview(review,rating,counter){
       console.log("Response: " + JSON.stringify(resp) + "\nStatus: " + status);
     });
 }
+
+function GetFlightStatus(fltNo,date){
+	
+	$("#container").load("http://www.google.com");
+var xmlHTTP = new XMLHttpRequest();
+    xmlHTTP.open('GET','https://flightfollower-qa.api.aero/flightfollower/v1/SEA/JFK/DL/1120?imgWidth=650&imgLength=300&imgType=gif&rfc2397=false&base64=false',true);
+	xmlHTTP.setRequestHeader("x-apiKey", "84d718b8a9bd60d1bfe79122d3770870")
+    // Must include this line - specifies the response type we want
+    xmlHTTP.responseType = 'arraybuffer';
+
+    xmlHTTP.onload = function(e)
+    {
+
+        var arr = new Uint8Array(this.response);
+
+
+        // Convert the int array to a binary string
+        // We have to use apply() as we are converting an *array*
+        // and String.fromCharCode() takes one or more single values, not
+        // an array.
+        var raw = String.fromCharCode.apply(null,arr);
+
+        // This works!!!
+        var b64=btoa(raw);
+        var dataURL="data:image/jpeg;base64,"+b64;
+        document.getElementById("map-tracker").src = dataURL;
+    };
+
+    xmlHTTP.send();
+}

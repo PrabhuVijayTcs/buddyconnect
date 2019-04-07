@@ -483,7 +483,7 @@ textarea::placeholder {
 		  <div class="row">
 			  <div class="col-12 timelineContainer">
 <div class="Timeline">
-<div class="timelineAirport">Seattle (SEA)</div>
+<div class="timelineAirport">{{originCity}} ({{originCode}})</div>
 
  <svg height="6" width="30">
   <line x1="0" y1="0" x2="30" y2="0" style="stroke:#06aa14;stroke-width:15" />
@@ -494,13 +494,13 @@ textarea::placeholder {
     <div class="event1Bubble" style="width:100px">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{depDate | date }}</div>
 		</div>
 		
       </div>
       <div class="eventTitle">Checked-In </div>
     </div>
-    <div class="agentAssisted">assisted by Jacob(DL)</div>
+    <div class="agentAssisted">assisted by Jacob({{airlineCode}})</div>
     <svg class="active" height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
 	   <image xlink:href="assets/timelineImages/checkin_black.png" x="10" y="10" height="30px" width="30px"/>
@@ -518,13 +518,13 @@ textarea::placeholder {
     <div class="event2Bubble" style="width:135px;">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{depDate | date }}</div>
 		</div>
 		
       </div>
       <div class="eventTitle">Security Check Completed</div>
     </div>
-    <div class="agent2Assisted">assisted by Jacob(DL)</div>
+    <div class="agent2Assisted">assisted by Jacob({{airlineCode}})</div>
     <svg class="active" height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
 	   <image xlink:href="assets/timelineImages/seccheck_black.png" x="10" y="10" height="30px" width="30px"/>
@@ -542,13 +542,13 @@ textarea::placeholder {
     <div class="event1Bubble">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{depDate | date }}</div>
 		</div>
 		
       </div>
       <div class="eventTitle">Reached Gate L3 </div>
     </div>
-    <div class="agentAssisted">assisted by Jacob(DL)</div>
+    <div class="agentAssisted">assisted by Jacob({{airlineCode}})</div>
     <svg class="active" height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
 	   <image xlink:href="assets/timelineImages/gate_black.png" x="10" y="10" height="30px" width="30px"/>
@@ -565,13 +565,13 @@ textarea::placeholder {
     <div class="event2Bubble" style="width:135px;">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{depDate | date }}</div>
 		</div>
 		
       </div>
       <div class="eventTitle">Boarded the Aircraft</div>
     </div>
-    <div class="agent2Assisted">assisted by Ken(DL)</div>
+    <div class="agent2Assisted">assisted by Ken({{airlineCode}})</div>
     <svg class="active" height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
 	   <image xlink:href="assets/timelineImages/boarding.png" x="10" y="10" height="30px" width="30px"/>
@@ -589,11 +589,11 @@ textarea::placeholder {
     <div class="event1Bubble" style="width:135px">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{depDate | date }}</div>
 		</div>
 		
       </div>
-      <div class="eventTitle">Flight DL 182 Departed to JFK</div>
+      <div class="eventTitle">Flight {{airlineCode}} {{flightNumber}} Departed to {{destinationCode}}</div>
     </div>
     <svg height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
@@ -630,10 +630,10 @@ textarea::placeholder {
     <div class="event1Bubble futureOpacity" style="width:125px">
       <div class="eventTime">
         <div class="Day">
-          <div class="FlightDate">5 April 2019</div>
+          <div class="FlightDate">{{arrDate | date }}</div>
         </div>
       </div>
-      <div class="eventTitle">Estimated Arrival At JFK</div>
+      <div class="eventTitle">Estimated Arrival At {{destinationCode}}</div>
     </div>
       <svg height="50" width="50">
        <circle id="chkin" cx="25" cy="25" r="24" fill="none" stroke="#003a70" stroke-width="2" opacity="0.5" />
@@ -649,7 +649,7 @@ textarea::placeholder {
     <div class="event2Bubble futureOpacity" style="width:130px;">
       <div class="eventTime">
         <div class="Day">
-		<div class="FlightDate">5 April 2019</div>
+		<div class="FlightDate">{{arrDate | date }}</div>
 		</div>
 		
       </div>
@@ -665,7 +665,7 @@ textarea::placeholder {
   <line x1="0" y1="0" x2="30" y2="0" style="stroke:#959799;stroke-width:15" />
   Sorry, your browser does not support inline SVG.
 </svg>
-  <div class="timelineAirport">New York (JFK)</div>
+  <div class="timelineAirport">{{destinationCity}} ({{destinationCode}})</div>
 </div>
 </div>
 		  </div>
@@ -678,7 +678,7 @@ textarea::placeholder {
 		 <div class="row">
 			<div class="col-6">
                
-                <img src="assets/img/map.gif" width="100%"  >
+                <img id="map-tracker" src="assets/img/map.gif" width="100%"  >
 			</div>
 			<div class="col-6" style="text-align:center;width:100%">
 			<div class="ticket inverse">
@@ -688,38 +688,38 @@ textarea::placeholder {
     </div>
     <div class="gate">
       <div>
-        DELTA AIRLINES 182
+        {{airlineName}} {{flightNumber}}
       </div>
     </div>
   </header>
   <section class="airports">
     <div class="airport">
       <div class="airport-name">
-        Seattle
+        {{originCity}}
       </div>
       <div class="airport-code">
-        SEA
+        {{originCode}}
       </div>
       <div class="dep-arr-label">
         Departed
       </div>
       <div class="fltTime">
-        11:25AM
+        {{departureTime}}
       </div>
     </div>
 	<img src="assets/img/AWT-Plane.png" style="position: relative; top: -40px;left: -25px;height:25px;width:25px;"/>
 	<div class="airport">
       <div class="airport-name">
-        New York
+        {{destinationCity}}
       </div>
       <div class="airport-code">
-        JFK
+        {{destinationCode}}
       </div>
       <div class="dep-arr-label">
         Arriving
       </div>
       <div class="fltTime">
-        7:55PM
+        {{arrivalTime}}
       </div>
     </div>
   </section>
