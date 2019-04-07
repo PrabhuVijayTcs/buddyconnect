@@ -95,6 +95,9 @@
   <div class="cb col-sm-12 col-md-12 col-lg-12">
       <button type="submit" [disabled]="!searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
   </div>
+    <div class="cb col-sm-12 col-md-12 col-lg-12">
+      <button type="submit" (click)="openOfferComparisonChart()"class="btn btn-warning btn-sm">Search Flights + Hotel</button>
+  </div>
 </form>
 
 <div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
@@ -161,7 +164,7 @@
         <button type="button" class="btn btn-warning btn-sm fr" routerLink="./payment" >Continue</button>
     </div>
 
-    <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 p0 package">
+    <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 p0 package" style="display:none;">
         <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
               <img src="../../../assets/img/delta.jpg" height="175px" width="175px">
@@ -190,7 +193,7 @@
         </div>
     </div>
 
-    <div class="cb col-sm-12 col-md-12 col-lg-12 mT p0 package">
+    <div class="cb col-sm-12 col-md-12 col-lg-12 mT p0 package" style="display:none;">
         <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
             <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
               <img src="../../../assets/img/jetblue.jpg" height="175px" width="175px">
@@ -220,3 +223,58 @@
     </div>
   </form>
 </div>
+
+
+<!--Offer comparison starts-->
+
+
+<div class="backdrop" style="display: none;"></div>
+<div class="modal offerModal" tabindex="-1" role="dialog"  [ngStyle]="{'display': display}" >
+  <!-- modal-dialog -->
+  <div class="modal-dialog" role="document">
+    <!-- modal-content -->
+    <div class="modal-content">
+      <div class="modal-body" >
+<div class="row" *ngIf="hotelOffersResponse">
+       
+           
+           
+               
+                
+					<div class="row row-align offersRow" *ngFor="let hotelRes of hotelOffersResponse.reviewSummaryCollection.originSummary; let i = index">
+					
+              <img class="px-2" [src]="(hotelRes.hotelImage)" height="145px" width="145px">
+			      <div class="px-2"><strong>{{hotelRes.hotelname}}</strong>
+					<div>{{hotelRes.hotelLocation}}</div>
+                 <p>Departure: {{hotelRes.departureTime}}</p>
+                <p>Arrival: {{hotelRes.arrivalTime}}</p>
+			
+				</div>
+				<div class="px-4"><p style="color:red;">{{hotelRes.highDemadText}}</p>
+				<p>{{hotelRes.avgOverallRating}}/5</p>
+				<p>{{hotelRes.reviewCnt}} Reviews</p>
+				<p>{{hotelRes.cleanliness}} Cleanliness</p><div *ngIf="hotelRes.offerPrice"><p class="priceFont"><s  style="color:grey;">${{hotelRes.actualPrice}}</s>${{hotelRes.offerPrice}}</p></div>
+				<div *ngIf="hotelRes.actualPrice && !hotelRes.offerPrice"><p class="priceFont">${{hotelRes.actualPrice}}</p></div>
+					<button type="button" class="btn btn-warning btn-lg" routerLink="./payment" >Book</button>
+				</div>
+              
+				
+				</div>
+		
+                 
+              
+				        <p class="clear"></p>
+            
+            
+
+        
+      </div>
+	  
+  </div>
+    <div class="modal-footer">
+         <button type="button" class="btn btn-default" (click)="closeModalDialog()" >Close</button>
+       </div>
+  </div>
+  </div>
+  </div>
+        <!--Offer Comparison ends-->
