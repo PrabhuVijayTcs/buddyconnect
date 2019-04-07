@@ -68,7 +68,6 @@ function SubmitReview(review,rating,counter){
 
 function GetFlightStatus(fltNo,code,origin,destination){
 	
-	$("#container").load("http://www.google.com");
 var xmlHTTP = new XMLHttpRequest();
     xmlHTTP.open('GET','https://flightfollower-qa.api.aero/flightfollower/v1/'+origin+'/'+destination+'/'+code+'/'+fltNo+'?imgWidth=650&imgLength=300&imgType=gif&rfc2397=false&base64=false',true);
 	xmlHTTP.setRequestHeader("x-apiKey", "84d718b8a9bd60d1bfe79122d3770870")

@@ -197,34 +197,12 @@ wb_sunny
 			<div class="row" style="margin-top:2%">
 			<div class="col-md-2">
 	<div class="card weather">
-        <h3>New York</h3>
-        <h2>43° F</h2>
-		<h1>Cloudy </h1>
-        <div class="sky">
-            <div class="sun"></div>
-            <div class="cloud">
-                <div class="circle-small"></div>
-                <div class="circle-tall"></div>
-                <div class="circle-medium"></div>
-            </div>
-        </div>
+        <h3>{{destinationCity}}</h3>
+        <h2 id="temperature">{{temperature}}</h2>
+		<h1 id="weatherType">{{weather}}</h1>
+        <img id="weatherImg" height="100px" width="100px" src="http://uds-static.api.aero/weather/icon/lg/02.png" />
     </div>
 	</div>
-			<!-- <div class="col-md-3">
-	<div class="card weather">
-        <h3>Seattle, WA</h2>
-        <h2>72° F</h1>
-		<h1>Partly Cloudy</h1>
-        <div class="sky">
-            <div class="sun"></div>
-            <div class="cloud">
-                <div class="circle-small"></div>
-                <div class="circle-tall"></div>
-                <div class="circle-medium"></div>
-            </div>
-        </div>
-    </div>
-	</div> -->
 	<div class="col-md-6">
 	<div class="card flt">
 	<h2>Flight Path</h2>

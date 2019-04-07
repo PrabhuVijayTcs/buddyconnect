@@ -122,6 +122,11 @@ function showResponse(lexResponse) {
 	responsePara.className = 'callouts--right';
 	if (lexResponse.message) {
 		console.log(lexResponse);
+		if(lexResponse.intentName == "WeatherAlert"){
+			var res = lexResponse.message.replace("44 F", $("#temperature")[0].innerHTML);
+			lexResponse.message = res;
+			$("#dynamic_va").attr("src", "assets/tt/cold.gif");
+		}
 		responsePara.innerHTML = lexResponse.message + "<br/>";
 		// responsePara.appendChild(document.createElement('br'));
 	}
@@ -238,11 +243,33 @@ function showResponse(lexResponse) {
 	}
 
 	if (lexResponse.intentName == "WeatherAlert") {
-		$("#dynamic_va").attr("src", "assets/tt/cold.gif");
+		
+		
 	}
 
 	conversationDiv.appendChild(responsePara);
 	conversationDiv.scrollTop = conversationDiv.scrollHeight;
 
 	$(".v_assistant").show();
+}
+
+
+function GetWeatherInfo(location){
+	
+var xmlHTTP = new XMLHttpRequest();
+    xmlHTTP.open('GET','https://weather.api.aero/weather/v1/current/'+location+'?temperatureScale=F',true);
+	xmlHTTP.setRequestHeader("x-apiKey", "89e15931434731aefdaa04920ec60e44")
+    
+    xmlHTTP.onload = function(e)
+    {
+		var resp= JSON.parse(this.response);
+		$("#temperature")[0].innerHTML= resp.currentWeather.temperature + "°" + resp.temperatureScale;
+		$("#weatherType")[0].innerHTML = resp.currentWeather.phrase;
+		$("#weatherImg").attr("src","http://uds-static.api.aero/weather/icon/lg/"+resp.currentWeather.icon + ".png");
+        console.log(resp);
+
+
+    };
+
+    xmlHTTP.send();
 }
