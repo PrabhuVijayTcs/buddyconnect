@@ -1,0 +1,59 @@
+# File patterns to ignore; see `git help ignore` for more information.
+# Lines that start with '#' are comments.
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+UpgradeLog.htm
+
+# TFS 2012 Local Workspace
+$tf/
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[pP]ackages/*
+!**/[pP]ackages/build/
+
+
+#################################################################
+# Application stuff
+HA.Web.Main/Data
+HA.Web.Main/App_Data/MediaCache/
+HA.Web.Main/Frontend/*.log
+HA.Web.Main/Frontend/node_modules/
+HA.Web.Main/temp/dictionary.dat
+HA.Web.Main/Styles/**/*.css
+!HA.Web.Main/Styles/lib/**/*.css
+/HA.PCI.Spike/HA.Spike.Api
+*.log
