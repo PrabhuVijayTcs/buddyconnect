@@ -152,9 +152,15 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
+    <Compile Include="ExtensionMethods\EnumerableExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Booking\AvailFareDetail.cs" />
+    <Compile Include="Models\Booking\AvailTripSegment.cs" />
+    <Compile Include="Models\Booking\AvailTripSlice.cs" />
+    <Compile Include="Models\Booking\FareGroupTripAndFareDetail.cs" />
+    <Compile Include="Models\Booking\FareResultsViewModel.cs" />
     <Compile Include="Models\ProfileViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -208,6 +214,7 @@
     <Content Include="assets\profileData.JSON" />
     <Content Include="assets\shopping.json" />
     <Content Include="assets\profile.json" />
+    <Content Include="assets\datasource\FlightResults.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -237,11 +244,10 @@
     <Content Include="Views\Booking\Index.cshtml" />
     <Content Include="Views\Shared\_BookingWidget.cshtml" />
     <Content Include="Views\UserProfile\Index.cshtml" />
+    <Content Include="Views\Booking\FlightResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\UserProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

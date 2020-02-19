@@ -6,48 +6,92 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <style type="text/css">
+        nav a {
+            font-size: 20px;
+        }
+
+        .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+            border-right-color: rgba(0, 0, 0, 0.7) !important;
+        }
+        .popover-header {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            color: #fff !important;
+        }
+        .popover-content {
+            background: #fff !important
+        }
+    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+    </script>
 </head>
-<body style="background: url('/assets/img/background.jpg')">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: rgba(0, 0, 0, 0.7) !important; border-radius: 10px;">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: rgba(0, 0, 0, 0.7) !important; border-radius: 10px;">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.airvistara.com/trip/sites/all/themes/vistara_theme/images/LOGO_2.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Book <span class="sr-only">(current)</span></a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/booking">Book <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Manage Trips</a>
+                </li>
+                @if (User.Identity.IsAuthenticated)
+                {
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Manage Trips</a>
+                        <a class="nav-link" href="#">Profile Settings</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Buddy Tracker</a>
+                }
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 2px">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li><a href="~/Login">Sign In</a></li>
+                }
+                else
+                {
+                    <li>
+                        <div class="text-white-50" style="font-size: 20px">
+                            Welcome <b class="text-white">@User.Identity.Name</b>
+                            <div class="text-right">
+                                <a href="~/Login/Logout" style="font-size: 14px; text-decoration: underline">Sign Out</a>
+                            </div>
+                        </div>
+
                     </li>
+                }
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container body-content">
+    @RenderBody()
+    <hr/>
+    <footer>
+        <p><b>&copy; @DateTime.Now.Year - TATA VistaRa Airlines. All Rights Reserved</b></p>
+    </footer>
+</div>
 
-                </ul>
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 2px">
-                    <li><a href="../Login?returnUrl=%2F">Sign In</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Airlines</p>
-        </footer>
-    </div>
 
-   
-    @RenderSection("scripts", required: false)
+@RenderSection("scripts", required: false)
 </body>
 </html>
