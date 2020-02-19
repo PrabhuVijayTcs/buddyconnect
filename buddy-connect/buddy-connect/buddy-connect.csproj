@@ -160,6 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\img\background.jpg" />
+    <Content Include="assets\img\caretaker.jpg" />
+    <Content Include="assets\img\caregiver.jpg" />
     <Content Include="assets\js\aws-sdk-2.41.0.min.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\js\sentimentAnalysis.js" />
@@ -240,8 +242,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\UserProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

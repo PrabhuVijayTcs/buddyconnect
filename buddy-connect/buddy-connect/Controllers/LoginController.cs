@@ -17,9 +17,15 @@ namespace buddy_connect.Controllers
         }
 
         [HttpPost]
-         public ActionResult Index(string userName)
+         public ActionResult Index(string userName, string password)
         {
             var userProfile = LoginFunctions.GetProfileData(userName);
+            Session["UserProfile"] = userProfile;
+            if (password == "buddy")
+            {
+                return RedirectToAction("Index", "UserProfile");
+            }
+
             return View();
         }
     }
