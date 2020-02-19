@@ -11,6 +11,13 @@ namespace buddy_connect.Controllers
         // GET: UserProfile
         public ActionResult Index()
         {
+            var activeUser = new
+            {
+                Firstname ="John",
+                Lastname ="Smith"
+            };
+
+            ViewBag.UserName = activeUser.Firstname + " " + activeUser.Lastname;
             return View();
         }
     }
