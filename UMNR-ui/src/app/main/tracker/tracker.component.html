@@ -1,0 +1,823 @@
+	
+
+<style>
+.Timeline {
+  display: flex;
+  align-items: center;
+  height: 270px;
+  text-align:left;
+  margin-left:1%;
+}
+
+.event1,
+.event2, .event3 {
+  position: relative;
+}
+
+.event1Bubble {
+  position: absolute;
+  background-color: rgba(158, 158, 158, 0.1);
+  width: 135px;
+  height: 60px;
+  top: -80px;
+  left: 0px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
+}
+
+.event2Bubble {
+  position: absolute;
+  background-color: rgba(158, 158, 158, 0.1);
+  width: 140px;
+  height: 60px;
+  left: -90px;
+  top: 80px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
+}
+
+.event1Bubble:after,
+.event1Bubble:before,
+.event2Bubble:after,
+.event2Bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+
+.event1Bubble:before {
+  bottom: -10px;
+  left: 13px;
+  border-top-color: rgba(222, 222, 222, 0.66);
+  border-width: 12px;
+}
+
+.event1Bubble:after {
+  bottom: -8px;
+  left: 13px;
+  border-top-color: #F6F6F6;
+  border-width: 12px;
+}
+
+.event2Bubble:before {
+  bottom: 59px;
+  left: 103px;
+  border-top-color: rgba(222, 222, 222, 0.66);
+  border-width: 12px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.event2Bubble:after {
+  bottom: 57px;
+  left: 103px;
+  border-top-color: #F6F6F6;
+  border-width: 12px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.eventTime {
+  display: flex;
+  padding-bottom:5px;
+}
+
+.Day {
+  font-size: 11px;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #003a70;
+}
+
+.FlightDate {
+  font-weight: 600;
+  line-height: 10px;
+  color: #9E9E9E;
+  font-size: 9px;
+  padding-top: 2px;
+}
+
+.eventTitle {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color:#003a70;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: -2px;
+}
+
+.time {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50px;
+  font-size: 8px;
+  margin-top: -5px;
+  margin-left: 5px;
+  color: #c8102e;
+}
+
+.agentAssisted {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9E9E9E;
+  font-size: 8px;
+  width: 100px;
+  top: -92px;
+  left: 0px;
+}
+
+.agent2Assisted {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9E9E9E;
+  font-size: 8px;
+  width: 100px;
+  top: 140px;
+  left: -90px;
+}
+
+.time2{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50px;
+  font-size: 8px;
+  margin-top: -31px;
+  margin-left: -5px;
+  color: #c8102e;
+}
+
+.now{
+    background-color: #003a70;
+    color: white;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 4px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #003a70;
+}
+
+.futureGray{
+     filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  
+}
+
+.futureOpacity{
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);
+  
+}
+
+.timelineAirport{
+	font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+	margin-right:5px;
+	margin-left:10px;
+	font-weight:bold;
+}
+
+
+.liveText{
+	padding-top:5px;
+}
+
+.kidStats{padding:3% 0 1% 1.5%;font-family: Arial, Helvetica, sans-serif;}
+
+.refreshIcon{border-radius:50%;}
+
+.refreshIcon:hover{background-color:#1187c1;color:white}
+
+.moodLabel{
+  color: #003a70;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#kidStatsTable tr{line-height:45px;}
+
+#kidStatsTable th{
+font-size:13px;color:#c8102e;text-align:left;width:120px;
+}
+
+.lastUpdated{
+	color: #9E9E9E;
+    font-size: 8px;
+	padding-left:10px;
+}
+
+.chat-icon{text-align:center;cursor:pointer;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius:25px;margin:1%;}
+
+.chat-icon:hover{
+	background-color:#1187c1;
+}
+
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  outline: 0 !important;
+  cursor: pointer;
+}
+button.chatbox-open {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  color: #fff;
+  background-color: #0360a5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 16px;
+}
+button.chatbox-close {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  color: #fff;
+  background-color: #0360a5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  margin: 16px calc(2 * 16px + 52px) 16px 16px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  height: calc(16px + 16px / 2);
+  padding: 0 calc(16px / 2);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(16px + 16px / 2);
+  color: #888;
+  background-color: none;
+  border: 0;
+  outline: 0 !important;
+  resize: none;
+  overflow: hidden;
+}
+textarea::-webkit-input-placeholder {
+  color: #888;
+}
+textarea:-ms-input-placeholder {
+  color: #888;
+}
+textarea::-ms-input-placeholder {
+  color: #888;
+}
+textarea::placeholder {
+  color: #888;
+}
+
+.chatbox-popup {
+  display: flex;
+  position: absolute;
+  z-index:999999999999;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  flex-direction: column;
+  display: none;
+  bottom: 40px;;
+  right: 100px;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.chatbox-popup .chatbox-popup__header {
+  box-sizing: border-box;
+  z-index:999999999999;
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  background-color: #003a70;
+  align-items: center;
+  justify-content: space-around;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.chatbox-popup .chatbox-popup__header .chatbox-popup__avatar {
+  margin-top: -32px;
+  z-index:999999999999;
+  background-color: #003a70;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.chatbox-popup .chatbox-popup__main {
+  box-sizing: border-box;
+  z-index:999999999999;
+  width: 100%;
+  padding: calc(2 * 16px) 16px;
+  line-height: calc(16px + 16px / 2);
+  color: #888;
+  text-align: center;
+}
+.chatbox-popup .chatbox-popup__footer {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index:999999999999;
+}
+.ticket {
+  display: inline-block;
+  width: 270px;
+  margin: 0px 20px 30px 20px;
+  background-color: #273138;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ticket header {
+  position: relative;
+  height: 35px;
+  background-color: #1B252E;
+  padding: 7px 7px 7px 12px;
+  border-radius: 10px 10px 1px 1px;
+  font-size: 15px;
+  font-weight:bold;
+}
+.ticket header .company-name {
+  text-align: left;
+}
+.ticket header .gate {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight:bold;
+}
+
+.ticket .airports {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #003a70;
+}
+.ticket .airports .airport {
+  position: relative;
+  margin: 1px;
+  text-align: center;
+  display: inline-block;
+}
+.ticket .airports .airport .airport-name {
+  color: #003a70;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ticket .airports .airport .airport-code {
+  font-size: 24px;
+  font-weight: 400;
+  line-height:27px;
+  margin: 0;
+}
+.ticket .airports .airport .dep-arr-label {
+  color: #9299A0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.ticket .airports .airport .fltTime {
+  font-size: 10px;
+  color: #9299A0;
+}
+.ticket .airports .airport:first-child {
+  margin-right: 20%;
+}
+
+.ticket .place {
+  padding:5px 0px;
+  text-align:center;
+}
+.ticket .place-block {
+  display: inline-block;
+  margin: 10px 10px;
+}
+.ticket .place-block .place-label {
+  color: #c8102e;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.ticket .place-block .place-value {
+  color: #9299A0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ticket.inverse {
+  background-color: #F8F8F8;
+  max-height:240px;
+}
+.ticket.inverse header {
+  background-color: #003a70;
+}
+.ticket.inverse .airport:first-child:after {
+  color: #003a70;
+}
+.ticket.inverse .airport .airport-code {
+  color:#000000;
+  font-weight: 500;
+}
+
+
+
+</style>
+
+<div class="container">
+        <div class="row">
+            <div class="col-12" style="padding-top:10px;">
+                <h3 class="tracker-page-title" style="font-family: Arial, Helvetica, sans-serif;margin-bottom:20px; margin-left:0px;font-size:22px;font-weight:500">Track your Kids journey</h3>
+              
+              </div>
+          </div>
+		  <div class="row">
+			  <div class="col-12 timelineContainer">
+<div class="Timeline">
+<div class="timelineAirport">Seattle (SEA)</div>
+
+ <svg height="6" width="30">
+  <line x1="0" y1="0" x2="30" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+  <div class="event1">
+    <div class="event1Bubble" style="width:100px">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Checked-In </div>
+    </div>
+    <div class="agentAssisted">assisted by Jacob(DL)</div>
+    <svg class="active" height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
+	   <image xlink:href="assets/timelineImages/checkin_black.png" x="10" y="10" height="30px" width="30px"/>
+     </svg>
+    <div class="time">9:47AM PT</div>
+    
+  </div>
+  
+  <svg height="6" width="60">
+  <line x1="0" y1="0" x2="60" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+ <div class="event2">
+    <div class="event2Bubble" style="width:135px;">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Security Check Completed</div>
+    </div>
+    <div class="agent2Assisted">assisted by Jacob(DL)</div>
+    <svg class="active" height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
+	   <image xlink:href="assets/timelineImages/seccheck_black.png" x="10" y="10" height="30px" width="30px"/>
+     </svg>
+    <div class="time">10:14AM PT</div>
+    
+  </div>
+  
+  <svg height="6" width="70">
+  <line x1="0" y1="0" x2="70" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event1">
+    <div class="event1Bubble">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Reached Gate L3 </div>
+    </div>
+    <div class="agentAssisted">assisted by Jacob(DL)</div>
+    <svg class="active" height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
+	   <image xlink:href="assets/timelineImages/gate_black.png" x="10" y="10" height="30px" width="30px"/>
+     </svg>
+    <div class="time">10:26AM PT</div>
+  </div>
+   
+  <svg height="6" width="65">
+  <line x1="0" y1="0" x2="65" y2="0" style="stroke:#06aa14;;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event2">
+    <div class="event2Bubble" style="width:135px;">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Boarded the Aircraft</div>
+    </div>
+    <div class="agent2Assisted">assisted by Ken(DL)</div>
+    <svg class="active" height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
+	   <image xlink:href="assets/timelineImages/boarding.png" x="10" y="10" height="30px" width="30px"/>
+     </svg>
+    <div class="time">11:05AM PT</div>
+    
+  </div>
+  
+  <svg height="6" width="70">
+  <line x1="0" y1="0" x2="70" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event1">
+    <div class="event1Bubble" style="width:135px">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Flight DL 182 Departed to JFK</div>
+    </div>
+    <svg height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="#8eb9ff" stroke="#003a70" stroke-width="2" />
+	   <image xlink:href="assets/timelineImages/air_black.png" x="10" y="10" height="30px" width="30px"/>
+     </svg>
+    <div class="time">11:28AM PT</div>
+    
+  </div>
+  
+  <svg height="6" width="40">
+  <line x1="0" y1="0" x2="40" y2="0" style="stroke:#06aa14;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+  
+<svg height="6" width="30">
+  <line x1="0" y1="0" x2="50" y2="0" style="stroke:#959799;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg height="20" width="42">
+<!-- <line x1="1" y1="0" x2="1" y2="30" style="stroke:#06aa14;stroke-width:2" />  -->
+<circle cx="9" cy="10" r="3" fill="#959799" />  
+<circle cx="19" cy="10" r="3" fill="#959799" />  
+<circle cx="29" cy="10" r="3" fill="#959799" />    
+<!-- <line x1="41" y1="0" x2="41" y2="20" style="stroke:#06aa14;stroke-width:2" />  -->
+</svg>  
+
+<svg height="6" width="45">
+  <line x1="0" y1="0" x2="45" y2="0" style="stroke:#959799;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+  <div class="event3 futureGray ">
+    <div class="event1Bubble futureOpacity" style="width:125px">
+      <div class="eventTime">
+        <div class="Day">
+          <div class="FlightDate">5 April 2019</div>
+        </div>
+      </div>
+      <div class="eventTitle">Estimated Arrival At JFK</div>
+    </div>
+      <svg height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="none" stroke="#003a70" stroke-width="2" opacity="0.5" />
+	   <image xlink:href="assets/timelineImages/landing_black.png" x="10" y="10" height="30px" width="30px" opacity="0.5"/>
+     </svg>
+	<div class="time">7:55PM ET</div>
+  </div>
+<svg height="6" width="60">
+<line x1="0" y1="0" x2="60" y2="0" style="stroke:#959799;stroke-width:15" /> 
+</svg>
+
+<div class="event2 futureGray">
+    <div class="event2Bubble futureOpacity" style="width:130px;">
+      <div class="eventTime">
+        <div class="Day">
+		<div class="FlightDate">5 April 2019</div>
+		</div>
+		
+      </div>
+      <div class="eventTitle">Estimated Pickup</div>
+    </div>
+    <svg height="50" width="50">
+       <circle id="chkin" cx="25" cy="25" r="24" fill="none" stroke="#003a70" stroke-width="2"  opacity="0.5"/>
+	   <image xlink:href="assets/timelineImages/bag_black.png" x="10" y="10" height="30px" width="30px" opacity="0.5"/>
+     </svg>
+    <div class="time">8:25PM ET</div>
+  </div>
+  <svg height="6" width="30">
+  <line x1="0" y1="0" x2="30" y2="0" style="stroke:#959799;stroke-width:15" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+  <div class="timelineAirport">New York (JFK)</div>
+</div>
+</div>
+		  </div>
+		 <div class="row">
+            <div class="col-12" style="padding-top:40px;">
+                <h3 class="tracker-page-title" style="font-family: Arial, Helvetica, sans-serif;margin-bottom:20px; margin-left:0px;font-size:22px;font-weight:500">Live Flight Tracker</h3>
+              
+              </div>
+          </div>
+		 <div class="row">
+			<div class="col-6">
+               
+                <img src="assets/img/map.gif" width="100%"  >
+			</div>
+			<div class="col-6" style="text-align:center;width:100%">
+			<div class="ticket inverse">
+  <header>
+    <div class="company-name">
+      H8XKLW
+    </div>
+    <div class="gate">
+      <div>
+        DELTA AIRLINES 182
+      </div>
+    </div>
+  </header>
+  <section class="airports">
+    <div class="airport">
+      <div class="airport-name">
+        Seattle
+      </div>
+      <div class="airport-code">
+        SEA
+      </div>
+      <div class="dep-arr-label">
+        Departed
+      </div>
+      <div class="fltTime">
+        11:25AM
+      </div>
+    </div>
+	<img src="assets/img/AWT-Plane.png" style="position: relative; top: -40px;left: -25px;height:25px;width:25px;"/>
+	<div class="airport">
+      <div class="airport-name">
+        New York
+      </div>
+      <div class="airport-code">
+        JFK
+      </div>
+      <div class="dep-arr-label">
+        Arriving
+      </div>
+      <div class="fltTime">
+        7:55PM
+      </div>
+    </div>
+  </section>
+  <section class="place">
+    <div class="place-block">
+      <div class="place-label">
+        Travellers
+      </div>
+      <div class="place-value">
+        John Smith
+      </div>
+	  <div class="place-value">
+        Jane Smith
+      </div>
+    </div>
+    <div class="place-block">
+      <div class="place-label">
+        Seat
+      </div>
+      <div class="place-value">
+        2A
+      </div>
+	  <div class="place-value">
+        2B
+      </div>
+    </div>
+    <div class="place-block">
+      <div class="place-label">
+        Zone
+      </div>
+      <div class="place-value">
+        1
+      </div>
+	  <div class="place-value">
+        1
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+			</div>
+			
+		  <div class="row">
+		  <div class="kidStats">
+<h3 style="font-family: Arial, Helvetica, sans-serif;margin-bottom:10px;font-size:22px;font-weight:500"> Kid Status: Inflight<i class="material-icons refreshIcon" style="vertical-align:top">
+refresh
+</i><span class="lastUpdated">Last updated at 1:09PM ET</span></h3>
+<table id="kidStatsTable" style="border-spacing:5px;">
+<tr><th> Name</th><th style="width:80px;">Status</th><th>Current Activity</th><th>Screen Time</th><th style="width:80px;text-align:center;">Chat</th>
+</tr>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-1-name">John Smith</td>
+	<td><img id="pax-1-mood" src="assets\img\happy.png" height=30px width=30px/></td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-1-activity">Playing Games</td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">14</span>m</td>
+	<td><div class="chat-icon"><button id="pax-1-chat" onclick="openChat(1)" type="button"><i style="vertical-align:middle;" class="material-icons">
+chat
+</i></button></div></td>
+</tr>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70" id="pax-2-name">Jane Smith</td>
+	<td><img id="pax-2-mood" src="assets\img\happy.png" height=30px width=30px/></td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color: #003a70;" id="pax-2-activity">Watching Movies</td>
+	<td style="font-family: Arial, Helvetica, sans-serif;font-weight:400;font-size:18px;color: #003a70" id="pax-1-screenTime"><span style="font-size:32px;font-weight:bold">1</span>hr <span style="font-size:20px;">32</span>m</td>
+	<td><div class="chat-icon"><button id="pax-2-chat" onclick="openChat(2)" type="button"><i style="vertical-align:middle;" class="material-icons">
+chat
+</i></button></div></td>
+</tr>
+</table>
+</div>
+
+
+
+		  </div>
+		  
+		  
+<div class="chatbox-popup">
+  <header class="chatbox-popup__header">
+    <aside style="flex:3">
+      <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
+    </aside>
+    <aside style="flex:8">
+      <h1 id="chat-name">Random Name</h1>
+    </aside>
+    <aside style="flex:1">
+      <button class="chatbox-panel-close" onclick="closeChat()"><i class="fa fa-close" aria-hidden="true"></i></button>
+    </aside>
+  </header>
+  <main class="chatbox-popup__main">
+	
+  </main>
+  <footer class="chatbox-popup__footer">
+    <aside style="flex:10">
+      <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+    </aside>
+    <aside style="flex:1;color:#888;text-align:center;">
+      <i class="fa fa-paper-plane" aria-hidden="true"></i>
+    </aside>
+  </footer>
+</div>
+		  </div>

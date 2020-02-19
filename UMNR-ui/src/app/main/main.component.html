@@ -1,0 +1,34 @@
+<div class="mainContainer">
+<!--<div> class="col-sm-12 col-md-12 col-lg-12"
+        <div>
+          <img></img>
+        </div>
+    </div>-->
+
+    <div class="contentPlaceholder">
+        <div class="navC">
+          <nav class="menuBar">
+            <a class="menuItem firstItem" routerLink="./booking" routerLinkActive="active">Book</a>|
+            <a class="menuItem" routerLink="./dashboard" routerLinkActive="active">My Trips</a>|
+            <a class="menuItem" routerLink="./tracker" routerLinkActive="active">Tracker</a>|
+            <a class="menuItem" routerLink="./review" routerLinkActive="active">Review</a>|
+            <a class="menuItem" href="http://localhost:4300" >Inflight Entertainment</a>
+            </nav>
+
+           <!-- <button type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on bottom">
+  Popover on bottom
+</button>-->
+          <div class="profileLink" *ngIf="profileData">
+            <a routerLink="./profile" routerLinkActive="active" class="tc">
+              <span style="vertical-align:bottom;">{{profileData.Name}}</span>
+			  <span style="padding-left:10px;"><img height="24px" width="24px" src="../../assets/img/profile.png"/></span>
+            </a>
+             <span style="color:#fff;display: block;">Miles travelled : 5000</span>
+          </div>
+        </div>
+        <div class="selectedContent">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

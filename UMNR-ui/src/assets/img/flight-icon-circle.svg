@@ -1,0 +1,31 @@
+<svg width="89" height="89" viewBox="0 0 89 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Oval 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12815 -14302)">
+<rect x="12815" y="14302" width="89" height="89" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 12672 14106L 13049 14106L 13049 14727L 12672 14727L 12672 14106Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Global_Nav_Flyout_MyDelta_Mobile_SM-375+" clip-path="url(#clip-0)">
+<path d="M 12672 14106L 13049 14106L 13049 14727L 12672 14727L 12672 14106Z" fill="#FFFFFF"/>
+<g id="container">
+<use xlink:href="#path0_fill" transform="translate(12673 14106)" fill="#FFFFFF"/>
+</g>
+<g id="ontime-icon">
+<g id="ontime-icon">
+<g id="Oval 2">
+<use xlink:href="#path1_fill" transform="translate(12815 14302)" fill="#F6F6F8"/>
+</g>
+<g id="Fill 1">
+<use xlink:href="#path2_fill" transform="translate(12834.1 14327.4)" fill="#D4D6DB"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 375 0L 375 621L 0 621L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 44.5 89C 69.0767 89 89 69.0767 89 44.5C 89 19.9233 69.0767 0 44.5 0C 19.9233 0 0 19.9233 0 44.5C 0 69.0767 19.9233 89 44.5 89Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 31.8575 44.5L 37.0702 41.1772L 37.0364 15.6438L 51.4447 6.71336C 52.8212 5.8615 53.2387 4.07315 52.3643 2.73048C 51.4898 1.37652 49.6676 0.975976 48.2855 1.82784L 34.0407 10.7583L 10.8317 0L 5.44968 3.32283L 21.0315 18.6733L 10.6455 25.0933L 5.33685 21.6859L 0 24.9861L 7.19289 30.6445L 9.32538 39.4396L 14.6679 36.1393L 13.7934 29.9788L 24.185 23.5645L 31.8575 44.5Z"/>
+</defs>
+</svg>

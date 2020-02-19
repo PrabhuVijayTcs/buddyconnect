@@ -1,0 +1,222 @@
+<form class="searchForm" (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm" *ngIf="airports">
+  <div class="triptype col-sm-12 col-md-12 col-lg-12" *ngIf="profileData">
+    <span>Select Travelers</span>
+    <mat-form-field>
+        <mat-label>Travelers</mat-label>
+        <mat-select   multiple id="travelers" name="travelers" [(ngModel)]="searchModel.selectedTravelers">
+          <mat-option [value]="profileData.Name">{{profileData.Name}} ({{profileData.AgeType}})</mat-option>
+          <mat-option *ngFor="let kid of profileData.kids" [value]="kid.Name">{{kid.Name}} ({{kid.AgeType}})</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+  <div class="triptype col-sm-12 col-md-12 col-lg-12">
+    <input type="radio" required value="Roundtrip" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">Roundtrip
+    <input type="radio" required value="One-Way" [(ngModel)]="searchModel.tripType" id="tripType" name="tripType">One-Way
+  </div>
+  <div class="col-sm-8 col-md-8 col-lg-8">
+    <!--<div class="selectText">from</div>-->
+    <select class="selectBox" [(ngModel)]="searchModel.origin" id="origin" required name="origin">
+      <option value="">Select Origin</option>
+      <option *ngFor="let airport of airports.airports" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
+    </select>
+  </div>
+  <div class="col-sm-8 col-md-8 col-lg-8">
+    <!--<div class="selectText">to</div>-->
+    <select class="selectBox" [(ngModel)]="searchModel.destination" id="destination" name="destination">
+      <option value="">Select Destination</option>
+      <option *ngFor="let airport of airports.airports" [value]="state">{{airport.displayName}} ({{(airport.code)}})</option>
+    </select>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12"> 
+    <span>Departing</span>
+    <mat-form-field class="example-full-width">
+      <input required [(ngModel)]="searchModel.depart" id="depart" name="depart" matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12">
+    <span>Returning</span>
+    <mat-form-field class="example-full-width">
+      <input  matInput [(ngModel)]="searchModel.return" id="return" name="return" [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div> 
+  <div class="col-sm-12 col-md-12 col-lg-12 fl col-xs-12">
+  <div class="col-sm-4 col-md-4 col-xs-12 fl col-lg-4">
+  <!--<div class="selectText">Travelers</div>-->
+  <mat-form-field>
+      <mat-label>No of Adult's</mat-label>
+      <select matNativeControl  [(ngModel)]="searchModel.adultsCount" id="adultsCount" name="adultsCount">
+        <option value="" selected>Select no of Adult's</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10+">10+</option>
+      </select>
+    </mat-form-field>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 fl col-xs-12">
+      <mat-form-field>
+          <mat-label>No of Children's</mat-label>
+          <select matNativeControl [(ngModel)]="searchModel.childCount" id="childCount" name="childCount">
+            <option value="">Select no of Children's</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10+">10+</option>
+          </select>
+        </mat-form-field>
+  </div>
+</div>
+  <div  class="cb col-sm-8 col-md-8 fl col-lg-8">
+    <div class="selectText dn">type</div>
+    <select  required class="selectBox" [(ngModel)]="searchModel.cabinType" id="cabinType" name="cabinType">
+      <option value="">Select Cabin Type</option>
+        <option value="First class">First class</option>
+        <option value="Business">Business</option>
+        <option value="Premium economy">Premium economy</option>
+        <option value="Economy/Coach">Economy/Coach</option>
+    </select>
+  </div>
+  <div class="cb col-sm-12 col-md-12 col-lg-12">
+      <button type="submit" [disabled]="!searchForm.valid" class="btn btn-warning btn-sm">Search Flights</button>
+  </div>
+</form>
+
+<div  class="col-sm-12 col-md-12 mT2 col-lg-12" *ngIf="shoppingResponse" >
+  <form>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            &nbsp;
+          </th>
+          <th>
+            Flight Details
+          </th>
+          <th>
+            Departs
+          </th>
+          <th>
+            Arrives
+          </th>
+          <th>
+            Duration
+          </th>
+          <th>
+            Ticket Price
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let flightdata of shoppingResponse.AirShoppingRS[0].ResponseOffer; let i = index">
+          <td>
+              <input type="radio" required value="{{i}}" id="selectTrip" name="selectTrip">
+          </td>
+          <td>
+            <div>
+                {{flightdata.MarketingCarrierName}}
+            </div>
+            <div>
+                {{flightdata.OperatingCarrierCode}} {{flightdata.OperatingFlightNumber}}
+            </div>
+            <div>
+              {{flightdata.DeptAirportCode}} --> {{flightdata.ArrAirportCode}}
+            </div>
+            <div>
+              <a class="viewSeat" (click)="openDialog()" >View Seat</a>
+            </div>
+          </td>
+          <td>
+              {{flightdata.DeptDate}} {{flightdata.DeptTime}}
+          </td>
+          <td>
+              {{flightdata.ArrDate}} {{flightdata.ArrTime}}
+          </td>
+          <td>
+              3 hours
+          </td>
+          <td>
+              {{flightdata.TotalFareAmount}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="cb col-sm-12 col-md-12 col-lg-12 mT2">
+        <button type="button" class="btn btn-warning btn-sm fr" routerLink="./payment" >Continue</button>
+    </div>
+
+    <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 p0 package">
+        <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
+            <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
+              <img src="../../../assets/img/delta.jpg" height="175px" width="175px">
+            </div>
+            <div class="tc fl col-sm-8 col-md-8 col-lg-8 p0">
+              <strong>Summer vacation package</strong>
+              <div>
+                  <p> Room:	Partner Package / 1 King Bed 1301 6TH AVENUE, SEATTLE, WASHINGTON</p>
+              </div>
+              <div>
+                <strong>Flight details</strong>
+                <p>JFK-->SEA</p>
+                <p>Outbound:	Depart: 9:00 PM; Arrive: 12:10 AM (Nonstop)</p>
+                <p> Inbound:	Depart: 6:00 AM; Arrive: 8:56 AM (Nonstop)</p>
+              </div>
+              <div class="tc">
+                  <button type="button" class="btn btn-warning btn-sm" routerLink="./payment" >Book</button>
+              </div>
+            </div>
+            <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
+              <img src="../../../assets/img/hilton.jpg"  height="175px" width="175px">
+            </div>
+            <div class="cb">
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="cb col-sm-12 col-md-12 col-lg-12 mT p0 package">
+        <div class="tc col-sm-12 col-md-12 col-lg-12 p0 mT6">
+            <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
+              <img src="../../../assets/img/jetblue.jpg" height="175px" width="175px">
+            </div>
+            <div class="tc fl col-sm-8 col-md-8 col-lg-8 p0">
+              <strong>Summer vacation package</strong>
+              <div>
+                  <p> Room:	Partner Package / 1 King Bed 1405 7TH AVENUE, SEATTLE, WASHINGTON</p>
+              </div>
+              <div>
+                <strong>Flight details</strong>
+                <p>JFK-->SEA</p>
+                <p>Outbound:	Depart: 9:00 PM; Arrive: 12:10 AM (Nonstop)</p>
+                <p> Inbound:	Depart: 6:00 AM; Arrive: 8:56 AM (Nonstop)</p>
+              </div>
+              <div class="tc">
+                  <button type="button" class="btn btn-warning btn-sm" routerLink="./payment" >Book</button>
+              </div>
+            </div>
+            <div class="tc fl col-sm-2 col-md-2 col-lg-2 p0">
+              <img src="../../../assets/img/hyatt.jpg"  height="175px" width="175px">
+            </div>
+            <div class="cb">
+              
+            </div>
+        </div>
+    </div>
+  </form>
+</div>

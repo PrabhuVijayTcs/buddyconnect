@@ -1,0 +1,29 @@
+<form *ngIf="showPaymentPage" class="payForm mT2" (ngSubmit)="payment(payForm)" #payForm="ngForm">
+  <div class="pB1 col-sm-12 col-md-12 col-lg-12">
+      <label class="col-sm-12 col-xs-12 col-md-12 col-lg-12">Name on Card</label>
+      <input  class="col-sm-4 col-xs-12 col-md-4 col-lg-4" type="text" required placeholder="username" id="name" name="name" [(ngModel)]="paymentObj.name">
+  </div> 
+  <div class="pB1 col-sm-12 col-md-12 col-lg-12">
+      <label class="col-sm-12 col-md-12 col-lg-12">Card Number</label>
+      <input class="col-sm-4 col-xs-12 col-md-4 col-lg-4" type="text" id="number" name="number" [(ngModel)]="paymentObj.number" required >
+  </div>  
+  <div class="pB1 col-sm-12 col-md-12 col-lg-12">
+    <div class="pB1">
+        <label class="col-sm-12 col-md-12 col-lg-12">CVC</label>
+        <input class="col-sm-4 col-xs-12 col-md-4 col-lg-4" type="password" id="cvc" name="cvs" [(ngModel)]="paymentObj.cvs" required >
+    </div>
+    <div>
+        <label class="col-sm-12 col-md-12 col-lg-12">Expiration</label>
+        <input class="col-sm-2 col-md-2 col-lg-2" type="text" id="expDateMon" name="expDateMon" [(ngModel)]="paymentObj.expDateMon"  required>
+        <input  class="col-sm-2 col-md-2 col-lg-2" type="text" id="expDateYear" name="expDateYear" [(ngModel)]="paymentObj.expDateYear" required>
+    </div>
+  </div>
+  <div class="tc col-sm-4 col-xs-12 col-md-4 col-lg-4">
+    <input type="button" class="btn btn-sm btn-warning btn-sm" value="Back"/>
+    <input type="button" class="btn dib mL2 btn-sm btn-warning btn-sm" value="Pay"  (click)="payment()" />
+  </div>
+</form>
+<div *ngIf="showPnrPage" class="tc col-sm-12 col-md-12 col-lg-12">
+  <p>Your payment successful.</p>
+  <p>Your ticketed pnr number is 132133 and ticket has been mailed to your mail ID.</p>
+</div>

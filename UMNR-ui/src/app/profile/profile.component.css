@@ -1,0 +1,502 @@
+h1{
+    color:rgba(31, 80, 132);
+}
+h2{
+    color:#ffc107;
+}
+.profileData div span:first-child{
+    width: 20%;
+    display: inline-block;
+}
+.profileData div{
+    padding: 0.5% 1%;
+}
+
+
+.Timeline {
+    display: flex;
+    align-items: center;
+    height: 270px;
+    text-align:left;
+    margin-left:1%;
+  }
+  
+  .event1,
+  .event2, .event3 {
+    position: relative;
+  }
+  
+  .event1Bubble {
+    position: absolute;
+    background-color: rgba(158, 158, 158, 0.1);
+    width: 135px;
+    height: 60px;
+    top: -70px;
+    left: -15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
+  }
+  
+  .event2Bubble {
+    position: absolute;
+    background-color: rgba(158, 158, 158, 0.1);
+    width: 140px;
+    height: 60px;
+    left: -105px;
+    top: 33px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
+  }
+  
+  .event1Bubble:after,
+  .event1Bubble:before,
+  .event2Bubble:after,
+  .event2Bubble:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+  }
+  
+  .event1Bubble:before {
+    bottom: -10px;
+    left: 13px;
+    border-top-color: rgba(222, 222, 222, 0.66);
+    border-width: 12px;
+  }
+  
+  .event1Bubble:after {
+    bottom: -8px;
+    left: 13px;
+    border-top-color: #F6F6F6;
+    border-width: 12px;
+  }
+  
+  .event2Bubble:before {
+    bottom: 59px;
+    left: 103px;
+    border-top-color: rgba(222, 222, 222, 0.66);
+    border-width: 12px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .event2Bubble:after {
+    bottom: 57px;
+    left: 103px;
+    border-top-color: #F6F6F6;
+    border-width: 12px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .eventTime {
+    display: flex;
+    padding-bottom:5px;
+  }
+  
+  .Day {
+    font-size: 11px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003a70;
+  }
+  
+  .FlightDate {
+    font-weight: 600;
+    line-height: 10px;
+    color: #9E9E9E;
+    font-size: 9px;
+    padding-top: 2px;
+  }
+  
+  .eventTitle {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color:#003a70;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 12px;
+    margin-top: -2px;
+  }
+  
+  .time {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    font-size: 8px;
+    margin-top: -12px;
+    margin-left: -5px;
+    color: #c8102e;
+  }
+  
+  .agentAssisted {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9E9E9E;
+    font-size: 8px;
+    width: 100px;
+    top: -86px;
+    left: -12px;
+  }
+  
+  .agent2Assisted {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9E9E9E;
+    font-size: 8px;
+    width: 100px;
+    top: 96px;
+    left: -45px;
+  }
+  
+  .time2{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    font-size: 8px;
+    margin-top: -31px;
+    margin-left: -5px;
+    color: #c8102e;
+  }
+  
+  .now{
+       background-color: #003a70;
+      color: white;
+      border-radius: 7px;
+      margin: 5px;
+      padding: 4px;
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 2px solid white;
+      font-weight: bold;
+      box-shadow: 0 0 0 2px #003a70;
+  }
+  
+  .futureGray{
+       filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+    
+  }
+  
+  .futureOpacity{
+    -webkit-filter: opacity(.3);
+    filter: opacity(.3);
+    
+  }
+  
+  .timelineAirport{
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right:5px;
+      margin-left:5px;
+      font-weight:bold;
+  }
+  
+  
+  .liveText{
+      padding-top:5px;
+  }
+  
+  .kidStats{padding:1.5% 0 1% 1.5%;font-family: Arial, Helvetica, sans-serif;}
+  
+  .moodLabel{
+    color: #003a70;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  #kidStatsTable tr{line-height:45px;}
+  
+  #kidStatsTable th{
+  font-size:13px;color:#c8102e;text-align:left;width:120px;
+  }
+  
+  .lastUpdated{
+      color: #9E9E9E;
+      font-size: 8px;
+      padding-left:10px;
+  }
+  
+  .chat-icon{text-align:center;cursor:pointer;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius:25px;}
+  
+  .chat-icon:hover{
+      background-color:#1187c1;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  button {
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    outline: 0 !important;
+    cursor: pointer;
+  }
+  button.chatbox-open {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    background-color: #0360a5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 16px;
+  }
+  button.chatbox-close {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    background-color: #0360a5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    margin: 16px calc(2 * 16px + 52px) 16px 16px;
+  }
+  
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    height: calc(16px + 16px / 2);
+    padding: 0 calc(16px / 2);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: calc(16px + 16px / 2);
+    color: #888;
+    background-color: none;
+    border: 0;
+    outline: 0 !important;
+    resize: none;
+    overflow: hidden;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #888;
+  }
+  textarea:-ms-input-placeholder {
+    color: #888;
+  }
+  textarea::-ms-input-placeholder {
+    color: #888;
+  }
+  textarea::placeholder {
+    color: #888;
+  }
+  
+  .chatbox-popup {
+    display: flex;
+    position: absolute;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+    flex-direction: column;
+    display: none;
+    bottom: 15px;;
+    right: 16px;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+  .chatbox-popup .chatbox-popup__header {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    background-color: #003a70;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  .chatbox-popup .chatbox-popup__header .chatbox-popup__avatar {
+    margin-top: -32px;
+    background-color: #003a70;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  .chatbox-popup .chatbox-popup__main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: calc(2 * 16px) 16px;
+    line-height: calc(16px + 16px / 2);
+    color: #888;
+    text-align: center;
+  }
+  .chatbox-popup .chatbox-popup__footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .ticket {
+    display: inline-block;
+    margin: 0px 20px 30px 20px;
+    background-color: #273138;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Helvetica Neue;
+    font-weight: 300;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .ticket header {
+    position: relative;
+    height: 35px;
+    background-color: #1B252E;
+    padding: 7px 7px 7px 12px;
+    border-radius: 10px 10px 1px 1px;
+    font-size: 15px;
+    font-weight:bold;
+  }
+  .ticket header .company-name {
+    text-align: left;
+  }
+  .ticket header .gate {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    font-size: 13px;
+    font-weight:bold;
+  }
+  
+  .ticket .airports {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px dotted #003a70;
+  }
+  .ticket .airports .airport {
+    position: relative;
+    margin: 1px;
+    text-align: center;
+    display: inline-block;
+  }
+  .ticket .airports .airport .airport-name {
+    color: #003a70;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .ticket .airports .airport .airport-code {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 3px 0;
+  }
+  .ticket .airports .airport .dep-arr-label {
+    color: #9299A0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .ticket .airports .airport .fltTime {
+    font-size: 10px;
+    color: #9299A0;
+  }
+  .ticket .airports .airport:first-child {
+    margin-right: 20%;
+  }
+  
+  .ticket .place {
+    padding:5px 0px;
+    text-align:center;
+  }
+  .ticket .place-block {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+  .ticket .place-block .place-label {
+    color: #c8102e;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .ticket .place-block .place-value {
+    color: #9299A0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .ticket.inverse {
+    background-color: #F8F8F8;
+  }
+  .ticket.inverse header {
+    background-color: #003a70;
+  }
+  .ticket.inverse .airport:first-child:after {
+    color: #003a70;
+  }
+  .ticket.inverse .airport .airport-code {
+    color:#000000;
+    font-weight: 500;
+  }
+
+  .emergencyContact{
+    border-top: 1px dotted #003a70; 
+    border-bottom: none;
+  }
+
+ 
+  h1{
+      color: #c8102e;
+  }
+
+  .d-none{
+      display: none;
+  }
+
+  .backdrop {
+    background-color:rgba(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+}
+.modal{
+  top: auto;
+}

@@ -1,0 +1,118 @@
+<div class="bg_login">
+  <div class="row padT bgC">
+    <div class="col-sm-12 col-md-6 col-lg-6 bgL tc">
+      <form class="col-xs-12 col-sm-8 col-md-8 col-lg-8 loginform" [formGroup]="loginform">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <input type="text" class="form-control" formControlName="username" required placeholder="username">
+          </div> 
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <input type="password" class="form-control"  formControlName="password" required placeholder="password">
+          </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <button type="submit" (click)="login()"  class="form-control" [disabled]="!loginform.valid">Log in</button>
+            </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                forgot password?<a href="#" >click here</a>
+            </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              not an user?<input type="button" class="btn btn-sm btn-warning btn-sm" routerLink="/registration" value="Sign Up"/>
+            </div>
+       </form> 
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6 pdT1">
+      <form (ngSubmit)="searchFlights(searchForm)" #searchForm="ngForm">
+        <div class="triptype col-sm-12 col-md-12 col-lg-12">
+          <input type="radio" value="Roundtrip" [(ngModel)]="searchModel.tripType" id="tripType1" name="tripType">Roundtrip
+          <input type="radio" value="One-Way" [(ngModel)]="searchModel.tripType" id="tripType2" name="tripType">One-Way
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <!--<div class="selectText">from</div>-->
+          <select class="selectBox" [(ngModel)]="searchModel.origin" id="origin" name="origin">
+            <option value="">Select Origin</option>
+            <option *ngFor="let state of states" [value]="state">{{state}}</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 mT2">
+          <!--<div class="selectText">to</div>-->
+          <select class="selectBox" [(ngModel)]="searchModel.destination" id="destination" name="destination">
+            <option value="">Select Destination</option>
+            <option *ngFor="let state of states" [value]="state">{{state}}</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12"> 
+          <span>Departing</span>
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="searchModel.depart" id="depart" name="depart" matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+          <span>Returning</span>
+          <mat-form-field class="example-full-width">
+            <input matInput [(ngModel)]="searchModel.return" id="return" name="return" [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        </div> 
+       <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
+          <!--<div class="selectText">Travelers</div>-->
+          <mat-form-field>
+              <mat-label>No of Adult's</mat-label>
+              <select matNativeControl required [(ngModel)]="searchModel.adultsCount" id="adultsCount" name="adultsCount">
+                <option value="" selected>Select no of Adult's</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10+">10+</option>
+              </select>
+            </mat-form-field>
+
+          <!--<mat-select class="selectBox">
+            <mat-option>Adults</mat-option>
+            <mat-option>Children</mat-option>
+            <mat-option>UMNR</mat-option>
+          </mat-select>-->
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 w50 fl p0">
+            <mat-form-field>
+                <mat-label>No of Children's</mat-label>
+                <select matNativeControl required [(ngModel)]="searchModel.childCount" id="childCount" name="childCount">
+                  <option value="">Select no of Children's</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10+">10+</option>
+                </select>
+              </mat-form-field>
+        </div>
+        </div>
+        <div  class="cb col-sm-12 col-md-12 col-lg-12">
+          <!--<div class="selectText">type</div>-->
+          <mat-select class="selectBox" [(ngModel)]="searchModel.cabinType" id="cabinType" name="cabinType">
+            <mat-option value="">Cabin Type</mat-option>
+              <mat-option value="First class">First class</mat-option>
+              <mat-option value="Business">Business</mat-option>
+              <mat-option value="Premium economy">Premium economy</mat-option>
+              <mat-option value="Economy/Coach">Economy/Coach</mat-option>
+          </mat-select>
+        </div>
+        <div class="cb col-sm-12 col-md-12 col-lg-12 mT2 tc">
+            <button type="submit"  class="btn btn-warning btn-sm">Search Flights</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

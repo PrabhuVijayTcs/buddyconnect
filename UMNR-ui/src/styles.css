@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.padT{
+    margin-top:10px;
+}
+.cdk-overlay-pane{
+    max-width: 850px !important;
+    width: 850px !important;
+    height: 550px;
+}
+.mat-dialog-container{
+    background: #fff;
+}
+.viewSeat{
+    color:#007bff !important;
+}
+.bgC{
+    background-color: #f1f1f1;
+    margin-top:10px;
+}
+.bgL{
+    background-color: #1f5084;
+    border-radius: 3px;
+}
+.selectText{
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    width: 50px;
+    background-color:#1f5084;
+    border-radius: 3px;
+    color:#fff;
+}
+.selectBox{
+    background: white;
+    border-radius: 5px;
+    padding: 1%;
+    color:#000;
+    padding-left: 50px;
+}
+.mT2{
+    margin-top:2%;
+}
+
+.cb{
+    clear: both;
+}
+.mat-form-field-suffix{
+    background:  #1f5084;
+}
+.mat-form-field-label{
+    display: none;
+}
+.mat-form-field-infix{
+    border-bottom:1px solid #ccc;
+}
+.mat-select-value-text{
+    color:#5c5c5c;
+}
+.mat-select-arrow{
+    color:#1f5084;
+}
+.fr{
+    float:right;
+}
+.dn{
+    display: none;
+}

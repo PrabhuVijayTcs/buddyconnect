@@ -1,0 +1,36 @@
+<div class="container">
+  <h4>STAR RATING</h4>
+  <div class="section">
+    <div class="block">
+      <div>Customer-Experience</div>
+      <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeCustRate($event)"></star-rating>
+      <div>Rating: {{custRate}}</div>
+    </div>
+    <div class="block">
+        <div>Services Offered</div>
+        <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeServRate($event)"></star-rating>
+        <div>Rating: {{servRate}}</div>
+      </div>
+      <div class="block">
+          <div>Grieviance Addressal</div>
+          <star-rating [maxScore]="5" [forDisplay]="false" (rateChanged)="changeGrievRate($event)"></star-rating>
+          <div>Rating: {{grievRate}}</div>
+        </div>
+         </div>
+         <input type='text' class="comments" #comment placeholder="Additional Comments if any">
+  <button type = "submit" (click)="onSubmit(comment)">Submit</button>
+  <div class="options">
+    <h4>User Rating</h4>
+  <div *ngIf='displayRatingScore > 0'>
+      <span><star-rating [score]="displayRatingScore" [forDisplay]="true"></star-rating></span>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="review">
+  <div class="col-sm-12 col-md-12 col-lg-12 rating" *ngFor="let person of persons">
+<b>{{ person.name  }} </b><star-rating [score]="person.rating" [forDisplay]="true"></star-rating> <div class="SentimentData_{{person.counterId}}" style="text-transform:capitalize;font-size:12px;"> <img height="15" width="15" style="vertical-align:top" src='assets/img/{{person.sentiment}}.jpg'/> <span> <img  width="20" height="20" src="assets/img/analysing.gif"/></span></div>
+<p>{{ person.comment }}</p>
+</div>

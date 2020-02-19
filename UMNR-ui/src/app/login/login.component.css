@@ -1,0 +1,91 @@
+.padT{
+    margin-top:10px;
+}
+.bgC{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top:10px;
+    margin: auto;
+    top:15%;
+    position: absolute;
+    width: 100%;
+}
+.bgL{
+    background-color:rgba(31, 80, 132, 0.5);
+    border-radius: 3px;
+    padding: 4% 0;
+    padding-left: 10%;
+}
+.selectText{
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    width: 50px;
+    background-color:#1f5084;
+    border-radius: 3px;
+    color:#fff;
+}
+.selectBox{
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    color:#000;
+    text-align: center;
+    width: 100%;
+}
+.mT2{
+    margin-top:2%;
+}
+
+.mat-select-value-text{
+    color:#ccc;
+}
+.p0{
+padding: 0;
+}
+.fl{
+    float: left;
+}
+.w50{
+    width: 50%;
+}
+.bg_login{
+    background-image: url(../../assets/img/bg-image.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    color:#f1f1f1;
+}
+.pdT1{
+    padding-top: 1%;
+}
+.triptype{
+    text-align:center;
+    padding-bottom:1%;
+}
+.loginform>div{
+    padding-bottom:4%; 
+}
+.tc{
+    text-align: center;
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { /* STYLES GO HERE */
+    .bgC{
+        top:0%;
+    }
+    .bgL{
+        padding-left: 0%;
+    }
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { /* STYLES GO HERE */
+    .bgC{
+        top:10%;
+    }
+    .bgL{
+        padding-left: 0%;
+    }
+}
