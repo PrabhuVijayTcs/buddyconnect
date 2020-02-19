@@ -50,9 +50,11 @@
 		display: none;
 	}
 
+
 </style>
 
 <script>
+	var isAssistanceRequired = "@user.IsDisabled";
 	$(function(){
 		$(":radio[value=YesSpecial]").click(function () {
 			$('.yesQues').show();
@@ -63,6 +65,15 @@
 			$('.noQues').show();
 			$('.yesQues').hide();
 		});
+
+		if (isAssistanceRequired === "True") {
+			$(":radio[value=YesSpecial]").click();
+			$('#splServ').val = "Yes";
+			$('#wchrPref').val = "Yes";
+		} else {
+			$(":radio[value=NoSpecial]").click();
+			$(":radio[value=YesCareTaker]").click();
+		}
 	});
 </script>
 
@@ -252,10 +263,10 @@
 		<div class="form-group noQues">
 			<div class="col-xs-12">
 				<br />
-				<h4>Are you interested in assisting a needful co-passenger?</h4>
-				<input type="radio" id="yesCareTaker" name="special" value="YesCareTaker">
+				<h4>Are you interested in joining Buddy Connect program?</h4>
+				<input type="radio" id="yesCareTaker" name="buddy" value="YesCareTaker">
 				<label for="yesSpecial">Yes</label><br>
-				<input type="radio" id="noCareTaker" name="special" value="NoCareTaker">
+				<input type="radio" id="noCareTaker" name="buddy" value="NoCareTaker">
 				<label for="noSpecial">No</label><br>
 			</div>
 		</div>
