@@ -1,0 +1,22 @@
+[
+  {
+    "UserName": "caretaker",
+    "FirstName": "John",
+    "MiddleName": "Richard",
+    "LastName": "Smith",
+    "DateOfBirth": "02/02/2000",
+    "Gender": "Male",
+    "isDisabled": 1,
+    "isCareGiver": 0
+  },
+  {
+    "UserName": "caregiver",
+    "FirstName": "Dwayne",
+    "MiddleName": "Rock",
+    "LastName": "Johnson",
+    "DateOfBirth": "02/02/1980",
+    "Gender": "Male",
+    "isDisabled": 0,
+    "isCareGiver": 1
+  }
+]
