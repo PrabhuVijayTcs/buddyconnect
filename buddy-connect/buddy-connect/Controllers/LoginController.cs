@@ -17,7 +17,7 @@ namespace buddy_connect.Controllers
         }
 
         [HttpPost]
-         public ActionResult Login(string userName)
+         public ActionResult Index(string userName)
         {
             var userProfile = LoginFunctions.GetProfileData(userName);
             return View();

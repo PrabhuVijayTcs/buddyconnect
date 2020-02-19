@@ -9,15 +9,16 @@ namespace buddy_connect.Components
 {
     public class LoginFunctions
     {
-        private static List<ProfileViewModel> returnUserProfiles()
+        private static List<ProfileViewModel> UserProfiles;
+        static LoginFunctions()
         {
             var sourceData = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~\assets\profile.json"));
-            return JsonConvert.DeserializeObject<List<ProfileViewModel>>(sourceData);            
+            UserProfiles =  JsonConvert.DeserializeObject<List<ProfileViewModel>>(sourceData);
         }
 
         public static ProfileViewModel GetProfileData(string userName)
         {
-            return returnUserProfiles().Where(x => x.UserName == userName).FirstOrDefault();            
+            return UserProfiles?.FirstOrDefault(x => x.UserName == userName);            
         }
     }
 }
