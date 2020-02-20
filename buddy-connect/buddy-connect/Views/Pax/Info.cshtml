@@ -1,0 +1,121 @@
+﻿@using buddy_connect.Models
+
+@{
+	ProfileViewModel user = Model;
+}
+
+
+
+<style type="text/css">
+
+	.card {
+		border-radius: 6px;
+		margin-top: 15px;
+		height: 400px;
+		width: 100%;
+		background-color: rgba(0,0,0,0.5) !important;
+	}
+
+	.card-header h3 {
+		color: white;
+	}
+
+	.input-group-prepend span { 
+		width: 50px;
+		background-color: #FFC312;
+		color: black;
+		border: 0 !important;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	input:focus {
+		outline: 0 0 0 0 !important;
+		box-shadow: 0 0 0 0 !important;
+	}
+
+	.editLink {
+		color: white;
+		font-size:12px;
+	}
+
+		.remember input {
+			width: 20px;
+			height: 20px;
+			border-radius: 5px;
+			margin-left: 15px;
+			margin-right: 5px;
+		}
+
+	.login_btn {
+		color: black;
+		background-color: #FFC312;
+		width: 100px;
+		border-radius: 20px;
+	}
+
+		.login_btn:hover {
+			color: black;
+			background-color: white;
+		}
+
+	.links {
+		color: white;
+	}
+
+		.links a {
+			margin-left: 4px;
+		}
+
+	.form-control {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.membership {
+		color: orange;
+		font-size: 18px;
+	}
+
+	.miles {
+		color: rgb(223, 185, 135);
+		font-size: 15px;
+	}
+
+	.userName {
+		color: rgb(125, 180, 254);
+		font-size: 20px;
+	}
+</style>
+<div class="row">
+	<div class="col-12">
+		<div class="d-flex justify-content-center h-100">
+			<div class="card">
+				<div class="card-header">
+					<h3>Selected Traveler</h3>
+				</div>
+				<div class="card-body">
+					<div class="card col-4" style="width: 16rem;height:21rem">
+						<div class="text-center" style="padding-top:20px;">
+							<img src="@ViewBag.Image" style="height: 190px; width: 190px;" class="rounded-circle img-thumbnail" alt="avatar">
+							<div class="card-body">
+								<div class="userName">@user.FirstName @user.LastName</div>
+								<div class="membership">@user.Membership</div>
+								<div class="miles">@user.Miles miles</div>
+								<div class="text-right editLink">
+									<i class="fas fa-edit"></i> Edit
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="card-footer">
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
