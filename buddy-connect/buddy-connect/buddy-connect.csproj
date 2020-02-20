@@ -159,6 +159,7 @@
     <Compile Include="Models\Booking\AvailFareDetail.cs" />
     <Compile Include="Models\Booking\AvailTripSegment.cs" />
     <Compile Include="Models\Booking\AvailTripSlice.cs" />
+    <Compile Include="Models\Booking\ConfirmationModel.cs" />
     <Compile Include="Models\Booking\FareGroupTripAndFareDetail.cs" />
     <Compile Include="Models\Booking\FareResultsViewModel.cs" />
     <Compile Include="Models\ProfileViewModel.cs" />
@@ -244,7 +245,8 @@
     <Content Include="Views\Booking\Index.cshtml" />
     <Content Include="Views\Shared\_BookingWidget.cshtml" />
     <Content Include="Views\UserProfile\Index.cshtml" />
-    <Content Include="Views\Booking\FlightResult.cshtml" />
+    <Content Include="Views\Booking\FlightResults.cshtml" />
+    <Content Include="Views\Booking\Confirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
