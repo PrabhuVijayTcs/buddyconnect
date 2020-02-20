@@ -27,7 +27,9 @@
             background: #fff !important
         }
     </style>
-
+    @{
+        var hasSessionUserProfile = Session["UserProfile"] != null;
+    }
     <script>
         $(document).ready(function () {
             $('[data-toggle="popover"]').popover();
@@ -47,15 +49,15 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="~/booking">Book <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="@Url.Action("Index","Booking")">Book <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Manage Trips</a>
                 </li>
-                @if (User.Identity.IsAuthenticated)
+                @if (User.Identity.IsAuthenticated && hasSessionUserProfile)
                 {
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile Settings</a>
+                        <a class="nav-link" href="@Url.Action("Index","UserProfile")">Profile Settings</a>
                     </li>
                 }
                 <li class="nav-item">
@@ -63,9 +65,9 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-right: 2px">
-                @if (!User.Identity.IsAuthenticated)
+                @if (!User.Identity.IsAuthenticated || !hasSessionUserProfile)
                 {
-                    <li><a href="~/Login">Sign In</a></li>
+                    <li><a href="@Url.Action("Index","Login")">Sign In</a></li>
                 }
                 else
                 {
@@ -73,7 +75,7 @@
                         <div class="text-white-50" style="font-size: 20px">
                             Welcome <b class="text-white">@User.Identity.Name</b>
                             <div class="text-right">
-                                <a href="~/Login/Logout" style="font-size: 14px; text-decoration: underline">Sign Out</a>
+                                <a href="@Url.Action("Logout","Login")" style="font-size: 14px; text-decoration: underline">Sign Out</a>
                             </div>
                         </div>
 
@@ -83,7 +85,7 @@
         </div>
     </nav>
 </div>
-<div class="container body-content">
+<div class="container body-content mt-3">
     @RenderBody()
     <hr/>
     <footer>
