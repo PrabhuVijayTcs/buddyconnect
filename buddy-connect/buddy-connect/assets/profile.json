@@ -9,7 +9,17 @@
     "IsDisabled": 1,
     "IsCareGiver": 0,
     "PhoneNumber": "+18082052321",
-    "Email": "RichardJS@xyz.com"
+    "Email": "RichardJS@xyz.com",
+    "Membership": "Elite Club",
+    "Miles": 2500,
+    "WheelChair": {
+      "Length": 42.5,
+      "Width": 29.5,
+      "Height": 52.5,
+      "Weight": "156 Lbs",
+      "Type": "Power Chair",
+      "BatteryType": "Lithium" 
+    } 
   },
   {
     "UserName": "caregiver",
@@ -21,6 +31,8 @@
     "IsDisabled": 0,
     "IsCareGiver": 1,
     "PhoneNumber": "+18083402444",
-    "Email": "JohnsonDR@xyz.com"
+    "Email": "JohnsonDR@xyz.com",
+    "Membership": "Gold Club",
+    "Miles": 1800
   }
 ]
