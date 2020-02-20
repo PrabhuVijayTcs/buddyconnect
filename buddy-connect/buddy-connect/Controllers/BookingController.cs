@@ -16,11 +16,52 @@ namespace buddy_connect.Controllers
             return View();
         }
 
-        public ActionResult FlightResult()
+        public ActionResult FlightResults()
         {
             var sourceData = System.IO.File.ReadAllText(Server.MapPath(@"~\assets\datasource\FlightResults.json"));
             var model = JsonConvert.DeserializeObject<FareResultsViewModel>(sourceData);
+            Session["FlightResults"] = model;
             return View(model);
+        }
+
+        public ActionResult Confirmation(string flightKey, string cabinType)
+        {
+            var flightResults = Session["FlightResults"] as FareResultsViewModel;
+            ConfirmationModel confirmationModel = null;
+            var selectedFlight = flightResults?.TripAndFareDetails.FirstOrDefault(x => x.UniqueReferenceKey == flightKey);
+
+            if (selectedFlight != null)
+            {
+                selectedFlight.FareDetails = selectedFlight.FareDetails.Where(x => x.CabinType == cabinType).ToList();
+
+                confirmationModel = new ConfirmationModel
+                {
+                    ArrivalDateTime = flightResults.ArrivalDateTime,
+                    DepartureDateTime = flightResults.DepartureDateTime,
+                    Destination = flightResults.Destination,
+                    DestinationCityName = flightResults.DestinationCityName,
+                    Origin = flightResults.Origin,
+                    OriginCityName = flightResults.OriginCityName,
+                    TripAndFareDetail = selectedFlight,
+                    RecordLocator = GenerateRecordLocator()
+                };
+            }
+            return View(confirmationModel);
+        }
+
+        private static string GenerateRecordLocator()
+        {
+            char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g',
+                'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                'o', 'p', 'q', 'r', 's', 't', 'u',
+                'v', 'w', 'x', 'y', 'z' };
+
+            var random = new Random();
+            var res = "";
+            for (var i = 0; i < 6; i++)
+                res = res + alphabet[random.Next(0, 26)];
+
+            return res.ToUpper();
         }
     }
 }
