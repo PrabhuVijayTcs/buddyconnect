@@ -1,0 +1,227 @@
+﻿@using buddy_connect.Models
+@{
+	ViewBag.Title = "Profile";
+	ProfileViewModel user = Model;
+}
+
+<style>
+	.bgProfile {
+		background: rgba(0, 0, 0, 0.7);
+		margin-top: 15px;
+		border-radius: 6px;
+	}
+
+	h3.username {
+		color: #ffffff;
+		padding: 5px;
+	}
+
+
+	.colorWhite {
+		color: #ffffff;
+	}
+
+	.labels {
+		font-size: 20px;
+	}
+
+	.values {
+		font-size: 20px;
+	}
+
+	.membership {
+		font-size: 25px;
+		color: orange;
+	}
+
+	.miles {
+		font-size: 15px;
+		color: rgb(223, 185, 135);
+	}
+
+	.form-control[disabled] {
+		background-color: rgb(161, 161, 161);
+		font-size: 15px;
+	}
+
+	.nav-tabs :not(.active) {
+		color: #ffffff;
+		font-weight: bold;
+	}
+
+	.yesQues, .noQues {
+		display: none;
+	}
+
+	.form-control {
+	    background-color: #fff;
+	    height: 40px;
+	    color: #191a1e;
+	    border: none;
+	    font-size: 14px;
+	    font-weight: 400;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border-radius: 10px;
+	    padding: 0px 10px;
+	}
+
+	
+
+</style>
+<script>
+	var isAssistanceRequired = "@user.IsDisabled";
+	$(function() {
+		$(":radio[value=YesSpecial]").click(function() {
+			$('.yesQues').show();
+			$('#splServ').val = "Yes";
+			$('#wchrPref').val = "Yes";
+			$(":radio[value=inchUnit]").click();
+			$('.noQues').hide();
+		});
+
+		$(":radio[value=NoSpecial]").click(function() {
+			$('.noQues').show();
+			$(":radio[value=YesCareTaker]").click();
+			$('.yesQues').hide();
+		});
+
+		if (isAssistanceRequired === "True") {
+			$(":radio[value=YesSpecial]").click();
+			$('#splServ').val = "Yes";
+			$('#wchrPref').val = "Yes";
+			$(":radio[value=inchUnit]").click();
+
+		} else {
+			$(":radio[value=NoSpecial]").click();
+			$(":radio[value=YesCareTaker]").click();
+		}
+	});
+</script>
+<div class="row">
+	<div class="col-12 specialService">
+		<div class="form-group">
+			<br />
+			<label>Do you need any special assistance?</label>
+			<div>
+				<input type="radio" id="YesSpecial" name="special" value="YesSpecial">
+				<label for="YesSpecial">Yes</label><br>
+				<input type="radio" id="noSpecial" name="special" value="NoSpecial">
+				<label for="noSpecial">No</label><br>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="yesQues">
+	<div class="row">
+		<div class="col-6">
+			<div class="form-group">
+				<label for="splServ">
+					<i class="fas fa-wheelchair"></i> Do you need Wheel chair assistance?
+				</label>
+				<select class="form-control" id="splServ" name="splServ">
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-6">
+			<label for="wchrPref">
+				Do you plan to bring your own Wheelchair?
+			</label>
+			<select class="form-control" id="wchrPref" name="wchrPref">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="form-group wchrWeight">
+				<label for="wheelchairweight">
+					Weight of Wheelchair (lbs/kg)
+				</label>
+				<input name="wheelchairweight" class="form-control" id="wheelchairweight" type="text" tabindex="4" value="@user.WheelChair.Weight">
+			</div>
+		</div>
+		<div class="col-6">
+			<label for="wheelchairtype">
+				Type of Wheelchair
+			</label>
+			<input name="wheelchairtype" class="form-control" id="wheelchairtype" type="text" tabindex="5" value="@user.WheelChair.Type">
+
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<div class="form-group">
+				<label for="length">
+					Length
+				</label>
+				<input id="length" class="form-control" type="text" name="length" tabindex="6" value="@user.WheelChair.Length">
+
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="form-group">
+				<label for="width">
+					Width
+				</label>
+				<input id="width" class="form-control" type="text" tabindex="7" name="width" value="@user.WheelChair.Width">
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="form-group">
+				<label for="height">
+					Height
+				</label>
+				<input id="height" class="form-control" type="text" tabindex="8" name="height" value="@user.WheelChair.Height">
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="form-group">
+				<label for="height">
+					Units
+				</label>
+				<div>
+					<input type="radio" selected style="margin-bottom: 1px;" id="inchUnit" name="units" value="inchUnit">
+					<label for="inchUnit" style="margin-bottom: 1px;">Inches</label><br />
+					<input type="radio" style="margin-bottom: 1px;" id="cmUnit" name="units" value="cmUnit">
+					<label for="cmUnit" style="margin-bottom: 1px;">Cms</label><br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<div class="form-group">
+				<label>
+					Battery Type
+				</label>
+				<br />
+				<input type="checkbox" name="wetCellCheckBox" id="wetCellCheckBox" value="wetcell" tabindex="9">&nbsp;Wet Cell / Acid (Spill-able)<br>
+
+				<input type="checkbox" name="dryCellCheckBox" id="dryCellCheckBox" value="drycell" tabindex="10">&nbsp;Dry Cell / Gel (Non-Spill-able)<br>
+
+				<input type="checkbox" checked="checked" name="lithiumCheckBox" id="lithiumCheckBox" value="lithium" tabindex="11">&nbsp;Lithium<br />
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="row noQues">
+	<div class="col-12">
+		<div class="form-group">
+			<br />
+			<h4>Are you interested in joining Buddy Connect program?</h4>
+			<input type="radio" id="yesCareTaker" name="buddy" value="YesCareTaker">
+			<label for="yesCareTaker">Yes</label><br>
+			<input type="radio" id="noCareTaker" name="buddy" value="NoCareTaker">
+			<label for="noCareTaker">No</label><br>
+		</div>
+	</div>
+</div>

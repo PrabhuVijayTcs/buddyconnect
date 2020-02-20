@@ -1,0 +1,148 @@
+﻿@using buddy_connect.Models
+
+@{
+	ProfileViewModel user = Model;
+}
+
+
+
+<style type="text/css">
+
+	.card-main {
+		border-radius: 6px;
+		margin-top: 15px;
+		width: 100%;
+		background-color: rgba(0,0,0,0.5) !important;
+	}
+
+	.card-body .card {
+		background-color: rgba(0,0,0,0.4) !important;
+		border-radius:5px;
+		box-shadow: inherit;
+	}
+
+	.card-body {
+		padding-top:5px;
+	}
+
+	.card-header h3 {
+		color: white;
+	}
+
+	.editLink {
+		color: white;
+		font-size:12px;
+	}
+	.bgProfile {
+		background: rgba(0, 0, 0, 0.7);
+		margin-top: 15px;
+		border-radius: 6px;
+	}
+
+	h3.username {
+		color: #ffffff;
+		padding: 5px;
+	}
+
+
+	.colorWhite {
+		color: #ffffff;
+	}
+
+	.labels {
+		font-size: 20px;
+	}
+
+	.values {
+		font-size: 20px;
+	}
+
+	.form-control[disabled] {
+		background-color: rgb(161, 161, 161);
+		font-size: 15px;
+	}
+
+	.nav-tabs :not(.active) {
+		color: #ffffff;
+		font-weight: bold;
+	}
+
+	.yesQues, .noQues {
+		display: none;
+	}
+	
+
+	.membership {
+		color: rgb(253, 186, 62);
+		font-size: 18px;
+	}
+
+	.miles {
+		color: rgb(223, 185, 135);
+		font-size: 15px;
+	}
+
+	.userName2 {
+		color: rgb(125, 180, 254);
+		font-size: 20px;
+	}
+</style>
+<div class="row">
+		<div class="d-flex justify-content-center h-100 col-12">
+			<div class="card-main">
+				<div class="card-header ml-3 ">
+					<h3>Selected Traveler</h3>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-8 colorWhite ml-3">
+							<div class="mb-3 mt-3" style="font-size: 18px;">Contact Information</div>
+							<div class="row">
+								<div class="col-6">
+									<div class="form-group">
+										<label for="phone">
+											Mobile
+										</label>
+										<input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any." value="@user.PhoneNumber">
+
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label for="email">
+											Email
+										</label>
+										<input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email." value="@user.Email">
+									</div>
+								</div>
+							</div>
+							<hr />
+							@Html.Partial("_SpecialService")
+						</div>
+						<div class="card col-3 mt-3" style="height: 20rem;width:20rem">
+							<div class="text-center" style="padding-top:20px;">
+								<img src="@ViewBag.Image" style="height: 190px; width: 190px;" class="rounded-circle img-thumbnail" alt="avatar">
+								<div class="card-body">
+									<div class="userName2"> @user.FirstName @user.MiddleName.FirstOrDefault(). @user.LastName</div>
+									<div class="miles"><i class="far fa-calendar-alt"></i> @user.DateOfBirth</div>
+									<br />
+									<div class="text-right editLink ">
+										<i class="fas fa-edit"></i> <a href="#" class="colorWhite">Edit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 colorWhite ml-3">
+							
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					
+				</div>
+			</div>
+		</div>
+</div>
+
