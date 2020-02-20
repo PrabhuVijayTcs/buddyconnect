@@ -4,6 +4,11 @@
     ViewBag.Title = "Confirmation";
 }
 
-<h2>PNR: @Model.RecordLocator</h2>
-
-<div>@Html.Partial("_ConfirmationWidget")</div>
+<div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
+    <div class="card-header">
+        PNR: <strong class="text-info">@Model.RecordLocator</strong>
+    </div>
+    <div class="card-body">
+        <div>@Html.Partial("_ConfirmationWidget")</div>
+    </div>
+</div>
