@@ -17,7 +17,7 @@ namespace buddy_connect.Controllers
         {
             if (Session["UserProfile"] is ProfileViewModel activeUser)
             {
-                ViewBag.Image = "/assets/img/" + activeUser.UserName + ".jpg";
+                ViewBag.Image = "~/assets/img/" + activeUser.UserName + ".jpg";
                 return View(activeUser);
             }
 
