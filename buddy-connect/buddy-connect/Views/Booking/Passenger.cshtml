@@ -1,107 +1,109 @@
 ﻿@using buddy_connect.Models
 
 @{
-	ProfileViewModel user = Model;
+    ProfileViewModel user = Model;
 }
 
 
 
 <style type="text/css">
 
-	.card-main {
-		border-radius: 6px;
-		margin-top: 15px;
-		width: 100%;
-		background-color: rgba(0,0,0,0.5) !important;
-	}
+    .card-main {
+        border-radius: 6px;
+        margin-top: 15px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5) !important;
+    }
 
-	.card-body .card {
-		background-color: rgba(0,0,0,0.4) !important;
-		border-radius:5px;
-		box-shadow: inherit;
-	}
+    .card-body .card {
+        background-color: rgba(0,0,0,0.4) !important;
+        border-radius: 5px;
+        box-shadow: inherit;
+    }
 
-	.card-body {
-		padding-top:5px;
-	}
+    .card-body {
+        padding-top: 5px;
+    }
 
-	.card-header h3 {
-		color: white;
-	}
+    .card-header h3 {
+        color: white;
+    }
 
-	.editLink {
-		color: white;
-		font-size:12px;
-	}
-	.bgProfile {
-		background: rgba(0, 0, 0, 0.7);
-		margin-top: 15px;
-		border-radius: 6px;
-	}
+    .editLink {
+        color: white;
+        font-size: 12px;
+    }
 
-	h3.username {
-		color: #ffffff;
-		padding: 5px;
-	}
+    .bgProfile {
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: 15px;
+        border-radius: 6px;
+    }
+
+    h3.username {
+        color: #ffffff;
+        padding: 5px;
+    }
 
 
-	.colorWhite {
-		color: #ffffff;
-	}
+    .colorWhite {
+        color: #ffffff;
+    }
 
-	.labels {
-		font-size: 20px;
-	}
+    .labels {
+        font-size: 20px;
+    }
 
-	.values {
-		font-size: 20px;
-	}
+    .values {
+        font-size: 20px;
+    }
 
-	.form-control[disabled] {
-		background-color: rgb(161, 161, 161);
-		font-size: 15px;
-	}
+    .form-control[disabled] {
+        background-color: rgb(161, 161, 161);
+        font-size: 15px;
+    }
 
-	.nav-tabs :not(.active) {
-		color: #ffffff;
-		font-weight: bold;
-	}
+    .nav-tabs :not(.active) {
+        color: #ffffff;
+        font-weight: bold;
+    }
 
-	.yesQues, .noQues {
-		display: none;
-	}
-	
+    .yesQues, .noQues {
+        display: none;
+    }
 
-	.membership {
-		color: rgb(253, 186, 62);
-		font-size: 18px;
-	}
 
-	.miles {
-		color: rgb(223, 185, 135);
-		font-size: 15px;
-	}
+    .membership {
+        color: rgb(253, 186, 62);
+        font-size: 18px;
+    }
 
-	.userName2 {
-		color: rgb(125, 180, 254);
-		font-size: 20px;
-	}
-	.submit-btn {
-	    color: #fff;
-	    background-color: #f23e3e;
-	    font-weight: 400;
-	    height: 40px;
-	    font-size: 14px;
-	    border: none;
-	    width: 200px;
-	    border-radius: 20px;
-	    text-transform: uppercase;
-	    -webkit-transition: 0.2s all;
-	    transition: 0.2s all;
-	}
+    .miles {
+        color: rgb(223, 185, 135);
+        font-size: 15px;
+    }
+
+    .userName2 {
+        color: rgb(125, 180, 254);
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        color: #fff;
+        background-color: #f23e3e;
+        font-weight: 400;
+        height: 40px;
+        font-size: 14px;
+        border: none;
+        width: 200px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+    }
 </style>
 <div class="row">
-    <div class="d-flex justify-content-center h-100 col-12">
+    <div class="col-12">
         <form action="@Url.Action("Confirmation","Booking")" method="post">
             <div class="card-main">
                 <div class="card-header ml-3 ">
@@ -160,4 +162,3 @@
         </form>
     </div>
 </div>
-

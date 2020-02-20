@@ -25,10 +25,10 @@ namespace buddy_connect.Controllers
             return View(model);
         }
 
-        public ActionResult Confirmation(string flightKey, string cabinType)
+        public ActionResult Passenger(string flightKey, string cabinType)
         {
             var flightResults = Session["FlightResults"] as FareResultsViewModel;
-            var userProfileSessionModel = (Session["UserProfile"] as ProfileViewModel)?? new ProfileViewModel();
+            var userProfileSessionModel = (Session["UserProfile"] as ProfileViewModel) ?? new ProfileViewModel();
 
             ConfirmationModel confirmationModel = null;
             var selectedFlight = flightResults?.TripAndFareDetails.FirstOrDefault(x => x.UniqueReferenceKey == flightKey);
@@ -51,6 +51,18 @@ namespace buddy_connect.Controllers
                 };
             }
             Session["ConfirmationModel"] = confirmationModel;
+            if (Session["UserProfile"] is ProfileViewModel activeUser)
+            {
+                ViewBag.Image = "../assets/img/" + activeUser.UserName + ".jpg";
+                return View(activeUser);
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult Confirmation()
+        {
+            ConfirmationModel confirmationModel = Session["ConfirmationModel"] as ConfirmationModel;
             return View(confirmationModel);
         }
 

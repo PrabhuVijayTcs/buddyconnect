@@ -25,10 +25,10 @@ namespace buddy_connect.Controllers
             Session["UserProfile"] = userProfile;
             FormsAuthentication.SignOut();
             FormsAuthentication.SetAuthCookie($"{userProfile.LastName}, {userProfile.FirstName}", true);
-            var identity = new System.Security.Principal.GenericIdentity($"{userProfile.LastName}, {userProfile.FirstName}");
+            var identity = new GenericIdentity($"{userProfile.LastName}, {userProfile.FirstName}");
             var principal = new GenericPrincipal(identity, new string[0]);
             HttpContext.User = principal;
-            return RedirectToAction("Index","Booking");
+            return RedirectToAction("Index","UserProfile");
         }
 
         public ActionResult Logout()

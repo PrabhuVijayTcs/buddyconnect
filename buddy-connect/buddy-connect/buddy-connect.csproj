@@ -269,6 +269,7 @@
     <Content Include="Views\Shared\_ConfirmationWidget.cshtml" />
     <Content Include="Views\Pax\Info.cshtml" />
     <Content Include="Views\Shared\_SpecialService.cshtml" />
+    <Content Include="Views\Booking\Passenger.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

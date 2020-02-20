@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Booking - Flight Results";
 }
-<form id="flight-results-form" action="@Url.Action("Confirmation", "Booking")" method="post">
+<form id="flight-results-form" action="@Url.Action("Passenger", "Booking")" method="post">
     <input type="hidden" name="flightKey" />
     <input type="hidden" name="cabinType" />
 
