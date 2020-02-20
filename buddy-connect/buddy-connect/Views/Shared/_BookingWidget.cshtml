@@ -10,7 +10,6 @@
 
     #booking {
         font-family: 'PT Sans', sans-serif;
-        background-image: url('../img/background.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -178,19 +177,19 @@
         <div class="container">
             <div class="row">
                 <div class="booking-form" style="width: 100%">
-                    <form>
+                    <form action="@Url.Action("FlightResults", "Booking")" method="post">
                         <div class="form-group">
                             <div class="form-checkbox">
                                 <label for="roundtrip">
-                                    <input type="radio" id="roundtrip" checked="checked" name="flight-type">
+                                    <input type="radio" id="roundtrip" value="RT" checked="checked" name="tripType">
                                     <span></span>Roundtrip
                                 </label>
                                 <label for="one-way">
-                                    <input type="radio" id="one-way" name="flight-type">
+                                    <input type="radio" id="one-way" value="OW" name="tripType">
                                     <span></span>One way
                                 </label>
                                 <label for="multi-city">
-                                    <input type="radio" id="multi-city" name="flight-type">
+                                    <input type="radio" id="multi-city" value="MC" name="tripType">
                                     <span></span>Multi-City
                                 </label>
                             </div>
@@ -200,14 +199,14 @@
                                 <div class="form-group">
                                     <span class="form-label">Flying from</span>
                                     <input class="form-control" type="text" id="origin_dropdown" placeholder="City or airport">
-                                    <input type="hidden" id="origin">
+                                    <input type="hidden" id="origin" name="origin">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <span class="form-label">Flying to</span>
                                     <input class="form-control" type="text" id="destination_dropdown" placeholder="City or airport">
-                                    <input type="hidden" id="destination">
+                                    <input type="hidden" id="destination" name="destination">
                                 </div>
                             </div>
                         </div>
@@ -215,22 +214,25 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <span class="form-label">Departing</span>
-                                    <input class="form-control" type="date" required>
+                                    <input class="form-control" type="date" name="departureDate" required>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <span class="form-label">Returning</span>
-                                    <input class="form-control" type="date" required>
+                                    <input class="form-control" type="date" name="returnDate" required>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <span class="form-label">Adults</span>
-                                    <select class="form-control">
+                                    <select class="form-control" name="adults">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
                                     </select>
                                     <span class="select-arrow"></span>
                                 </div>
@@ -238,10 +240,13 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <span class="form-label">Children</span>
-                                    <select class="form-control">
+                                    <select class="form-control" name="children">
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
                                     </select>
                                     <span class="select-arrow"></span>
                                 </div>
@@ -251,10 +256,11 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <span class="form-label">Travel class</span>
-                                    <select class="form-control">
-                                        <option>Economy</option>
-                                        <option>Business</option>
-                                        <option>First</option>
+                                    <select class="form-control" name="cabinType">
+                                        <option value="ALL">All</option>
+                                        <option value="EC">Economy</option>
+                                        <option value="BC">Business</option>
+                                        <option value="FC">First</option>
                                     </select>
                                     <span class="select-arrow"></span>
                                 </div>
@@ -708,7 +714,7 @@
     $('#origin_dropdown').autocomplete({
         maxResults: 10,
         source: filterFunction,
-        change: function(event, ui) {
+        change: function (event, ui) {
             $('#origin').val(ui.item.id);
         }
     });
