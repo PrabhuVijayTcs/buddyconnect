@@ -144,6 +144,10 @@ namespace buddy_connect.Models.Booking
             get { return Segments.Any(x => x.IsCodeShare); }
         }
 
+        public string OperatingAirline => Segments.FirstOrDefault()?.OperatingAirline;
+
+        public string MarketingAirline => Segments.FirstOrDefault()?.MarketingAirline;
+
         /// <summary>
         /// Day difference (+1/-1 day)
         /// </summary>

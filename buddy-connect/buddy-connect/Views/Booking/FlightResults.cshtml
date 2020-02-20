@@ -10,9 +10,10 @@
     <div style="width: 100%">
         <div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
             <div class="card-header">
-                Displaying flights from <strong class="text-info">@Model.OriginCityName</strong> and
+                Displaying flights from <strong class="text-info">@Model.OriginCityName</strong> to
                 <strong class="text-info">@Model.DestinationCityName</strong> departing
-                <strong class="text-info">@Model.DepartureDateTime.ToString("dd-MMM-yyyy ddd")</strong>
+                <strong class="text-info">@Model.DepartureDateTime.ToString("dd-MMM-yyyy ddd")</strong> and returning
+                <strong class="text-info">@Model.ArrivalDateTime.ToString("dd-MMM-yyyy ddd")</strong>
             </div>
             <div class="card-body">
                 @foreach (var fareGroup in Model.TripAndFareDetails)
@@ -25,18 +26,18 @@
                                     {
                                         <div class="row mt-2">
                                             <div class="col-1">
-                                                <img style="width: 50px; height: 40px" src="https://www.momondo.com/rimg/provider-logos/airlines/v/AS.png?crop=false&width=50&height=40" />
+                                                <img alt="Airline Logo" style="width: 50px; height: 40px" src="~/assets/img/airline_@(tripSlice.OperatingAirline).png" />
                                             </div>
                                             <div class="col-4">
                                                 <div>
                                                     @tripSlice.DepartureDate.ToString("HH:mm tt") - @tripSlice.ArrivalDate.ToString("HH:mm tt")
                                                 </div>
                                                 <div>
-                                                    Alaska Airlines
+                                                    @tripSlice.MarketingAirline
                                                 </div>
                                             </div>
                                             <div class="col-2">
-                                                @(tripSlice.NoOfStops == 0 ? "nonstop" : $"{tripSlice.NoOfStops}stop")
+                                                @(tripSlice.StopsCount == 0 ? "nonstop" : $"{tripSlice.StopsCount}stop")
                                             </div>
                                             <div class="col-3">
                                                 <div>
@@ -49,13 +50,13 @@
                                             <div class="col-2 text-right">
                                                 @if (tripSlice.Segments.Any(x => x.EquipmentType == "332"))
                                                 {
-                                                    <img src="https://www.gstatic.com/flights/app/2x/carry_on_restricted_grey700_24dp.svg" style="width: 30px; height: 30px" />
+                                                    <img src="~/assets/img/carry_on_restricted_grey700_24dp.svg" style="width: 30px; height: 30px" />
                                                 }
                                                 @if (tripSlice.Segments.Any(x => x.EquipmentType != "332"))
                                                 {
                                                     <a tabindex="0" data-toggle="popover" data-trigger="focus" title="Wheel chair not supported" data-content="Aircraft doesn't support wheel chair to be checked-in">
                                                         <img alt="non-accessibile-wheel-chair"
-                                                             src="https://cdn3.iconfinder.com/data/icons/disability-accessibility/100/not-accessible-11-512.png" style="width: 30px; height: 30px" />
+                                                             src="~/assets/img/not-accessible.png" style="width: 30px; height: 30px" />
                                                     </a>
 
                                                 }
