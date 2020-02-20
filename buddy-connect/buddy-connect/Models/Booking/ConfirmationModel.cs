@@ -1,4 +1,5 @@
 ﻿using System;
+using buddy_connect.Models;
 
 namespace buddy_connect.Models.Booking
 {
@@ -19,5 +20,7 @@ namespace buddy_connect.Models.Booking
         public DateTime ArrivalDateTime { get; set; }
 
         public FareGroupTripAndFareDetail TripAndFareDetail { get; set; }
+
+        public ProfileViewModel userProfile { get; set; }
     }
 }
