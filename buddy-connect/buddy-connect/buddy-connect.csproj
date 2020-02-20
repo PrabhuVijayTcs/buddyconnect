@@ -151,6 +151,7 @@
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PaxController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="ExtensionMethods\EnumerableExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -261,6 +262,7 @@
     <Content Include="Views\UserProfile\Index.cshtml" />
     <Content Include="Views\Booking\FlightResults.cshtml" />
     <Content Include="Views\Booking\Confirmation.cshtml" />
+    <Content Include="Views\Pax\Info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
