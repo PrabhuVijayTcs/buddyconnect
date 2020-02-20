@@ -19,9 +19,10 @@ namespace buddy_connect.Controllers
         }
 
         [HttpPost]
-         public ActionResult Index(string userName)
+         public ActionResult Index(string userName, string password)
         {
             var userProfile = LoginFunctions.GetProfileData(userName);
+            Session["UserProfile"] = userProfile;
             FormsAuthentication.SignOut();
             FormsAuthentication.SetAuthCookie($"{userProfile.LastName}, {userProfile.FirstName}", true);
             var identity = new System.Security.Principal.GenericIdentity($"{userProfile.LastName}, {userProfile.FirstName}");
