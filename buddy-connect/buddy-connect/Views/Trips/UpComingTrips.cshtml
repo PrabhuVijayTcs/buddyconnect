@@ -1,0 +1,157 @@
+﻿@model buddy_connect.Models.Booking.ConfirmationModel
+
+@{
+    ViewBag.Title = "Trips";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+    table {
+        border-spacing: 15px;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    .boarding-pass-small-header {
+        font-size: x-small;
+    }
+
+    .boarding-pass-value-fields {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .boarding-pass-btn {
+        color: #fff;
+        background-color: #f23e3e;
+        font-weight: 400;
+        height: 40px;
+        font-size: 14px;
+        border: none;
+        width: 30%;
+        border-radius: 10px;
+        text-transform: uppercase;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+    }
+    .boarding-pass-div {
+        background-color: whitesmoke;
+        padding: 15px;
+        width: 95%;
+        border-radius: 6px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        float:left;
+        margin-right:3%;
+    }
+</style>
+<div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
+    <div class="card-header">
+        PNR: <strong class="text-info">@Model.RecordLocator</strong>
+    </div>
+    <div class="card-body">
+        <div>@Html.Partial("_ConfirmationWidget")</div>
+        <div>
+            <button id="btn-boarding-pass" class="boarding-pass-btn">View Boarding Pass</button>
+        </div>
+        
+        <div class="mt-2 row">
+            @foreach (var tripSlice in Model.TripAndFareDetail.TripSlices)
+            {
+                <div class="col-6 text-center" >
+                    <div class="boarding-pass-div" style="border: solid 1px black">
+                        <table>
+                            <tr>
+                                <td colspan=2>
+                                    <img src="~/assets/img/airline_@(tripSlice.OperatingAirline).png" width="100" alt="err-logo">
+                                </td>
+                                <td></td>
+                                <td colspan=3>
+                                    <label class="boarding-pass-value-fields">@Model.userProfile.FirstName @Model.userProfile.LastName</label>
+                                </td>
+                                <td colspan=3>
+                                    <label class="boarding-pass-value-fields">Feb 25, 2020</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Flight Number</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">@tripSlice.FlightNumber</label>
+                                </td>
+                                <td></td>
+                                <td colspan=3>
+                                    <label class="boarding-pass-small-header">Departure Airport</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">@tripSlice.Origin</label>
+                                </td>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Departs</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.ToString("HH:mm")</label>
+                                </td>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Seat</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">A11</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Gate</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">G23</label>
+                                </td>
+                                <td></td>
+                                <td colspan=3>
+                                    <label class="boarding-pass-small-header">Boarding Starts</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">21:00</label>
+                                </td>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Boarding closes</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">21:35</label>
+                                </td>
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Group</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields" style="text-align: center;">3</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=4>
+                                    <img src="~/assets/img/boardingpass-barcode.png" alt="Err - barcode" height=50 width=150 />
+                                </td>
+
+                                <td colspan=2>
+                                    <label class="boarding-pass-small-header">Conf #</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">@Model.RecordLocator</label>
+
+                                <td colspan=3>
+                                    <label class="boarding-pass-small-header">Ticket</label>
+                                    <br>
+                                    <label class="boarding-pass-value-fields">1724567896215</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('.boarding-pass-div').hide();
+    });
+    $("#btn-boarding-pass").click(function () {
+        $('.boarding-pass-div').slideToggle("swing");
+    });
+</script>

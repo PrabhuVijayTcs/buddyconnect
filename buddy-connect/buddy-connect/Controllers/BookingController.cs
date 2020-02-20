@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using buddy_connect.Models.Booking;
 using Newtonsoft.Json;
+using buddy_connect.Models;
 
 namespace buddy_connect.Controllers
 {
@@ -27,6 +28,8 @@ namespace buddy_connect.Controllers
         public ActionResult Confirmation(string flightKey, string cabinType)
         {
             var flightResults = Session["FlightResults"] as FareResultsViewModel;
+            var userProfileSessionModel = (Session["UserProfile"] as ProfileViewModel)?? new ProfileViewModel();
+
             ConfirmationModel confirmationModel = null;
             var selectedFlight = flightResults?.TripAndFareDetails.FirstOrDefault(x => x.UniqueReferenceKey == flightKey);
 
@@ -43,9 +46,11 @@ namespace buddy_connect.Controllers
                     Origin = flightResults.Origin,
                     OriginCityName = flightResults.OriginCityName,
                     TripAndFareDetail = selectedFlight,
-                    RecordLocator = GenerateRecordLocator()
+                    RecordLocator = GenerateRecordLocator(),
+                    userProfile = userProfileSessionModel
                 };
             }
+            Session["ConfirmationModel"] = confirmationModel;
             return View(confirmationModel);
         }
 

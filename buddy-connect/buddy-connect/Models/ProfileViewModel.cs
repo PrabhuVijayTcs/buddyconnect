@@ -7,9 +7,9 @@ namespace buddy_connect.Models
     {
         public string UserName { get; set; }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = "John";
 
-        public string LastName { get; set; }
+        public string LastName { get; set; } = "Smith";
         
         public string MiddleName { get; set; }
 

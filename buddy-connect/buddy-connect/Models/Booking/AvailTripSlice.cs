@@ -20,6 +20,18 @@ namespace buddy_connect.Models.Booking
         #endregion
 
         #region Public Properties
+        public string FlightNumber
+        {
+            get
+            {
+                string flightNumber = string.Empty;
+                if (!Segments.IsNullOrEmpty())
+                {
+                    flightNumber = Segments.First().FlightNumber;
+                }
+                return flightNumber;
+            }
+        }
 
         /// <summary>
         /// Origin City Code

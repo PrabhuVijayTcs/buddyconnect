@@ -1,0 +1,130 @@
+﻿@model buddy_connect.Models.Booking.ConfirmationModel
+<style>
+    .confirmation-container {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .label-name {
+        font-size: small;
+    }
+
+    .submit-btn {
+        color: #fff;
+        background-color: #f23e3e;
+        font-weight: 400;
+        height: 40px;
+        font-size: 14px;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        text-transform: uppercase;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+    }
+</style>
+<div class="confirmation-container">
+    <div style="font-size: large;">
+        <label>Your Confirmation code is: </label>
+        <Label style="font-weight:bold">@Model.RecordLocator</Label>
+    </div>
+    <div style="overflow:hidden">
+        <div style="font-size: medium;float:left">
+            @Model.userProfile.FirstName @Model.userProfile.LastName
+        </div>
+        <div style="float:right;margin-right:20px">
+            <button class="submit-btn">View or Print Receipt</button>
+        </div>
+    </div>
+
+
+    <div>
+        <label style="font-weight:bold">Itinerary</label>
+        @*<div>
+                <div id="itinerary" style="float:left">
+                    <label class="label-name">Flight : </label><label style="font-weight:bold">KLM 33</label><br>
+                    <label class="label-name">Departure Date: </label><label style="font-weight:bold">February 20, 2020 21:25</label><br>
+                    <label class="label-name">Origin: </label><label style="font-weight:bold">HNL</label><br>
+                    <label class="label-name">Destination: </label><label style="font-weight:bold">OGG</label><br>
+                </div>
+                <div style="float:right;">
+                    <button class="submit-btn">Change Flight</button>
+                </div>
+            </div>*@
+    </div>
+    <div class="card-body">
+        <div class="card text-white bg-secondary mb-3" style="border-radius: 6px">
+            <div class="card-body1">
+                <div class="row card-body">
+                    <div class="col-9">
+                        @foreach (var tripSlice in Model.TripAndFareDetail.TripSlices)
+                        {
+                        <div class="row mt-2">
+                            <div class="col-1">
+                                <img alt="Airline Logo" style="width: 50px; height: 40px" src="~/assets/img/airline_@(tripSlice.OperatingAirline).png" />
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    @tripSlice.DepartureDate.ToString("HH:mm tt") - @tripSlice.ArrivalDate.ToString("HH:mm tt")
+                                </div>
+                                <div>
+                                    @tripSlice.MarketingAirline
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                @(tripSlice.StopsCount == 0 ? "nonstop" : $"{tripSlice.StopsCount}stop")
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    @tripSlice.Duration
+                                </div>
+                                <div>
+                                    @tripSlice.Origin - @tripSlice.Destination
+                                </div>
+                            </div>
+                            <div class="col-2 text-right">
+                                @if (tripSlice.Segments.Any(x => x.EquipmentType == "332"))
+                                {
+                                <img src="~/assets/img/carry_on_restricted_grey700_24dp.svg" style="width: 30px; height: 30px" />
+                                }
+                                @if (tripSlice.Segments.Any(x => x.EquipmentType != "332"))
+                                {
+                                <a tabindex="0" data-toggle="popover" data-trigger="focus" title="Wheel chair not supported" data-content="Aircraft doesn't support wheel chair to be checked-in">
+                                    <img alt="non-accessibile-wheel-chair"
+                                         src="~/assets/img/not-accessible.png" style="width: 30px; height: 30px" />
+                                </a>
+
+                                }
+                            </div>
+                        </div>
+                        if (Model.TripAndFareDetail.TripSlices.Count > 1 && Model.TripAndFareDetail.TripSlices.Last() != tripSlice)
+                        {
+                        <hr />
+                        }
+                        }
+                    </div>
+                    <div class="col-3" style="border-left: solid 1px wheat">
+                        <div class="row" style="height: 100%">
+                            @foreach (var fare in Model.TripAndFareDetail.FareDetails)
+                            {
+                            <div class="col-6">
+                                <div>
+                                    <strong class="text-info"><u>@fare.CabinType</u></strong>
+                                </div>
+                                <div>
+                                    $@fare.DisplayAmount
+                                </div>
+                                <div>                                    
+                                    <button type="button" class="btn btn-primary mt-2 rounded" >Change Flight</button>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
