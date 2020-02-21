@@ -3,6 +3,11 @@
 @{
     ViewBag.Title = "Trips";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Random random = new Random();
+    int boardingGroup = random.Next(1,7);
+    int gateNumber = random.Next(1, 30);
+    int seatNumber = random.Next(1, 10);    
+    var tripSlice = Model.TripAndFareDetail.TripSlices[0];
 }
 
 <style type="text/css">
@@ -57,91 +62,94 @@
         </div>
         
         <div class="mt-2 row">
-            @foreach (var tripSlice in Model.TripAndFareDetail.TripSlices)
-            {
-                <div class="col-6 text-center" >
-                    <div class="boarding-pass-div" style="border: solid 1px black">
-                        <table>
-                            <tr>
-                                <td colspan=2>
-                                    <img src="~/assets/img/airline_@(tripSlice.OperatingAirline).png" width="100" alt="err-logo">
-                                </td>
-                                <td></td>
-                                <td colspan=3>
-                                    <label class="boarding-pass-value-fields">@Model.userProfile.FirstName @Model.userProfile.LastName</label>
-                                </td>
-                                <td colspan=3>
-                                    <label class="boarding-pass-value-fields">Feb 25, 2020</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Flight Number</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">@tripSlice.FlightNumber</label>
-                                </td>
-                                <td></td>
-                                <td colspan=3>
-                                    <label class="boarding-pass-small-header">Departure Airport</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">@tripSlice.Origin</label>
-                                </td>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Departs</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.ToString("HH:mm")</label>
-                                </td>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Seat</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">A11</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Gate</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">G23</label>
-                                </td>
-                                <td></td>
-                                <td colspan=3>
-                                    <label class="boarding-pass-small-header">Boarding Starts</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">21:00</label>
-                                </td>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Boarding closes</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">21:35</label>
-                                </td>
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Group</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields" style="text-align: center;">3</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan=4>
-                                    <img src="~/assets/img/boardingpass-barcode.png" alt="Err - barcode" height=50 width=150 />
-                                </td>
-
-                                <td colspan=2>
-                                    <label class="boarding-pass-small-header">Conf #</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">@Model.RecordLocator</label>
-
-                                <td colspan=3>
-                                    <label class="boarding-pass-small-header">Ticket</label>
-                                    <br>
-                                    <label class="boarding-pass-value-fields">1724567896215</label>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                </div>
-            }
             
+                    <div class="col-6 text-center" >
+                        <div class="boarding-pass-div" style="border: solid 1px black">
+                            <table>
+                                <tr>
+                                    <td colspan=2>
+                                        <img src="~/assets/img/airline_UK.png" width="85" height="55" alt="err-logo">
+                                    </td>
+                                    <td></td>
+                                    <td colspan=3>
+                                        <label class="boarding-pass-value-fields">@Model.userProfile.FirstName @Model.userProfile.LastName</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=3 style="text-align:right">
+                                        <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.ToString("dd MMM yyyy")</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Flight Number</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@tripSlice.FlightNumber</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=3>
+                                        <label class="boarding-pass-small-header">Departure Airport</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@tripSlice.Origin</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Departs</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.ToString("HH:mm")</label>
+                                    </td>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Seat</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@($"A{seatNumber}")</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Gate</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@($"G{gateNumber}")</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=3>
+                                        <label class="boarding-pass-small-header">Boarding Starts</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.AddMinutes(-60).ToString("HH:mm")</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Boarding closes</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@tripSlice.DepartureDate.AddMinutes(-20).ToString("HH:mm")</label>
+                                    </td>
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Group</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields" style="text-align: center;">@boardingGroup</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=4 width="150">
+                                        <img src="~/assets/img/boardingpass-barcode.png" alt="Err - barcode" height=50 width=130 />
+                                    </td>
+
+                                    <td colspan=2>
+                                        <label class="boarding-pass-small-header">Conf #</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">@Model.RecordLocator</label>
+                                    </td>
+                                    <td></td>
+                                    <td colspan=3>
+                                        <label class="boarding-pass-small-header">Ticket</label>
+                                        <br>
+                                        <label class="boarding-pass-value-fields">1724567896215</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    
+                    </div>
+
+
         </div>
     </div>
 </div>

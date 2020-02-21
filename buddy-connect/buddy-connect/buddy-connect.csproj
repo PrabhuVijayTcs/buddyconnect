@@ -181,6 +181,7 @@
     <Content Include="assets\img\klm-log.png" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\not-accessible.png" />
+    <Content Include="assets\img\airline_UK.png" />
     <Content Include="assets\js\aws-sdk-2.41.0.min.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\js\sentimentAnalysis.js" />
@@ -313,6 +314,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties assets_4profile_1json__JSONSchema="http://json.schemastore.org/appveyor" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
