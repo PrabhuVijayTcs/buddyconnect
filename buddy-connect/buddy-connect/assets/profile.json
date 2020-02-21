@@ -18,7 +18,15 @@
       "Height": 52.5,
       "Weight": "156 Lbs",
       "Type": "Power Chair",
-      "BatteryType": "Lithium" 
+      "BatteryType": "Lithium"
+    },
+    "AddressInfo": {
+      "Address": "113 Cherry St",
+      "Address2": "Apt 267",
+      "City": "Seattle",
+      "State": "WA",
+      "Zip": "98104-2205",
+      "Country": "US"
     } 
   },
   {
@@ -33,6 +41,22 @@
     "PhoneNumber": "+18083402444",
     "Email": "JohnsonDR@xyz.com",
     "Membership": "Gold Club",
-    "Miles": 1800
+    "Miles": 1800,
+    "WheelChair": {
+      "Length": 0,
+      "Width": 0,
+      "Height": 0,
+      "Weight": "",
+      "Type": "",
+      "BatteryType": ""
+    },
+    "AddressInfo": {
+      "Address": "118 Kiwi St",
+      "Address2": "Apt 697",
+      "City": "Seattle",
+      "State": "WA",
+      "Zip": "98106-2205",
+      "Country": "US"
+    }
   }
 ]

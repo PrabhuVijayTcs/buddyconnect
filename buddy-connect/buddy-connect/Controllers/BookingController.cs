@@ -60,6 +60,11 @@ namespace buddy_connect.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public ActionResult Ancillaries()
+        {
+            return View();
+        }
+
         public ActionResult Confirmation()
         {
             ConfirmationModel confirmationModel = Session["ConfirmationModel"] as ConfirmationModel;

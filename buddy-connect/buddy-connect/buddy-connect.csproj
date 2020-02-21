@@ -174,6 +174,7 @@
     <Content Include="assets\img\airline_UA.png" />
     <Content Include="assets\img\airline_UK.png" />
     <Content Include="assets\img\background.jpg" />
+    <Content Include="assets\img\Baggage_Allowance.jpg" />
     <Content Include="assets\img\boardingpass-barcode.png" />
     <Content Include="assets\img\caretaker.jpg" />
     <Content Include="assets\img\caregiver.jpg" />
@@ -181,6 +182,7 @@
     <Content Include="assets\img\klm-log.png" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\not-accessible.png" />
+    <Content Include="assets\img\bag.png" />
     <Content Include="assets\img\airline_UK_boardingpass.png" />
     <Content Include="assets\js\aws-sdk-2.41.0.min.js" />
     <Content Include="assets\js\jquery.min.js" />
@@ -270,6 +272,7 @@
     <Content Include="Views\Shared\_ConfirmationWidget.cshtml" />
     <Content Include="Views\Shared\_SpecialService.cshtml" />
     <Content Include="Views\Booking\Passenger.cshtml" />
+    <Content Include="Views\Booking\Ancillaries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

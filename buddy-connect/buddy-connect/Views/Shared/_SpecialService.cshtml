@@ -1,14 +1,16 @@
-﻿@using buddy_connect.Models
+﻿@using System.Configuration
+@using buddy_connect.Models
 @{
 	ViewBag.Title = "Profile";
 	ProfileViewModel user = Model;
+	var buddyConnect = ConfigurationManager.AppSettings["BuddyConnect"];
 }
 
 <style>
 	.bgProfile {
 		background: rgba(0, 0, 0, 0.7);
-		margin-top: 15px;
 		border-radius: 6px;
+		margin-top: 15px;
 	}
 
 	h3.username {
@@ -17,26 +19,20 @@
 	}
 
 
-	.colorWhite {
-		color: #ffffff;
-	}
+	.colorWhite { color: #ffffff; }
 
-	.labels {
-		font-size: 20px;
-	}
+	.labels { font-size: 20px; }
 
-	.values {
-		font-size: 20px;
-	}
+	.values { font-size: 20px; }
 
 	.membership {
-		font-size: 25px;
 		color: orange;
+		font-size: 25px;
 	}
 
 	.miles {
-		font-size: 15px;
 		color: rgb(223, 185, 135);
+		font-size: 15px;
 	}
 
 	.form-control[disabled] {
@@ -49,28 +45,28 @@
 		font-weight: bold;
 	}
 
-	.yesQues, .noQues {
-		display: none;
-	}
+	.yesQues, .noQues { display: none; }
 
 	.form-control {
-	    background-color: #fff;
-	    height: 40px;
-	    color: #191a1e;
-	    border: none;
-	    font-size: 14px;
-	    font-weight: 400;
-	    -webkit-box-shadow: none;
-	    box-shadow: none;
-	    border-radius: 10px;
-	    padding: 0px 10px;
+		-webkit-box-shadow: none;
+		background-color: #fff;
+		border: none;
+		border-radius: 10px;
+		box-shadow: none;
+		color: #191a1e;
+		font-size: 14px;
+		font-weight: 400;
+		height: 40px;
+		padding: 0px 10px;
 	}
 
-	
+	.tradeMark {
+		color: orangered; font-weight: bold;font-style: italic;
+	}
 
 </style>
 <script>
-	var isAssistanceRequired = "@user.IsDisabled";
+	var isAssistanceRequired = @user.IsDisabled
 	$(function() {
 		$(":radio[value=YesSpecial]").click(function() {
 			$('.yesQues').show();
@@ -86,7 +82,7 @@
 			$('.yesQues').hide();
 		});
 
-		if (isAssistanceRequired === "True") {
+		if (isAssistanceRequired === true) {
 			$(":radio[value=YesSpecial]").click();
 			$('#splServ').val = "Yes";
 			$('#wchrPref').val = "Yes";
@@ -101,7 +97,7 @@
 <div class="row">
 	<div class="col-12 specialService">
 		<div class="form-group">
-			<br />
+			<br/>
 			<label>Do you need any special assistance?</label>
 			<div>
 				<input type="radio" id="YesSpecial" name="special" value="YesSpecial">
@@ -113,6 +109,17 @@
 	</div>
 </div>
 <div class="yesQues">
+	<div class="row pb-3">
+		<div class="col-12">
+			<label for="buddyConnect">
+				<i class="fas fa-user-friends"></i> Would you like to be assisted & accompanied by members of our <a class="tradeMark" href="#">@buddyConnect<sup>TM</sup></a> program?
+			</label>
+			<select class="form-control" id="buddyConnect" name="buddyConnect">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-6">
 			<div class="form-group">
@@ -188,7 +195,7 @@
 				</label>
 				<div>
 					<input type="radio" selected style="margin-bottom: 1px;" id="inchUnit" name="units" value="inchUnit">
-					<label for="inchUnit" style="margin-bottom: 1px;">Inches</label><br />
+					<label for="inchUnit" style="margin-bottom: 1px;">Inches</label><br/>
 					<input type="radio" style="margin-bottom: 1px;" id="cmUnit" name="units" value="cmUnit">
 					<label for="cmUnit" style="margin-bottom: 1px;">Cms</label><br>
 				</div>
@@ -202,12 +209,12 @@
 				<label>
 					Battery Type
 				</label>
-				<br />
+				<br/>
 				<input type="checkbox" name="wetCellCheckBox" id="wetCellCheckBox" value="wetcell" tabindex="9">&nbsp;Wet Cell / Acid (Spill-able)<br>
 
 				<input type="checkbox" name="dryCellCheckBox" id="dryCellCheckBox" value="drycell" tabindex="10">&nbsp;Dry Cell / Gel (Non-Spill-able)<br>
 
-				<input type="checkbox" checked="checked" name="lithiumCheckBox" id="lithiumCheckBox" value="lithium" tabindex="11">&nbsp;Lithium<br />
+				<input type="checkbox" checked="checked" name="lithiumCheckBox" id="lithiumCheckBox" value="lithium" tabindex="11">&nbsp;Lithium<br/>
 			</div>
 		</div>
 	</div>
@@ -216,8 +223,7 @@
 <div class="row noQues">
 	<div class="col-12">
 		<div class="form-group">
-			<br />
-			<h4>Are you interested in joining Buddy Connect program?</h4>
+			<i class="fas fa-user-friends"></i> Are you interested in join our <a class="tradeMark" href="#">@buddyConnect<sup>TM</sup></a> program?<br />
 			<input type="radio" id="yesCareTaker" name="buddy" value="YesCareTaker">
 			<label for="yesCareTaker">Yes</label><br>
 			<input type="radio" id="noCareTaker" name="buddy" value="NoCareTaker">
