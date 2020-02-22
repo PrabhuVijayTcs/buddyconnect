@@ -1,14 +1,19 @@
-﻿@model buddy_connect.Models.Booking.ConfirmationModel
+﻿@using buddy_connect.Models
 
 @{
-    ViewBag.Title = "Confirmation";
+	ViewBag.Title = "Confirmation";
+	ProfileViewModel user = Model.userProfile;
 }
 
+
 <div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
-    <div class="card-header">
-        PNR: <strong class="text-info">@Model.RecordLocator</strong>
-    </div>
-    <div class="card-body">
-        <div>@Html.Partial("_ConfirmationWidget")</div>
-    </div>
+	<div class="card-header">
+		PNR: <strong class="text-info">@Model.RecordLocator</strong>
+	</div>
+	<div class="card-body">
+		<div>@Html.Partial("_ConfirmationWidget")</div>
+		<div>
+			@Html.Partial("_PickUpDropAddress", user)
+		</div>
+	</div>
 </div>

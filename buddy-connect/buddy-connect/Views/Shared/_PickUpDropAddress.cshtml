@@ -1,0 +1,187 @@
+﻿@using buddy_connect.Models
+@{
+	ProfileViewModel user = Model;
+}
+
+<style type="text/css">
+
+</style>
+<div class="card col-3 ml-4 pt-2 colorWhite mr-3">
+	<address>
+		<div class="pb-1"><strong style="color:orangered">You will be picked-up at</strong> <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#pickupModal"><i class="fas fa-edit "></i> Edit</a></span></div>
+		@user.PickupAddress.Address, @user.PickupAddress.Address2<br>
+		@user.PickupAddress.City, @user.PickupAddress.State @user.PickupAddress.Zip.Substring(0, 5)<br>
+		<abbr title="Phone"><i class="fas fa-phone"></i></abbr> @user.PhoneNumber
+	</address>
+</div>
+<div class="card col-3 ml-4 pt-2 colorWhite">
+	<address>
+		<div class="pb-1"><strong style="color:orangered">Your drop location is</strong> <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#dropModal"><i class="fas fa-edit "></i> Edit</a></span></div>
+		@user.AddressInfo.Address, @user.AddressInfo.Address2<br>
+		@user.AddressInfo.City, @user.AddressInfo.State @user.AddressInfo.Zip.Substring(0, 5)<br>
+		<abbr title="Phone"><i class="fas fa-phone"></i></abbr> @user.PhoneNumber
+	</address>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content col-12 colorWhite" style="height: 380px;border-radius:10px;background-color:black">
+			<form class="form" action="##" method="post" id="homeAddressForm">
+				<div class="userName2 row ml-1 mt-3 mb-3">
+					Edit Pickup Address
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="address">
+								Address
+							</label>
+							<input type="text" class="form-control" name="address" id="address" placeholder="Address" title="enter your address." value="@user.PickupAddress.Address">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="address2">
+								Address 2
+							</label>
+							<input type="text" class="form-control" name="address2" id="address2" placeholder="Address line 2" title="enter your address line no 2." value="@user.PickupAddress.Address2">
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="city">
+								City
+							</label>
+							<input type="text" class="form-control" name="city" id="city" placeholder="City" title="City" value="@user.PickupAddress.City">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="zip">
+								Zip code
+							</label>
+							<input type="text" class="form-control" name="zip" id="zip" placeholder="Zip Code" title="Zip Code" value="@user.PickupAddress.Zip">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="state">
+								State
+							</label>
+							<input type="text" class="form-control" name="state" id="state" placeholder="State" title="State" value="@user.PickupAddress.State">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="Country">
+								Country
+							</label>
+							<select class="form-control" id="Country" name="Country">
+								<option value="US" selected>United States of America</option>
+								<option value="UK">United Kingdom</option>
+								<option value="INDIA">India</option>
+								<option value="JAPAN">Japan</option>
+								<option value="CHINA">China</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<button class="btn submit-btn" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+							<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="dropModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content col-12 colorWhite" style="height: 380px;border-radius:10px;background-color:black">
+			<form class="form" action="##" method="post" id="dropAddressForm">
+				<div class="userName2 row ml-1 mt-3 mb-3">
+					Edit Drop-off Address
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="address">
+								Address
+							</label>
+							<input type="text" class="form-control" name="address" id="address" placeholder="Address" title="enter your address." value="@user.AddressInfo.Address">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="address2">
+								Address 2
+							</label>
+							<input type="text" class="form-control" name="address2" id="address2" placeholder="Address line 2" title="enter your address line no 2." value="@user.AddressInfo.Address2">
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="city">
+								City
+							</label>
+							<input type="text" class="form-control" name="city" id="city" placeholder="City" title="City" value="@user.AddressInfo.City">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="zip">
+								Zip code
+							</label>
+							<input type="text" class="form-control" name="zip" id="zip" placeholder="Zip Code" title="Zip Code" value="@user.AddressInfo.Zip">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="state">
+								State
+							</label>
+							<input type="text" class="form-control" name="state" id="state" placeholder="State" title="State" value="@user.AddressInfo.State">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="Country">
+								Country
+							</label>
+							<select class="form-control" id="Country" name="Country">
+								<option value="US" selected>United States of America</option>
+								<option value="UK">United Kingdom</option>
+								<option value="INDIA">India</option>
+								<option value="JAPAN">Japan</option>
+								<option value="CHINA">China</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<button class="btn submit-btn" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+							<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

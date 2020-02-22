@@ -27,7 +27,15 @@
       "State": "WA",
       "Zip": "98104-2205",
       "Country": "US"
-    } 
+    },
+    "PickupAddress": {
+      "Address": "113 Ala Nanala St",
+      "Address2": "Apt 989",
+      "City": "Honolulu",
+      "State": "HI",
+      "Zip": "96818",
+      "Country": "US"
+    }
   },
   {
     "UserName": "caregiver",
@@ -56,6 +64,14 @@
       "City": "Seattle",
       "State": "WA",
       "Zip": "98106-2205",
+      "Country": "US"
+    },
+    "PickupAddress": {
+      "Address": "113 Ala Napuaa St",
+      "Address2": "Apt 989",
+      "City": "Honolulu",
+      "State": "HI",
+      "Zip": "96818",
       "Country": "US"
     }
   }
