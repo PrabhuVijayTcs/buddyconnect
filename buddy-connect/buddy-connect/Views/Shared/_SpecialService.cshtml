@@ -66,7 +66,7 @@
 
 </style>
 <script>
-	var isAssistanceRequired = @user.IsDisabled
+	var isAssistanceRequired = @user.IsDisabled.ToString().ToLower();
 	$(function() {
 		$(":radio[value=YesSpecial]").click(function() {
 			$('.yesQues').show();

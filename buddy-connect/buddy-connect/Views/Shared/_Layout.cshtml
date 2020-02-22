@@ -26,6 +26,69 @@
         .popover-content {
             background: #fff !important
         }
+
+        .notification-container {
+            width: 400px;
+            max-width: 600px;
+        }
+        .toast-container {
+            max-width: 600px;
+        }
+
+        .toast-header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            color: #888;
+            background-color: #303030;
+            background-clip: padding-box;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .toast-body {
+            background-color: #444;
+            color: #fff;
+        }
+
+        #ex4 .p1[data-count]:after{
+            position: absolute;
+            right: -26%;
+            top: -43%;
+            content: attr(data-count);
+            font-size: 54%;
+            padding: .2em;
+            border-radius: 50%;
+            line-height: 1em;
+            color: white;
+            background: rgba(255,0,0,.85);
+            text-align: center;
+            min-width: 1em;
+        }
+
+        #ex4 .p1[data-count]:after{
+            position:absolute;
+            right:20%;
+            top:10%;
+            content: attr(data-count);
+            font-size:45%;
+            padding:.2em;
+            border-radius:50%;
+            line-height:1em;
+            color: white;
+            background:rgba(255,0,0,.85);
+            text-align:center;
+            min-width: 1em;
+        }
+
+        .popover-body {
+            padding: 0.1rem;
+            color: #373a3c;
+        }
+
     </style>
     @{
         var hasSessionUserProfile = Session["UserProfile"] != null;
@@ -33,67 +96,104 @@
     <script>
         $(document).ready(function () {
             $('[data-toggle="popover"]').popover();
+
+            var popoverTemplate = `<div class="popover notification-container" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>`;
+
+            var content = `<div class="toast show toast-container" role="alert" aria-live="assertive" aria-atomic="true">
+                                  <div class="toast-header">
+                                    <strong class="mr-auto">Travel Companion Confirmation</strong>
+                                    <small>11 mins ago</small>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="toast-body">
+                                    <b>Dear Mr. Mantovani, your Companion in the Sky is Akash Gupta. <br /><br />
+                                    Akash is travelling the same route as you, and has happily volunteered to be your travel companion. <br /><br /> 
+                                    Please expect him to arrive at the aiport around 11 am. <br /><br />
+                                    We look forward to welcoming you aboard VistaRa airlines and hope you will enjoy your assisted journey.</b>
+                                  </div>
+                                </div>`;
+
+            $('#message-notification').popover({
+                trigger: 'click',
+                content: content,
+                container: 'body',
+                placement: "left",
+                template: popoverTemplate,
+                html: true
+            });
         });
     </script>
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: rgba(0, 0, 0, 0.7) !important; border-radius: 10px;">
-        <a class="navbar-brand" href="#">
-            <img src="~/assets/img/logo.png" alt="logo"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: rgba(0, 0, 0, 0.7) !important; border-radius: 10px;">
+            <a class="navbar-brand" href="#">
+                <img src="~/assets/img/logo.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Index","Booking")">Book <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="~/Trips/upcomingTrips">Manage Trips</a>
-                </li>
-                @if (User.Identity.IsAuthenticated && hasSessionUserProfile)
-                {
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index","UserProfile")">Profile Settings</a>
+                        <a class="nav-link" href="@Url.Action("Index","Booking")">Book <span class="sr-only">(current)</span></a>
                     </li>
-                }
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" style="margin-right: 2px">
-                @if (!User.Identity.IsAuthenticated || !hasSessionUserProfile)
-                {
-                    <li><a href="@Url.Action("Index","Login")">Sign In</a></li>
-                }
-                else
-                {
-                    <li>
-                        <div class="text-white-50" style="font-size: 20px">
-                            Welcome <b class="text-white">@User.Identity.Name</b>
-                            <div class="text-right">
-                                <a href="@Url.Action("Logout","Login")" style="font-size: 14px; text-decoration: underline">Sign Out</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Trips/upcomingTrips">Manage Trips</a>
+                    </li>
+                    @if (User.Identity.IsAuthenticated && hasSessionUserProfile)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","UserProfile")">Profile Settings</a>
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 2px">
+                    @if (!User.Identity.IsAuthenticated || !hasSessionUserProfile)
+                    {
+                        <li><a href="@Url.Action("Index","Login")">Sign In</a></li>
+                    }
+                    else
+                    {
+                        <li>
+                            <div class="text-white-50" style="font-size: 20px">
+                                Welcome <b class="text-white">
+                                @User.Identity.Name
+                                    @if (Request.QueryString["dot"] != null)
+                                    {
+                                        <span id="ex4" style="display:inline-block">
+                                            <span class="p1 fa-stack has-badge" data-count="1">
+                                                <i class="p3 far fa-bell fa-stack-1x xfa-inverse" id="message-notification" data-count="1b"></i>
+                                            </span>
+                                        </span>
+                                    }
+                            </b>
+                                <div class="text-right">
+                                    <a href="@Url.Action("Logout", "Login")" style="font-size: 14px; text-decoration: underline">Sign Out</a>
+                                </div>
                             </div>
-                        </div>
 
-                    </li>
-                }
-            </ul>
-        </div>
-    </nav>
-</div>
-<div class="container body-content mt-3">
-    @RenderBody()
-    <hr/>
-    <footer>
-        <p><b>&copy; @DateTime.Now.Year - TATA VistaRa Airlines. All Rights Reserved</b></p>
-    </footer>
-</div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container body-content mt-3">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p><b>&copy; @DateTime.Now.Year - TATA VistaRa Airlines. All Rights Reserved</b></p>
+        </footer>
+    </div>
 
 
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>
