@@ -30,6 +30,8 @@ namespace buddy_connect.Models
         public WheelChair WheelChair { get; set; }
 
         public AddressInfo AddressInfo { get; set; }
+
+        public PickupAddress PickupAddress { get; set; }
     }
 
     public class WheelChair
@@ -48,6 +50,22 @@ namespace buddy_connect.Models
     }
 
     public class AddressInfo
+    {
+        public string Address { get; set; }
+
+        public string Address2 { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public string Zip { get; set; }
+
+        public string Country { get; set; }
+    }
+
+
+    public class PickupAddress
     {
         public string Address { get; set; }
 

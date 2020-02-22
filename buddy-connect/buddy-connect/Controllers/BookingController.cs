@@ -62,6 +62,11 @@ namespace buddy_connect.Controllers
 
         public ActionResult Ancillaries()
         {
+            if (Session["UserProfile"] is ProfileViewModel activeUser)
+            {
+                ViewBag.Image = "../assets/img/" + activeUser.UserName + ".jpg";
+                return View(activeUser);
+            }
             return View();
         }
 
