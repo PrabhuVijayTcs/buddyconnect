@@ -1,0 +1,347 @@
+{
+  "TripId": 1,
+  "MarketID": 2,
+  "Origin": "SEA",
+  "OriginCityName": "Seattle, Washington",
+  "Destination": "LHR",
+  "DestinationCityName": "London, United Kingdom",
+  "CurrencyCode": "USD",
+  "DepartureDateTime": "2020-04-20T00:00:00",
+  "ArrivalDateTime": "2020-04-21T00:00:00",
+  "TripAndFareDetails": [
+    {
+      "UniqueReferenceKey": "1*9A#355#HNL#SEA#3/18/2020#13:15:00#3/18/2020#21:55:00",
+      "TripSlices": [
+        {
+          "Origin": "SEA",
+          "Destination": "LHR",
+          "flightNumber": 355,
+          "DepartureDate": "2020-04-20T15:15:00",
+          "ArrivalDate": "2020-04-21T08:40:00",
+          "DurationInMins": 565,
+          "Duration": "9h 25m",
+          "TripID": 1,
+          "IsCodeShare": false,
+          "DayDifference": 1,
+          "StopsCount": 0,
+          "Segments": [
+            {
+              "ECFee": 89.00,
+              "HasEC": true,
+              "HasPreferredSeat": false,
+              "PreferredSeatFee": 0.0,
+              "FlightNumber": "355",
+              "DepartureDateTime": "2020-04-20T15:15:00",
+              "ArrivalDateTime": "2020-04-21T08:40:00",
+              "OriginCityCode": "SEA",
+              "OriginCityName": "Seattle, Washington",
+              "DestinationCityCode": "LHR",
+              "DestinationCityName": "London, United Kingdom",
+              "DurationInMins": 565,
+              "Duration": "9h 25m",
+              "NoOfStops": 0,
+              "StopInformation": null,
+              "SegmentID": 1,
+              "EquipmentType": "737",
+              "EquipmentCode": null,
+              "OperatingAirline": "9A",
+              "MarketingAirline": "VistaRa Airlines",
+              "IsOverNightStay": false,
+              "LayOverTimeInMins": 0,
+              "LayOverTime": "",
+              "DayDifference": 0,
+              "IsCodeShare": false,
+              "LieFlatAvailable": true,
+              "OnTimeDetail": {
+                "OnTimePercentage": "39",
+                "DelayedPercentage": "29"
+              },
+              "HasFlightDisclaimer": false,
+              "DisclaimerLinkText": null,
+              "DisclaimerPopupContent": null
+            }
+          ],
+          "NoOfStops": 0,
+          "HasDisclaimer": false
+        }
+      ],
+      "FareDetails": [
+        {
+          "CabinType": "COACH",
+          "SeatType": "BASIC",
+          "DisplayAmount": 941.39,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL" ]
+        },
+        {
+          "CabinType": "COACH",
+          "SeatType": "ECONOMY",
+          "DisplayAmount": 1004.39,
+          "BookingCount": 1,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "SET" ]
+        },
+        {
+          "CabinType": "COACH",
+          "SeatType": "PREMIUM",
+          "DisplayAmount": 1066.39,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "CON", "SET", "GRN" ]
+        }
+      ]
+    },
+    {
+      "UniqueReferenceKey": "2*9A#553#HNL#SEA#3/18/2020#13:15:00#3/18/2020#21:55:00",
+      "TripSlices": [
+        {
+          "Origin": "SEA",
+          "Destination": "LHR",
+          "flightNumber": 353,
+          "DepartureDate": "2020-04-20T19:55:00",
+          "ArrivalDate": "2020-04-21T13:20:00",
+          "DurationInMins": 565,
+          "Duration": "9h 25m",
+          "TripID": 1,
+          "IsCodeShare": false,
+          "DayDifference": 1,
+          "StopsCount": 0,
+          "Segments": [
+            {
+              "ECFee": 89.00,
+              "HasEC": true,
+              "HasPreferredSeat": false,
+              "PreferredSeatFee": 0.0,
+              "FlightNumber": "355",
+              "DepartureDateTime": "2020-04-20T19:55:00",
+              "ArrivalDateTime": "2020-04-21T13:20:00",
+              "OriginCityCode": "SEA",
+              "OriginCityName": "Seattle, Washington",
+              "DestinationCityCode": "LHR",
+              "DestinationCityName": "London, United Kingdom",
+              "DurationInMins": 565,
+              "Duration": "9h 25m",
+              "NoOfStops": 0,
+              "StopInformation": null,
+              "SegmentID": 1,
+              "EquipmentType": "737",
+              "EquipmentCode": null,
+              "OperatingAirline": "9A",
+              "MarketingAirline": "VistaRa Airlines",
+              "IsOverNightStay": false,
+              "LayOverTimeInMins": 0,
+              "LayOverTime": "",
+              "DayDifference": 0,
+              "IsCodeShare": false,
+              "LieFlatAvailable": true,
+              "OnTimeDetail": {
+                "OnTimePercentage": "39",
+                "DelayedPercentage": "29"
+              },
+              "HasFlightDisclaimer": false,
+              "DisclaimerLinkText": null,
+              "DisclaimerPopupContent": null
+            }
+          ],
+          "NoOfStops": 0,
+          "HasDisclaimer": false
+        }
+      ],
+      "FareDetails": [
+        {
+          "CabinType": "BASIC",
+          "SeatType": "COACH",
+          "DisplayAmount": 941.39,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL" ]
+        },
+        {
+          "CabinType": "ECONOMY",
+          "SeatType": "COACH",
+          "DisplayAmount": 1004.39,
+          "BookingCount": 1,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "SET" ]
+        },
+        {
+          "CabinType": "ECONOMY",
+          "CabinGroup": "COACH",
+          "DisplayAmount": 1066.39,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "CON", "SET", "GRN" ]
+        }
+      ]
+    },
+    {
+      "UniqueReferenceKey": "3*HA#286#HNL#OGG#3/18/2020#13:00:00#3/18/2020#13:46:00*HA#30#OGG#SEA#3/18/2020#15:00:00#3/18/2020#23:15:00",
+      "TripSlices": [
+        {
+          "Origin": "SEA",
+          "Destination": "LHR",
+          "flightNumber": 357,
+          "DepartureDate": "2020-06-20T09:10:00",
+          "ArrivalDate": "2020-06-21T12:49:00",
+          "DurationInMins": 1179,
+          "Duration": "19h 39m",
+          "TripID": 1,
+          "IsCodeShare": false,
+          "DayDifference": 1,
+          "StopsCount": 1,
+          "Segments": [
+            {
+              "ECFee": 0.0,
+              "HasEC": false,
+              "HasPreferredSeat": false,
+              "PreferredSeatFee": 0.0,
+              "FlightNumber": "357",
+              "DepartureDateTime": "2020-06-20T09:10:00",
+              "ArrivalDateTime": "2020-06-21T12:49:00",
+              "OriginCityCode": "SEA",
+              "OriginCityName": "Seattle, Washington",
+              "DestinationCityCode": "SFO",
+              "DestinationCityName": "San Francisco, California",
+              "DurationInMins": 132,
+              "Duration": "2h 12m",
+              "NoOfStops": 0,
+              "StopInformation": null,
+              "SegmentID": 1,
+              "EquipmentType": "320",
+              "EquipmentCode": null,
+              "OperatingAirline": "9A",
+              "MarketingAirline": "United Airlines",
+              "IsOverNightStay": false,
+              "LayOverTimeInMins": 74,
+              "LayOverTime": "1h 14m",
+              "DayDifference": 0,
+              "IsCodeShare": false,
+              "LieFlatAvailable": false,
+              "OnTimeDetail": {
+                "OnTimePercentage": "90",
+                "DelayedPercentage": "6"
+              },
+              "HasFlightDisclaimer": false,
+              "DisclaimerLinkText": null,
+              "DisclaimerPopupContent": null
+            },
+            {
+              "ECFee": 99.00,
+              "HasEC": true,
+              "HasPreferredSeat": false,
+              "PreferredSeatFee": 0.0,
+              "FlightNumber": "280",
+              "DepartureDateTime": "2020-06-20T17:50:00",
+              "ArrivalDateTime": "2020-06-21T12:49:00",
+              "OriginCityCode": "SFO",
+              "OriginCityName": "San Francisco, California",
+              "DestinationCityCode": "LHR",
+              "DestinationCityName": "London, United Kingdom",
+              "DurationInMins": 659,
+              "Duration": "10h 59m",
+              "NoOfStops": 0,
+              "StopInformation": null,
+              "SegmentID": 2,
+              "EquipmentType": "737",
+              "EquipmentCode": null,
+              "OperatingAirline": "9A",
+              "MarketingAirline": "United Airlines",
+              "IsOverNightStay": false,
+              "LayOverTimeInMins": 0,
+              "LayOverTime": "",
+              "DayDifference": 0,
+              "IsCodeShare": false,
+              "LieFlatAvailable": true,
+              "OnTimeDetail": {
+                "OnTimePercentage": "81",
+                "DelayedPercentage": "6"
+              },
+              "HasFlightDisclaimer": false,
+              "DisclaimerLinkText": null,
+              "DisclaimerPopupContent": null
+            }
+          ],
+          "NoOfStops": 1,
+          "HasDisclaimer": false
+        }
+      ],
+      "FareDetails": [
+        {
+          "CabinType": "BASIC",
+          "SeatType": "COACH",
+          "DisplayAmount": 1329.31,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL" ]
+        },
+        {
+          "CabinType": "ECONOMY",
+          "SeatType": "COACH",
+          "DisplayAmount": 1454.31,
+          "BookingCount": 1,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "SET" ]
+        },
+        {
+          "CabinType": "ECONOMY",
+          "CabinGroup": "COACH",
+          "DisplayAmount": 1579.31,
+          "BookingCount": 6,
+          "IsLowestFare": false,
+          "IsAvailable": true,
+          "IsSoldOut": false,
+          "IsDiscount": false,
+          "IsMixedCabinTrip": false,
+          "Amenities": [ "BAG", "MEL", "CON", "SET", "GRN" ]
+        }
+      ]
+    }
+  ],
+  "HasDiscount": false,
+  "Message": null,
+  "Discounts": [],
+  "DisplayMilesDropdown": true,
+  "BookingType": 0,
+  "IsRefundableFare": false,
+  "IsDisableSeatUpgrade": false,
+  "MCBAcceptRestrictionModal": null,
+  "ShowCompareExperienceModal": true,
+  "HasServiceError": false,
+  "ServiceErrors": [],
+  "TranslateServiceError": "",
+  "TranslateAllServiceErrors": [],
+  "IsSuccess": true
+}

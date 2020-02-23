@@ -235,6 +235,7 @@
     <Content Include="assets\shopping.json" />
     <Content Include="assets\profile.json" />
     <Content Include="assets\datasource\FlightResults.json" />
+    <Content Include="assets\datasource\iataFlightResults.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
