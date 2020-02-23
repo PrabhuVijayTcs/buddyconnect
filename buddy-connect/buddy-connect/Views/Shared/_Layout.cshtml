@@ -177,7 +177,7 @@
                     @if (User.Identity.IsAuthenticated && hasSessionUserProfile)
                     {
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index","UserProfile")">Profile Settings</a>
+                            <a class="nav-link" href="@Url.Action("Index","UserProfile")">Saved Travelers</a>
                         </li>
                     }
                     <li class="nav-item">
@@ -194,7 +194,7 @@
                         <li>
                             <div class="text-white-50" style="font-size: 20px">
                                 Welcome <b class="text-white">
-                                    @User.Identity.Name
+                                    Susan Fields
                                     @if (Request.QueryString["dot"] != null)
                                     {
                                         <span id="ex4" style="display:inline-block">

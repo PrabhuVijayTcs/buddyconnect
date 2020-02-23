@@ -21,6 +21,7 @@ namespace buddy_connect.Controllers
         [HttpPost]
          public ActionResult Index(string userName, string password)
         {
+            userName = "Roberto";
             var userProfile = LoginFunctions.GetProfileData(userName);
             Session["UserProfile"] = userProfile;
             FormsAuthentication.SignOut();
@@ -28,7 +29,7 @@ namespace buddy_connect.Controllers
             var identity = new GenericIdentity($"{userProfile.LastName}, {userProfile.FirstName}");
             var principal = new GenericPrincipal(identity, new string[0]);
             HttpContext.User = principal;
-            return RedirectToAction("Index","UserProfile");
+            return RedirectToAction("Index", "Booking");
         }
 
         public ActionResult Logout()
