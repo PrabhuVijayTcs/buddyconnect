@@ -7,30 +7,44 @@
 
 </style>
 <div class="card col-3 ml-4 pt-2 colorWhite mr-3">
-	<address>
-		<div class="pb-1"><strong style="color:orangered">You will be picked-up at</strong> <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#pickupModal"><i class="fas fa-edit "></i> Edit</a></span></div>
-		@user.PickupAddress.Address, @user.PickupAddress.Address2<br>
-		@user.PickupAddress.City, @user.PickupAddress.State @user.PickupAddress.Zip.Substring(0, 5)<br>
-		<abbr title="Phone"><i class="fas fa-phone"></i></abbr> @user.PhoneNumber
-	</address>
+    <address>
+        <div class="pb-1">
+            <strong style="color:orangered">You will be picked-up at</strong>
+            @if (ViewData["edit"] != null)
+            {
+                <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#pickupModal"><i class="fas fa-edit "></i> Edit</a></span>
+            }
+            
+        </div>
+        @user.AddressInfo.Address, @user.AddressInfo.Address2<br>
+        @user.AddressInfo.City, @user.AddressInfo.State @user.AddressInfo.Zip.Substring(0, 5)<br>
+        <abbr title="Phone"><i class="fas fa-phone"></i></abbr> @user.PhoneNumber
+    </address>
 </div>
 <div class="card col-3 ml-4 pt-2 colorWhite">
-	<address>
-		<div class="pb-1"><strong style="color:orangered">Your drop location is</strong> <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#dropModal"><i class="fas fa-edit "></i> Edit</a></span></div>
-		@user.AddressInfo.Address, @user.AddressInfo.Address2<br>
-		@user.AddressInfo.City, @user.AddressInfo.State @user.AddressInfo.Zip.Substring(0, 5)<br>
-		<abbr title="Phone"><i class="fas fa-phone"></i></abbr> @user.PhoneNumber
-	</address>
+    <address>
+        <div class="pb-1">
+            <strong style="color:orangered">Your drop location is</strong>
+            @if (ViewData["edit"] != null)
+            {
+                <span class="float-sm-right"><a href="#" data-toggle="modal" data-target="#dropModal"><i class="fas fa-edit "></i> Edit</a></span>
+            }
+
+        </div>
+        @user.PickupAddress.Address, @user.PickupAddress.Address2<br>
+        @user.PickupAddress.City, @user.PickupAddress.State @user.PickupAddress.Zip<br>
+        <abbr title="Phone"><i class="fas fa-phone"></i></abbr> +44 20 7946 0755
+    </address>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="dropModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content col-12 colorWhite" style="height: 380px;border-radius:10px;background-color:black">
 			<form class="form" action="##" method="post" id="homeAddressForm">
-				<div class="userName2 row ml-1 mt-3 mb-3">
-					Edit Pickup Address
-				</div>
+                <div class="userName2 row ml-1 mt-3 mb-3">
+                    Edit Drop-off Address
+                </div>
 				<div class="row">
 					<div class="col-6">
 						<div class="form-group">
@@ -105,12 +119,12 @@
 	</div>
 </div>
 
-<div class="modal fade" id="dropModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content col-12 colorWhite" style="height: 380px;border-radius:10px;background-color:black">
 			<form class="form" action="##" method="post" id="dropAddressForm">
 				<div class="userName2 row ml-1 mt-3 mb-3">
-					Edit Drop-off Address
+					Edit Pickup Address
 				</div>
 				<div class="row">
 					<div class="col-6">

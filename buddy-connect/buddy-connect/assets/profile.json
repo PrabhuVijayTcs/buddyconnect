@@ -1,42 +1,44 @@
 [
-  {
-    "UserName": "caretaker",
-    "FirstName": "John",
-    "MiddleName": "Richard",
-    "LastName": "Smith",
-    "DateOfBirth": "08/02/1950",
-    "Gender": "Male",
-    "IsDisabled": 1,
-    "IsCareGiver": 0,
-    "PhoneNumber": "+18082052321",
-    "Email": "RichardJS@xyz.com",
-    "Membership": "Elite Club",
-    "Miles": 2500,
-    "WheelChair": {
-      "Length": 42.5,
-      "Width": 29.5,
-      "Height": 52.5,
-      "Weight": "156 Lbs",
-      "Type": "Power Chair",
-      "BatteryType": "Lithium"
+    {
+        "UserName": "Roberto",
+        "FirstName": "Roberto",
+        "MiddleName": "R",
+        "LastName": "Mantovani",
+        "DateOfBirth": "01/10/1935",
+        "Gender": "Male",
+        "IsDisabled": 1,
+        "IsCareGiver": 0,
+        "PhoneNumber": "+18082052321",
+        "Email": "Roberto.Mantovani@gmail.com",
+        "Membership": "Elite Club",
+        "Miles": 2500,
+        "WheelChair": {
+            "Length": 42.5,
+            "Width": 29.5,
+            "Height": 52.5,
+            "Weight": "156 Lbs",
+            "Type": "Power Chair",
+            "BatteryType": "Lithium"
+        },
+        // will be used as pickup location
+        "AddressInfo": {
+            "Address": "113 Cherry St",
+            "Address2": "Apt 267",
+            "City": "Seattle",
+            "State": "WA",
+            "Zip": "98104-2205",
+            "Country": "US"
+        },
+        //will be used as drop location
+        "PickupAddress": {
+            "Address": "123 High St",
+            "Address2": "Newtown",
+            "City": "London",
+            "State": "SW1",
+            "Zip": "3AA",
+            "Country": "UK"
+        }
     },
-    "AddressInfo": {
-      "Address": "113 Cherry St",
-      "Address2": "Apt 267",
-      "City": "Seattle",
-      "State": "WA",
-      "Zip": "98104-2205",
-      "Country": "US"
-    },
-    "PickupAddress": {
-      "Address": "113 Ala Nanala St",
-      "Address2": "Apt 989",
-      "City": "Honolulu",
-      "State": "HI",
-      "Zip": "96818",
-      "Country": "US"
-    }
-  },
   {
     "UserName": "caregiver",
     "FirstName": "Dwayne",

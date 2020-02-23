@@ -4,16 +4,89 @@
 	ViewBag.Title = "Confirmation";
 	ProfileViewModel user = Model.userProfile;
 }
+<style type="text/css">
+    .card-main {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 6px;
+        margin-top: 15px;
+        width: 100%;
+    }
 
+    .card-body .card {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border-radius: 5px;
+        box-shadow: inherit;
+    }
 
-<div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
+    .card-body {
+        padding-top: 5px;
+    }
+
+    .card-header h3 {
+        color: white;
+    }
+
+    .colorWhite {
+        color: #ffffff;
+    }
+</style>
+<div class="row">
+    <div class="col-12">
+
+        <div class="card-main">
+            <div class="card-header ml-3 ">
+                <h3>PNR: <strong class="text-info">@Model.RecordLocator</strong></h3>
+            </div>
+            <div class="card-body">
+                <div>@Html.Partial("_ConfirmationWidget")</div>
+                
+                <div class="row">
+                    <div class="col-12 colorWhite ml-3">
+                        <fieldset>
+                            <legend><i class="fas fa-car" style="color:black"></i> Thanks for opting our pickup and drop service</legend>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    @Html.Partial("_PickUpDropAddress", user)
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-12 colorWhite ml-3">
+                        <fieldset>
+                            <legend><i class="fas fa-briefcase-medical" style="color:#fd7e14"></i> Medical aid during the travel</legend>
+                            <div class="form-group">
+                                <div class="custom-control mb-2">
+                                    <label>
+                                        <strong>
+                                            You will be contacted to discuss on the detailed plan by the <span style="color:orangered">Medical Travel Companions. </span><img style="width:210px" src="https://medicaltravelcompanions.com/wp-content/themes/im-startup-Child/images/wpm-logo-companion.jpg" />
+                                        </strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="card bg-light mb-3" style="margin-top: 15px; border-radius: 6px">
 	<div class="card-header">
 		PNR: <strong class="text-info">@Model.RecordLocator</strong>
 	</div>
-	<div class="card-body">
-		<div>@Html.Partial("_ConfirmationWidget")</div>
-		<div>
-			@Html.Partial("_PickUpDropAddress", user)
-		</div>
-	</div>
-</div>
+    <div class="card-body">
+        <div>@Html.Partial("_ConfirmationWidget")</div>
+
+        <div class="card-main">
+            <div class="card-header ml-3 ">
+                <h3>Additional Services</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    @Html.Partial("_PickUpDropAddress", user)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@

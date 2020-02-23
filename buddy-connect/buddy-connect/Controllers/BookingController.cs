@@ -72,7 +72,7 @@ namespace buddy_connect.Controllers
 
         public ActionResult Confirmation()
         {
-            ConfirmationModel confirmationModel = Session["ConfirmationModel"] as ConfirmationModel;
+            var confirmationModel = Session["ConfirmationModel"] as ConfirmationModel;
             return View(confirmationModel);
         }
 

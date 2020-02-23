@@ -9,6 +9,36 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script>
+        (function (doc, head, body) {
+            window.interdeal = {
+                sitekey: "61540a8b34b92d4e6a25cf91f5f5e6e2",
+                Position: "Left",
+                Menulang: "EN",
+                btnStyle: {
+                    vPosition: ["30%", undefined],
+                    scale: [0.9, 0.7],
+                    icon: {
+                        type: 1,
+                        shape: "circle",
+                        outline: true
+                    },
+                    color: {
+                        main: "#000000",
+                        second: "#ffffff"
+                    }
+                }
+            };
+
+            var coreCall = doc.createElement('script');
+            coreCall.src = 'https://cdn.equalweb.com/core/2.0.2/accessibility.js';
+            coreCall.defer = true;
+            coreCall.integrity = 'sha512-qoSw5f0i8HNkxw/CGLQyisq1wMNj695s0JAcWXaJ9bhO5l6UBCXQ7BXpfHUxl5cyJsBouPcvht3fh32LZKQbyQ==';
+            coreCall.crossOrigin = 'anonymous';
+            coreCall.setAttribute('data-cfasync', true);
+            body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+        })(document, document.head, document.body);
+    </script>
     <style type="text/css">
         nav a {
             font-size: 20px;
@@ -31,6 +61,7 @@
             width: 400px;
             max-width: 600px;
         }
+
         .toast-container {
             max-width: 600px;
         }
@@ -54,7 +85,7 @@
             color: #fff;
         }
 
-        #ex4 .p1[data-count]:after{
+        #ex4 .p1[data-count]:after {
             position: absolute;
             right: -26%;
             top: -43%;
@@ -69,18 +100,18 @@
             min-width: 1em;
         }
 
-        #ex4 .p1[data-count]:after{
-            position:absolute;
-            right:20%;
-            top:10%;
+        #ex4 .p1[data-count]:after {
+            position: absolute;
+            right: 20%;
+            top: 10%;
             content: attr(data-count);
-            font-size:45%;
-            padding:.2em;
-            border-radius:50%;
-            line-height:1em;
+            font-size: 45%;
+            padding: .2em;
+            border-radius: 50%;
+            line-height: 1em;
             color: white;
-            background:rgba(255,0,0,.85);
-            text-align:center;
+            background: rgba(255,0,0,.85);
+            text-align: center;
             min-width: 1em;
         }
 
@@ -88,7 +119,6 @@
             padding: 0.1rem;
             color: #373a3c;
         }
-
     </style>
     @{
         var hasSessionUserProfile = Session["UserProfile"] != null;
@@ -100,20 +130,20 @@
             var popoverTemplate = `<div class="popover notification-container" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>`;
 
             var content = `<div class="toast show toast-container" role="alert" aria-live="assertive" aria-atomic="true">
-                                  <div class="toast-header">
-                                    <strong class="mr-auto">Travel Companion Confirmation</strong>
-                                    <small>11 mins ago</small>
-                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="toast-body">
-                                    <b>Dear Mr. Mantovani, your Companion in the Sky is Akash Gupta. <br /><br />
-                                    Akash is travelling the same route as you, and has happily volunteered to be your travel companion. <br /><br /> 
-                                    Please expect him to arrive at the aiport around 11 am. <br /><br />
-                                    We look forward to welcoming you aboard VistaRa airlines and hope you will enjoy your assisted journey.</b>
-                                  </div>
-                                </div>`;
+                                      <div class="toast-header">
+                                        <strong class="mr-auto">Travel Companion Confirmation</strong>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="toast-body">
+                                        <b>Dear Mr. Mantovani, your Companion in the Sky is Akash Gupta. <br /><br />
+                                        Akash is travelling the same route as you, and has happily volunteered to be your travel companion. <br /><br />
+                                        Please expect him to arrive at the aiport around 11 am. <br /><br />
+                                        We look forward to welcoming you aboard VistaRa airlines and hope you will enjoy your assisted journey.</b>
+                                      </div>
+                                    </div>`;
 
             $('#message-notification').popover({
                 trigger: 'click',
@@ -164,7 +194,7 @@
                         <li>
                             <div class="text-white-50" style="font-size: 20px">
                                 Welcome <b class="text-white">
-                                @User.Identity.Name
+                                    @User.Identity.Name
                                     @if (Request.QueryString["dot"] != null)
                                     {
                                         <span id="ex4" style="display:inline-block">
@@ -173,7 +203,7 @@
                                             </span>
                                         </span>
                                     }
-                            </b>
+                                </b>
                                 <div class="text-right">
                                     <a href="@Url.Action("Logout", "Login")" style="font-size: 14px; text-decoration: underline">Sign Out</a>
                                 </div>

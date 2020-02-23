@@ -1,312 +1,404 @@
 ﻿@using System.Configuration
 @using buddy_connect.Models
 @{
-	var pickupDropServiceName = ConfigurationManager.AppSettings["PickupDropService"];
-	ProfileViewModel user = Model;
+    var pickupDropServiceName = ConfigurationManager.AppSettings["PickupDropService"];
+    ProfileViewModel user = Model;
 }
 
 <style type="text/css">
 
-	.card-main {
-		background-color: rgba(0, 0, 0, 0.5) !important;
-		border-radius: 6px;
-		margin-top: 15px;
-		width: 100%;
-	}
+    .card-main {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 6px;
+        margin-top: 15px;
+        width: 100%;
+    }
 
-	.card-body .card {
-		background-color: rgba(0, 0, 0, 0.4) !important;
-		border-radius: 5px;
-		box-shadow: inherit;
-	}
+    .card-body .card {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border-radius: 5px;
+        box-shadow: inherit;
+    }
 
-	.card-body {
-		padding-top: 5px;
-	}
+    .card-body {
+        padding-top: 5px;
+    }
 
-	.card-header h3 {
-		color: white;
-	}
+    .card-header h3 {
+        color: white;
+    }
 
-	.editLink {
-		color: white;
-		font-size: 12px;
-	}
+    .editLink {
+        color: white;
+        font-size: 12px;
+    }
 
-	.bgProfile {
-		background: rgba(0, 0, 0, 0.7);
-		border-radius: 6px;
-		margin-top: 15px;
-	}
+    .bgProfile {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 6px;
+        margin-top: 15px;
+    }
 
-	h3.username {
-		color: #ffffff;
-		padding: 5px;
-	}
-
-
-	.colorWhite {
-		color: #ffffff;
-	}
-
-	.labels {
-		font-size: 20px;
-	}
-
-	.values {
-		font-size: 20px;
-	}
-
-	.form-control[disabled] {
-		background-color: rgb(161, 161, 161);
-		font-size: 15px;
-	}
-
-	.nav-tabs :not(.active) {
-		color: #ffffff;
-		font-weight: bold;
-	}
-
-	.yesQues, .noQues {
-		display: none;
-	}
+    h3.username {
+        color: #ffffff;
+        padding: 5px;
+    }
 
 
-	.membership {
-		color: rgb(253, 186, 62);
-		font-size: 18px;
-	}
+    .colorWhite {
+        color: #ffffff;
+    }
 
-	.miles {
-		color: rgb(223, 185, 135);
-		font-size: 15px;
-	}
+    .labels {
+        font-size: 20px;
+    }
 
-	.userName2 {
-		color: rgb(125, 180, 254);
-		font-size: 20px;
-	}
+    .values {
+        font-size: 20px;
+    }
 
-	.submit-btn {
-		-webkit-transition: 0.2s all;
-		background-color: #f23e3e;
-		border: none;
-		border-radius: 20px;
-		color: #fff;
-		font-size: 14px;
-		font-weight: 400;
-		height: 40px;
-		text-transform: uppercase;
-		transition: 0.2s all;
-		width: 200px;
-	}
+    .form-control[disabled] {
+        background-color: rgb(161, 161, 161);
+        font-size: 15px;
+    }
 
-	.largeTabs {
-		padding: 5px;
-	}
+    .nav-tabs :not(.active) {
+        color: #ffffff;
+        font-weight: bold;
+    }
 
-	.qty .count, .count1 {
-		color: #000;
-		display: inline-block;
-		vertical-align: top;
-		font-size: 25px;
-		font-weight: 700;
-		line-height: 30px;
-		padding: 0 2px;
-		min-width: 35px;
-		text-align: center;
-	}
+    .yesQues, .noQues {
+        display: none;
+    }
 
-	.qty .plus, .plus1 {
-		cursor: pointer;
-		display: inline-block;
-		vertical-align: top;
-		color: white;
-		width: 30px;
-		height: 30px;
-		font: 30px/1 Arial,sans-serif;
-		text-align: center;
-		border-radius: 50%;
-	}
 
-	.qty .minus, .minus1 {
-		cursor: pointer;
-		display: inline-block;
-		vertical-align: top;
-		color: white;
-		width: 30px;
-		height: 30px;
-		font: 30px/1 Arial,sans-serif;
-		text-align: center;
-		border-radius: 50%;
-		background-clip: padding-box;
-	}
+    .membership {
+        color: rgb(253, 186, 62);
+        font-size: 18px;
+    }
 
-	.minus:hover {
-		background-color: orangered !important;
-	}
+    .miles {
+        color: rgb(223, 185, 135);
+        font-size: 15px;
+    }
 
-	.minus1:hover {
-		background-color: orangered !important;
-	}
+    .userName2 {
+        color: rgb(125, 180, 254);
+        font-size: 20px;
+    }
 
-	.plus:hover {
-		background-color: orangered !important;
-	}
+    .submit-btn {
+        -webkit-transition: 0.2s all;
+        background-color: #f23e3e;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        height: 40px;
+        text-transform: uppercase;
+        transition: 0.2s all;
+        width: 200px;
+    }
 
-	.plus1:hover {
-		background-color: orangered !important;
-	}
-	/*Prevent text selection*/
-	span {
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-	}
+    .largeTabs {
+        padding: 5px;
+    }
+
+    .qty .count, .count1 {
+        color: #000;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 2px;
+        min-width: 35px;
+        text-align: center;
+    }
+
+    .qty .plus, .plus1 {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial,sans-serif;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .qty .minus, .minus1 {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial,sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        background-clip: padding-box;
+    }
+
+    .minus:hover {
+        background-color: orangered !important;
+    }
+
+    .minus1:hover {
+        background-color: orangered !important;
+    }
+
+    .plus:hover {
+        background-color: orangered !important;
+    }
+
+    .plus1:hover {
+        background-color: orangered !important;
+    }
+    /*Prevent text selection*/
+    span {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
 </style>
 
 <script>
-	$(document).ready(function () {
-		$(".pickupDrop").hide();
-		$(document).on('click', '.plus', function () {
-			var valueInCount = parseInt($('.count').text());
-			$('.count').text(valueInCount + 1);
-		});
-		$(document).on('click', '.minus', function () {
-			var valueInCount = parseInt($('.count').text());
-			if (valueInCount > 0) {
-				$('.count').text(valueInCount - 1);
-			}
-		});
+    $(document).ready(function () {
+        $(".pickupDrop").hide();
+        $('.baggage-pickup-section').hide();
+        $("#medical-row").hide();
+        $(document).on('click', '.plus', function () {
+            var valueInCount = parseInt($('.count').text());
+            $('.count').text(valueInCount + 1);
+        });
+        $(document).on('click', '.minus', function () {
+            var valueInCount = parseInt($('.count').text());
+            if (valueInCount > 0) {
+                $('.count').text(valueInCount - 1);
+            }
+        });
 
-		$(document).on('click', '.plus1', function () {
-			var valueInCount = parseInt($('.count1').text());
-			$('.count1').text(valueInCount + 1);
-		});
-		$(document).on('click', '.minus1', function () {
-			var valueInCount = parseInt($('.count1').text());
-			if (valueInCount > 0) {
-				$('.count1').text(valueInCount - 1);
-			}
-		});
+        $(document).on('click', '.plus1', function () {
+            var valueInCount = parseInt($('.count1').text());
+            $('.count1').text(valueInCount + 1);
+            if (valueInCount === 0) {
+                $('.baggage-pickup-section').fadeIn(500);
+            }
+        });
+        $(document).on('click', '.minus1', function () {
+            var valueInCount = parseInt($('.count1').text());
+            if (valueInCount > 0) {
+                $('.count1').text(valueInCount - 1);
+            }
+            if (valueInCount === 1) {
+                $('.baggage-pickup-section').fadeOut(500);
+            }
+        });
 
-		$("#YesPickup").click(function () {
-			$(".pickupDrop").fadeIn(500);
-		});
+        $("#YesPickup").click(function () {
+            $(".pickupDrop").fadeIn(500);
+        });
 
-		$("#NoPickup").click(function () {
-			$(".pickupDrop").fadeOut(500);
-		});
+        $("#NoPickup").click(function () {
+            $(".pickupDrop").fadeOut(500);
+        });
 
+        $("#MedicalYes").click(function () {
+            $("#medical-row").fadeIn(500);
+        });
 
-	});
+        $("#MedicalNo").click(function () {
+            $("#medical-row").fadeOut(500);
+        });
+
+    });
 </script>
 <div class="row">
-	<div class="col-12">
-		<form action="@Url.Action("Confirmation", "Booking")" method="post">
-			<div class="card-main">
-				<div class="card-header ml-3 ">
-					<h3>Additional Services</h3>
-				</div>
-				<div class="card-body">
-					<div class="row">
-						<div class="col-12 colorWhite ml-3">
-							<fieldset>
-								<legend><i class="fas fa-car" style="color:black"></i> Would you like to use our @pickupDropServiceName service?</legend>
-								<div class="form-group">
-									<div class="custom-control custom-radio mb-2">
-										<input type="radio" id="YesPickup" name="customRadio" class="custom-control-input">
-										<label class="custom-control-label" for="YesPickup">
-											<strong>Yes, </strong>add service for additional <span style="color:orangered">$45. </span>
-											<i class="fas fa-check text-danger"></i> Recommended
-										</label>
-									</div>
-									<div class="custom-control custom-radio">
-										<input type="radio" id="NoPickup" name="customRadio" class="custom-control-input">
-										<label class="custom-control-label" for="NoPickup">No, thank you.</label>
-									</div>
-								</div>
-							</fieldset>
-						</div>
-					</div>
-					<div class="row pickupDrop">
-						@Html.Partial("_PickUpDropAddress")
-					</div>
-					<div class="row">
-						<div class="col-12 colorWhite ml-3 mt-3 mb-3">
-							<h3>Other Amenities</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 colorWhite ml-3">
-							<ul class="nav nav-tabs">
-								<li class="nav-item">
-									<a class="nav-link active" data-toggle="tab" href="#baggage"><i class="fas fa-suitcase-rolling" style="color:orangered"></i> &nbsp;Baggage</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" data-toggle="tab" href="#wifi"><i class="fas fa-wifi" style="color:orangered"></i> &nbsp; Wifi</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" data-toggle="tab" href="#food"><i class="fas fa-utensils" style="color:orangered"></i> &nbsp; Meals & Snacks</a>
-								</li>
-							</ul>
-							<div id="myTabContent" class="tab-content">
-								<div class="tab-pane fade active show" id="baggage">
-									<div class="row">
-										<div class="col-6 mt-3">
-											<div class="row">
-												<div class="col-6">
-													<div class="mt-3">
-														Carry-On-Baggage
-													</div>
-												</div>
-												<div class="col-6">
-													<div class="qty mt-3">
-														<span class="minus bg-dark">-</span>
-														<span class="count" style="color: white" name="qty">0</span>
-														<span class="plus bg-dark">+</span>
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-6">
-													<div class="mt-3">
-														Checked-In Baggage
-													</div>
-												</div>
-												<div class="col-6">
-													<div class="qty mt-3">
-														<span class="minus1 bg-dark">-</span>
-														<span class="count1" style="color: white" name="qty">0</span>
-														<span class="plus1 bg-dark">+</span>
-													</div>
-												</div>
-											</div>
-											<div class="row mt-3 col-12">
-												<a href="#">Learn more about Baggage limits and restrictions</a><br />
-											</div>
-										</div>
-										<div class="col-6 mt-3">
-											<img style="width:130px;height:130px;" src="~/assets/img/bag.png" />
-										</div>
+    <div class="col-12">
+        <form action="@Url.Action("Confirmation", "Booking")" method="post">
+            <div class="card-main">
+                <div class="card-header ml-3 ">
+                    <h3>Additional Services</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 colorWhite ml-3">
+                            <fieldset>
+                                <legend><i class="fas fa-car" style="color:black"></i> Would you like to use our @pickupDropServiceName service?</legend>
+                                <div class="form-group">
+                                    <div class="custom-control custom-radio mb-2">
+                                        <input type="radio" id="YesPickup" name="pickupOption" value="Y" class="custom-control-input">
+                                        <label class="custom-control-label" for="YesPickup">
+                                            <strong>Yes, </strong>add service for additional <span style="color:orangered">$45. </span>
+                                            <span style="font-size: 0.75rem"><i class="fas fa-check text-danger"></i> Recommended</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="NoPickup" name="pickupOption" value="N" class="custom-control-input">
+                                        <label class="custom-control-label" for="NoPickup">No, thank you.</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row pickupDrop mb-3">
+                        @Html.Partial("_PickUpDropAddress", user, new ViewDataDictionary { { "edit", true } })
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 colorWhite ml-3">
+                            <fieldset>
+                                <legend><i class="fas fa-briefcase-medical" style="color:#fd7e14"></i> Would you need medical aid during the travel?</legend>
+                                <div class="form-group">
+                                    <div class="custom-control custom-radio mb-2">
+                                        <input type="radio" id="MedicalYes" name="medicalRadio" value="Y" class="custom-control-input" data-target="#medical-row">
+                                        <label class="custom-control-label" for="MedicalYes">
+                                            <strong>Yes, </strong>additional service provided by <span style="color:orangered">Medical Travel Companions. </span><img style="width:210px" src="https://medicaltravelcompanions.com/wp-content/themes/im-startup-Child/images/wpm-logo-companion.jpg"/>
+                                            <span style="font-size: 0.75rem"><i class="fas fa-check text-danger"></i> Recommended</span>
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3" style="width: 100%; background: gray" id="medical-row">
+                                        <div class="col-3" style="border: solid 1px whitesmoke">
+                                            <h3 style="text-align: center; text-decoration: underline" class="text-warning"><b>GOLD</b></h3>
+                                            <ul style="text-align: center; padding-left: 15px;font-size: 14px;">
+                                                <li style="text-align: left;">Local “Concierge” and “Transit Care” with a qualified&nbsp;companion for: airport meet &amp;&nbsp;transit assist or local city guide.</li>
+                                                <li style="text-align: left;">Companions are matched to the customer requirements at either end of travel</li>
+                                            </ul>
+                                            @*<div>
+                                                <button type="button" class="btn btn-primary mt-2 rounded">Select</button>
+                                            </div>*@
+                                        </div>
+                                        <div class="col-3" style="border: solid 1px whitesmoke">
+                                            <h3 style="text-align: center; text-decoration: underline" class="text-warning"><b>DIAMOND </b></h3>
+                                            <ul style="text-align: center; padding-left: 15px;font-size: 14px;">
+                                                <li style="text-align: left;">Travel Nanny or Nurse concierge support for the entire journey</li>
+                                                <li style="text-align: left;">Support for individuals, families or groups</li>
+                                                <li style="text-align: left;">Assistance with baggage, mobilization, meals, customs and immigration</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3" style="border: solid 1px whitesmoke">
+                                            <h3 style="text-align: center; text-decoration: underline" class="text-warning"><b>PLATINUM</b></h3>
+                                            <ul style="text-align: center; padding-left: 15px;font-size: 14px;">
+                                                <li style="text-align: left;">Concierge Nurse or&nbsp;Paramedic for the entire journey</li>
+                                                <li style="text-align: left;">For clients who need a little extra assistance with medical needs, VIP escorts or observations or assistance with prescribed medication</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3" style="border: solid 1px whitesmoke">
+                                            <h3 style="text-align: center; text-decoration: underline" class="text-warning"><b>PLATINUM PLUS</b></h3>
+                                            <ul style="text-align: center; padding-left: 15px;font-size: 14px;">
+                                                <li style="text-align: left;">Full concierge support with experienced Nurse, Paramedic, Military trained Paramedics or even a Doctor for the entire journey</li>
+                                                <li style="text-align: left;">For VIP client service who like full support and concierge services globally</li>
+                                                <li style="text-align: left;">Full concierge service incorporated</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="MedicalNo" value="N" name="medicalRadio" class="custom-control-input" data-toggle="collapse" data-target="#medical-row">
+                                        <label class="custom-control-label" for="MedicalNo">No, thank you.</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
 
-									</div>
-								</div>
+                    <div class="row">
+                        <div class="col-12 colorWhite ml-3 mt-3 mb-3">
+                            <h3>Other Amenities</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 colorWhite ml-3">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#baggage"><i class="fas fa-suitcase-rolling" style="color:orangered"></i> &nbsp;Baggage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#wifi"><i class="fas fa-wifi" style="color:orangered"></i> &nbsp; Wifi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#food"><i class="fas fa-utensils" style="color:orangered"></i> &nbsp; Meals & Snacks</a>
+                                </li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade active show" id="baggage">
+                                    <div class="row">
+                                        <div class="col-6 mt-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mt-3">
+                                                        Carry-On-Baggage
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="qty mt-3">
+                                                        <span class="minus bg-dark">-</span>
+                                                        <span class="count" style="color: white" name="qty">0</span>
+                                                        <span class="plus bg-dark">+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mt-3">
+                                                        Checked-In Baggage
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="qty mt-3">
+                                                        <span class="minus1 bg-dark">-</span>
+                                                        <span class="count1" style="color: white" name="qty">0</span>
+                                                        <span class="plus1 bg-dark">+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 col-12">
+                                                <a href="#">Learn more about Baggage limits and restrictions</a><br />
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <img style="width:130px;height:130px;" src="~/assets/img/bag.png" />
+                                        </div>
 
-								<div class="tab-pane fade  " id="wifi">
-									Test1
-								</div>
-								<div class="tab-pane fade  " id="food">
-									Test2
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card-footer">
-					<button class="btn btn submit-btn" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Next</button>
-				</div>
-			</div>
-		</form>
-	</div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade  " id="wifi">
+                                    Test1
+                                </div>
+                                <div class="tab-pane fade  " id="food">
+                                    Test2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row baggage-pickup-section mt-4">
+                        <div class="col-12 colorWhite ml-3">
+                            <fieldset>
+                                <legend><i class="fas fa-suitcase-rolling" style="color:black"></i> Would you like us to collect your baggage before the day of travel for a hassle free check-in?</legend>
+                                <div class="form-group">
+                                    <div class="custom-control custom-radio mb-2">
+                                        <input type="radio" id="BaggagePickup" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="BaggagePickup">
+                                            <strong>Yes </strong><span style="font-size: 0.75rem"><i class="fas fa-check text-danger"></i> Recommended</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="BaggageNoPickup" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="BaggageNoPickup">No, thank you.</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn submit-btn" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Next</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
